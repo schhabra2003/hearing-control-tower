@@ -37,6 +37,32 @@ ul li::marker { color: var(--accent); }
 .lead { font-weight: 700; color: var(--ink); }
 .kv td:first-child { width: 13%; }
 .kv td { font-size: 8.6pt; }
+
+.grid2 { display:grid; grid-template-columns: 1fr 1fr; column-gap: 16pt; }
+.g64 { display:grid; grid-template-columns: 1.45fr 1fr; column-gap: 16pt; align-items:start; }
+/* timeline */
+.tl { position: relative; padding-left: 14pt; }
+.tl::before { content:""; position:absolute; left:4pt; top:4pt; bottom:6pt; border-left:1.4pt solid var(--accent); }
+.tl .st { position: relative; margin-bottom: 4pt; }
+.tl .st::before { content:""; position:absolute; left:-13.6pt; top:2.5pt; width:7pt; height:7pt; border-radius:50%; background: var(--accent); }
+.tl .st.later::before { background:#fff; border:1.4pt solid var(--accent); width:4.2pt; height:4.2pt; }
+.tl .when { font-size:7.4pt; font-weight:700; letter-spacing:.05em; text-transform:uppercase; color: var(--accent); }
+.tl p { margin:0; }
+.change { background: var(--tint); padding: 3pt 7pt; margin-top: 2pt; font-size: 8.4pt; }
+/* process strip */
+.strip { display:grid; grid-template-columns: repeat(5, 1fr); column-gap: 9pt; margin: 3pt 0 4pt; }
+.box { position:relative; border-top: 2.4pt solid var(--accent); background: var(--tint); padding: 3pt 6pt 4pt; line-height: 1.28; }
+.box:not(:last-child)::after { content:""; position:absolute; right:-7.5pt; top:9pt; border-left:5pt solid var(--accent); border-top:3.5pt solid transparent; border-bottom:3.5pt solid transparent; }
+.box .k { font-size:7.4pt; font-weight:700; color: var(--accent); letter-spacing:.05em; }
+.box .t { font-weight:700; color: var(--ink); }
+.box .p, .box .o { font-size: 8.2pt; }
+.box .o { color: var(--muted); }
+.rules { margin-bottom: 5pt; display:grid; grid-template-columns: auto 1fr auto 1fr; gap: 1.5pt 6pt; font-size: 8.5pt; }
+.rules .s { font-weight:700; color: var(--accent); font-size: 7.6pt; letter-spacing: .05em; padding-top: 1pt; }
+.chart { margin-top: 3pt; }
+.chart svg { width: 92%; height: auto; display:block; }
+ul.tight li { margin-bottom: 1.6pt; }
+table.m td, table.m th { font-size: 8.3pt; }
 </style>
 </head>
 <body>
@@ -46,69 +72,73 @@ ul li::marker { color: var(--accent); }
 </header>
 
 <div class="summary">
-<p><b>Recommendation.</b> The firm's errors share one pattern: its records drift from the county's official record, and consultants are not confirmed in writing in time. <span class="hl">First, make every hearing READY three working days ahead</span>: five checks, each closed by its owner's written reply, kept in one shared spreadsheet. This buys reliability, not saved minutes, and needs no custom software.</p>
-<p><span class="hl">Next, recruit consultants</span>, because they, not coordinators, limit growth. <span class="hl">Build the control tower</span> (software that runs each hearing) <span class="hl">only from about 5,000 hearings a year</span>, once the firm's own timed minutes prove it pays.</p>
+<p><b>Recommendation.</b> The firm's errors share one pattern: its records drift from the county's official record, and consultants are not confirmed in writing in time. <span class="hl">First, make every hearing READY three working days ahead</span>: five checks, each closed by its owner's written reply, kept in one shared spreadsheet. This buys reliability, not saved minutes, and needs no custom software. <span class="hl">Next, recruit consultants</span>, because they, not coordinators, limit growth. <span class="hl">Build the control tower</span> (software that runs each hearing) <span class="hl">only from about 5,000 hearings a year</span>, once the firm's own timed minutes prove it pays.</p>
 </div>
 
-<h2>1. Measures: where the firm is today and the season-one target</h2>
-<table>
-<tr><th style="width:17%">Goal</th><th style="width:37%">Measure</th><th style="width:19%">Today</th><th>Target (estimate)</th></tr>
-<tr><td><b>Fewer errors</b></td><td>Hearings READY 3 working days out</td><td class="n"><b>2 of 11</b> (measured)</td><td>90% by the sixth live week</td></tr>
-<tr><td></td><td>Hearings nobody attended</td><td class="n">not tracked</td><td>0 per season</td></tr>
-<tr><td></td><td>Records not matching</td><td class="n"><b>11 of 24</b> (measured)</td><td>under 1 in 20</td></tr>
-<tr><td><b>Capacity</b></td><td>Hearings per consultant-day</td><td class="n"><b>1.7</b> (measured)</td><td>2.4</td></tr>
-<tr><td><b>Less human work</b></td><td>Coordinator minutes per hearing</td><td class="n">19.6 (estimate)</td><td>at most 19.6 (25 hearings timed)</td></tr>
-<tr><td><b>Cost</b></td><td>Cost per hearing held</td><td class="n">$104 (estimate)</td><td>at most $106</td></tr>
-<tr><td><b>Guardrail</b></td><td>Share of appeals winning a reduction</td><td class="n">not tracked</td><td>must not fall</td></tr>
-</table>
-<p class="note">Season one buys reliability: effort and cost are held flat while the five checks are added.</p>
-
-<div class="cols">
+<div class="g64">
 <div>
-<section>
+<h2>1. Measures: today and the season-one target</h2>
+<table class="m">
+<tr><th style="width:42%">Measure</th><th style="width:25%">Today</th><th>Target (estimate)</th></tr>
+<tr><td><b>Hearings READY</b> 3 working days out</td><td class="n"><b>2 of 11</b> (measured)</td><td>90% by sixth live week</td></tr>
+<tr><td><b>Hearings nobody attended</b></td><td class="n">not tracked</td><td>0 per season</td></tr>
+<tr><td><b>Records not matching</b></td><td class="n"><b>11 of 24</b> (measured)</td><td>under 1 in 20</td></tr>
+<tr><td><b>Hearings per consultant-day</b></td><td class="n"><b>1.7</b> (measured)</td><td>2.4</td></tr>
+<tr><td><b>Coordinator minutes</b> a hearing</td><td class="n">19.6 (estimate)</td><td>at most 19.6 (25 timed)</td></tr>
+<tr><td><b>Cost per hearing</b> held</td><td class="n">$104 (estimate)</td><td>at most $106</td></tr>
+<tr><td><b>Share winning a reduction</b></td><td class="n">not tracked</td><td>guardrail: must not fall</td></tr>
+</table>
+<p class="note">Season one buys reliability: effort and cost are held flat while the checks are added.</p>
+<div class="change" style="margin-top:5pt"><b>What would change the order:</b> if Alice's fee is under the $104 a hearing costs (estimate; public fees run $97 to $387), first decide which cases to book.</div>
+
+</div>
+<div>
 <h2>2. Priorities and why</h2>
-<p><span class="lead">First (from December): every hearing READY three working days out.</span> In the example week, <b>4 of the 11 hearings</b> due within three working days had no consultant's written yes (measured).</p>
-<p><span class="lead">Next (December to April): more consultants, fuller days.</span> Today's 6 consultants leave no spare for a cancellation. Twenty recruiting calls a week target two per office by mid-March; booking an office's whole day lifts a consultant-day from 1.7 toward 2.4.</p>
-<p><span class="lead">Later (September): decide on the control tower</span>, using the rule in section 5.</p>
-<p><b>What would change the order:</b> if Alice's fee is under the $104 a hearing costs (estimate; public fees run $97 to $387), the firm first decides which cases to book.</p>
-</section>
-<section>
+<div class="tl">
+<div class="st"><div class="when">First · from December</div><p><b>Every hearing READY three working days out.</b> In the example week, <b>4 of 11 hearings</b> due within three working days had no consultant's written yes (measured).</p></div>
+<div class="st"><div class="when">Next · December to April</div><p><b>More consultants, fuller days.</b> Today's 6 leave no spare for a cancellation. Twenty recruiting calls a week target two per office by mid-March; booking an office's whole day lifts a consultant-day from 1.7 toward 2.4.</p></div>
+<div class="st later"><div class="when">Later · September</div><p><b>Decide on the control tower</b> by the rule in section 5.</p></div>
+</div>
+</div>
+</div>
+
+<h2>3. Proposed process for the first priority: five checks, each closed only by its owner's written reply</h2>
+<div class="strip">
+<div class="box"><div class="k">CHECK 1</div><div class="t">Written notice</div><div class="p">Date, place, link</div><div class="o">Owner: office</div></div>
+<div class="box"><div class="k">CHECK 2</div><div class="t">Consultant's yes</div><div class="p">Written yes</div><div class="o">Owner: consultant</div></div>
+<div class="box"><div class="k">CHECK 3</div><div class="t">Named on record</div><div class="p">Office's reply</div><div class="o">Owner: office</div></div>
+<div class="box"><div class="k">CHECK 4</div><div class="t">Current files</div><div class="p">Receipts from both</div><div class="o">Owner: office, consultant</div></div>
+<div class="box"><div class="k">CHECK 5</div><div class="t">Agreements</div><div class="p">Homeowner's yes</div><div class="o">Owner: named signer</div></div>
+</div>
+<div class="rules">
+<div class="s">READY</div><div>All five checks proven three working days ahead.</div>
+<div class="s">CONFIRMED</div><div>A second written yes the day before.</div>
+<div class="s">DROPOUT</div><div style="grid-column: 2 / 5">The day before: call by noon; silence at 2 p.m. means out, offer the next consultant; at 4 p.m., use the office's alternate.</div>
+</div>
+
+<div class="grid2">
+<div>
 <h2>4. Where people decide; proof that work is done</h2>
-<ul>
-<li><b>People decide; AI only suggests.</b> Coordinator sends offers; Alice approves consultant terms; counsel rules on who may appear and sign. In a test on 100 unseen messages, readings that two AI readers and a checker agreed on were <b>right 73 of 81 times (90%, measured)</b>, so a person checks each before it is sent.</li>
+<ul class="tight">
+<li><b>People decide; AI only suggests.</b> The coordinator sends offers, Alice approves consultant terms, and counsel rules on who may appear and sign. In a test on 100 unseen messages, readings that two AI readers and a checker agreed on were <b>right 73 of 81 times (90%, measured)</b>, so a person checks each before it is sent.</li>
 <li><b>Status is computed, never typed</b>; each check links to the message that proves it.</li>
 <li><b>A hearing closes</b> only with its result and any signed agreement on file.</li>
 <li><b>Every Friday</b>, a second person opens every proof link of 10 hearings.</li>
 </ul>
-</section>
+<h2>6. Assumptions, people, tools and budget</h2>
+<p><b>Assumptions.</b> 300 hearings a year (estimate; 240 to 320). Consultant $90 a hearing, coordinator $33 an hour (sourced).</p>
+<p><b>People.</b> Associate 2 to 4 weeks, coordinator 3 days, Alice 2 hours a week, counsel about 5 hours, technical help 3 days.</p>
+<p><b>Tools.</b> Shared spreadsheet and mailbox, a text line ($1,000 a year), two AI models (under $80 a year).</p>
+<p><b>Budget.</b> Set-up <b>about $12,000 at 300 hearings</b>, $23,000 at 1,000 (payroll included). At 5,000 hearings, peak cash tied up is about $330,000 (12 weeks to fee). No dedicated engineer below about 19,000 hearings (estimates).</p>
 </div>
 <div>
-<section>
-<h2>3. Proposed process for the first priority</h2>
-<p>Five checks per hearing, each closed only by its owner's written reply:</p>
-<ol>
-<li><b>Written notice</b> from the office: date, place, link.</li>
-<li><b>Consultant's yes</b>, in writing.</li>
-<li><b>Named on record</b>: the office confirms our consultant.</li>
-<li><b>Current files</b>: receipts from office and consultant.</li>
-<li><b>Agreements</b>: the homeowner's yes, from the named signer.</li>
-</ol>
-<p>A hearing is <b>READY</b> when all five are proven three working days ahead, and <b>CONFIRMED</b> after a second yes the day before. Dropout the day before: call by noon; silence at 2 p.m. means out, offer the next; 4 p.m., the office's alternate.</p>
-</section>
-<section>
 <h2>5. Scaling without linear human work</h2>
-<p><b>Local processes are data, not code.</b> Each office's rules are one row: a new county adds a row and about 8 hours of set-up (estimate). A load test held 39 offices and 1,199 hearings in one workbook (measured).</p>
-<p><b>Consultants limit growth.</b> With a fifth spare, the firm needs 6 to 10 consultants at 300 hearings a year, 20 to 33 at 1,000 and <b>95 to 157 at 5,000</b> (estimates). In a 5,000-hearing peak week the plan needs about <b>3.3 coordinators</b>; the control tower cuts that to <b>1.8</b>.</p>
-<p><b>When to build the tower.</b> A lean build costs $40,000 to $70,000 a year and removes about 11 of 19.6 coordinator minutes a hearing. Valued at coordinator pay it breaks even at <b>5,000 to 8,700 hearings a year</b>; in cash it still loses $16,000 to $46,000 at 5,000 (estimates). <span class="hl">Build it once timed minutes confirm the 11 and volume reaches that range.</span></p>
-</section>
+<p><b>Local processes are data, not code.</b> Each office's rules are one row; a new county adds a row and about 8 hours of set-up (estimate). A load test held 39 offices and 1,199 hearings in one workbook (measured).</p>
+<p><b>Consultants limit growth; coordinators do not.</b> At 5,000 hearings a year, a peak week needs about <b>3.3 coordinators</b> (1.8 with the tower) but <b>95 to 157 consultants</b> (estimates).</p>
+<div class="chart"><svg viewBox="0 0 250 100" role="img" aria-label="Coordinators needed in a peak week, plan against control tower: 0.2 and 0.1 at 300 hearings a year; 0.7 and 0.4 at 1,000; 3.3 and 1.8 at 5,000. Consultants needed with a fifth spare: 6 to 10, 20 to 33, 95 to 157 (estimates)." font-family="InterPDF, Inter, Arial, sans-serif"><text x="0" y="8" font-size="7.4" font-weight="700" fill="#141c24">Hearings</text><text x="40" y="8" font-size="7.4" font-weight="700" fill="#141c24">Coordinators, peak week</text><rect x="40" y="12" width="7" height="5" fill="#a7b3bd"/><text x="50" y="16.6" font-size="7" fill="#5d6874">Plan</text><rect x="74" y="12" width="7" height="5" fill="#0b4f6c"/><text x="84" y="16.6" font-size="7" fill="#5d6874">Control tower</text><text x="250" y="8" font-size="7.4" font-weight="700" fill="#141c24" text-anchor="end">Consultants</text><text x="250" y="16.6" font-size="7" fill="#5d6874" text-anchor="end">(fifth spare)</text><line x1="0" y1="21" x2="250" y2="21" stroke="#141c24" stroke-width="0.7"/><line x1="40" y1="23" x2="40" y2="88" stroke="#e1e6ea" stroke-width="0.6"/><text x="40" y="97" font-size="6.8" fill="#5d6874" text-anchor="middle">0</text><line x1="66" y1="23" x2="66" y2="88" stroke="#e1e6ea" stroke-width="0.6"/><text x="66" y="97" font-size="6.8" fill="#5d6874" text-anchor="middle">1</text><line x1="92" y1="23" x2="92" y2="88" stroke="#e1e6ea" stroke-width="0.6"/><text x="92" y="97" font-size="6.8" fill="#5d6874" text-anchor="middle">2</text><line x1="118" y1="23" x2="118" y2="88" stroke="#e1e6ea" stroke-width="0.6"/><text x="118" y="97" font-size="6.8" fill="#5d6874" text-anchor="middle">3</text><line x1="144" y1="23" x2="144" y2="88" stroke="#e1e6ea" stroke-width="0.6"/><text x="144" y="97" font-size="6.8" fill="#5d6874" text-anchor="middle">4</text><text x="0" y="37" font-size="8" font-weight="600" fill="#141c24">300</text><rect x="40" y="26" width="5.2" height="7" fill="#a7b3bd"/><text x="48.2" y="32.3" font-size="7.2" fill="#5d6874">0.2</text><rect x="40" y="34.5" width="2.6" height="7" fill="#0b4f6c"/><text x="45.6" y="40.8" font-size="7.2" font-weight="700" fill="#0b4f6c">0.1</text><text x="250" y="37" font-size="8" font-weight="600" fill="#141c24" text-anchor="end">6 to 10</text><line x1="0" y1="45" x2="250" y2="45" stroke="#e1e6ea" stroke-width="0.5"/><text x="0" y="58" font-size="8" font-weight="600" fill="#141c24">1,000</text><rect x="40" y="47" width="18.2" height="7" fill="#a7b3bd"/><text x="61.2" y="53.3" font-size="7.2" fill="#5d6874">0.7</text><rect x="40" y="55.5" width="10.4" height="7" fill="#0b4f6c"/><text x="53.4" y="61.8" font-size="7.2" font-weight="700" fill="#0b4f6c">0.4</text><text x="250" y="58" font-size="8" font-weight="600" fill="#141c24" text-anchor="end">20 to 33</text><line x1="0" y1="66" x2="250" y2="66" stroke="#e1e6ea" stroke-width="0.5"/><text x="0" y="79" font-size="8" font-weight="600" fill="#141c24">5,000</text><rect x="40" y="68" width="85.8" height="7" fill="#a7b3bd"/><text x="128.8" y="74.3" font-size="7.2" fill="#5d6874">3.3</text><rect x="40" y="76.5" width="46.8" height="7" fill="#0b4f6c"/><text x="89.8" y="82.8" font-size="7.2" font-weight="700" fill="#0b4f6c">1.8</text><text x="250" y="79" font-size="8" font-weight="600" fill="#141c24" text-anchor="end">95 to 157</text></svg></div>
+<p class="note">Estimates from the cost model. Peak week: 60% of a year's hearings in 8 weeks.</p>
+<p style="margin-top:3pt"><b>When to build the tower.</b> A lean build costs $40,000 to $70,000 a year and removes about 11 of 19.6 coordinator minutes a hearing. At coordinator pay it breaks even at <b>5,000 to 8,700 hearings a year</b>; in cash it still loses $16,000 to $46,000 at 5,000 (estimates). <span class="hl">Build it once timed minutes confirm the 11 and volume reaches that range.</span></p>
 </div>
 </div>
-<h2>6. Assumptions, people, tools and budget</h2>
-<table class="kv">
-<tr><td><b>Assumptions</b></td><td>300 hearings a year (estimate; 240 to 320). Consultant $90 a hearing, coordinator $33 an hour (sourced).</td></tr>
-<tr><td><b>People</b></td><td>Associate 2 to 4 weeks, coordinator 3 days, Alice 2 hours a week, counsel about 5 hours, technical help 3 days.</td></tr>
-<tr><td><b>Tools</b></td><td>Shared spreadsheet and mailbox, a text line ($1,000 a year), two AI models (under $80 a year).</td></tr>
-<tr><td><b>Budget</b></td><td>Set-up <b>about $12,000 at 300 hearings</b>, $23,000 at 1,000 (payroll included). At 5,000 hearings, peak cash tied up is about $330,000 (12 weeks to fee). No dedicated engineer below about 19,000 hearings (estimates).</td></tr>
-</table>
 </body>
 </html>
