@@ -1,0 +1,77 @@
+/*
+ * Hearing Desk layout tokens: grid, spacing, type and sizes.
+ * Colour, radius and elevation stay in tokens.css (Ledger). Import order in src/styles/base.css:
+ * tokens.css, then this file, then src/layout/layout.css (the classes that use these tokens).
+ *
+ * Rules:
+ * - Spacing comes only from --sp-* (8 px grid, with 4 and 12 for the two tight steps).
+ * - Type comes only from the five --type-* pairs. No text above 24 px inside the app.
+ * - Two widths: wide (1600 px and up) and standard (1280 to 1599 px). Below 1200 px the list and
+ *   the detail stack; below 768 px the phone bar replaces the sidebar.
+ */
+
+:root {
+  /* Spacing scale (px): label to value 4, tight 8, rows 12, inside a block 16, between blocks 24, page edge and sections 32, large 48. */
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-6: 24px;
+  --sp-8: 32px;
+  --sp-12: 48px;
+
+  /* Named uses of the scale. Use these names in components, not the raw steps. */
+  --gap-label: var(--sp-1);
+  --gap-row: var(--sp-3);
+  --pad-block: var(--sp-4);
+  --gap-block: var(--sp-6);
+  --gap-section: var(--sp-8);
+
+  /* Grid: 12 columns, fixed gutter, fixed page edge. */
+  --grid-columns: 12;
+  --grid-gutter: 24px;
+  --page-edge: 32px;
+  --page-top: 24px;
+
+  /* Shell. */
+  --shell-topbar: 56px;
+  --shell-sidebar: 248px;
+  --shell-search: 320px;
+
+  /* Heights. Rows and controls snap to the 8 px grid (36 is the one 4 px step, for nav and segments). */
+  --h-control-sm: 32px;
+  --h-control-md: 40px;
+  --h-nav: 36px;
+  --h-seg: 36px;
+  --h-card-head: 48px;
+  --h-card-foot: 56px;
+  --h-table-head: 40px;
+  --h-row: 48px;
+  --h-row-2: 64px;
+  --h-row-3: 88px;
+  --h-strip-cell: 108px;
+
+  /* Type scale: size / line height / weight. Five sizes, no more on a page. (No --type-label: sidebar group labels use --type-small at 600.) */
+  --type-title: 600 24px/32px var(--font-sans);
+  --type-section: 600 16px/24px var(--font-sans);
+  --type-body: 400 14px/20px var(--font-sans);
+  --type-small: 400 13px/18px var(--font-sans);
+  --type-figure: 600 28px/32px var(--font-sans);
+  --type-mono: 400 13px/18px var(--font-mono);
+
+  /* Prose and text budget. */
+  --measure: 52ch; /* about 75 characters of 14 px Inter */
+
+  /* The list and detail split, in grid columns, at every width from 1200 px. */
+  --split-list: 7;
+  --split-detail: 5;
+}
+
+@media (max-width: 1599px) {
+  :root {
+    --grid-gutter: 16px;
+    --page-edge: 24px;
+    --shell-sidebar: 232px;
+    --shell-search: 240px;
+  }
+}

@@ -1,0 +1,200 @@
+/*
+ * Hearing Desk identity, "Ledger": the proposed src/styles/tokens.css (colour, type, radius, elevation).
+ * Palette derived from 21st.dev themes: "Paper and Ink" by stijnvanlierrd-del,
+ * https://21st.dev/community/themes/paper-and-ink-1793094244495 (warm paper and ink, ink primary),
+ * "Accessible Teal" by dhxwhy, https://21st.dev/community/themes/accessible-teal-1791645467533
+ * (the petrol hue 184 to 205 and its AA pairs), and "Linear" by ibrandify,
+ * https://21st.dev/community/themes/linear-1791653451973 (6 px control radius, ink primary, hairline borders).
+ * Changes: the paper is desaturated to near neutral; the accent is a deep petrol, not blue; every
+ * status colour is low chroma and has a separate dot tone; contrast checked by tools/contrast.mjs.
+ * Same token names as the app, plus --primary, --primary-hover, --on-primary, --dot-*, --shadow-control
+ * and --shadow-primary. Dark mode under [data-theme='dark'] and prefers-color-scheme.
+ * Contrast adjustments: light --border-strong #85888e became #7d8087
+ * (3.23:1 on sunken, was 2.90) and light --dot-warn #b0832a became #a57a26 (3.17:1 on sunken,
+ * was 2.80).
+ */
+
+:root {
+  color-scheme: light;
+
+  --bg: #f6f5f2;
+  --surface: #ffffff;
+  --surface-2: #f1f0ec;
+  --sunken: #eae8e3;
+  --border: #e3e1db;
+  --border-strong: #7d8087;
+  --ink: #131518;
+  --ink-2: #393d44;
+  --muted: #5a5f67;
+
+  --primary: #16181c;
+  --primary-hover: #2b2e34;
+  --on-primary: #ffffff;
+
+  --accent: #17606d;
+  --accent-soft: #e5eff0;
+  --on-accent: #ffffff;
+
+  --danger: #9e3a36;
+  --danger-bg: #f7eceb;
+  --warn: #7a5a18;
+  --warn-bg: #f6f0e1;
+  --ok: #2e6a4d;
+  --ok-bg: #e9f1ec;
+  --dot-danger: #c0524a;
+  --dot-warn: #a57a26;
+  --dot-ok: #4f8a6c;
+
+  --measured: #2f5e57;
+  --measured-bg: #e8f0ee;
+  --simulated: #5b4a86;
+  --simulated-bg: #efecf5;
+  --estimate: #7a5a18;
+  --estimate-bg: #f6f0e1;
+  --packet: #3e4f66;
+  --packet-bg: #ebeef2;
+  --later: #4a4f57;
+  --later-bg: #efefed;
+  --block-fg: #ffffff;
+  --block-bg: #9e3a36;
+  --scrim: rgba(19, 21, 24, 0.5);
+  /* Edges of controls (secondary and danger buttons, fields): at least 3:1 on the surface. */
+  --border-control: var(--border-strong);
+
+  --shadow-control: 0 0 0 1px var(--border), 0 1px 1px rgb(19 21 24 / 0.04);
+  --shadow-primary: inset 0 1px 0 rgb(255 255 255 / 0.12), 0 0 0 1px var(--primary), 0 1px 2px rgb(19 21 24 / 0.16);
+  --shadow-e1: 0 0 0 1px var(--border);
+  --shadow-e2: 0 0 0 1px var(--border), 0 4px 12px rgb(19 21 24 / 0.08), 0 1px 2px rgb(19 21 24 / 0.04);
+  --shadow-e3: 0 0 0 1px var(--border), 0 16px 40px rgb(19 21 24 / 0.14);
+
+  --font-serif: 'Inter Variable', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-sans: 'Inter Variable', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+
+  --radius-chip: 4px;
+  --radius-nav: 6px;
+  --radius-control: 6px;
+  --radius-quote: 8px;
+  --radius-card: 10px;
+  --radius-feature: 12px;
+
+  /* Shell sizes live in layout.css (--shell-topbar 56, --shell-sidebar 248 or 232). The two old
+     names point there for the pages that still read them; --rail-width is gone. */
+  --sidebar-width: var(--shell-sidebar);
+  --sidebar-collapsed: 72px;
+  --topbar-height: var(--shell-topbar);
+  --drawer-width: 760px;
+  --reading-max: 1600px;
+  --ease-out: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --dur-press: 120ms;
+  --dur-color: 160ms;
+  --dur-pop: 200ms;
+  --dur-spot: 240ms;
+  --dur-step: 320ms;
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+
+  --bg: #0f1011;
+  --surface: #161718;
+  --surface-2: #1c1e1f;
+  --sunken: #121314;
+  --border: #2a2c2e;
+  --border-strong: #6a6e74;
+  --ink: #ededeb;
+  --ink-2: #c6c7c8;
+  --muted: #9ea1a6;
+
+  --primary: #ededeb;
+  --primary-hover: #ffffff;
+  --on-primary: #121314;
+
+  --accent: #82c3cd;
+  --accent-soft: #16292d;
+  --on-accent: #0f1011;
+
+  --danger: #eba29b;
+  --danger-bg: #301a19;
+  --warn: #dfbf7f;
+  --warn-bg: #2b2414;
+  --ok: #94c8ac;
+  --ok-bg: #15261e;
+  --dot-danger: #d9786f;
+  --dot-warn: #c9a052;
+  --dot-ok: #6fae8c;
+
+  --measured: #9ccac1;
+  --measured-bg: #15272a;
+  --simulated: #c3b6e3;
+  --simulated-bg: #221e31;
+  --estimate: #dfbf7f;
+  --estimate-bg: #2b2414;
+  --packet: #b1c1d5;
+  --packet-bg: #1a212b;
+  --later: #b2b5ba;
+  --later-bg: #18191b;
+  --block-fg: #1a0c0b;
+  --block-bg: #e3958d;
+  --scrim: rgba(0, 0, 0, 0.62);
+
+  --shadow-control: 0 0 0 1px var(--border);
+  --shadow-primary: 0 0 0 1px var(--primary);
+  --shadow-e1: 0 0 0 1px var(--border);
+  --shadow-e2: 0 0 0 1px var(--border), 0 8px 24px rgb(0 0 0 / 0.45);
+  --shadow-e3: 0 0 0 1px var(--border), 0 20px 48px rgb(0 0 0 / 0.55);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    color-scheme: dark;
+
+    --bg: #0f1011;
+    --surface: #161718;
+    --surface-2: #1c1e1f;
+    --sunken: #121314;
+    --border: #2a2c2e;
+    --border-strong: #6a6e74;
+    --ink: #ededeb;
+    --ink-2: #c6c7c8;
+    --muted: #9ea1a6;
+
+    --primary: #ededeb;
+    --primary-hover: #ffffff;
+    --on-primary: #121314;
+
+    --accent: #82c3cd;
+    --accent-soft: #16292d;
+    --on-accent: #0f1011;
+
+    --danger: #eba29b;
+    --danger-bg: #301a19;
+    --warn: #dfbf7f;
+    --warn-bg: #2b2414;
+    --ok: #94c8ac;
+    --ok-bg: #15261e;
+    --dot-danger: #d9786f;
+    --dot-warn: #c9a052;
+    --dot-ok: #6fae8c;
+
+    --measured: #9ccac1;
+    --measured-bg: #15272a;
+    --simulated: #c3b6e3;
+    --simulated-bg: #221e31;
+    --estimate: #dfbf7f;
+    --estimate-bg: #2b2414;
+    --packet: #b1c1d5;
+    --packet-bg: #1a212b;
+    --later: #b2b5ba;
+    --later-bg: #18191b;
+    --block-fg: #1a0c0b;
+    --block-bg: #e3958d;
+    --scrim: rgba(0, 0, 0, 0.62);
+
+    --shadow-control: 0 0 0 1px var(--border);
+    --shadow-primary: 0 0 0 1px var(--primary);
+    --shadow-e1: 0 0 0 1px var(--border);
+    --shadow-e2: 0 0 0 1px var(--border), 0 8px 24px rgb(0 0 0 / 0.45);
+    --shadow-e3: 0 0 0 1px var(--border), 0 20px 48px rgb(0 0 0 / 0.55);
+  }
+}

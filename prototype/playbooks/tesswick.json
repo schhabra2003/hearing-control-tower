@@ -1,0 +1,22 @@
+{
+  "id": "tesswick",
+  "layer": "county",
+  "county": "Tesswick",
+  "state": "Belloria",
+  "version": 1,
+  "verified_at": "2030-05-15",
+  "verified_from": "Firm saved instructions in the examples packet, recorded 2030-05-15",
+  "office": {
+    "email": "clerk@tesswick.example"
+  },
+  "hearing_mode": "in_person",
+  "staffing": {
+    "method": "email_case_ids",
+    "template": "staffing_email",
+    "source_text": "Email case IDs and representative name to clerk; government acknowledgment required."
+  },
+  "replacement": {
+    "method": "email_replacement",
+    "source_text": "Email the replacement name and affected case IDs."
+  }
+}

@@ -1,0 +1,71 @@
+{
+ "note": "Example input for node cli/sheet.js --paste. Six messages in the packet message format. Messages 66 and 72 are example messages of the case packet (both repeat an earlier message). H031 and H036 are two of the 30 unseen messages and U001 is one of the 100 messages of the second unseen set: recorded answers of both readers exist for them. new-1 was written for this example and has no recorded answer, so without a key it is not read. Everything here is fictional.",
+ "messages": [
+  {
+   "id": 66,
+   "sender": "Larkmere hearing office",
+   "channel": "email",
+   "properties": [
+    "102 Willow Lane, Larkmere",
+    "118 Willow Lane, Larkmere"
+   ],
+   "body": "The June 10 hearings for 102 and 118 Willow Lane remain confirmed. Leo is recorded for both, and we have the current packets. No further documents are requested at this time."
+  },
+  {
+   "id": 72,
+   "sender": "Velloran hearing office",
+   "channel": "email",
+   "properties": [
+    "120 Garden Street, Velloran",
+    "138 Garden Street, Velloran"
+   ],
+   "body": "Sending the same confirmation again for your records: Owen is recorded for 120 Garden Street, Velloran and 138 Garden Street, Velloran, June 11 at 3 p.m. and 3:30 p.m., room C. No changes."
+  },
+  {
+   "id": "H031",
+   "sender": "Velloran hearing office",
+   "address": "clerk@velloran.example",
+   "channel": "email",
+   "properties": [
+    "63 Garden Street, Velloran",
+    "81 Garden Street, Velloran"
+   ],
+   "at": "2030-06-07T12:15:00-05:00",
+   "body": "We confirm that we hold the case packets for 63 Garden Street and 81 Garden Street, and that both open without trouble. One further item is needed, for 81 Garden Street only. Page 2 of its appeal summary relies on a contractor's damp survey that is not in the packet. Please file the survey with us by noon on Monday June 10; otherwise the board will not consider that part of the claim. Nothing more is required for 63 Garden Street.\n\nVelloran hearing office, clerk's desk"
+  },
+  {
+   "id": "H036",
+   "sender": "Caldmere hearing office",
+   "address": "clerk@caldmere.example",
+   "channel": "email",
+   "properties": [
+    "75 Elm Street, Caldmere",
+    "96 Elm Street, Caldmere"
+   ],
+   "at": "2030-06-07T14:45:00-05:00",
+   "body": "Change to how filings reach this office, with immediate effect. Representative names, replacement names and case packets for Caldmere appeals must now be sent to filings@caldmere.example. The clerk@ address will be read only for same-day hearing emergencies, and anything else sent there from today will not be logged. A change of representative must also be made on form CF-7, attached; a name given in the body of an email will no longer be entered. Every filing must carry the case ID in the subject line. Messages without one will be returned unread. This applies to your pending matters, 75 Elm Street and 96 Elm Street, as to all others. Nothing already on file needs to be sent again."
+  },
+  {
+   "id": "U001",
+   "sender": "Owen Tarris",
+   "address": "owen@consultants.example",
+   "channel": "email",
+   "properties": [
+    "11 Brook Road, Fenwick Vale",
+    "29 Brook Road, Fenwick Vale"
+   ],
+   "at": "2030-06-07T08:20:00-05:00",
+   "body": "Report on Brook Road yesterday. I got there at 8:35.\n\n11 Brook Road was heard at 9:05. The board wants a signed occupancy statement from the owner, deadline Friday 14 June at noon.\n\n29 Brook Road: the assessor's file was incomplete, so it was continued. Date to come by post.\n\nInvoice to follow, two hearings at 110.\n\nOwen Tarris"
+  },
+  {
+   "id": "new-1",
+   "sender": "Velloran hearing office",
+   "channel": "email",
+   "properties": [
+    "120 Garden Street, Velloran",
+    "138 Garden Street, Velloran"
+   ],
+   "body": "Room C stays as confirmed for June 11. Nothing else has changed."
+  }
+ ]
+}

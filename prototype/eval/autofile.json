@@ -1,0 +1,792 @@
+{
+ "generated_by": "node eval/autofile.js",
+ "source": "data/recorded_reads.json replayed offline (no model call). First reader: gpt-6.1-sol. Second reader: gpt-6-luna.",
+ "definitions": {
+  "closing_reading": "One reading of one message for one hearing, of a type that needs both readers because it can close a proof cell or set an official fact.",
+  "agreed": "Both readers produced it for the same hearing with the same key details (it passed the cross-check).",
+  "passed": "The verifier accepted it as a fact: the right sender, in writing, as a plain statement.",
+  "right": "The answer key holds the same type for the same hearing with the same key details.",
+  "person_action": "One of: a yes or no to one proposed proof link on the Reader suggestions tab; one proof a person types because the readers did not propose it; one message handed to a person to read; and, on the gate sheet since round 15, one cell that a person types because a rule added in round 15 reads it and the readers do not propose it (BW, AY, AZ, a later receipt pasted over the link in L, CH, CI). With auto-file on, a proposed link that is agreed and passed needs no yes; the typed cells stay with a person. A message handed to a person is counted on each hearing of its thread. This is a count of actions, not a timing.",
+  "not_counted": "Typing that the method never counted, before or after round 15: the consultant's name in H, the name on the office's record in BD, a room in AV, the change notice in BN and BO, the homeowner notice in BK and BL. Messages that still have to be sent (a question to an office, a request to reply GOT IT n, a files email, a reply about an arrival time) are not counted either: they are listed for each hearing under what_remains, and one message can serve every hearing of a docket.",
+  "proofs_missing_on_the_sheet_after_this_filing": "What column U of the gate sheet reads once every link and typed cell above is in: one for each open check, the files check counted by its two halves. Worked out here by rules S11 and S12 from the words of the messages; cli/check.js compares it with column U of the installed sheet."
+ },
+ "decision": "Auto-file is OFF this season: nothing fills a cell on its own. The condition for switching it on is the sheet's own sentence (Reader suggestions A168): at the live-week-4 review Alice may decide that proposals both readers agree on, of one kind, fill their cell without the 9:00 pass, but only if the Friday sample found no wrong link of that kind in four weeks running. The firm's two-week log is the measurement that feeds that review; it is not a second condition. The counts in this file are from the example and unseen messages and decide nothing.",
+ "caution": "The answer key was written by one person, the author of the readers' instructions. The 72 examples were used while the readers' instructions were written; the 30 unseen messages were not, and were written to be hard. Both sets are small and neither is a sample of a real mailbox. These are counts, not a policy.",
+ "examples_72": {
+  "messages": 72,
+  "messages_without_a_recorded_read": 0,
+  "closing_readings_in_the_answer_key": 134,
+  "agreed_by_both_readers": 128,
+  "agreed_and_passed_by_the_verifier": 125,
+  "agreed_but_not_passed": {
+   "n": 3,
+   "by_verifier_result": {
+    "provisional": 2,
+    "flag": 1
+   },
+   "right_against_the_answer_key": 3,
+   "list": [
+    {
+     "message": "46",
+     "type": "schedule_changed",
+     "case": "AX-115",
+     "verifier": "provisional",
+     "right": true
+    },
+    {
+     "message": "46",
+     "type": "hearing_confirmed",
+     "case": "AX-116",
+     "verifier": "provisional",
+     "right": true
+    },
+    {
+     "message": "17",
+     "type": "change_denied",
+     "case": "AX-106",
+     "verifier": "flag",
+     "right": true
+    }
+   ]
+  },
+  "agreed_and_passed_that_the_answer_key_cannot_judge": {
+   "n": 0,
+   "why": "None.",
+   "list": []
+  },
+  "of_agreed_and_passed": {
+   "judged": 125,
+   "right": {
+    "k": 124,
+    "n": 125,
+    "share": 0.992,
+    "interval95": [
+     0.956074165232081,
+     0.9985864412801013
+    ]
+   },
+   "wrong": {
+    "k": 1,
+    "n": 125,
+    "share": 0.008,
+    "interval95": [
+     0.0014135587198986672,
+     0.043925834767918934
+    ]
+   }
+  },
+  "strict_count_unjudged_as_wrong": {
+   "right": {
+    "k": 124,
+    "n": 125,
+    "share": 0.992,
+    "interval95": [
+     0.956074165232081,
+     0.9985864412801013
+    ]
+   },
+   "wrong": {
+    "k": 1,
+    "n": 125,
+    "share": 0.008,
+    "interval95": [
+     0.0014135587198986672,
+     0.043925834767918934
+    ]
+   }
+  },
+  "wrong_by_message": [
+   {
+    "message": "17",
+    "type": "hearing_confirmed",
+    "case": "AX-106",
+    "quote": "The hearing for 24 Orchard Road, Orimere must stay on June 12 at 2 p.m.",
+    "why_wrong": "The answer key has no reading of this type for this hearing."
+   }
+  ],
+  "answer_key_closing_readings_that_would_file_themselves": {
+   "k": 124,
+   "n": 134,
+   "share": 0.9253731343283582,
+   "interval95": [
+    0.8680741320895439,
+    0.9589621182151539
+   ]
+  },
+  "held_back_for_a_person": {
+   "n": 7,
+   "in_the_answer_key": 5,
+   "not_in_the_answer_key": 2,
+   "list": [
+    {
+     "message": "14",
+     "type": "consultant_accepted",
+     "case": "AX-105",
+     "found_by": "primary",
+     "in_answer_key": true
+    },
+    {
+     "message": "15",
+     "type": "consultant_conditional",
+     "case": "AX-105",
+     "found_by": "primary",
+     "in_answer_key": false
+    },
+    {
+     "message": "15",
+     "type": "consultant_conditional",
+     "case": "AX-106",
+     "found_by": "primary",
+     "in_answer_key": false
+    },
+    {
+     "message": "18",
+     "type": "calendar_edited",
+     "case": "AX-105",
+     "found_by": "primary",
+     "in_answer_key": true
+    },
+    {
+     "message": "42",
+     "type": "coverage_offered",
+     "case": "AX-113",
+     "found_by": "primary",
+     "in_answer_key": true
+    },
+    {
+     "message": "42",
+     "type": "coverage_offered",
+     "case": "AX-114",
+     "found_by": "primary",
+     "in_answer_key": true
+    },
+    {
+     "message": "34",
+     "type": "packet_received",
+     "case": "AX-111",
+     "found_by": "primary",
+     "in_answer_key": true
+    }
+   ]
+  },
+  "by_type": {
+   "hearing_scheduled": {
+    "agreed_and_passed": 24,
+    "right": 24,
+    "wrong": 0
+   },
+   "rep_recorded": {
+    "agreed_and_passed": 20,
+    "right": 20,
+    "wrong": 0
+   },
+   "packet_received": {
+    "agreed_and_passed": 22,
+    "right": 22,
+    "wrong": 0
+   },
+   "consultant_accepted": {
+    "agreed_and_passed": 19,
+    "right": 19,
+    "wrong": 0
+   },
+   "consultant_conditional": {
+    "agreed_and_passed": 4,
+    "right": 4,
+    "wrong": 0
+   },
+   "schedule_changed": {
+    "agreed_and_passed": 4,
+    "right": 4,
+    "wrong": 0
+   },
+   "hearing_confirmed": {
+    "agreed_and_passed": 18,
+    "right": 17,
+    "wrong": 1
+   },
+   "outcome_reported": {
+    "agreed_and_passed": 2,
+    "right": 2,
+    "wrong": 0
+   },
+   "document_submitted": {
+    "agreed_and_passed": 12,
+    "right": 12,
+    "wrong": 0
+   }
+  }
+ },
+ "unseen_30": {
+  "messages": 30,
+  "messages_without_a_recorded_read": 0,
+  "closing_readings_in_the_answer_key": 37,
+  "agreed_by_both_readers": 36,
+  "agreed_and_passed_by_the_verifier": 30,
+  "agreed_but_not_passed": {
+   "n": 6,
+   "by_verifier_result": {
+    "flag": 2,
+    "provisional": 4
+   },
+   "right_against_the_answer_key": 6,
+   "list": [
+    {
+     "message": "H034",
+     "type": "change_denied",
+     "case": "AX-115",
+     "verifier": "flag",
+     "right": true
+    },
+    {
+     "message": "H045",
+     "type": "change_denied",
+     "case": "AX-111",
+     "verifier": "flag",
+     "right": true
+    },
+    {
+     "message": "H050",
+     "type": "rep_recorded",
+     "case": "AX-107",
+     "verifier": "provisional",
+     "right": true
+    },
+    {
+     "message": "H050",
+     "type": "rep_recorded",
+     "case": "AX-108",
+     "verifier": "provisional",
+     "right": true
+    },
+    {
+     "message": "H050",
+     "type": "schedule_changed",
+     "case": "AX-107",
+     "verifier": "provisional",
+     "right": true
+    },
+    {
+     "message": "H050",
+     "type": "schedule_changed",
+     "case": "AX-108",
+     "verifier": "provisional",
+     "right": true
+    }
+   ]
+  },
+  "agreed_and_passed_that_the_answer_key_cannot_judge": {
+   "n": 4,
+   "why": "These readings are of a claim type that did not exist when this answer key was written. eval/run.js counts them neither as right nor as wrong, and so does the main count below.",
+   "list": [
+    {
+     "message": "H046",
+     "type": "hearing_postponed",
+     "case": "AX-107",
+     "quote": "No hearings will be held on that date, in person or otherwise.",
+     "note": "The answer key was written before the type \"hearing postponed\" existed, so it cannot judge this reading. For this message it holds: schedule changed for AX-107, AX-108."
+    },
+    {
+     "message": "H046",
+     "type": "hearing_postponed",
+     "case": "AX-108",
+     "quote": "No hearings will be held on that date, in person or otherwise.",
+     "note": "The answer key was written before the type \"hearing postponed\" existed, so it cannot judge this reading. For this message it holds: schedule changed for AX-107, AX-108."
+    },
+    {
+     "message": "H056",
+     "type": "hearing_postponed",
+     "case": "AX-111",
+     "quote": "75 Elm Street and 96 Elm Street are postponed and will not be heard on June 13.",
+     "note": "The answer key was written before the type \"hearing postponed\" existed, so it cannot judge this reading. For this message it holds: schedule changed for AX-111, AX-112."
+    },
+    {
+     "message": "H056",
+     "type": "hearing_postponed",
+     "case": "AX-112",
+     "quote": "75 Elm Street and 96 Elm Street are postponed and will not be heard on June 13.",
+     "note": "The answer key was written before the type \"hearing postponed\" existed, so it cannot judge this reading. For this message it holds: schedule changed for AX-111, AX-112."
+    }
+   ]
+  },
+  "of_agreed_and_passed": {
+   "judged": 26,
+   "right": {
+    "k": 25,
+    "n": 26,
+    "share": 0.9615384615384616,
+    "interval95": [
+     0.811068230080416,
+     0.9931781910230102
+    ]
+   },
+   "wrong": {
+    "k": 1,
+    "n": 26,
+    "share": 0.038461538461538464,
+    "interval95": [
+     0.0068218089769898765,
+     0.18893176991958405
+    ]
+   }
+  },
+  "strict_count_unjudged_as_wrong": {
+   "right": {
+    "k": 25,
+    "n": 30,
+    "share": 0.8333333333333334,
+    "interval95": [
+     0.6643529481431982,
+     0.9266356575964831
+    ]
+   },
+   "wrong": {
+    "k": 5,
+    "n": 30,
+    "share": 0.16666666666666666,
+    "interval95": [
+     0.07336434240351683,
+     0.33564705185680177
+    ]
+   }
+  },
+  "wrong_by_message": [
+   {
+    "message": "H059",
+    "type": "schedule_changed",
+    "case": "AX-119",
+    "quote": "A second hearing is set for Thursday June 20, 2030 at 9 a.m., in person, at the Juniper Reach hearing office.",
+    "why_wrong": "The answer key has no reading of this type for this hearing."
+   }
+  ],
+  "answer_key_closing_readings_that_would_file_themselves": {
+   "k": 25,
+   "n": 37,
+   "share": 0.6756756756756757,
+   "interval95": [
+    0.5146336850482394,
+    0.8036692217918453
+   ]
+  },
+  "held_back_for_a_person": {
+   "n": 1,
+   "in_the_answer_key": 1,
+   "not_in_the_answer_key": 0,
+   "list": [
+    {
+     "message": "H032",
+     "type": "hearing_confirmed",
+     "case": "AX-101",
+     "found_by": "secondary",
+     "in_answer_key": true
+    }
+   ]
+  },
+  "by_type": {
+   "packet_received": {
+    "agreed_and_passed": 2,
+    "right": 2,
+    "wrong": 0
+   },
+   "schedule_changed": {
+    "agreed_and_passed": 10,
+    "right": 9,
+    "wrong": 1
+   },
+   "rep_recorded": {
+    "agreed_and_passed": 7,
+    "right": 7,
+    "wrong": 0
+   },
+   "obligation_cleared": {
+    "agreed_and_passed": 4,
+    "right": 4,
+    "wrong": 0
+   },
+   "hearing_confirmed": {
+    "agreed_and_passed": 3,
+    "right": 3,
+    "wrong": 0
+   },
+   "hearing_postponed": {
+    "agreed_and_passed": 4,
+    "right": 0,
+    "wrong": 4
+   }
+  }
+ },
+ "sheet_examples_72": {
+  "what": "The 72 example messages read in order, as node cli/sheet.js does. A proof link is one message proposed as the proof for one cell (G1 to G5) of one hearing. The answer key side is the same engine fed with the answer key and no reader.",
+  "proof_links_proposed": 63,
+  "agreed_and_passed": 63,
+  "of_agreed_and_passed": {
+   "right": {
+    "k": 63,
+    "n": 63,
+    "share": 1,
+    "interval95": [
+     0.9425268096514744,
+     0.9999999999999999
+    ]
+   },
+   "wrong": {
+    "k": 0,
+    "n": 63,
+    "share": 0,
+    "interval95": [
+     0,
+     0.057473190348525466
+    ]
+   }
+  },
+  "wrong_by_message": [],
+  "proof_links_in_the_answer_key": 65,
+  "in_the_answer_key_but_not_proposed": [
+   {
+    "case": "AX-105",
+    "gate": "G2",
+    "message": 18
+   },
+   {
+    "case": "AX-105",
+    "gate": "G3",
+    "message": 16
+   }
+  ],
+  "half_proofs": {
+   "what": "A receipt of the case files from the clerk or the consultant where the other half of G4 is still missing. The gate stays open, but the cell (Hearings L or M) can be filled.",
+   "proposed": 2,
+   "right": 2,
+   "list": [
+    {
+     "case": "AX-113",
+     "cell": "Hearings L",
+     "message": 40,
+     "agreed_and_passed": true
+    },
+    {
+     "case": "AX-114",
+     "cell": "Hearings L",
+     "message": 40,
+     "agreed_and_passed": true
+    }
+   ]
+  },
+  "hearings_identical_to_the_answer_key": {
+   "what": "Hearings whose five cells have the same status, and the same proof messages where a cell is closed, from the readers and from the answer key.",
+   "k": 23,
+   "n": 24,
+   "differing": [
+    {
+     "case": "AX-105",
+     "cells": [
+      "G2: readers problem, answer key closed",
+      "G3: readers problem, answer key closed"
+     ]
+    }
+   ]
+  }
+ },
+ "threads": [
+  {
+   "thread": "Clean thread, Larkmere (messages 61 to 66)",
+   "messages_still_to_send_for_the_docket": {
+    "n": 1,
+    "list": [
+     "a reply to Leo Arlen about the arrival time"
+    ],
+    "note": "One message for the docket where it serves both hearings. The homeowner notices are not in this count."
+   },
+   "hearings": [
+    {
+     "case": "AX-121",
+     "property": "102 Willow Lane, Larkmere",
+     "cells_closed_by_the_readers": 4,
+     "cells_that_apply": 4,
+     "proof_links_proposed": 5,
+     "half_proofs_proposed": 0,
+     "of_those_agreed_and_passed": 5,
+     "proofs_in_the_answer_key_the_readers_did_not_propose": 0,
+     "messages_of_the_thread_handed_to_a_person": [],
+     "cells_a_person_types_on_the_round_15_sheet": [
+      {
+       "cell": "Hearings L",
+       "value": "the link to message 66, pasted over the readers' link to message 64",
+       "why": "message 64 names no version; the office's later message 66 says \"current\""
+      },
+      {
+       "cell": "Hearings AZ",
+       "value": "2",
+       "why": "message 66 says \"current\""
+      },
+      {
+       "cell": "Hearings BW",
+       "value": "Leo Arlen",
+       "why": "the GOT IT in M (message 65) counts only with the name of the consultant it is from"
+      },
+      {
+       "cell": "Hearings AY",
+       "value": "2",
+       "why": "message 65 names the version or says \"current\""
+      },
+      {
+       "cell": "Hearings CH",
+       "value": "10:45 a.m.",
+       "why": "Leo Arlen gives an arrival time in message 65"
+      }
+     ],
+     "person_actions_auto_file_off": 10,
+     "person_actions_auto_file_on": 5,
+     "proof_links_only_the_method_before_round_15": {
+      "person_actions_auto_file_off": 5,
+      "person_actions_auto_file_on": 0
+     },
+     "proofs_missing_on_the_sheet_after_this_filing": 0,
+     "status_on_the_sheet_after_this_filing": "READY",
+     "what_remains": [
+      "Leo Arlen said they arrive at 10:45 a.m. and the firm needs 10:30 a.m.: reply the same day (one reply for the docket).",
+      "No homeowner notice is on record in the packet for this hearing: send it, then type the name and date on it in BK and BL."
+     ],
+     "messages_still_to_send": [
+      "a reply to Leo Arlen about the arrival time"
+     ],
+     "open_cells_that_need_work_either_way": []
+    },
+    {
+     "case": "AX-122",
+     "property": "118 Willow Lane, Larkmere",
+     "cells_closed_by_the_readers": 4,
+     "cells_that_apply": 4,
+     "proof_links_proposed": 5,
+     "half_proofs_proposed": 0,
+     "of_those_agreed_and_passed": 5,
+     "proofs_in_the_answer_key_the_readers_did_not_propose": 0,
+     "messages_of_the_thread_handed_to_a_person": [],
+     "cells_a_person_types_on_the_round_15_sheet": [
+      {
+       "cell": "Hearings L",
+       "value": "the link to message 66, pasted over the readers' link to message 64",
+       "why": "message 64 names no version; the office's later message 66 says \"current\""
+      },
+      {
+       "cell": "Hearings AZ",
+       "value": "2",
+       "why": "message 66 says \"current\""
+      },
+      {
+       "cell": "Hearings BW",
+       "value": "Leo Arlen",
+       "why": "the GOT IT in M (message 65) counts only with the name of the consultant it is from"
+      },
+      {
+       "cell": "Hearings AY",
+       "value": "2",
+       "why": "message 65 names the version or says \"current\""
+      },
+      {
+       "cell": "Hearings CH",
+       "value": "10:45 a.m.",
+       "why": "Leo Arlen gives an arrival time in message 65"
+      }
+     ],
+     "person_actions_auto_file_off": 10,
+     "person_actions_auto_file_on": 5,
+     "proof_links_only_the_method_before_round_15": {
+      "person_actions_auto_file_off": 5,
+      "person_actions_auto_file_on": 0
+     },
+     "proofs_missing_on_the_sheet_after_this_filing": 0,
+     "status_on_the_sheet_after_this_filing": "READY",
+     "what_remains": [
+      "Leo Arlen said they arrive at 10:45 a.m. and the firm needs 10:30 a.m.: reply the same day (one reply for the docket).",
+      "No homeowner notice is on record in the packet for this hearing: send it, then type the name and date on it in BK and BL."
+     ],
+     "messages_still_to_send": [
+      "a reply to Leo Arlen about the arrival time"
+     ],
+     "open_cells_that_need_work_either_way": []
+    }
+   ]
+  },
+  {
+   "thread": "Clean thread, Velloran (messages 67 to 72)",
+   "messages_still_to_send_for_the_docket": {
+    "n": 3,
+    "list": [
+     "a files email to the clerk that names every file",
+     "a request to Owen Tarris to reply GOT IT 2",
+     "a question to the office about the video room"
+    ],
+    "note": "One message for the docket where it serves both hearings. The homeowner notices are not in this count."
+   },
+   "hearings": [
+    {
+     "case": "AX-123",
+     "property": "120 Garden Street, Velloran",
+     "cells_closed_by_the_readers": 4,
+     "cells_that_apply": 4,
+     "proof_links_proposed": 6,
+     "half_proofs_proposed": 0,
+     "of_those_agreed_and_passed": 6,
+     "proofs_in_the_answer_key_the_readers_did_not_propose": 0,
+     "messages_of_the_thread_handed_to_a_person": [],
+     "cells_a_person_types_on_the_round_15_sheet": [
+      {
+       "cell": "Hearings BW",
+       "value": "Owen Tarris",
+       "why": "the GOT IT in M (message 71) counts only with the name of the consultant it is from"
+      }
+     ],
+     "person_actions_auto_file_off": 7,
+     "person_actions_auto_file_on": 1,
+     "proof_links_only_the_method_before_round_15": {
+      "person_actions_auto_file_off": 6,
+      "person_actions_auto_file_on": 0
+     },
+     "proofs_missing_on_the_sheet_after_this_filing": 3,
+     "status_on_the_sheet_after_this_filing": "OPEN: 3 missing",
+     "what_remains": [
+      "The clerk's receipt (message 70) names no version, so the clerk's half of the files check stays open: send the files email that names every file (version 2) and ask for a reply to it, then type the version in AZ.",
+      "The consultant's receipt (message 71) names no version, so the consultant's half of the files check stays open: ask Owen Tarris to reply GOT IT 2, then type the version in AY.",
+      "The office names video room C and sends no link or number, so the schedule check (G1) stays open: ask the office whether a link comes and whether the room is at the office (Offices AL), then type the link in AV or choose the answer in AL.",
+      "No homeowner notice is on record in the packet for this hearing: send it, then type the name and date on it in BK and BL."
+     ],
+     "messages_still_to_send": [
+      "a files email to the clerk that names every file",
+      "a request to Owen Tarris to reply GOT IT 2",
+      "a question to the office about the video room"
+     ],
+     "open_cells_that_need_work_either_way": []
+    },
+    {
+     "case": "AX-124",
+     "property": "138 Garden Street, Velloran",
+     "cells_closed_by_the_readers": 4,
+     "cells_that_apply": 4,
+     "proof_links_proposed": 6,
+     "half_proofs_proposed": 0,
+     "of_those_agreed_and_passed": 6,
+     "proofs_in_the_answer_key_the_readers_did_not_propose": 0,
+     "messages_of_the_thread_handed_to_a_person": [],
+     "cells_a_person_types_on_the_round_15_sheet": [
+      {
+       "cell": "Hearings BW",
+       "value": "Owen Tarris",
+       "why": "the GOT IT in M (message 71) counts only with the name of the consultant it is from"
+      }
+     ],
+     "person_actions_auto_file_off": 7,
+     "person_actions_auto_file_on": 1,
+     "proof_links_only_the_method_before_round_15": {
+      "person_actions_auto_file_off": 6,
+      "person_actions_auto_file_on": 0
+     },
+     "proofs_missing_on_the_sheet_after_this_filing": 3,
+     "status_on_the_sheet_after_this_filing": "OPEN: 3 missing",
+     "what_remains": [
+      "The clerk's receipt (message 70) names no version, so the clerk's half of the files check stays open: send the files email that names every file (version 2) and ask for a reply to it, then type the version in AZ.",
+      "The consultant's receipt (message 71) names no version, so the consultant's half of the files check stays open: ask Owen Tarris to reply GOT IT 2, then type the version in AY.",
+      "The office names video room C and sends no link or number, so the schedule check (G1) stays open: ask the office whether a link comes and whether the room is at the office (Offices AL), then type the link in AV or choose the answer in AL.",
+      "No homeowner notice is on record in the packet for this hearing: send it, then type the name and date on it in BK and BL."
+     ],
+     "messages_still_to_send": [
+      "a files email to the clerk that names every file",
+      "a request to Owen Tarris to reply GOT IT 2",
+      "a question to the office about the video room"
+     ],
+     "open_cells_that_need_work_either_way": []
+    }
+   ]
+  },
+  {
+   "thread": "Brook Road, Fenwick Vale (messages 37 to 42)",
+   "messages_still_to_send_for_the_docket": {
+    "n": 0,
+    "list": [],
+    "note": "One message for the docket where it serves both hearings. The homeowner notices are not in this count."
+   },
+   "hearings": [
+    {
+     "case": "AX-113",
+     "property": "11 Brook Road, Fenwick Vale",
+     "cells_closed_by_the_readers": 1,
+     "cells_that_apply": 4,
+     "proof_links_proposed": 1,
+     "half_proofs_proposed": 1,
+     "of_those_agreed_and_passed": 2,
+     "proofs_in_the_answer_key_the_readers_did_not_propose": 0,
+     "messages_of_the_thread_handed_to_a_person": [
+      42
+     ],
+     "cells_a_person_types_on_the_round_15_sheet": [
+      {
+       "cell": "Hearings CI",
+       "value": "15",
+       "why": "the office's arrival instruction in message 40, as minutes before the first case"
+      }
+     ],
+     "person_actions_auto_file_off": 4,
+     "person_actions_auto_file_on": 2,
+     "proof_links_only_the_method_before_round_15": {
+      "person_actions_auto_file_off": 3,
+      "person_actions_auto_file_on": 1
+     },
+     "proofs_missing_on_the_sheet_after_this_filing": 4,
+     "status_on_the_sheet_after_this_filing": "4 proofs missing on a past row",
+     "what_remains": [
+      "The clerk's receipt (message 40) names no version, so the clerk's half of the files check stays open (AZ stays empty; the sheet does not print the question on a past row).",
+      "Needs work with or without the readers: G2: Maya cannot attend. No one is committed.",
+      "Needs work with or without the readers: G3: Fenwick Vale has Maya recorded, but Maya is not committed to this slot.",
+      "Needs work with or without the readers: G4: Clerk has it. No committed consultant to send it to. Past the 48-hour mark: late material needs clerk confirmation."
+     ],
+     "messages_still_to_send": [],
+     "open_cells_that_need_work_either_way": [
+      "G2: Maya cannot attend. No one is committed.",
+      "G3: Fenwick Vale has Maya recorded, but Maya is not committed to this slot.",
+      "G4: Clerk has it. No committed consultant to send it to. Past the 48-hour mark: late material needs clerk confirmation."
+     ]
+    },
+    {
+     "case": "AX-114",
+     "property": "29 Brook Road, Fenwick Vale",
+     "cells_closed_by_the_readers": 1,
+     "cells_that_apply": 4,
+     "proof_links_proposed": 1,
+     "half_proofs_proposed": 1,
+     "of_those_agreed_and_passed": 2,
+     "proofs_in_the_answer_key_the_readers_did_not_propose": 0,
+     "messages_of_the_thread_handed_to_a_person": [
+      42
+     ],
+     "cells_a_person_types_on_the_round_15_sheet": [
+      {
+       "cell": "Hearings CI",
+       "value": "15",
+       "why": "the office's arrival instruction in message 40, as minutes before the first case"
+      }
+     ],
+     "person_actions_auto_file_off": 4,
+     "person_actions_auto_file_on": 2,
+     "proof_links_only_the_method_before_round_15": {
+      "person_actions_auto_file_off": 3,
+      "person_actions_auto_file_on": 1
+     },
+     "proofs_missing_on_the_sheet_after_this_filing": 4,
+     "status_on_the_sheet_after_this_filing": "4 proofs missing on a past row",
+     "what_remains": [
+      "The clerk's receipt (message 40) names no version, so the clerk's half of the files check stays open (AZ stays empty; the sheet does not print the question on a past row).",
+      "Needs work with or without the readers: G2: Maya cannot attend. No one is committed.",
+      "Needs work with or without the readers: G3: Fenwick Vale has Maya recorded, but Maya is not committed to this slot.",
+      "Needs work with or without the readers: G4: Clerk has it. No committed consultant to send it to. Past the 48-hour mark: late material needs clerk confirmation."
+     ],
+     "messages_still_to_send": [],
+     "open_cells_that_need_work_either_way": [
+      "G2: Maya cannot attend. No one is committed.",
+      "G3: Fenwick Vale has Maya recorded, but Maya is not committed to this slot.",
+      "G4: Clerk has it. No committed consultant to send it to. Past the 48-hour mark: late material needs clerk confirmation."
+     ]
+    }
+   ]
+  }
+ ]
+}

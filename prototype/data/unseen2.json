@@ -1,0 +1,3053 @@
+{
+ "note": "Second unseen set: 100 messages in a mixed, everyday spread (county offices, consultants, homeowners, firm staff notes, and messages with nothing to file), written by an AI author who read the 72 examples, the first unseen set and the claim vocabulary, and did not read the readers' instructions, code or recorded output. FINAL KEY: two labellers labelled the set blind (labels_A.json, labels_B.json); an adjudicator who did not read the readers' instructions, code or output, nor the author's key, decided every statement only one of them gave, from the message text, the packet and the written conventions (adjudication.md). key_status.json marks each statement as \"both\" or \"adjudicated\". \"expect_no_effect\" is true where the list is empty or holds only acknowledgement or internal_note, and null elsewhere because the engine was not run on the labels. \"trap\" is left null. The labels use the newest claim types, so score with --labels-current. Each message is read on its own at the end of the examples; the messages do not form one consistent timeline.",
+ "written": "2026-11-20",
+ "labellers": 2,
+ "parts_planned": 1,
+ "parts_done": 1,
+ "messages": [
+  {
+   "id": "U001",
+   "ts": "2030-06-07T08:20:00-05:00",
+   "sender": "Owen Tarris",
+   "address": "owen@consultants.example",
+   "channel": "email",
+   "properties": [
+    "11 Brook Road, Fenwick Vale",
+    "29 Brook Road, Fenwick Vale"
+   ],
+   "body": "Report on Brook Road yesterday. I got there at 8:35.\n\n11 Brook Road was heard at 9:05. The board wants a signed occupancy statement from the owner, deadline Friday 14 June at noon.\n\n29 Brook Road: the assessor's file was incomplete, so it was continued. Date to come by post.\n\nInvoice to follow, two hearings at 110.\n\nOwen Tarris",
+   "claims": [
+    {
+     "type": "outcome_reported",
+     "cases": [
+      "AX-113"
+     ],
+     "result": "heard"
+    },
+    {
+     "type": "outcome_reported",
+     "cases": [
+      "AX-114"
+     ],
+     "result": "continued"
+    },
+    {
+     "type": "obligation_created",
+     "cases": [
+      "AX-113"
+     ],
+     "kind": "homeowner_statement",
+     "deadline": "2030-06-14T12:00"
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": true,
+   "ambiguous_why": "Labeller A: A second labeller could keep only the two outcome reports, because the deadline is hearsay from a consultant, or could leave the kind empty.",
+   "group": "unseen2_consultant",
+   "note": "Adjudicated: see adjudication.md. Labeller A: The consultant relays the board's request and deadline; I labelled it as obligation_created because the existing labels record what a message asserts whoever relays it (examples 22 and 46, H041). Kind homeowner_statement is my reading of 'signed occupancy statement from the owner'. Labeller B: The consultant also relays that the board wants a signed occupancy statement by June 14 at noon. I did not label obligation_created, following example 57, where a consultant's report of what the board asked got outcome_reported only."
+  },
+  {
+   "id": "U002",
+   "ts": "2030-06-07T08:55:00-05:00",
+   "sender": "Jamie Vale",
+   "address": "jamie.vale@mailbox.example",
+   "channel": "email",
+   "properties": [
+    "14 Willow Lane, Larkmere",
+    "28 Willow Lane, Larkmere"
+   ],
+   "body": "Hello,\n\nJust checking, do I need to come on Monday for the Willow Lane hearings or does your person handle it? I've taken the morning off in case. Also I never got anything telling me who is going.\n\nJamie Vale",
+   "claims": [],
+   "expect_no_effect": true,
+   "trap": null,
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "unseen2_homeowner",
+   "note": "Labeller A: A homeowner's question about attending. It states nothing in the vocabulary. Labeller B: A homeowner's question about attending; nothing in the vocabulary fits."
+  },
+  {
+   "id": "U003",
+   "ts": "2030-06-07T09:10:00-05:00",
+   "sender": "Fenwick Vale hearing office",
+   "address": "clerk@fenwick-vale.example",
+   "channel": "email",
+   "properties": [
+    "11 Brook Road, Fenwick Vale",
+    "29 Brook Road, Fenwick Vale"
+   ],
+   "body": "For your records. The updated staffing notice naming Owen Tarris for 11 Brook Road and 29 Brook Road reached us at 8:40 a.m. on 6 June, after the door list had been printed. The chair accepted it at the hearing and our record was amended the same day. Mr Tarris is the representative on both files.",
+   "claims": [
+    {
+     "type": "rep_recorded",
+     "cases": [
+      "AX-113",
+      "AX-114"
+     ],
+     "consultant": "R04"
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "unseen2_office"
+  },
+  {
+   "id": "U004",
+   "ts": "2030-06-07T09:30:00-05:00",
+   "sender": "Tesswick hearing office",
+   "address": "clerk@tesswick.example",
+   "channel": "email",
+   "properties": [
+    "37 Meadow Avenue, Tesswick",
+    "52 Meadow Avenue, Tesswick"
+   ],
+   "body": "Form found, it was sitting in the shared inbox under the firm's name instead of the property. Both entries are made on the list of representatives as of this morning: Owen Tarris, 37 Meadow Avenue and 52 Meadow Avenue, Wed 12 June.\n\nSol (for Ren)",
+   "claims": [
+    {
+     "type": "rep_recorded",
+     "cases": [
+      "AX-107",
+      "AX-108"
+     ],
+     "consultant": "R04"
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "unseen2_office",
+   "note": "Labeller A: 'Wed 12 June' is a date with no time inside the entry, so I did not label hearing_confirmed. Labeller B: 'Wed 12 June' describes the list entry and is not a restatement that the hearing stays, so no hearing_confirmed."
+  },
+  {
+   "id": "U005",
+   "ts": "2030-06-07T09:40:00-05:00",
+   "sender": "Larkmere hearing office",
+   "address": "clerk@larkmere.example",
+   "channel": "email",
+   "properties": [
+    "14 Willow Lane, Larkmere",
+    "28 Willow Lane, Larkmere"
+   ],
+   "body": "Reminder: 14 Willow Lane and 28 Willow Lane are listed for Tuesday June 11 at 9 a.m. and 9:30 a.m. Please make sure your representative has the notice.",
+   "claims": [
+    {
+     "type": "hearing_confirmed",
+     "cases": [
+      "AX-101"
+     ],
+     "date": "2030-06-11",
+     "time": "09:00"
+    },
+    {
+     "type": "hearing_confirmed",
+     "cases": [
+      "AX-102"
+     ],
+     "date": "2030-06-11",
+     "time": "09:30"
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": true,
+   "ambiguous_why": "Adjudicated. The office's date (June 11) conflicts with the record (June 10) and nothing says the date changed; labeller A left the list empty. A reader that gives nothing here is defensible.",
+   "group": "unseen2_office",
+   "note": "Adjudicated: see adjudication.md. Labeller A: The office reminder gives Tuesday June 11, but every earlier office message gives Monday June 10. It does not say the date has changed and it does not restate the schedule as it stands, so no type fits; a person should ask Larkmere. Labeller B: The office states in writing, as a reminder, that both hearings are listed for Tuesday June 11; the record says Monday June 10. I label what the office states (the label follows the office, as in H038) and carry the conflicting date in the date field."
+  },
+  {
+   "id": "U006",
+   "ts": "2030-06-07T10:00:00-05:00",
+   "sender": "Harthmere hearing office",
+   "address": "clerk@harthmere.example",
+   "channel": "email",
+   "properties": [
+    "48 Linden Avenue, Harthmere",
+    "66 Linden Avenue, Harthmere"
+   ],
+   "body": "Result of yesterday's list: 66 Linden Avenue was heard at 10:30 on 6 June in room D, Mr. Arlen appearing. The board asked for nothing further and will give its decision in writing within 30 days.",
+   "claims": [
+    {
+     "type": "outcome_reported",
+     "cases": [
+      "AX-116"
+     ],
+     "result": "heard"
+    },
+    {
+     "type": "decision_pending",
+     "cases": [
+      "AX-116"
+     ]
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": true,
+   "ambiguous_why": "Labeller A: outcome_reported is defined as a consultant's report; a second labeller could keep only decision_pending.",
+   "group": "unseen2_office",
+   "note": "Labeller A: The outcome comes from the office, not the consultant. I labelled outcome_reported because the message states the result (H033's trap text implies an office message can be an outcome report when it states a result). Labeller B: The office states the result of the hearing; I label outcome_reported although the vocabulary words it as a consultant's report, because the trap text of H033 implies an office message that states the result would be one."
+  },
+  {
+   "id": "U007",
+   "ts": "2030-06-07T10:15:00-05:00",
+   "sender": "Orimere hearing office",
+   "address": "clerk@orimere.example",
+   "channel": "email",
+   "properties": [
+    "9 Orchard Road, Orimere",
+    "24 Orchard Road, Orimere"
+   ],
+   "body": "The staffing notice for 24 Orchard Road came in overnight. It names Nora Pell. Ms Pell told this office herself on Thursday that she is not free at 2 on the 12th, so we have not entered it and the case still has no representative. Please send a notice naming whoever is really going to appear.",
+   "claims": [
+    {
+     "type": "rep_not_recorded",
+     "cases": [
+      "AX-106"
+     ]
+    },
+    {
+     "type": "rep_requested",
+     "cases": [
+      "AX-106"
+     ]
+    },
+    {
+     "type": "consultant_declined",
+     "cases": [
+      "AX-106"
+     ],
+     "consultant": "R03"
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": true,
+   "ambiguous_why": "Labeller A: Relayed decline, same doubt as H041. Labeller B: A decline relayed by the office, not written by the consultant (same question as H041).",
+   "group": "unseen2_office",
+   "note": "Labeller A: The office relays that Nora Pell told it she is not free; labelled consultant_declined as in H041. Labeller B: The office relays the consultant's own decline; labelled as in H041, which was itself marked ambiguous."
+  },
+  {
+   "id": "U008",
+   "ts": "2030-06-07T10:50:00-05:00",
+   "sender": "Caldmere hearing office",
+   "address": "clerk@caldmere.example",
+   "channel": "email",
+   "properties": [
+    "75 Elm Street, Caldmere",
+    "96 Elm Street, Caldmere"
+   ],
+   "body": "The second copy of the 96 Elm Street file opened without any problem. We now hold readable packets for both Elm Street cases and each one says version 2 on its cover sheet.",
+   "claims": [
+    {
+     "type": "packet_received",
+     "cases": [
+      "AX-111",
+      "AX-112"
+     ]
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "unseen2_office"
+  },
+  {
+   "id": "U009",
+   "ts": "2030-06-07T11:05:00-05:00",
+   "sender": "Nora Pell",
+   "address": null,
+   "channel": "text note",
+   "properties": [
+    "9 Orchard Road, Orimere",
+    "24 Orchard Road, Orimere"
+   ],
+   "body": "to confirm what I have: 9 Orchard = 18 June 9am, me. 24 Orchard = 12 June 2pm, NOT me. I'd put both on the 18th by mistake, fixed in my diary now",
+   "claims": [
+    {
+     "type": "consultant_accepted",
+     "cases": [
+      "AX-105"
+     ],
+     "consultant": "R03",
+     "date": "2030-06-18"
+    },
+    {
+     "type": "consultant_declined",
+     "cases": [
+      "AX-106"
+     ],
+     "consultant": "R03"
+    },
+    {
+     "type": "calendar_edited",
+     "cases": [
+      "AX-106"
+     ],
+     "date": "2030-06-12"
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": true,
+   "ambiguous_why": "Labeller A: She restates what she holds; a second labeller could see no new acceptance and no calendar_edited, only the decline.",
+   "group": "unseen2_consultant",
+   "note": "Adjudicated: see adjudication.md. Labeller A: '9 Orchard = 18 June 9am, me' is read as her yes for AX-105 on the moved date. 'Fixed in my diary now' is read as a calendar edit putting 24 Orchard Road back on June 12 (example 18 labels her own diary as calendar_edited). Labeller B: '9 Orchard = 18 June 9am, me' is read as the consultant confirming her commitment and 'NOT me' as a decline. She corrected her diary entry for 24 Orchard Road back to June 12, which I label calendar_edited with that date."
+  },
+  {
+   "id": "U010",
+   "ts": "2030-06-07T11:30:00-05:00",
+   "sender": "Priya Marden",
+   "address": null,
+   "channel": "phone note",
+   "properties": [
+    "16 Birch Lane, Brindlefen",
+    "42 Birch Lane, Brindlefen"
+   ],
+   "body": "Priya rang. She has signed the 16 Birch Lane settlement and is posting the original today, with a scan to follow by email tonight. For 42 Birch Lane she will take the photo again in daylight.",
+   "claims": [],
+   "expect_no_effect": true,
+   "trap": null,
+   "ambiguous": true,
+   "ambiguous_why": "Labeller A: A second labeller could label document_submitted (settlement) for AX-109 because she says she is posting the original today. Labeller B: The signing is stated as done; a second labeller could label document_submitted with kind settlement for 16 Birch Lane.",
+   "group": "unseen2_consultant",
+   "note": "Labeller A: Signing is done but nothing has been sent: posting and a scan are promised for later, and a new photo is promised. Future statements are not the event, so no document_submitted. Labeller B: Priya has signed the settlement but the sending is only promised (posting today, scan tonight), and the new photo is promised too. A promise is not the event, so no document_submitted."
+  },
+  {
+   "id": "U011",
+   "ts": "2030-06-07T11:40:00-05:00",
+   "sender": "Velloran hearing office",
+   "address": "clerk@velloran.example",
+   "channel": "email",
+   "properties": [
+    "63 Garden Street, Velloran",
+    "81 Garden Street, Velloran"
+   ],
+   "body": "Thank you for your email of this morning. Leo Arlen has been entered as representative on AX-103 and AX-104.\n\nSo there is no doubt after last week's exchange: the sitting is Tuesday 11 June, 1.00 pm and 1.30 pm, by video. Nothing about the date has altered.\n\nVelloran hearing office",
+   "claims": [
+    {
+     "type": "rep_recorded",
+     "cases": [
+      "AX-103",
+      "AX-104"
+     ],
+     "consultant": "R02"
+    },
+    {
+     "type": "hearing_confirmed",
+     "cases": [
+      "AX-103"
+     ],
+     "date": "2030-06-11",
+     "time": "13:00"
+    },
+    {
+     "type": "hearing_confirmed",
+     "cases": [
+      "AX-104"
+     ],
+     "date": "2030-06-11",
+     "time": "13:30"
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "unseen2_office",
+   "note": "Adjudicated: see adjudication.md. Labeller A: No change_denied: the office restates the date and refuses nothing new."
+  },
+  {
+   "id": "U012",
+   "ts": "2030-06-07T12:05:00-05:00",
+   "sender": "Maya Venn",
+   "address": "maya@consultants.example",
+   "channel": "email",
+   "properties": [
+    "14 Willow Lane, Larkmere",
+    "28 Willow Lane, Larkmere"
+   ],
+   "body": "Checked the other thing and it has moved. So I'm a definite yes for 28 Willow Lane at 9:30 on Monday. I still can't do the 9 o'clock one, I drop my son at 8:50 and Larkmere is 25 minutes from the school. Please send the packet for 28, v2 if that's the latest.\n\nMaya",
+   "claims": [
+    {
+     "type": "consultant_accepted",
+     "cases": [
+      "AX-102"
+     ],
+     "consultant": "R01"
+    },
+    {
+     "type": "consultant_declined",
+     "cases": [
+      "AX-101"
+     ],
+     "consultant": "R01"
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "unseen2_consultant"
+  },
+  {
+   "id": "U013",
+   "ts": "2030-06-07T12:40:00-05:00",
+   "sender": "Leo Arlen",
+   "address": "leo@consultants.example",
+   "channel": "email",
+   "properties": [
+    "63 Garden Street, Velloran",
+    "81 Garden Street, Velloran"
+   ],
+   "body": "To be clear, now that Velloran has said no to the 13th: I am NOT available on Tuesday June 11 at 1 or at 1:30. I'm in a deposition from noon to 4 that day. If it stays the 11th you need someone else for both Garden Street cases. If by some miracle it ends up on the 13th, I'm fine for both.\n\nLeo",
+   "claims": [
+    {
+     "type": "consultant_declined",
+     "cases": [
+      "AX-103",
+      "AX-104"
+     ],
+     "consultant": "R02"
+    },
+    {
+     "type": "consultant_conditional",
+     "cases": [
+      "AX-103",
+      "AX-104"
+     ],
+     "consultant": "R02",
+     "date": "2030-06-13"
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "unseen2_consultant"
+  },
+  {
+   "id": "U014",
+   "ts": "2030-06-07T13:05:00-05:00",
+   "sender": "Brindlefen hearing office",
+   "address": null,
+   "channel": "portal notice",
+   "properties": [],
+   "body": "Brindlefen Appeals Portal: upload rejected.\nAppeal ref AX-110 | property 42 Birch Lane\nFile: 42-birch-lane-withdrawal-statement.png\nReason code R3: image not legible (case number, date of signature)\nAppeal status: unchanged. Hearing listed 06/13/2030 10:30.\nUpload a replacement file to continue. This mailbox is not monitored.",
+   "claims": [
+    {
+     "type": "doc_unreadable",
+     "cases": [
+      "AX-110"
+     ],
+     "kind": "withdrawal"
+    },
+    {
+     "type": "hearing_confirmed",
+     "cases": [
+      "AX-110"
+     ],
+     "date": "2030-06-13",
+     "time": "10:30"
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "unseen2_office",
+   "note": "Labeller A: An illegible upload is labelled doc_unreadable, not signature_rejected, because the reason is legibility and not the signer. Labeller B: The upload is rejected because the image is not legible, which is doc_unreadable and not signature_rejected. 'Appeal status: unchanged. Hearing listed 06/13/2030 10:30' is a restatement that the hearing stays."
+  },
+  {
+   "id": "U015",
+   "ts": "2030-06-07T13:20:00-05:00",
+   "sender": "Leo Arlen",
+   "address": null,
+   "channel": "text note",
+   "properties": [
+    "48 Linden Avenue, Harthmere",
+    "66 Linden Avenue, Harthmere"
+   ],
+   "body": "Linden 48 on the 13th, no can do, told you already. Linden 66 went fine yest btw, called 10:35ish, nothing asked for",
+   "claims": [
+    {
+     "type": "consultant_declined",
+     "cases": [
+      "AX-115"
+     ],
+     "consultant": "R02"
+    },
+    {
+     "type": "outcome_reported",
+     "cases": [
+      "AX-116"
+     ],
+     "result": "heard"
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "unseen2_consultant"
+  },
+  {
+   "id": "U016",
+   "ts": "2030-06-07T13:35:00-05:00",
+   "sender": "Drew Rowan",
+   "address": "drew.rowan@mailbox.example",
+   "channel": "email",
+   "properties": [
+    "57 Clover Road, Juniper Reach",
+    "73 Clover Road, Juniper Reach"
+   ],
+   "body": "Attached is my statement for 57 Clover Road like the board asked for. Signed and dated today. I have NOT sent it to the county myself, I assumed you do that. The deadline is tomorrow at 4, I think?\n\nDrew",
+   "claims": [
+    {
+     "type": "document_submitted",
+     "cases": [
+      "AX-119"
+     ],
+     "kind": "homeowner_statement"
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "unseen2_homeowner",
+   "note": "Labeller A: The homeowner sends the signed statement to the firm (as the consultant sends a photo in example 29). It has not gone to the county. Labeller B: The homeowner sends the signed statement to the firm, not to the county; labelled document_submitted as in example 29."
+  },
+  {
+   "id": "U017",
+   "ts": "2030-06-07T14:08:00-05:00",
+   "sender": "Alice’s Law Firm operations",
+   "address": null,
+   "channel": "phone note",
+   "properties": [
+    "14 Willow Lane, Larkmere",
+    "28 Willow Lane, Larkmere"
+   ],
+   "body": "Rang Larkmere 2:05 pm. Clerk says they will take notices naming two different reps for 14 and 28 Willow, no problem. She also said nothing is on their list for either yet. Emailing both notices now.",
+   "claims": [
+    {
+     "type": "rep_not_recorded",
+     "cases": [
+      "AX-101",
+      "AX-102"
+     ]
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": true,
+   "ambiguous_why": "Labeller A: A second labeller could add document_submitted (staffing) for the notices being emailed.",
+   "group": "unseen2_firm_staff",
+   "note": "Labeller A: Staff call note quoting the clerk, labelled like example 22. 'Emailing both notices now' is not yet a sent document, so no document_submitted. Labeller B: 'Emailing both notices now' is not yet a sent document and names no representative, so no document_submitted. The clerk accepting two different names is ordinary practice, not a changed procedure."
+  },
+  {
+   "id": "U018",
+   "ts": "2030-06-07T14:10:00-05:00",
+   "sender": "Owen Tarris",
+   "address": "owen@consultants.example",
+   "channel": "email",
+   "properties": [
+    "14 Willow Lane, Larkmere",
+    "28 Willow Lane, Larkmere"
+   ],
+   "body": "Larkmere at 9 on Monday for 14 Willow Lane: I can, provided it really is at the main Larkmere office and not out at their annex. The annex adds forty minutes and I'd never get back for my afternoon. If it's the main office, count me in.",
+   "claims": [
+    {
+     "type": "consultant_conditional",
+     "cases": [
+      "AX-101"
+     ],
+     "consultant": "R04"
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": true,
+   "ambiguous_why": "Labeller A: The condition is a fact to check, not a change to ask for; consultant_accepted or consultant_tentative are both defensible. Labeller B: The condition is a location that may already be true, not a change; a second labeller could choose consultant_accepted or consultant_tentative.",
+   "group": "unseen2_consultant",
+   "note": "Labeller A: A yes that depends on the hearing being at the main office. I chose consultant_conditional (no date) over consultant_accepted because the commitment is not yet unconditional. Labeller B: A yes that holds only if the hearing is at the main office. I chose consultant_conditional (no date) over consultant_accepted or consultant_tentative, because the commitment depends on a fact he does not yet have."
+  },
+  {
+   "id": "U019",
+   "ts": "2030-06-07T14:30:00-05:00",
+   "sender": "Iverfen hearing office",
+   "address": "clerk@iverfen.example",
+   "channel": "email",
+   "properties": [
+    "18 Maple Lane, Iverfen",
+    "34 Maple Lane, Iverfen"
+   ],
+   "body": "On the withdrawal of 18 Maple Lane: an email from the firm is not enough for us. It has to be on our form W-2, signed by the representative on record, who is Ms. Pell. Blank form attached. Until the signed form is here the appeal is live and stays on the 14 June list at 1 p.m.",
+   "claims": [
+    {
+     "type": "signature_required",
+     "cases": [
+      "AX-117"
+     ],
+     "kind": "withdrawal",
+     "consultant": "R03"
+    },
+    {
+     "type": "rep_recorded",
+     "cases": [
+      "AX-117"
+     ],
+     "consultant": "R03"
+    },
+    {
+     "type": "hearing_confirmed",
+     "cases": [
+      "AX-117"
+     ],
+     "date": "2030-06-14",
+     "time": "13:00"
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": true,
+   "ambiguous_why": "Labeller A: A second labeller could add process_rule_changed for the form W-2 requirement.",
+   "group": "unseen2_office",
+   "note": "Labeller A: Labelled like example 28. No process_rule_changed: the packet holds no saved withdrawal procedure for Iverfen that this could differ from. No signature_rejected: the firm's email was not a signed document. Labeller B: The office names Ms. Pell as representative on record (rep_recorded, as in example 28) and requires her signature on its withdrawal form. I did not label signature_rejected, because no signed document was rejected, nor process_rule_changed, because the packet holds no saved withdrawal procedure for Iverfen to differ from."
+  },
+  {
+   "id": "U020",
+   "ts": "2030-06-07T15:10:00-05:00",
+   "sender": "Larkmere hearing office",
+   "address": "clerk@larkmere.example",
+   "channel": "email",
+   "properties": [
+    "14 Willow Lane, Larkmere",
+    "28 Willow Lane, Larkmere"
+   ],
+   "body": "Re: Staffing notices AX-101 / AX-102\n\n> Please find both notices attached. Kindly acknowledge.\n\nThe notice for 28 Willow Lane is in order and Ms. Venn has gone on the list for that hearing. The one for 14 Willow Lane has nothing in box 4 (signature of the firm). We do not put a name on the list from an unsigned notice, so that line stays empty for now. A signed copy before 4 today will still be in time.\n\nL. Brandt\nClerk's office, Larkmere",
+   "claims": [
+    {
+     "type": "rep_recorded",
+     "cases": [
+      "AX-102"
+     ],
+     "consultant": "R01"
+    },
+    {
+     "type": "rep_not_recorded",
+     "cases": [
+      "AX-101"
+     ]
+    },
+    {
+     "type": "rep_requested",
+     "cases": [
+      "AX-101"
+     ],
+     "deadline": "2030-06-07T16:00"
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "unseen2_office",
+   "note": "Labeller A: Labelled like H052: an unsigned notice is not entered, and 'a signed copy before 4 today will still be in time' is the request for the notice with a deadline. The quoted line from the firm is not labelled. Labeller B: 'A signed copy before 4 today will still be in time' is read as the office asking again for the notice with a deadline, as in H052."
+  },
+  {
+   "id": "U021",
+   "ts": "2030-06-07T15:30:00-05:00",
+   "sender": "Juniper Reach hearing office",
+   "address": "clerk@juniper-reach.example",
+   "channel": "email",
+   "properties": [
+    "57 Clover Road, Juniper Reach",
+    "73 Clover Road, Juniper Reach"
+   ],
+   "body": "Deadline tomorrow. The homeowner statement for 57 Clover Road is due by 4 p.m. on Saturday 8 June. Our counter is closed on Saturdays, so send it by email or use the drop box in the lobby. Nothing has reached us yet.",
+   "claims": [
+    {
+     "type": "obligation_created",
+     "cases": [
+      "AX-119"
+     ],
+     "kind": "homeowner_statement",
+     "deadline": "2030-06-08T16:00"
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "unseen2_office"
+  },
+  {
+   "id": "U022",
+   "ts": "2030-06-07T16:05:00-05:00",
+   "sender": "Eli Corven",
+   "address": "eli@consultants.example",
+   "channel": "email",
+   "properties": [
+    "75 Elm Street, Caldmere",
+    "96 Elm Street, Caldmere"
+   ],
+   "body": "Found the v2 files in the documents folder. I've downloaded 75-elm-street-packet-v2.txt and 96-elm-street-packet-v2.txt and read both, homeowner statement included. Those are the ones I'm working from.\n\nEli",
+   "claims": [
+    {
+     "type": "packet_received",
+     "cases": [
+      "AX-111",
+      "AX-112"
+     ]
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "unseen2_consultant"
+  },
+  {
+   "id": "U023",
+   "ts": "2030-06-07T16:20:00-05:00",
+   "sender": "Larkmere hearing office",
+   "address": "clerk@larkmere.example",
+   "channel": "email",
+   "properties": [
+    "14 Willow Lane, Larkmere",
+    "28 Willow Lane, Larkmere"
+   ],
+   "body": "Signed copy for 14 Willow Lane arrived 3:52 p.m., inside the cut-off. Entered just now: Owen Tarris, 14 Willow Lane (AX-101). With Maya Venn already down for 28 Willow Lane (AX-102), both lines on Monday's door list are filled.",
+   "claims": [
+    {
+     "type": "rep_recorded",
+     "cases": [
+      "AX-101"
+     ],
+     "consultant": "R04"
+    },
+    {
+     "type": "rep_recorded",
+     "cases": [
+      "AX-102"
+     ],
+     "consultant": "R01"
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "unseen2_office"
+  },
+  {
+   "id": "U024",
+   "ts": "2030-06-07T16:40:00-05:00",
+   "sender": "Eli Corven",
+   "address": "eli@consultants.example",
+   "channel": "email",
+   "properties": [
+    "75 Elm Street, Caldmere",
+    "96 Elm Street, Caldmere"
+   ],
+   "body": "Thanks, noted.",
+   "claims": [
+    {
+     "type": "acknowledgement",
+     "cases": [
+      "AX-111",
+      "AX-112"
+     ]
+    }
+   ],
+   "expect_no_effect": true,
+   "trap": null,
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "unseen2_consultant",
+   "note": "Labeller A: Thanks and nothing else. I used the acknowledgement type because the vocabulary defines it for exactly this, although no existing label uses it; it proves nothing for any gate. Labeller B: Thanks and nothing else. The vocabulary has the type acknowledgement for exactly this, but no existing label uses it; I use it here. It proves nothing."
+  },
+  {
+   "id": "U025",
+   "ts": "2030-06-07T17:45:00-05:00",
+   "sender": "Maya Venn",
+   "address": "maya@consultants.example",
+   "channel": "email",
+   "properties": [
+    "11 Brook Road, Fenwick Vale",
+    "29 Brook Road, Fenwick Vale"
+   ],
+   "body": "A bit better today but I still have a temperature, so nothing in person before Tuesday at the earliest. Sorry again about Brook Road. Did Owen get there in time?",
+   "claims": [],
+   "expect_no_effect": true,
+   "trap": null,
+   "ambiguous": true,
+   "ambiguous_why": "Adjudicated. She names no case; labeller A read a decline of 28 Willow Lane (AX-102), her in-person case on Monday June 10. A person should read this message.",
+   "group": "unseen2_consultant",
+   "note": "Adjudicated: see adjudication.md. Labeller A: She names no case, but 'nothing in person before Tuesday' rules out her in-person hearing on Monday June 10, 28 Willow Lane (AX-102), the one she accepted. AX-101 is left out because she had already declined it. Labeller B: Maya says she can do nothing in person before Tuesday. That bears on her Monday case at Larkmere, but she names no case and declines none in words, so I label nothing; a person should read it."
+  },
+  {
+   "id": "U026",
+   "ts": "2030-06-08T07:02:00-05:00",
+   "sender": "Eli Corven",
+   "address": "eli@consultants.example",
+   "channel": "email",
+   "properties": [
+    "75 Elm Street, Caldmere",
+    "96 Elm Street, Caldmere"
+   ],
+   "body": "Automatic reply: I am away until Monday 10 June with limited access to email. For anything about a hearing this week, call my mobile.\n\nEli Corven",
+   "claims": [],
+   "expect_no_effect": true,
+   "trap": null,
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "unseen2_consultant",
+   "note": "Labeller A: Automatic out-of-office reply. Labeller B: An automatic out-of-office reply."
+  },
+  {
+   "id": "U027",
+   "ts": "2030-06-08T09:15:00-05:00",
+   "sender": "Cameron Hale",
+   "address": null,
+   "channel": "text note",
+   "properties": [
+    "18 Maple Lane, Iverfen",
+    "34 Maple Lane, Iverfen"
+   ],
+   "body": "Hi its Cameron Hale. I did ask Iverfen to drop the appeal on 18 Maple, thats right, the bill went down after the reassessment so no point. Keep 34 going though!!",
+   "claims": [
+    {
+     "type": "homeowner_confirmed",
+     "cases": [
+      "AX-117"
+     ]
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": true,
+   "ambiguous_why": "Labeller A: A message that only claims to come from a homeowner is a lead, so a second labeller could leave it empty.",
+   "group": "unseen2_homeowner",
+   "note": "Labeller A: The homeowner's own text confirming his withdrawal request. homeowner_confirmed is defined as a staff record of speaking with the homeowner; I labelled the assertion and leave the question of evidence to the verifier. Labeller B: The homeowner himself confirms by text that the withdrawal was his own request. The vocabulary words homeowner_confirmed as a firm staff record; I label what the message states, as the existing labels do for relayed office statements."
+  },
+  {
+   "id": "U028",
+   "ts": "2030-06-08T10:25:00-05:00",
+   "sender": "Priya Marden",
+   "address": "priya@consultants.example",
+   "channel": "email",
+   "properties": [
+    "16 Birch Lane, Brindlefen",
+    "42 Birch Lane, Brindlefen"
+   ],
+   "body": "Rescanned withdrawal statement for 42 Birch Lane attached, as a PDF this time (42-birch-lane-withdrawal-statement-v2.pdf). You should be able to read the case number, AX-110, and the date, 5 June. Tell me if you still can't.\n\nPriya",
+   "claims": [
+    {
+     "type": "document_submitted",
+     "cases": [
+      "AX-110"
+     ],
+     "kind": "withdrawal"
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "unseen2_consultant"
+  },
+  {
+   "id": "U029",
+   "ts": "2030-06-08T11:25:00-05:00",
+   "sender": "Alice’s Law Firm operations",
+   "address": null,
+   "channel": "phone note",
+   "properties": [
+    "57 Clover Road, Juniper Reach",
+    "73 Clover Road, Juniper Reach"
+   ],
+   "body": "Called Drew Rowan about the 57 Clover statement. He confirmed he signed it on Friday and wants us to file it. Filed by email to clerk@juniper-reach.example at 11:20 Saturday. No receipt back yet.",
+   "claims": [
+    {
+     "type": "internal_note",
+     "cases": [
+      "AX-119"
+     ]
+    },
+    {
+     "type": "document_submitted",
+     "cases": [
+      "AX-119"
+     ],
+     "kind": "homeowner_statement"
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "unseen2_firm_staff",
+   "note": "Adjudicated: see adjudication.md. Labeller A: Call log plus a filing, labelled like example 52. homeowner_confirmed does not apply: it covers a withdrawal or a date change, not a statement. Labeller B: The firm filed the statement with the clerk by email. The homeowner's wish to have it filed is not a withdrawal or date request, so no homeowner_confirmed."
+  },
+  {
+   "id": "U030",
+   "ts": "2030-06-08T12:30:00-05:00",
+   "sender": "Alice’s Law Firm operations",
+   "address": null,
+   "channel": "email",
+   "properties": [
+    "48 Linden Avenue, Harthmere",
+    "66 Linden Avenue, Harthmere"
+   ],
+   "body": "Fwd: June 13\n\n---------- Forwarded message ----------\nFrom: Leo Arlen <leo@consultants.example>\nDate: Sat, Jun 8, 2030 at 11:58 AM\nSubject: June 13\n\nI could maybe do the 13th after all. The other matter might settle. I'll know Monday.",
+   "claims": [
+    {
+     "type": "consultant_tentative",
+     "cases": [
+      "AX-115"
+     ],
+     "consultant": "R02"
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": true,
+   "ambiguous_why": "Labeller A: The sender is the firm, not the consultant, and the forward names no case; a second labeller could leave it empty. Labeller B: The sender is firm staff forwarding the consultant's words; a second labeller could leave the list empty.",
+   "group": "unseen2_firm_staff",
+   "note": "Labeller A: The firm forwards Leo Arlen's own words ('could maybe', 'I'll know Monday'). Labelled as his tentative answer for the June 13 case in this thread, 48 Linden Avenue. Labeller B: A forwarded message from Leo saying he could maybe do the 13th and will know Monday. I label the forwarded content as consultant_tentative for 48 Linden Avenue, the case heard on June 13; it commits him to nothing."
+  },
+  {
+   "id": "U031",
+   "ts": "2030-06-09T17:10:00-05:00",
+   "sender": "Leo Arlen",
+   "address": "leo@consultants.example",
+   "channel": "email",
+   "properties": [
+    "102 Willow Lane, Larkmere",
+    "118 Willow Lane, Larkmere"
+   ],
+   "body": "Confirming for tomorrow: 102 and 118 Willow Lane, 11:00 and 11:30, Larkmere, in person. I'll be there. The packets I've read are the v2 ones prepared May 29. That's still right, yes?",
+   "claims": [
+    {
+     "type": "consultant_accepted",
+     "cases": [
+      "AX-121",
+      "AX-122"
+     ],
+     "consultant": "R02"
+    },
+    {
+     "type": "packet_received",
+     "cases": [
+      "AX-121",
+      "AX-122"
+     ]
+    },
+    {
+     "type": "consultant_question",
+     "cases": [
+      "AX-121",
+      "AX-122"
+     ],
+     "consultant": "R02"
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "unseen2_consultant",
+   "note": "Labeller A: A day-before 'I'll be there' is labelled consultant_accepted. The closing question about the packet version is labelled consultant_question like example 35. Labeller B: A yes on the eve of the hearing is labelled consultant_accepted because the consultant explicitly re-states the commitment for named cases; example 65 ('I will arrive at 10:45') did not get one, so the convention is not settled. He also asks whether version 2 is still current, which I label consultant_question."
+  },
+  {
+   "id": "U032",
+   "ts": "2030-06-09T18:40:00-05:00",
+   "sender": "Maya Venn",
+   "address": null,
+   "channel": "text note",
+   "properties": [
+    "14 Willow Lane, Larkmere",
+    "28 Willow Lane, Larkmere"
+   ],
+   "body": "Yes still on for tmrw, 930 Willow Ln. Leaving the house 8:45",
+   "claims": [
+    {
+     "type": "consultant_accepted",
+     "cases": [
+      "AX-102"
+     ],
+     "consultant": "R01"
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "unseen2_consultant",
+   "note": "Labeller A: Day-before yes for the 9:30 case only. Labeller B: A yes on the eve of the hearing is labelled consultant_accepted because the consultant explicitly re-states the commitment for named cases; example 65 ('I will arrive at 10:45') did not get one, so the convention is not settled."
+  },
+  {
+   "id": "U033",
+   "ts": "2030-06-09T20:10:00-05:00",
+   "sender": "Morgan Ellis",
+   "address": "m.ellis@mailbox.example",
+   "channel": "email",
+   "properties": [
+    "63 Garden Street, Velloran",
+    "81 Garden Street, Velloran"
+   ],
+   "body": "My neighbour says the Garden Street hearings were moved to Thursday the 13th. Is that right? Your reminder email said the 13th as well, but the county website still shows the 11th. Which one do I tell my employer?\n\nMorgan",
+   "claims": [],
+   "expect_no_effect": true,
+   "trap": null,
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "unseen2_homeowner",
+   "note": "Labeller A: A homeowner's question about which date is right. It asserts nothing itself. Labeller B: A homeowner's question about which date is right; it states no fact of its own."
+  },
+  {
+   "id": "U034",
+   "ts": "2030-06-10T07:00:00-05:00",
+   "sender": "Velloran hearing office",
+   "address": "clerk@velloran.example",
+   "channel": "email",
+   "properties": [
+    "120 Garden Street, Velloran",
+    "138 Garden Street, Velloran"
+   ],
+   "body": "VELLORAN VIDEO HEARINGS: AUTOMATED REMINDER\nSession: Tue 06/11/2030, 15:00\nMatters: AX-123 (15:00), AX-124 (15:30)\nRoom: C\nRepresentative on file: O. TARRIS\nJoin 10 minutes early. Test camera and microphone beforehand. Do not reply to this address.",
+   "claims": [
+    {
+     "type": "hearing_confirmed",
+     "cases": [
+      "AX-123"
+     ],
+     "date": "2030-06-11",
+     "time": "15:00",
+     "room": "C"
+    },
+    {
+     "type": "hearing_confirmed",
+     "cases": [
+      "AX-124"
+     ],
+     "date": "2030-06-11",
+     "time": "15:30",
+     "room": "C"
+    },
+    {
+     "type": "rep_recorded",
+     "cases": [
+      "AX-123",
+      "AX-124"
+     ],
+     "consultant": "R04"
+    },
+    {
+     "type": "hearing_instruction",
+     "cases": [
+      "AX-123",
+      "AX-124"
+     ]
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "unseen2_office"
+  },
+  {
+   "id": "U035",
+   "ts": "2030-06-10T08:05:00-05:00",
+   "sender": "Larkmere hearing office",
+   "address": "clerk@larkmere.example",
+   "channel": "email",
+   "properties": [
+    "102 Willow Lane, Larkmere",
+    "118 Willow Lane, Larkmere"
+   ],
+   "body": "Building note for this morning. The east entrance is shut for the ceiling works, so anyone coming for 102 Willow Lane or 118 Willow Lane must use the Court Street door. Security there is slow, about ten minutes. Mr. Arlen should be in the building by 10:40. The hearings themselves are as listed, 11:00 and 11:30, same room.",
+   "claims": [
+    {
+     "type": "hearing_instruction",
+     "cases": [
+      "AX-121",
+      "AX-122"
+     ]
+    },
+    {
+     "type": "hearing_confirmed",
+     "cases": [
+      "AX-121"
+     ],
+     "date": "2030-06-10",
+     "time": "11:00"
+    },
+    {
+     "type": "hearing_confirmed",
+     "cases": [
+      "AX-122"
+     ],
+     "date": "2030-06-10",
+     "time": "11:30"
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "unseen2_office",
+   "note": "Labeller A: 'Mr. Arlen should be in the building' does not say he is recorded."
+  },
+  {
+   "id": "U036",
+   "ts": "2030-06-10T08:40:00-05:00",
+   "sender": "Riley Fern",
+   "address": "riley.fern@mailbox.example",
+   "channel": "email",
+   "properties": [
+    "48 Linden Avenue, Harthmere",
+    "66 Linden Avenue, Harthmere"
+   ],
+   "body": "I asked the county to move 48 Linden because I was going to be travelling, and they did, to the 13th. It turns out I'm back late on the 12th, so the 13th suits me. Please don't ask them to move it again.\n\nRiley Fern",
+   "claims": [
+    {
+     "type": "homeowner_confirmed",
+     "cases": [
+      "AX-115"
+     ]
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": true,
+   "ambiguous_why": "Labeller A: Not a staff record of a call; a second labeller could leave it empty. Labeller B: The message comes from the homeowner, not from a staff note of a call; a second labeller could leave the list empty.",
+   "group": "unseen2_homeowner",
+   "note": "Labeller A: The homeowner's own email saying the date change was his request and that June 13 suits him. Same choice as U027. Labeller B: The homeowner confirms in her own email that the date change was her request and that June 13 suits her. Labelled homeowner_confirmed although the type is worded as a firm staff record."
+  },
+  {
+   "id": "U037",
+   "ts": "2030-06-10T08:50:00-05:00",
+   "sender": "Owen Tarris",
+   "address": "owen@consultants.example",
+   "channel": "email",
+   "properties": [
+    "120 Garden Street, Velloran",
+    "138 Garden Street, Velloran"
+   ],
+   "body": "Two things in one mail, sorry.\n\nGarden Street tomorrow, 120 and 138: fine, no change.\n\nMeadow Avenue on Wednesday: I can only do the first one now. 52 needs to go to someone else, I have to be out of the building by 11:20.",
+   "claims": [
+    {
+     "type": "consultant_accepted",
+     "cases": [
+      "AX-123",
+      "AX-124",
+      "AX-107"
+     ],
+     "consultant": "R04"
+    },
+    {
+     "type": "consultant_declined",
+     "cases": [
+      "AX-108"
+     ],
+     "consultant": "R04"
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": true,
+   "ambiguous_why": "Labeller A: A second labeller could hold the Meadow Avenue part for a person because it arrives in the Garden Street thread.",
+   "group": "unseen2_consultant",
+   "note": "Labeller A: One message about two threads. The Meadow Avenue cases are not in the properties line, but the text names them plainly, so they are labelled. Labeller B: Two threads in one message. The Meadow Avenue cases are not in the properties and come from the body ('the first one' is 37 Meadow Avenue at 11:00, '52' is named)."
+  },
+  {
+   "id": "U038",
+   "ts": "2030-06-10T09:12:00-05:00",
+   "sender": "Maya Venn",
+   "address": null,
+   "channel": "text note",
+   "properties": [
+    "14 Willow Lane, Larkmere",
+    "28 Willow Lane, Larkmere"
+   ],
+   "body": "Here at Larkmere, signed in. They're running abt 10 min behind",
+   "claims": [],
+   "expect_no_effect": true,
+   "trap": null,
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "unseen2_consultant",
+   "note": "Labeller A: Arrival note. The vocabulary has no type for 'I am here'. Labeller B: An arrival or waiting-room message; the vocabulary has no type for it, so the list is empty."
+  },
+  {
+   "id": "U039",
+   "ts": "2030-06-10T09:25:00-05:00",
+   "sender": "Velloran hearing office",
+   "address": "clerk@velloran.example",
+   "channel": "email",
+   "properties": [
+    "63 Garden Street, Velloran",
+    "81 Garden Street, Velloran"
+   ],
+   "body": "A firm has withdrawn two matters from Thursday's list, so there is now room on 13 June after all. If you still want 63 Garden Street and 81 Garden Street on that day at 1 and 1:30, tell us by 3 p.m. today and we will move them. If we hear nothing they go ahead tomorrow as listed.",
+   "claims": [],
+   "expect_no_effect": true,
+   "trap": null,
+   "ambiguous": true,
+   "ambiguous_why": "Labeller A: A second labeller could choose change_pending, hearing_confirmed for June 11, or obligation_created with deadline 2030-06-10T15:00. Labeller B: A second labeller could label hearing_confirmed for June 11, since the listed date stands unless the firm acts.",
+   "group": "unseen2_office",
+   "note": "Labeller A: An offer that depends on the firm's answer by 3 p.m. Nothing is moved, nothing is under review at the office, and the 'go ahead tomorrow' is conditional. No type fits; a person must answer. Labeller B: A conditional offer: the office will move the hearings only if told by 3 p.m., and 'they go ahead tomorrow as listed' holds only if nothing is heard. Nothing is changed, pending, denied or plainly confirmed, as in H053."
+  },
+  {
+   "id": "U040",
+   "ts": "2030-06-10T09:45:00-05:00",
+   "sender": "Juniper Reach hearing office",
+   "address": "clerk@juniper-reach.example",
+   "channel": "email",
+   "properties": [
+    "57 Clover Road, Juniper Reach",
+    "73 Clover Road, Juniper Reach"
+   ],
+   "body": "No statement for 57 Clover Road had arrived when the time ran out on Saturday. The board is still willing to take it if it is here by 10 a.m. on Wednesday 12 June together with one line explaining why it is late. After that the case will be decided on the record as it stands.",
+   "claims": [
+    {
+     "type": "obligation_created",
+     "cases": [
+      "AX-119"
+     ],
+     "kind": "homeowner_statement",
+     "deadline": "2030-06-12T10:00"
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "unseen2_office"
+  },
+  {
+   "id": "U041",
+   "ts": "2030-06-10T10:05:00-05:00",
+   "sender": "Fenwick Vale hearing office",
+   "address": "clerk@fenwick-vale.example",
+   "channel": "email",
+   "properties": [
+    "11 Brook Road, Fenwick Vale",
+    "29 Brook Road, Fenwick Vale"
+   ],
+   "body": "Follow-up to Thursday's sitting.\n\n11 Brook Road: the board wants the owner's signed occupancy statement. Deadline Friday 14 June at noon.\n\n29 Brook Road: nothing is needed from you at present. You will get a separate notice.",
+   "claims": [
+    {
+     "type": "obligation_created",
+     "cases": [
+      "AX-113"
+     ],
+     "kind": "homeowner_statement",
+     "deadline": "2030-06-14T12:00"
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "unseen2_office",
+   "note": "Labeller A: Kind homeowner_statement is my reading of 'the owner's signed occupancy statement'. Labeller B: I read the owner's signed occupancy statement as kind homeowner_statement, since it is a statement by the homeowner."
+  },
+  {
+   "id": "U042",
+   "ts": "2030-06-10T10:18:00-05:00",
+   "sender": "Alice’s Law Firm operations",
+   "address": null,
+   "channel": "phone note",
+   "properties": [
+    "18 Maple Lane, Iverfen",
+    "34 Maple Lane, Iverfen"
+   ],
+   "body": "Spoke to Cameron Hale on the number on file, 10:15. He confirms the withdrawal of 18 Maple Lane was his own request and he still wants it. 34 Maple Lane carries on.",
+   "claims": [
+    {
+     "type": "homeowner_confirmed",
+     "cases": [
+      "AX-117"
+     ]
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "unseen2_firm_staff"
+  },
+  {
+   "id": "U043",
+   "ts": "2030-06-10T10:20:00-05:00",
+   "sender": "Caldmere hearing office",
+   "address": "clerk@caldmere.example",
+   "channel": "email",
+   "properties": [
+    "75 Elm Street, Caldmere",
+    "96 Elm Street, Caldmere"
+   ],
+   "body": "A correction, with apologies. Our earlier message that Eli Corven was the representative on both Elm Street cases was only half true. A colleague had entered him against 75 Elm Street; the entry for 96 Elm Street was never saved. I put it right at 10:15 today and he is now on both.\n\nD. Ashby, deputy clerk",
+   "claims": [
+    {
+     "type": "rep_recorded",
+     "cases": [
+      "AX-111",
+      "AX-112"
+     ],
+     "consultant": "R06"
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "unseen2_office"
+  },
+  {
+   "id": "U044",
+   "ts": "2030-06-10T10:40:00-05:00",
+   "sender": "Brindlefen hearing office",
+   "address": "clerk@brindlefen.example",
+   "channel": "email",
+   "properties": [
+    "16 Birch Lane, Brindlefen",
+    "42 Birch Lane, Brindlefen"
+   ],
+   "body": "Thank you. The rescanned withdrawal for 42 Birch Lane can be read and is signed by Ms Marden. It now goes to the board secretary for the signature check, which takes up to two working days. Until that is finished the 13 June hearing at 10:30 stays on the list and somebody must be ready to appear.",
+   "claims": [
+    {
+     "type": "hearing_confirmed",
+     "cases": [
+      "AX-110"
+     ],
+     "date": "2030-06-13",
+     "time": "10:30"
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": true,
+   "ambiguous_why": "Labeller A: obligation_cleared covers 'received or processed'; a second labeller could label it (kind withdrawal) because the office confirms receipt of a readable, signed statement. Labeller B: obligation_cleared is defined as received or processed; the corrected statement was received, so a second labeller could label it with kind withdrawal.",
+   "group": "unseen2_office",
+   "note": "Labeller A: The withdrawal is readable and signed but the signature check is not finished, so I did not label obligation_cleared: the office says the hearing stays until the check is done. Labeller B: The office has the readable, signed withdrawal but says it now goes to a signature check and the hearing stays. I did not label obligation_cleared, because the withdrawal is not processed (H055 shows 'under signature check' as the state before cleared)."
+  },
+  {
+   "id": "U045",
+   "ts": "2030-06-10T10:41:00-05:00",
+   "sender": "Leo Arlen",
+   "address": null,
+   "channel": "text note",
+   "properties": [
+    "102 Willow Lane, Larkmere",
+    "118 Willow Lane, Larkmere"
+   ],
+   "body": "Parked. Walking in now.",
+   "claims": [],
+   "expect_no_effect": true,
+   "trap": null,
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "unseen2_consultant",
+   "note": "Labeller A: Arrival note. Labeller B: An arrival or waiting-room message; the vocabulary has no type for it, so the list is empty."
+  },
+  {
+   "id": "U046",
+   "ts": "2030-06-10T11:20:00-05:00",
+   "sender": "Leo Arlen",
+   "address": "leo@consultants.example",
+   "channel": "email",
+   "properties": [
+    "9 Orchard Road, Orimere",
+    "24 Orchard Road, Orimere"
+   ],
+   "body": "Fine, I can do that one. 2 p.m. Wednesday, video. Get me recorded with Orimere and send the files today please, not Tuesday night.\n\nOn Mon, Jun 10, 2030 at 10:48 AM operations wrote:\n> Leo, Nora can't do 24 Orchard Road on Wed June 12 at 2 p.m. (Orimere, video, about 30 min). Could you take it?",
+   "claims": [
+    {
+     "type": "consultant_accepted",
+     "cases": [
+      "AX-106"
+     ],
+     "consultant": "R02"
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "unseen2_consultant",
+   "note": "Labeller A: The quoted request from the firm is not labelled."
+  },
+  {
+   "id": "U047",
+   "ts": "2030-06-10T11:55:00-05:00",
+   "sender": "Tesswick hearing office",
+   "address": "clerk@tesswick.example",
+   "channel": "email",
+   "properties": [
+    "37 Meadow Avenue, Tesswick",
+    "52 Meadow Avenue, Tesswick"
+   ],
+   "body": "The car park at the county annex is closed on Wednesday for resurfacing. Representatives for the 11:00 and 11:30 Meadow Avenue cases should leave the car at the library and walk over, and check in at the front desk with photo ID by 10:45 at the latest.",
+   "claims": [
+    {
+     "type": "hearing_instruction",
+     "cases": [
+      "AX-107",
+      "AX-108"
+     ]
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "unseen2_office"
+  },
+  {
+   "id": "U048",
+   "ts": "2030-06-10T12:10:00-05:00",
+   "sender": "Priya Marden",
+   "address": null,
+   "channel": "voicemail transcript",
+   "properties": [
+    "16 Birch Lane, Brindlefen",
+    "42 Birch Lane, Brindlefen"
+   ],
+   "body": "Hi, it's Priya Marden. I got the two Birch Lane packets, um, the second versions, thank you. I've read sixteen, I haven't opened forty-two yet. Call me if the settlement paperwork changes anything. Okay, bye.",
+   "claims": [
+    {
+     "type": "packet_received",
+     "cases": [
+      "AX-109",
+      "AX-110"
+     ]
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "unseen2_consultant",
+   "note": "Labeller A: She has both packets and has read one. 'Have' is enough for packet_received (example 50). Labeller B: He has both packets and has read only one; 'has' is enough for packet_received by the type's wording."
+  },
+  {
+   "id": "U049",
+   "ts": "2030-06-10T12:30:00-05:00",
+   "sender": "Maya Venn",
+   "address": "maya@consultants.example",
+   "channel": "email",
+   "properties": [
+    "14 Willow Lane, Larkmere",
+    "28 Willow Lane, Larkmere"
+   ],
+   "body": "28 Willow Lane is done. They took it at 9:40, about twenty minutes, and they'll write with the result. The clerk asked me about number 14 too. I told her I wasn't on that one. I didn't see anyone else from the firm in the room.",
+   "claims": [
+    {
+     "type": "outcome_reported",
+     "cases": [
+      "AX-102"
+     ],
+     "result": "heard"
+    },
+    {
+     "type": "decision_pending",
+     "cases": [
+      "AX-102"
+     ]
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": true,
+   "ambiguous_why": "Labeller A: A second labeller could keep only outcome_reported, since decision_pending is defined as a government statement.",
+   "group": "unseen2_consultant",
+   "note": "Adjudicated: see adjudication.md. Labeller A: 'They'll write with the result' is the board's pending written decision, relayed by the consultant. Her remark about number 14 reports no outcome and is not labelled. Labeller B: For 14 Willow Lane she only says she was not on it and saw nobody from the firm; that is no outcome and no new decline."
+  },
+  {
+   "id": "U050",
+   "ts": "2030-06-10T12:40:00-05:00",
+   "sender": "Tesswick hearing office",
+   "address": "clerk@tesswick.example",
+   "channel": "email",
+   "properties": [
+    "37 Meadow Avenue, Tesswick",
+    "52 Meadow Avenue, Tesswick"
+   ],
+   "body": "The hearing for 41 Meadow Avenue, Tesswick is confirmed for June 12 at 11:15 a.m. in person, and Owen Tarris is on the list of representatives for it.",
+   "claims": [],
+   "expect_no_effect": true,
+   "trap": null,
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "unseen2_office",
+   "note": "Labeller A: 41 Meadow Avenue is not a property in the packet. The message cannot be tied to AX-107 or AX-108, so nothing is labelled. Labeller B: 41 Meadow Avenue is not a property in the packet; the firm's Tesswick cases are 37 and 52 Meadow Avenue at 11:00 and 11:30. Nothing can be filed to a case."
+  },
+  {
+   "id": "U051",
+   "ts": "2030-06-10T13:15:00-05:00",
+   "sender": "Leo Arlen",
+   "address": "leo@consultants.example",
+   "channel": "email",
+   "properties": [
+    "102 Willow Lane, Larkmere",
+    "118 Willow Lane, Larkmere"
+   ],
+   "body": "Both heard. 102: board reserved, written decision to come. 118: they want a comparable sales sheet for 2028. By Friday I think she said, but check that with the clerk, I didn't write it down.",
+   "claims": [
+    {
+     "type": "outcome_reported",
+     "cases": [
+      "AX-121",
+      "AX-122"
+     ],
+     "result": "heard"
+    },
+    {
+     "type": "decision_pending",
+     "cases": [
+      "AX-121"
+     ]
+    },
+    {
+     "type": "obligation_created",
+     "cases": [
+      "AX-122"
+     ]
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": true,
+   "ambiguous_why": "Adjudicated. The relayed request is kept without a deadline because the consultant hedges the day; labeller B kept only the outcome.",
+   "group": "unseen2_consultant",
+   "note": "Adjudicated: see adjudication.md. Labeller A: The board's request for a comparable sales sheet is relayed by the consultant; the deadline is a guess ('I think', 'check that'), so no deadline field, and the document is outside the kind list. Labeller B: The relayed request for a comparable sales sheet is hedged ('I think', 'check that with the clerk') and comes from the consultant; as in U001 I label only the outcome."
+  },
+  {
+   "id": "U052",
+   "ts": "2030-06-10T13:45:00-05:00",
+   "sender": "Harthmere hearing office",
+   "address": "clerk@harthmere.example",
+   "channel": "email",
+   "properties": [
+    "48 Linden Avenue, Harthmere",
+    "66 Linden Avenue, Harthmere"
+   ],
+   "body": "We have your email naming Maya Venn for AX-115 on the 13th. She has been entered. Mr Arlen comes off that case only. AX-116 was his and is finished, so nothing changes there.",
+   "claims": [
+    {
+     "type": "rep_recorded",
+     "cases": [
+      "AX-115"
+     ],
+     "consultant": "R01"
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "unseen2_office"
+  },
+  {
+   "id": "U053",
+   "ts": "2030-06-10T14:02:00-05:00",
+   "sender": "Alice’s Law Firm operations",
+   "address": null,
+   "channel": "calendar activity",
+   "properties": [
+    "9 Orchard Road, Orimere",
+    "24 Orchard Road, Orimere"
+   ],
+   "body": "Dana moved the 24 Orchard Road event to June 18 at 2 p.m. in the shared calendar to match Nora's availability. The tracker row was not changed. The county has not approved anything.",
+   "claims": [
+    {
+     "type": "calendar_edited",
+     "cases": [
+      "AX-106"
+     ],
+     "date": "2030-06-18"
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "unseen2_firm_staff"
+  },
+  {
+   "id": "U054",
+   "ts": "2030-06-10T14:35:00-05:00",
+   "sender": "Eli Corven",
+   "address": "eli@consultants.example",
+   "channel": "email",
+   "properties": [
+    "16 Birch Lane, Brindlefen",
+    "42 Birch Lane, Brindlefen"
+   ],
+   "body": "I could do the 10:00. The 10:30 is harder: I have to leave at 11 sharp for the dentist, so only if it's a short one. Put me down as a maybe for that.\n\n> Eli, if Priya has to drop out, would you be able to cover 16 and 42 Birch Lane on June 13 at 10 and 10:30 (Brindlefen, video)?",
+   "claims": [
+    {
+     "type": "consultant_conditional",
+     "cases": [
+      "AX-109"
+     ],
+     "consultant": "R06"
+    },
+    {
+     "type": "consultant_tentative",
+     "cases": [
+      "AX-110"
+     ],
+     "consultant": "R06"
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": true,
+   "ambiguous_why": "Adjudicated. The 10:00 is conditional on Priya dropping out; labeller B read it as an acceptance.",
+   "group": "unseen2_consultant",
+   "note": "Adjudicated: see adjudication.md. Labeller A: He answers a hypothetical ('if Priya has to drop out'). 'I could do the 10:00' is a yes that depends on that, so consultant_conditional; the 10:30 is a stated maybe. Labeller B: 'I could do the 10:00' answers a hypothetical request (if Priya drops out); I label it consultant_accepted for 16 Birch Lane and the 'maybe' as consultant_tentative for 42 Birch Lane."
+  },
+  {
+   "id": "U055",
+   "ts": "2030-06-10T15:35:00-05:00",
+   "sender": "Orimere hearing office",
+   "address": "clerk@orimere.example",
+   "channel": "email",
+   "properties": [
+    "9 Orchard Road, Orimere",
+    "24 Orchard Road, Orimere"
+   ],
+   "body": "Updated notice received with thanks. Leo Arlen is now recorded for 24 Orchard Road, Wednesday 12 June, 14:00, video. The joining link will go to leo@consultants.example the evening before.\n\nFor completeness, 9 Orchard Road is unchanged on our side: 18 June, 09:00, N. Pell.",
+   "claims": [
+    {
+     "type": "rep_recorded",
+     "cases": [
+      "AX-106"
+     ],
+     "consultant": "R02"
+    },
+    {
+     "type": "hearing_confirmed",
+     "cases": [
+      "AX-106"
+     ],
+     "date": "2030-06-12",
+     "time": "14:00"
+    },
+    {
+     "type": "rep_recorded",
+     "cases": [
+      "AX-105"
+     ],
+     "consultant": "R03"
+    },
+    {
+     "type": "hearing_confirmed",
+     "cases": [
+      "AX-105"
+     ],
+     "date": "2030-06-18",
+     "time": "09:00"
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "unseen2_office",
+   "note": "Adjudicated: see adjudication.md. Labeller A: The office states date and time in full for both cases, so both get hearing_confirmed. Labeller B: The office restates date, time and mode for 24 Orchard Road and says 9 Orchard Road is unchanged; I label hearing_confirmed for both. The promised joining link is not yet an instruction (H035)."
+  },
+  {
+   "id": "U056",
+   "ts": "2030-06-10T15:55:00-05:00",
+   "sender": "Velloran hearing office",
+   "address": "clerk@velloran.example",
+   "channel": "email",
+   "properties": [
+    "63 Garden Street, Velloran",
+    "81 Garden Street, Velloran"
+   ],
+   "body": "Noted, thank you. We will update our file.",
+   "claims": [
+    {
+     "type": "acknowledgement",
+     "cases": [
+      "AX-103",
+      "AX-104"
+     ]
+    }
+   ],
+   "expect_no_effect": true,
+   "trap": null,
+   "ambiguous": true,
+   "ambiguous_why": "Labeller A: A second labeller could leave it empty. Labeller B: 'We will update our file' goes slightly beyond thanks; a second labeller could leave the list empty.",
+   "group": "unseen2_office",
+   "note": "Labeller A: 'Noted' and a promise to update the file, with no word on what was noted. Labelled acknowledgement; it proves nothing. Labeller B: A vague acknowledgement with a promise to update the file; it says nothing about what was noted. I label acknowledgement, as for U024."
+  },
+  {
+   "id": "U057",
+   "ts": "2030-06-10T16:30:00-05:00",
+   "sender": "Nora Pell",
+   "address": "nora@consultants.example",
+   "channel": "email",
+   "properties": [
+    "18 Maple Lane, Iverfen",
+    "34 Maple Lane, Iverfen"
+   ],
+   "body": "I have the Maple Lane files, both of them, version 2, and 9 Orchard Road version 2 as well. I have nothing for 24 Orchard and I don't need it.\n\nNora",
+   "claims": [
+    {
+     "type": "packet_received",
+     "cases": [
+      "AX-117",
+      "AX-118",
+      "AX-105"
+     ]
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "unseen2_consultant",
+   "note": "Labeller A: 9 Orchard Road is outside the properties line but named in the text. Labeller B: 9 Orchard Road is not in the properties and comes from the body."
+  },
+  {
+   "id": "U058",
+   "ts": "2030-06-10T16:50:00-05:00",
+   "sender": "Owen Tarris",
+   "address": "owen@consultants.example",
+   "channel": "email",
+   "properties": [
+    "120 Garden Street, Velloran",
+    "138 Garden Street, Velloran"
+   ],
+   "body": "Day-before check. Tomorrow, Velloran, 3:00 and 3:30, room C. Both are in my calendar and I have read both packets. All set.",
+   "claims": [
+    {
+     "type": "consultant_accepted",
+     "cases": [
+      "AX-123",
+      "AX-124"
+     ],
+     "consultant": "R04"
+    },
+    {
+     "type": "packet_received",
+     "cases": [
+      "AX-123",
+      "AX-124"
+     ]
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": true,
+   "ambiguous_why": "Labeller A: Example 71 ('Files reviewed. Room C and both times are in my work calendar') carries only packet_received; a second labeller could do the same here. Labeller B: Whether a day-before 'all set' is a consultant_accepted is not settled by the examples (see 65 and 71).",
+   "group": "unseen2_consultant",
+   "note": "Labeller A: 'Day-before check ... All set' is read as his confirmation that he attends. Labeller B: 'Day-before check ... All set' is read as a yes for both hearings. Example 71, with similar words, got packet_received only."
+  },
+  {
+   "id": "U059",
+   "ts": "2030-06-10T17:35:00-05:00",
+   "sender": "Taylor Finch",
+   "address": "taylor.finch@mailbox.example",
+   "channel": "email",
+   "properties": [
+    "16 Birch Lane, Brindlefen",
+    "42 Birch Lane, Brindlefen"
+   ],
+   "body": "I'm confused. A letter from Brindlefen came today saying 42 Birch Lane has a hearing on June 13 at 10:30. I thought we were withdrawing that one? And I haven't signed anything for the settlement on number 16, nobody has sent me a form.\n\nTaylor Finch",
+   "claims": [],
+   "expect_no_effect": true,
+   "trap": null,
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "unseen2_homeowner",
+   "note": "Labeller A: A homeowner's questions. 'I thought we were withdrawing that one?' does not say she declines or confirms the withdrawal. Labeller B: A confused homeowner's questions; she neither confirms nor withdraws a request."
+  },
+  {
+   "id": "U060",
+   "ts": "2030-06-11T08:50:00-05:00",
+   "sender": "Avery Moss",
+   "address": null,
+   "channel": "voicemail transcript",
+   "properties": [
+    "75 Elm Street, Caldmere",
+    "96 Elm Street, Caldmere"
+   ],
+   "body": "Yeah hi, this is Avery Moss, the Elm Street appeals. I'm going to be away on the thirteenth, a family thing, so can you get the hearing pushed back a week? I've emailed the county about it too. Call me back when you can.",
+   "claims": [
+    {
+     "type": "change_requested",
+     "cases": [
+      "AX-111",
+      "AX-112"
+     ]
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": true,
+   "ambiguous_why": "Labeller A: A second labeller could add date 2030-06-20.",
+   "group": "unseen2_homeowner",
+   "note": "Labeller A: He asks for the hearing to be pushed back a week and names no date, so no date field. Both Elm Street hearings are on the 13th. Labeller B: The homeowner asks for the hearing to be pushed back a week. No date field, because he names no date."
+  },
+  {
+   "id": "U061",
+   "ts": "2030-06-11T09:15:00-05:00",
+   "sender": "Caldmere hearing office",
+   "address": "clerk@caldmere.example",
+   "channel": "email",
+   "properties": [
+    "75 Elm Street, Caldmere",
+    "96 Elm Street, Caldmere"
+   ],
+   "body": "Could you tell us whether Mr Corven will be joining Thursday's hearings from the firm's premises or from his own office? The board keeps a list of where each participant is sitting. There is no rush.",
+   "claims": [],
+   "expect_no_effect": true,
+   "trap": null,
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "unseen2_office",
+   "note": "Labeller A: A question about where the consultant will sit. It is not a request for a representative. Labeller B: A question about where Mr Corven will sit; not a request for a representative's name and nothing else in the vocabulary fits."
+  },
+  {
+   "id": "U062",
+   "ts": "2030-06-11T09:50:00-05:00",
+   "sender": "Brindlefen hearing office",
+   "address": "clerk@brindlefen.example",
+   "channel": "email",
+   "properties": [
+    "16 Birch Lane, Brindlefen",
+    "42 Birch Lane, Brindlefen"
+   ],
+   "body": "Settlement papers, 16 Birch Lane. Two things are missing: the attending consultant's signature on page 3 and the homeowner's initials on page 2. Both by 12 noon on Wednesday 12 June please. If they are not in, the 10 a.m. hearing on the 13th goes ahead as normal.\n\nT. Okoro, Brindlefen hearing office",
+   "claims": [
+    {
+     "type": "signature_required",
+     "cases": [
+      "AX-109"
+     ],
+     "kind": "settlement"
+    },
+    {
+     "type": "obligation_created",
+     "cases": [
+      "AX-109"
+     ],
+     "kind": "settlement",
+     "deadline": "2030-06-12T12:00"
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": true,
+   "ambiguous_why": "Labeller A: A second labeller could add consultant R05 from the record, or signature_rejected for missing information.",
+   "group": "unseen2_office",
+   "note": "Adjudicated: see adjudication.md. Labeller A: The office names no consultant ('the attending consultant'), so signature_required has no consultant field. No signature_rejected: the papers are incomplete, not refused. Labeller B: The consultant is not named ('the attending consultant'), so signature_required carries no consultant. I did not label signature_rejected (nothing signed was rejected) nor hearing_confirmed (the hearing is mentioned only as what happens if the papers are late)."
+  },
+  {
+   "id": "U063",
+   "ts": "2030-06-11T10:20:00-05:00",
+   "sender": "Iverfen hearing office",
+   "address": "clerk@iverfen.example",
+   "channel": "email",
+   "properties": [
+    "18 Maple Lane, Iverfen",
+    "34 Maple Lane, Iverfen"
+   ],
+   "body": "Mr Hale telephoned this office yesterday afternoon. He now says he would like 18 Maple Lane heard after all. We made a note of the call but we cannot act on a telephone call, in either direction. Would the firm please tell us in writing which it is to be, by close of business on Wednesday.",
+   "claims": [
+    {
+     "type": "homeowner_declined",
+     "cases": [
+      "AX-117"
+     ]
+    },
+    {
+     "type": "obligation_created",
+     "cases": [
+      "AX-117"
+     ],
+     "deadline": "2030-06-12T16:00"
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": true,
+   "ambiguous_why": "Labeller A: The reversal is a phone call reported by the office, which itself says it cannot act on it; a second labeller could keep only the obligation, or give no clock time. Labeller B: homeowner_declined is worded as a firm staff record and here the office relays a phone call; a second labeller could keep only obligation_created. The deadline time is inferred.",
+   "group": "unseen2_office",
+   "note": "Labeller A: The office relays that the homeowner no longer wants the withdrawal and asks for a written answer by close of business Wednesday. 16:00 is the end of the contact hours in the packet. Labeller B: The office reports that the homeowner no longer wants the withdrawal and says it cannot act on the call. I label homeowner_declined for what is reported and obligation_created for the written answer due by close of business Wednesday. The time 16:00 is the end of contact hours in the packet; the message gives no clock time."
+  },
+  {
+   "id": "U064",
+   "ts": "2030-06-11T10:30:00-05:00",
+   "sender": "Larkmere hearing office",
+   "address": null,
+   "channel": "mail transcript",
+   "properties": [
+    "102 Willow Lane, Larkmere",
+    "118 Willow Lane, Larkmere"
+   ],
+   "body": "LARKMERE BOARD OF REVIEW. Notice dated 10 June 2030.\nRe: 102 Willow Lane (AX-121) and 118 Willow Lane (AX-122), appellant A. Linden.\nBoth matters were heard on 10 June 2030, L. Arlen appearing.\nAX-121: decision reserved. A written decision will be issued within 21 days of this notice.\nAX-122: the board requires the appellant's 2028 comparable sales sheet. It must be lodged with the clerk no later than 5:00 p.m. on Friday 14 June 2030. No further hearing has been fixed in either matter.",
+   "claims": [
+    {
+     "type": "outcome_reported",
+     "cases": [
+      "AX-121",
+      "AX-122"
+     ],
+     "result": "heard"
+    },
+    {
+     "type": "decision_pending",
+     "cases": [
+      "AX-121"
+     ]
+    },
+    {
+     "type": "obligation_created",
+     "cases": [
+      "AX-122"
+     ],
+     "deadline": "2030-06-14T17:00",
+     "no_further_hearing": true
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": true,
+   "ambiguous_why": "Labeller A: Office-sourced outcome_reported.",
+   "group": "unseen2_office",
+   "note": "Labeller A: Office notice of the outcome, labelled like U006. The comparable sales sheet is outside the kind list. Labeller B: The office states the result of the hearing; I label outcome_reported although the vocabulary words it as a consultant's report, because the trap text of H033 implies an office message that states the result would be one. The comparable sales sheet is outside the kind list, so no kind (as in H054)."
+  },
+  {
+   "id": "U065",
+   "ts": "2030-06-11T11:30:00-05:00",
+   "sender": "Harthmere hearing office",
+   "address": "clerk@harthmere.example",
+   "channel": "email",
+   "properties": [
+    "48 Linden Avenue, Harthmere",
+    "66 Linden Avenue, Harthmere"
+   ],
+   "body": "Your written request to move 48 Linden Avenue from 13 June to 20 June has been logged under reference HM-2231. It goes to the chair at Wednesday's review. There will be no answer before then, and the hearing stays where it is unless and until you get one.",
+   "claims": [
+    {
+     "type": "change_pending",
+     "cases": [
+      "AX-115"
+     ]
+    },
+    {
+     "type": "hearing_confirmed",
+     "cases": [
+      "AX-115"
+     ],
+     "date": "2030-06-13"
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": true,
+   "ambiguous_why": "Labeller A: A second labeller could keep only change_pending.",
+   "group": "unseen2_office",
+   "note": "Labeller A: 'The hearing stays where it is unless and until you get an answer' restates June 13 while the request is under review. Labeller B: 'The hearing stays where it is' is read as a restatement that June 13 holds while the request is under review."
+  },
+  {
+   "id": "U066",
+   "ts": "2030-06-11T12:15:00-05:00",
+   "sender": "Caldmere hearing office",
+   "address": null,
+   "channel": "phone note",
+   "properties": [
+    "75 Elm Street, Caldmere",
+    "96 Elm Street, Caldmere"
+   ],
+   "body": "Caldmere clerk phoned. Avery Moss came to their counter this morning asking whether he has to be on the video himself on Thursday. They told him no, not if his representative attends. She just wanted us to know he'd been in. Nothing for us to do.",
+   "claims": [],
+   "expect_no_effect": true,
+   "trap": null,
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "unseen2_office",
+   "note": "Labeller A: The clerk reports a homeowner's visit and says there is nothing to do. No type fits. Labeller B: The office reports a homeowner's visit and says there is nothing to do; nothing in the vocabulary fits."
+  },
+  {
+   "id": "U067",
+   "ts": "2030-06-11T13:20:00-05:00",
+   "sender": "Juniper Reach hearing office",
+   "address": null,
+   "channel": "phone note",
+   "properties": [
+    "57 Clover Road, Juniper Reach",
+    "73 Clover Road, Juniper Reach"
+   ],
+   "body": "Juniper Reach clerk called back about 57 Clover. Yes, they do have the statement, it came by email on Friday at 4:48 pm and she had it open in front of her. She will confirm in writing when she gets a moment.",
+   "claims": [
+    {
+     "type": "obligation_cleared",
+     "cases": [
+      "AX-119"
+     ],
+     "kind": "homeowner_statement"
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "unseen2_office",
+   "note": "Labeller A: Spoken only (phone note), with written confirmation promised; labelled as H050 labels spoken office statements. Labeller B: Spoken by the clerk; labelled as stated, as in H050."
+  },
+  {
+   "id": "U068",
+   "ts": "2030-06-11T14:40:00-05:00",
+   "sender": "Tesswick hearing office",
+   "address": null,
+   "channel": "voicemail transcript",
+   "properties": [
+    "37 Meadow Avenue, Tesswick",
+    "52 Meadow Avenue, Tesswick"
+   ],
+   "body": "Hi, um, it's Sol at Tesswick hearings, calling about your form for the two Meadow Avenue cases. Line two, where the name goes, I can't tell if that says Tarris or Farris, the scan's gone fuzzy right there. So I have not put anybody on the list yet. Can you ring me back before four. Thanks.",
+   "claims": [
+    {
+     "type": "rep_not_recorded",
+     "cases": [
+      "AX-107",
+      "AX-108"
+     ]
+    },
+    {
+     "type": "doc_unreadable",
+     "cases": [
+      "AX-107",
+      "AX-108"
+     ],
+     "kind": "staffing_form"
+    },
+    {
+     "type": "rep_requested",
+     "cases": [
+      "AX-107",
+      "AX-108"
+     ],
+     "deadline": "2030-06-11T16:00"
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": true,
+   "ambiguous_why": "Adjudicated. The call-back request is kept as rep_requested; labeller B did not label it.",
+   "group": "unseen2_office",
+   "note": "Adjudicated: see adjudication.md. Labeller A: The name on the form cannot be read, nobody is on the list, and the clerk asks for a call back before four to settle the name. Labeller B: The clerk cannot read the name on the scanned form and has entered nobody. I label doc_unreadable with kind staffing_form for the illegible line; the request to ring back is not labelled rep_requested."
+  },
+  {
+   "id": "U069",
+   "ts": "2030-06-11T14:52:00-05:00",
+   "sender": "Owen Tarris",
+   "address": null,
+   "channel": "text note",
+   "properties": [
+    "120 Garden Street, Velloran",
+    "138 Garden Street, Velloran"
+   ],
+   "body": "Logged in to room C, waiting to be let in",
+   "claims": [],
+   "expect_no_effect": true,
+   "trap": null,
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "unseen2_consultant",
+   "note": "Labeller A: Arrival note. Labeller B: An arrival or waiting-room message; the vocabulary has no type for it, so the list is empty."
+  },
+  {
+   "id": "U070",
+   "ts": "2030-06-11T15:05:00-05:00",
+   "sender": "Alice’s Law Firm operations",
+   "address": null,
+   "channel": "phone note",
+   "properties": [
+    "16 Birch Lane, Brindlefen",
+    "42 Birch Lane, Brindlefen"
+   ],
+   "body": "Taylor Finch returned our call. She says she never asked to withdraw 42 Birch Lane, that was \"the consultant's idea\", and she wants it heard. Told her we would come back to her today.",
+   "claims": [
+    {
+     "type": "homeowner_declined",
+     "cases": [
+      "AX-110"
+     ]
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "unseen2_firm_staff"
+  },
+  {
+   "id": "U071",
+   "ts": "2030-06-11T15:20:00-05:00",
+   "sender": "Maya Venn",
+   "address": "maya@consultants.example",
+   "channel": "email",
+   "properties": [
+    "48 Linden Avenue, Harthmere",
+    "66 Linden Avenue, Harthmere"
+   ],
+   "body": "Thursday 10 a.m., Harthmere, video, 48 Linden Avenue: yes, I'll take it.\n\nI haven't got a packet for it though. The only files in my folder are the Brook Road ones. Could you send it over today?\n\nMaya Venn\nmaya@consultants.example",
+   "claims": [
+    {
+     "type": "consultant_accepted",
+     "cases": [
+      "AX-115"
+     ],
+     "consultant": "R01"
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "unseen2_consultant",
+   "note": "Labeller A: Her missing packet is a request for files; no type fits it. Labeller B: She says she has no packet for the case; the vocabulary has no type for a missing packet."
+  },
+  {
+   "id": "U072",
+   "ts": "2030-06-11T16:05:00-05:00",
+   "sender": "Velloran hearing office",
+   "address": "clerk@velloran.example",
+   "channel": "email",
+   "properties": [
+    "120 Garden Street, Velloran",
+    "138 Garden Street, Velloran"
+   ],
+   "body": "AX-123 and AX-124 were both heard this afternoon with Mr Tarris appearing. The board did not ask for anything more. Decisions go out by post; the board aims for ten working days but that is not a promise.",
+   "claims": [
+    {
+     "type": "outcome_reported",
+     "cases": [
+      "AX-123",
+      "AX-124"
+     ],
+     "result": "heard"
+    },
+    {
+     "type": "decision_pending",
+     "cases": [
+      "AX-123",
+      "AX-124"
+     ]
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": true,
+   "ambiguous_why": "Labeller A: Office-sourced outcome_reported.",
+   "group": "unseen2_office",
+   "note": "Labeller A: Office-sourced outcome, labelled like U006. Labeller B: The office states the result of the hearing; I label outcome_reported although the vocabulary words it as a consultant's report, because the trap text of H033 implies an office message that states the result would be one."
+  },
+  {
+   "id": "U073",
+   "ts": "2030-06-11T16:10:00-05:00",
+   "sender": "Alice’s Law Firm operations",
+   "address": null,
+   "channel": "email",
+   "properties": [
+    "63 Garden Street, Velloran",
+    "81 Garden Street, Velloran"
+   ],
+   "body": "Status for the 4 pm huddle. 63 and 81 Garden St went ahead today at 1 and 1:30 with Owen covering, after we sent his name to Velloran yesterday. We have his email accepting. I can't find any acknowledgment from Velloran. 120 and 138 are his 3 pm block and that one is fully papered.",
+   "claims": [
+    {
+     "type": "internal_note",
+     "cases": [
+      "AX-103",
+      "AX-104",
+      "AX-123",
+      "AX-124"
+     ]
+    }
+   ],
+   "expect_no_effect": true,
+   "trap": null,
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "unseen2_firm_staff",
+   "note": "Labeller A: A firm status note. What it says about the hearings and the missing acknowledgment is the firm's own observation, not an office or consultant statement. Labeller B: A firm status note. 120 and 138 Garden Street are not in the properties and come from the body. The missing acknowledgment is the firm's own observation, not an office statement, so no rep_not_recorded."
+  },
+  {
+   "id": "U074",
+   "ts": "2030-06-11T16:15:00-05:00",
+   "sender": "Priya Marden",
+   "address": "priya@consultants.example",
+   "channel": "email",
+   "properties": [
+    "48 Linden Avenue, Harthmere",
+    "66 Linden Avenue, Harthmere"
+   ],
+   "body": "Sorry, I can't take 48 Linden Avenue on Thursday. It's at 10 and I am already in Brindlefen at 10 and again at 10:30. Any other time that day and I would have said yes. Try me for the next Harthmere one, I like their video setup.\n\nPriya",
+   "claims": [
+    {
+     "type": "consultant_declined",
+     "cases": [
+      "AX-115"
+     ],
+     "consultant": "R05"
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "unseen2_consultant"
+  },
+  {
+   "id": "U075",
+   "ts": "2030-06-11T17:05:00-05:00",
+   "sender": "Sam Briar",
+   "address": "sam.briar@mailbox.example",
+   "channel": "email",
+   "properties": [
+    "120 Garden Street, Velloran",
+    "138 Garden Street, Velloran"
+   ],
+   "body": "Thank you for letting me know how it went today, much appreciated.\n\nSam Briar",
+   "claims": [
+    {
+     "type": "acknowledgement",
+     "cases": [
+      "AX-123",
+      "AX-124"
+     ]
+    }
+   ],
+   "expect_no_effect": true,
+   "trap": null,
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "unseen2_homeowner",
+   "note": "Labeller A: A homeowner's thanks and nothing else. Labeller B: Thanks and nothing else from a homeowner; labelled acknowledgement as for U024."
+  },
+  {
+   "id": "U076",
+   "ts": "2030-06-11T17:30:00-05:00",
+   "sender": "Owen Tarris",
+   "address": "owen@consultants.example",
+   "channel": "email",
+   "properties": [
+    "37 Meadow Avenue, Tesswick",
+    "52 Meadow Avenue, Tesswick"
+   ],
+   "body": "Still good for Tesswick tomorrow, 11 and 11:30.\n\nOne problem. The folder link for 52 Meadow Avenue gives me \"access denied\". 37 opens fine. Can someone share it again before tonight?",
+   "claims": [
+    {
+     "type": "consultant_accepted",
+     "cases": [
+      "AX-107",
+      "AX-108"
+     ],
+     "consultant": "R04"
+    },
+    {
+     "type": "packet_received",
+     "cases": [
+      "AX-107"
+     ]
+    },
+    {
+     "type": "doc_unreadable",
+     "cases": [
+      "AX-108"
+     ],
+     "kind": "packet"
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": true,
+   "ambiguous_why": "Labeller A: Access denied is not an unreadable file in the strict sense; a second labeller could leave that part out. Labeller B: An access-denied link is not quite an unreadable file, and 'opens fine' is a thin receipt; a second labeller could keep consultant_accepted alone.",
+   "group": "unseen2_consultant",
+   "note": "Labeller A: '37 opens fine' is read as packet_received (example 34); 'access denied' on the 52 link as doc_unreadable for the packet. Labeller B: A yes on the eve of the hearing is labelled consultant_accepted because the consultant explicitly re-states the commitment for named cases; example 65 ('I will arrive at 10:45') did not get one, so the convention is not settled. '37 opens fine' is read as packet_received for that case and 'access denied' on the 52 Meadow Avenue folder as doc_unreadable with kind packet."
+  },
+  {
+   "id": "U077",
+   "ts": "2030-06-11T19:25:00-05:00",
+   "sender": "Nora Pell",
+   "address": null,
+   "channel": "text note",
+   "properties": [
+    "9 Orchard Road, Orimere",
+    "24 Orchard Road, Orimere"
+   ],
+   "body": "see you at 9 Orchard on the 19th, 9 sharp",
+   "claims": [],
+   "expect_no_effect": true,
+   "trap": null,
+   "ambiguous": true,
+   "ambiguous_why": "Labeller A: A second labeller could label consultant_accepted for AX-105 with date 2030-06-19 and leave the conflict to the verifier. Labeller B: A second labeller could label consultant_accepted for AX-105 with date 2030-06-19.",
+   "group": "unseen2_consultant",
+   "note": "Labeller A: She writes 'the 19th' but 9 Orchard Road is on June 18. A yes for a day on which there is no hearing proves nothing; a person should check with her. Labeller B: '9 Orchard on the 19th' conflicts with the record (June 18). A consultant is not the authority for the date, and a yes for a day on which there is no hearing proves no commitment for the real slot, so I label nothing; a person should ask her."
+  },
+  {
+   "id": "U078",
+   "ts": "2030-06-12T08:15:00-05:00",
+   "sender": "Nora Pell",
+   "address": null,
+   "channel": "text note",
+   "properties": [],
+   "body": "Woke up w a migraine. I'm ok for Friday and for the 18th but can't look at files today so don't send me anything urgent",
+   "claims": [],
+   "expect_no_effect": true,
+   "trap": null,
+   "ambiguous": true,
+   "ambiguous_why": "Labeller A: A second labeller could label consultant_accepted for AX-118 and AX-105 (and AX-117). Labeller B: A second labeller could label consultant_accepted for 18 and 34 Maple Lane (Friday June 14) and 9 Orchard Road (June 18).",
+   "group": "unseen2_consultant",
+   "note": "Labeller A: No case is named. 'OK for Friday and for the 18th' reassures and declines nothing; I did not turn it into acceptances for AX-117, AX-118 and AX-105. Labeller B: She says she is fine for Friday and for the 18th but names no case, and the message has no properties. I label nothing rather than infer the cases from the calendar."
+  },
+  {
+   "id": "U079",
+   "ts": "2030-06-12T08:30:00-05:00",
+   "sender": "Alice’s Law Firm operations",
+   "address": null,
+   "channel": "email",
+   "properties": [
+    "16 Birch Lane, Brindlefen",
+    "42 Birch Lane, Brindlefen"
+   ],
+   "body": "Priya, the settlement for 16 Birch Lane still needs your signature on page 3 by noon today. That is Brindlefen's deadline, not ours. The e-sign request went to priya@consultants.example at 8:10. Taylor Finch's initials on page 2 are done.",
+   "claims": [
+    {
+     "type": "signature_required",
+     "cases": [
+      "AX-109"
+     ],
+     "kind": "settlement",
+     "consultant": "R05",
+     "deadline": "2030-06-12T12:00"
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "unseen2_firm_staff",
+   "note": "Adjudicated: see adjudication.md. Labeller A: Labelled like example 27, with the stated deadline added. Labeller B: Labelled as in example 27. The noon deadline is Brindlefen's, relayed by the firm, so no obligation_created."
+  },
+  {
+   "id": "U080",
+   "ts": "2030-06-12T10:38:00-05:00",
+   "sender": "Owen Tarris",
+   "address": null,
+   "channel": "text note",
+   "properties": [
+    "37 Meadow Avenue, Tesswick",
+    "52 Meadow Avenue, Tesswick"
+   ],
+   "body": "At Tesswick front desk. They have me on the list for 37 but the clerk cant see my name against 52??",
+   "claims": [
+    {
+     "type": "rep_recorded",
+     "cases": [
+      "AX-107"
+     ],
+     "consultant": "R04"
+    },
+    {
+     "type": "rep_not_recorded",
+     "cases": [
+      "AX-108"
+     ]
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": true,
+   "ambiguous_why": "Labeller A: Hearsay from a consultant about the office record; a second labeller could leave it empty. Labeller B: The relay is by a consultant in a text, not a staff note quoting the clerk; a second labeller could label consultant_question or nothing.",
+   "group": "unseen2_consultant",
+   "note": "Labeller A: The consultant relays what the clerk at the desk sees on the list. Labeller B: The consultant relays from the front desk what the clerk's list shows; I label the relayed office statements, as examples 22 and 46 do for staff notes of what a clerk said."
+  },
+  {
+   "id": "U081",
+   "ts": "2030-06-12T10:45:00-05:00",
+   "sender": "Fenwick Vale hearing office",
+   "address": null,
+   "channel": "mail transcript",
+   "properties": [
+    "11 Brook Road, Fenwick Vale",
+    "29 Brook Road, Fenwick Vale"
+   ],
+   "body": "FENWICK VALE BOARD OF APPEALS. Notice of continued hearing, issued June 10, 2030. Property: 29 Brook Road, Fenwick Vale (AX-114). The hearing of June 6 was continued. The continued hearing will be held on Monday, June 17, 2030 at 9:30 a.m., in person, at the Fenwick Vale hearing office, room 1. A staffing notice is required for the continued hearing. The notice filed for June 6 does not carry over.",
+   "claims": [
+    {
+     "type": "hearing_scheduled",
+     "cases": [
+      "AX-114"
+     ],
+     "date": "2030-06-17",
+     "time": "09:30",
+     "mode": "in_person",
+     "room": "1"
+    },
+    {
+     "type": "rep_requested",
+     "cases": [
+      "AX-114"
+     ]
+    },
+    {
+     "type": "outcome_reported",
+     "cases": [
+      "AX-114"
+     ],
+     "result": "continued"
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "unseen2_office",
+   "note": "Adjudicated: see adjudication.md. Labeller A: Labelled like H059: a new hearing after a continued one. 'The hearing of June 6 was continued' is background and is not labelled as an outcome. Labeller B: The office states the result of the hearing; I label outcome_reported although the vocabulary words it as a consultant's report, because the trap text of H033 implies an office message that states the result would be one. The new date is a new hearing after a continued one (hearing_scheduled, as in H059). 'A staffing notice is required' is labelled rep_requested; I did not add rep_not_recorded, since the office does not say in words that nobody is recorded."
+  },
+  {
+   "id": "U082",
+   "ts": "2030-06-12T11:45:00-05:00",
+   "sender": "Caldmere hearing office",
+   "address": "clerk@caldmere.example",
+   "channel": "email",
+   "properties": [
+    "75 Elm Street, Caldmere",
+    "96 Elm Street, Caldmere"
+   ],
+   "body": "Tomorrow afternoon's video list will run in room 2, not room 1, because of an audio fault. 75 Elm Street 2:00, 96 Elm Street 2:30, as before. A new link is attached; the old one will not connect.",
+   "claims": [
+    {
+     "type": "schedule_changed",
+     "cases": [
+      "AX-111",
+      "AX-112"
+     ],
+     "room": "2"
+    },
+    {
+     "type": "hearing_confirmed",
+     "cases": [
+      "AX-111"
+     ],
+     "date": "2030-06-13",
+     "time": "14:00"
+    },
+    {
+     "type": "hearing_confirmed",
+     "cases": [
+      "AX-112"
+     ],
+     "date": "2030-06-13",
+     "time": "14:30"
+    },
+    {
+     "type": "hearing_instruction",
+     "cases": [
+      "AX-111",
+      "AX-112"
+     ]
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "unseen2_office",
+   "note": "Labeller A: Room change labelled like example 45; the new link is a hearing_instruction like H049. Labeller B: Room change with times restated, labelled as in example 45; the new link is a hearing_instruction as in H049."
+  },
+  {
+   "id": "U083",
+   "ts": "2030-06-12T13:10:00-05:00",
+   "sender": "Tesswick hearing office",
+   "address": "clerk@tesswick.example",
+   "channel": "email",
+   "properties": [
+    "37 Meadow Avenue, Tesswick",
+    "52 Meadow Avenue, Tesswick"
+   ],
+   "body": "Both Meadow Avenue matters were called this morning.\n37 Meadow Avenue: heard in full, decision reserved.\n52 Meadow Avenue: adjourned at the assessor's request. New date Wednesday 26 June, 11:30 a.m., in person, same room. A fresh staffing form is not needed if the representative is the same.",
+   "claims": [
+    {
+     "type": "outcome_reported",
+     "cases": [
+      "AX-107"
+     ],
+     "result": "heard"
+    },
+    {
+     "type": "decision_pending",
+     "cases": [
+      "AX-107"
+     ]
+    },
+    {
+     "type": "outcome_reported",
+     "cases": [
+      "AX-108"
+     ],
+     "result": "continued"
+    },
+    {
+     "type": "hearing_scheduled",
+     "cases": [
+      "AX-108"
+     ],
+     "date": "2030-06-26",
+     "time": "11:30",
+     "mode": "in_person"
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": true,
+   "ambiguous_why": "Labeller A: A second labeller could label the new date as schedule_changed, or drop the office-sourced outcome reports. Labeller B: The hearing for 52 Meadow Avenue was adjourned without being heard, so a second labeller could label schedule_changed instead of hearing_scheduled.",
+   "group": "unseen2_office",
+   "note": "Labeller A: Adjourned on the day with a new date: outcome continued plus a new hearing (hearing_scheduled as in H059), not schedule_changed. Labeller B: The office states the result of the hearing; I label outcome_reported although the vocabulary words it as a consultant's report, because the trap text of H033 implies an office message that states the result would be one. The new date after the adjournment is labelled hearing_scheduled, following H059."
+  },
+  {
+   "id": "U084",
+   "ts": "2030-06-12T14:24:00-05:00",
+   "sender": "Orimere hearing office",
+   "address": null,
+   "channel": "phone note",
+   "properties": [
+    "9 Orchard Road, Orimere",
+    "24 Orchard Road, Orimere"
+   ],
+   "body": "Orimere clerk rang 2:20 pm. The 2 o'clock video for 24 Orchard Road hasn't started, the board is sitting there and nobody from our side is in the waiting room. They will hold it open till 2:40. After that it goes down as a non-appearance. She asked who is supposed to be on.",
+   "claims": [
+    {
+     "type": "rep_requested",
+     "cases": [
+      "AX-106"
+     ]
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": true,
+   "ambiguous_why": "Labeller A: A day-of non-appearance warning has no type of its own. Labeller B: The vocabulary has no type for an imminent non-appearance; a second labeller could leave the list empty or add rep_not_recorded.",
+   "group": "unseen2_office",
+   "note": "Labeller A: The clerk asks who is supposed to be on. The 2:40 limit is for appearing, not for naming, so no deadline field. Labeller B: The clerk asks who is supposed to be on; I label rep_requested without a deadline, since 2:40 is how long the board will wait, not a deadline for a name."
+  },
+  {
+   "id": "U085",
+   "ts": "2030-06-12T14:50:00-05:00",
+   "sender": "Harthmere hearing office",
+   "address": "clerk@harthmere.example",
+   "channel": "email",
+   "properties": [
+    "48 Linden Avenue, Harthmere",
+    "66 Linden Avenue, Harthmere"
+   ],
+   "body": "Room D is double booked at ten tomorrow. 48 Linden Avenue will be taken in video room A instead. The time does not move, still 10 a.m. Each room has its own link, so please do not reuse an old one.",
+   "claims": [
+    {
+     "type": "schedule_changed",
+     "cases": [
+      "AX-115"
+     ],
+     "room": "A"
+    },
+    {
+     "type": "hearing_confirmed",
+     "cases": [
+      "AX-115"
+     ],
+     "date": "2030-06-13",
+     "time": "10:00"
+    },
+    {
+     "type": "hearing_instruction",
+     "cases": [
+      "AX-115"
+     ]
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": true,
+   "ambiguous_why": "Labeller A: A second labeller could drop hearing_instruction.",
+   "group": "unseen2_office",
+   "note": "Labeller A: 'Do not reuse an old link' is read as a joining instruction. Labeller B: The warning not to reuse an old link is read as a joining instruction."
+  },
+  {
+   "id": "U086",
+   "ts": "2030-06-12T15:15:00-05:00",
+   "sender": "Brindlefen hearing office",
+   "address": "clerk@brindlefen.example",
+   "channel": "email",
+   "properties": [
+    "16 Birch Lane, Brindlefen",
+    "42 Birch Lane, Brindlefen"
+   ],
+   "body": "Staffing notices: both accepted. P. Marden entered for AX-109 and AX-110, 13 June, video. Joining codes are issued at 9:30 on the morning of the hearing to the address on the notice.",
+   "claims": [
+    {
+     "type": "rep_recorded",
+     "cases": [
+      "AX-109",
+      "AX-110"
+     ],
+     "consultant": "R05"
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "unseen2_office",
+   "note": "Labeller A: Date without a time, so no hearing_confirmed; the joining codes are a promise, not yet an instruction (H035). Labeller B: '13 June, video' describes the entry and is not a restatement that the hearing stays. The joining codes are a promise, not yet an instruction (H035)."
+  },
+  {
+   "id": "U087",
+   "ts": "2030-06-12T16:40:00-05:00",
+   "sender": "Priya Marden",
+   "address": "priya@consultants.example",
+   "channel": "email",
+   "properties": [
+    "16 Birch Lane, Brindlefen",
+    "42 Birch Lane, Brindlefen"
+   ],
+   "body": "Yes to both Birch Lane hearings tomorrow, 10 and 10:30, if they still go ahead. I know one may settle and one may be withdrawn. Unless I hear otherwise from you I log in for both.",
+   "claims": [
+    {
+     "type": "consultant_accepted",
+     "cases": [
+      "AX-109",
+      "AX-110"
+     ],
+     "consultant": "R05"
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "unseen2_consultant",
+   "note": "Labeller B: A yes on the eve of the hearing is labelled consultant_accepted because the consultant explicitly re-states the commitment for named cases; example 65 ('I will arrive at 10:45') did not get one, so the convention is not settled. 'If they still go ahead' is not her condition."
+  },
+  {
+   "id": "U088",
+   "ts": "2030-06-12T17:20:00-05:00",
+   "sender": "Eli Corven",
+   "address": "eli@consultants.example",
+   "channel": "email",
+   "properties": [
+    "75 Elm Street, Caldmere",
+    "96 Elm Street, Caldmere"
+   ],
+   "body": "All fine for tomorrow, 2:00 and 2:30, Caldmere by video. Is it still room 1? I saw something go past about a link changing.",
+   "claims": [
+    {
+     "type": "consultant_accepted",
+     "cases": [
+      "AX-111",
+      "AX-112"
+     ],
+     "consultant": "R06"
+    },
+    {
+     "type": "consultant_question",
+     "cases": [
+      "AX-111",
+      "AX-112"
+     ],
+     "consultant": "R06"
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "unseen2_consultant",
+   "note": "Labeller B: A yes on the eve of the hearing is labelled consultant_accepted because the consultant explicitly re-states the commitment for named cases; example 65 ('I will arrive at 10:45') did not get one, so the convention is not settled."
+  },
+  {
+   "id": "U089",
+   "ts": "2030-06-13T09:05:00-05:00",
+   "sender": "Iverfen hearing office",
+   "address": "clerk@iverfen.example",
+   "channel": "email",
+   "properties": [
+    "18 Maple Lane, Iverfen",
+    "34 Maple Lane, Iverfen"
+   ],
+   "body": "Tomorrow's video list, Friday 14 June\n13:00  AX-117  18 Maple Lane\n13:30  AX-118  34 Maple Lane\nRep: N. Pell (both)\nThe waiting room opens at 12:45. Camera on, ID to hand. This reminder goes to every firm with a matter on the list.",
+   "claims": [
+    {
+     "type": "hearing_confirmed",
+     "cases": [
+      "AX-117"
+     ],
+     "date": "2030-06-14",
+     "time": "13:00"
+    },
+    {
+     "type": "hearing_confirmed",
+     "cases": [
+      "AX-118"
+     ],
+     "date": "2030-06-14",
+     "time": "13:30"
+    },
+    {
+     "type": "rep_recorded",
+     "cases": [
+      "AX-117",
+      "AX-118"
+     ],
+     "consultant": "R03"
+    },
+    {
+     "type": "hearing_instruction",
+     "cases": [
+      "AX-117",
+      "AX-118"
+     ]
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "unseen2_office",
+   "note": "Adjudicated: see adjudication.md."
+  },
+  {
+   "id": "U090",
+   "ts": "2030-06-13T09:42:00-05:00",
+   "sender": "Alice’s Law Firm operations",
+   "address": null,
+   "channel": "phone note",
+   "properties": [
+    "48 Linden Avenue, Harthmere",
+    "66 Linden Avenue, Harthmere"
+   ],
+   "body": "Tried Harthmere three times between 9:00 and 9:40 about who they have recorded for 48 Linden at 10. Engaged every time. No reply to yesterday's email either. Maya is logged in to room D regardless.",
+   "claims": [
+    {
+     "type": "internal_note",
+     "cases": [
+      "AX-115"
+     ]
+    }
+   ],
+   "expect_no_effect": true,
+   "trap": null,
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "unseen2_firm_staff",
+   "note": "Labeller A: A call log with no answer from the office. 'Maya is logged in' is the firm's remark. Labeller B: A firm call log with no answer from the office."
+  },
+  {
+   "id": "U091",
+   "ts": "2030-06-13T09:51:00-05:00",
+   "sender": "Priya Marden",
+   "address": null,
+   "channel": "text note",
+   "properties": [
+    "16 Birch Lane, Brindlefen",
+    "42 Birch Lane, Brindlefen"
+   ],
+   "body": "Logged in to the Brindlefen video, waiting. No code came through for 42 Birch, only for 16",
+   "claims": [],
+   "expect_no_effect": true,
+   "trap": null,
+   "ambiguous": true,
+   "ambiguous_why": "Labeller A: A second labeller could label consultant_question for AX-110.",
+   "group": "unseen2_consultant",
+   "note": "Labeller A: Arrival note with a day-of problem (no joining code for 42 Birch Lane). No type fits; a person should act. Labeller B: An arrival or waiting-room message; the vocabulary has no type for it, so the list is empty. The missing code for 42 Birch Lane is a problem for a person; no type fits."
+  },
+  {
+   "id": "U092",
+   "ts": "2030-06-13T11:10:00-05:00",
+   "sender": "Orimere hearing office",
+   "address": "clerk@orimere.example",
+   "channel": "email",
+   "properties": [
+    "9 Orchard Road, Orimere",
+    "24 Orchard Road, Orimere"
+   ],
+   "body": "Ahead of the 9 Orchard Road hearing on 18 June: the packet on our file is marked version 1, prepared 28 May, but your covering email talks about version 2. We can only work from what we actually hold. If version 2 is the one you rely on, it has to be with us by 4 p.m. on Friday 14 June. The 48 hour rule will not be relaxed.",
+   "claims": [
+    {
+     "type": "packet_version_issue",
+     "cases": [
+      "AX-105"
+     ]
+    },
+    {
+     "type": "obligation_created",
+     "cases": [
+      "AX-105"
+     ],
+     "kind": "packet",
+     "deadline": "2030-06-14T16:00"
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "unseen2_office",
+   "note": "Labeller B: The office holds version 1, so no packet_received."
+  },
+  {
+   "id": "U093",
+   "ts": "2030-06-13T11:20:00-05:00",
+   "sender": "Fenwick Vale hearing office",
+   "address": "clerk@fenwick-vale.example",
+   "channel": "email",
+   "properties": [
+    "11 Brook Road, Fenwick Vale",
+    "29 Brook Road, Fenwick Vale"
+   ],
+   "body": "Handed in at the counter today: occupancy statement for 11 Brook Road, signed J. Reed and dated 12 June. Logged at 11:05. That is everything the board asked for on that file.",
+   "claims": [
+    {
+     "type": "obligation_cleared",
+     "cases": [
+      "AX-113"
+     ],
+     "kind": "homeowner_statement"
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "unseen2_office"
+  },
+  {
+   "id": "U094",
+   "ts": "2030-06-13T13:48:00-05:00",
+   "sender": "Eli Corven",
+   "address": null,
+   "channel": "text note",
+   "properties": [
+    "75 Elm Street, Caldmere",
+    "96 Elm Street, Caldmere"
+   ],
+   "body": "on the caldmere link now. it says host has not started",
+   "claims": [],
+   "expect_no_effect": true,
+   "trap": null,
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "unseen2_consultant",
+   "note": "Labeller A: Arrival note. Labeller B: An arrival or waiting-room message; the vocabulary has no type for it, so the list is empty."
+  },
+  {
+   "id": "U095",
+   "ts": "2030-06-13T14:10:00-05:00",
+   "sender": "Juniper Reach hearing office",
+   "address": "clerk@juniper-reach.example",
+   "channel": "email",
+   "properties": [
+    "57 Clover Road, Juniper Reach",
+    "73 Clover Road, Juniper Reach"
+   ],
+   "body": "The decision in 73 Clover Road (AX-120) was issued today. A copy is in the post to the homeowner and one to your firm. Any further appeal must be brought within 30 days of today's date.",
+   "claims": [],
+   "expect_no_effect": true,
+   "trap": null,
+   "ambiguous": true,
+   "ambiguous_why": "Labeller A: A second labeller could force outcome_reported with result other. Labeller B: A second labeller could look for a closest fit; I found none.",
+   "group": "unseen2_office",
+   "note": "Labeller A: The decision has been issued. The vocabulary has decision_pending but no type for an issued decision, and the 30 days for a further appeal ask nothing of the firm by a set date. Labeller B: The decision has been issued. The vocabulary has decision_pending but no type for a decision that is out, and the 30 days for a further appeal are not an obligation toward the office."
+  },
+  {
+   "id": "U096",
+   "ts": "2030-06-13T15:20:00-05:00",
+   "sender": "Eli Corven",
+   "address": "eli@consultants.example",
+   "channel": "email",
+   "properties": [
+    "75 Elm Street, Caldmere",
+    "96 Elm Street, Caldmere"
+   ],
+   "body": "75 Elm: heard, 25 minutes, decision to follow in writing.\n96 Elm: the assessor asked for more time and got it. The chair said two weeks, no date fixed.\nMy fee note for the two is attached (2 x 75).",
+   "claims": [
+    {
+     "type": "outcome_reported",
+     "cases": [
+      "AX-111"
+     ],
+     "result": "heard"
+    },
+    {
+     "type": "decision_pending",
+     "cases": [
+      "AX-111"
+     ]
+    },
+    {
+     "type": "outcome_reported",
+     "cases": [
+      "AX-112"
+     ],
+     "result": "continued"
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "unseen2_consultant",
+   "note": "Adjudicated: see adjudication.md."
+  },
+  {
+   "id": "U097",
+   "ts": "2030-06-13T19:05:00-05:00",
+   "sender": "Nora Pell",
+   "address": null,
+   "channel": "text note",
+   "properties": [
+    "18 Maple Lane, Iverfen",
+    "34 Maple Lane, Iverfen"
+   ],
+   "body": "yes for tmrw, 34 Maple 1:30. what about 18 Maple at 1, is that off or not?? nobody answered me",
+   "claims": [
+    {
+     "type": "consultant_accepted",
+     "cases": [
+      "AX-118"
+     ],
+     "consultant": "R03"
+    },
+    {
+     "type": "consultant_question",
+     "cases": [
+      "AX-117"
+     ],
+     "consultant": "R03"
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "unseen2_consultant",
+   "note": "Labeller B: A yes on the eve of the hearing is labelled consultant_accepted because the consultant explicitly re-states the commitment for named cases; example 65 ('I will arrive at 10:45') did not get one, so the convention is not settled."
+  },
+  {
+   "id": "U098",
+   "ts": "2030-06-14T12:50:00-05:00",
+   "sender": "Nora Pell",
+   "address": null,
+   "channel": "text note",
+   "properties": [
+    "18 Maple Lane, Iverfen",
+    "34 Maple Lane, Iverfen"
+   ],
+   "body": "in the Iverfen waiting room, 2 ahead of us",
+   "claims": [],
+   "expect_no_effect": true,
+   "trap": null,
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "unseen2_consultant",
+   "note": "Labeller A: Arrival note. Labeller B: An arrival or waiting-room message; the vocabulary has no type for it, so the list is empty."
+  },
+  {
+   "id": "U099",
+   "ts": "2030-06-14T14:20:00-05:00",
+   "sender": "Nora Pell",
+   "address": "nora@consultants.example",
+   "channel": "email",
+   "properties": [
+    "18 Maple Lane, Iverfen",
+    "34 Maple Lane, Iverfen"
+   ],
+   "body": "34 Maple Lane was heard at 1:40. Reduction granted from the bench, order to follow.\n\nThey called 18 Maple first. I said the firm had asked for it to be withdrawn, the chair said he had no paperwork for that and put it over to a date to be fixed instead of hearing it.",
+   "claims": [
+    {
+     "type": "outcome_reported",
+     "cases": [
+      "AX-118"
+     ],
+     "result": "heard"
+    },
+    {
+     "type": "decision_pending",
+     "cases": [
+      "AX-118"
+     ]
+    },
+    {
+     "type": "outcome_reported",
+     "cases": [
+      "AX-117"
+     ],
+     "result": "continued"
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": true,
+   "ambiguous_why": "Labeller A: A second labeller could drop decision_pending because the result is already known.",
+   "group": "unseen2_consultant",
+   "note": "Adjudicated: see adjudication.md. Labeller A: The decision was given from the bench and the written order is still to come, which I labelled decision_pending. 18 Maple Lane was put over to a date to be fixed: continued. Labeller B: 'Put it over to a date to be fixed' is read as continued, as 'more time' in example 57."
+  },
+  {
+   "id": "U100",
+   "ts": "2030-06-14T15:00:00-05:00",
+   "sender": "Iverfen hearing office",
+   "address": "clerk@iverfen.example",
+   "channel": "email",
+   "properties": [
+    "18 Maple Lane, Iverfen",
+    "34 Maple Lane, Iverfen"
+   ],
+   "body": "34 Maple Lane was heard today. The board gave its decision orally: the assessment is reduced, and the written order follows next week.\n\n18 Maple Lane was called but not heard. There was no withdrawal form on the file and the chair stood the matter over. You will be notified of a new date.",
+   "claims": [
+    {
+     "type": "outcome_reported",
+     "cases": [
+      "AX-118"
+     ],
+     "result": "heard"
+    },
+    {
+     "type": "decision_pending",
+     "cases": [
+      "AX-118"
+     ]
+    },
+    {
+     "type": "outcome_reported",
+     "cases": [
+      "AX-117"
+     ],
+     "result": "continued"
+    }
+   ],
+   "expect_no_effect": null,
+   "trap": null,
+   "ambiguous": true,
+   "ambiguous_why": "Adjudicated. Stood over with no new date is kept as outcome continued only; labeller B added hearing_postponed.",
+   "group": "unseen2_office",
+   "note": "Adjudicated: see adjudication.md. Labeller A: Office-sourced outcome. 18 Maple Lane was called and stood over, which I labelled as continued and not as hearing_postponed, because the sitting had already taken place. Labeller B: The office states the result of the hearing; I label outcome_reported although the vocabulary words it as a consultant's report, because the trap text of H033 implies an office message that states the result would be one. The written order that follows next week is labelled decision_pending. 18 Maple Lane was stood over with no new date, which I label hearing_postponed in addition."
+  }
+ ]
+}

@@ -1,0 +1,12 @@
+{
+ "event": "message.received",
+ "message": {
+  "id": "packet-message-41",
+  "received_at": "2030-06-05T18:12:00-05:00",
+  "from": {
+   "name": "Maya Venn"
+  },
+  "in_reply_to": "S2",
+  "text": "I am ill and cannot attend tomorrow. I am sorry for the short notice."
+ }
+}

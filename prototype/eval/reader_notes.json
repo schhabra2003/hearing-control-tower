@@ -1,0 +1,20 @@
+{
+ "notes": [
+  "The fair test is the unseen set: 30 office messages about new situations, written and labelled after the reader was built, by a separate writer who saw neither the patterns nor the instructions. It is small (57 statements), has one labeller, and covers offices only. Five more parts (consultants, homeowners, phone notes, forged senders, mixed threads) were planned and not made.",
+  "The 72 examples are not a fair test of any reader here. The offline patterns were written while looking at them, and the AI instructions were written by someone who had read them.",
+  "The offline pattern reader is a stand-in for running without a key. It is not the product. On first contact with the unseen set, before any change, it found 5 of 57 statements, 12 of its 17 closing statements were wrong, and it sent no message to a person. It now passes on every sentence with a date or a time that it cannot place, which is why 18 of 30 go to a person. It still makes 4 wrong closings there.",
+  "The models cannot be told apart on 30 messages. The intervals overlap, and the same pair run twice found 49 and 48 of 57 statements. The default pair was chosen on the larger set, where the stronger first reader sent about half as many messages to a person as the cheapest one (10 to 12 of 72 against 21 of 72). A person's minute costs far more than a model call, so that is what decides.",
+  "The wrong closing in the recorded unseen run (1 of 32) is message H059: a second hearing is set for June 20 at 9 a.m. Both readers called it a changed schedule, the labels call it a new schedule. Date, time and place are the same. The one in the recorded examples run (1 of 124) is message 17: \"must stay on June 12 at 2 p.m.\" was read as the office confirming the hearing, which restates the date already on record.",
+  "Four of the six statements missed on the unseen set are two postponement notices (H046, H056). The readers read them as \"postponed\", a statement type added after the labels were written. The labels say \"schedule changed\" with no date. Read by hand, \"postponed\" is right. Counting them as found would give 55 of 57. The table keeps the labels as they are.",
+  "The unseen set exposed one real fault, in the rules and not in the reading: a clerk's voicemail was treated as writing because the channel name contains \"mail\", so it moved a hearing on the record. It is fixed, and check W18 fails without the fix.",
+  "An answer is sometimes cut off because the model thinks for too long: 4 of 102 first reads when the record was made. The reader now asks again with more room, and those four answers come from the second attempt. A cut-off attempt costs about 6 cents, so the four made up 24 of the 60 cents that the record cost.",
+  "Cost and time: the recorded answers cost $0.0035 per message for both readers together, or $0.0059 with the cut-off attempts, and half of the requests took under 4.4 seconds. About 4.6 messages arrive per hearing in the scale runs, so reading costs about 3 cents per hearing.",
+  "Not measured: a Claude reader (the adapter is written from the documentation and has never been run against the live service, because no key was available), models from other providers, unseen wording from consultants, homeowners and phone notes, and how often a second careful person would disagree with the labels."
+ ],
+ "reproduce": [
+  { "what": "The recorded AI readers on the unseen messages, offline, no key", "command": "node eval/run.js --set data/heldout.json --reader recorded:data/recorded_reads.json --crosscheck recorded:data/recorded_reads.json" },
+  { "what": "The same on the 72 examples", "command": "node eval/run.js --set data/gold_dev.json --reader recorded:data/recorded_reads.json --crosscheck recorded:data/recorded_reads.json" },
+  { "what": "The offline pattern reader on the unseen messages", "command": "node eval/run.js --set data/heldout.json --reader rules" },
+  { "what": "A fresh paid run with your own key (about 20 cents)", "command": "node eval/run.js --set data/heldout.json --reader openai:gpt-6.1-sol --crosscheck openai:gpt-6-luna" }
+ ]
+}

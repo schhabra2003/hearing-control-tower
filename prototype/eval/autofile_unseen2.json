@@ -1,0 +1,1978 @@
+{
+ "generated_by": "node eval/autofile.js --set data/unseen2.json --reads data/recorded_reads_unseen2.json",
+ "source": "data/recorded_reads_unseen2.json replayed offline (no model call). First reader: gpt-6.1-sol. Second reader: gpt-6-luna.",
+ "set": "data/unseen2.json",
+ "roles": {
+  "U001": "consultant",
+  "U002": "homeowner",
+  "U003": "government",
+  "U004": "government",
+  "U005": "government",
+  "U006": "government",
+  "U007": "government",
+  "U008": "government",
+  "U009": "consultant",
+  "U010": "consultant",
+  "U011": "government",
+  "U012": "consultant",
+  "U013": "consultant",
+  "U014": "government",
+  "U015": "consultant",
+  "U016": "homeowner",
+  "U017": "firm",
+  "U018": "consultant",
+  "U019": "government",
+  "U020": "government",
+  "U021": "government",
+  "U022": "consultant",
+  "U023": "government",
+  "U024": "consultant",
+  "U025": "consultant",
+  "U026": "consultant",
+  "U027": "homeowner",
+  "U028": "consultant",
+  "U029": "firm",
+  "U030": "firm",
+  "U031": "consultant",
+  "U032": "consultant",
+  "U033": "homeowner",
+  "U034": "government",
+  "U035": "government",
+  "U036": "homeowner",
+  "U037": "consultant",
+  "U038": "consultant",
+  "U039": "government",
+  "U040": "government",
+  "U041": "government",
+  "U042": "firm",
+  "U043": "government",
+  "U044": "government",
+  "U045": "consultant",
+  "U046": "consultant",
+  "U047": "government",
+  "U048": "consultant",
+  "U049": "consultant",
+  "U050": "government",
+  "U051": "consultant",
+  "U052": "government",
+  "U053": "firm",
+  "U054": "consultant",
+  "U055": "government",
+  "U056": "government",
+  "U057": "consultant",
+  "U058": "consultant",
+  "U059": "homeowner",
+  "U060": "homeowner",
+  "U061": "government",
+  "U062": "government",
+  "U063": "government",
+  "U064": "government",
+  "U065": "government",
+  "U066": "government",
+  "U067": "government",
+  "U068": "government",
+  "U069": "consultant",
+  "U070": "firm",
+  "U071": "consultant",
+  "U072": "government",
+  "U073": "firm",
+  "U074": "consultant",
+  "U075": "homeowner",
+  "U076": "consultant",
+  "U077": "consultant",
+  "U078": "consultant",
+  "U079": "firm",
+  "U080": "consultant",
+  "U081": "government",
+  "U082": "government",
+  "U083": "government",
+  "U084": "government",
+  "U085": "government",
+  "U086": "government",
+  "U087": "consultant",
+  "U088": "consultant",
+  "U089": "government",
+  "U090": "firm",
+  "U091": "consultant",
+  "U092": "government",
+  "U093": "government",
+  "U094": "consultant",
+  "U095": "government",
+  "U096": "consultant",
+  "U097": "consultant",
+  "U098": "consultant",
+  "U099": "consultant",
+  "U100": "government"
+ },
+ "extra_set": {
+  "messages": 100,
+  "messages_without_a_recorded_read": 0,
+  "closing_readings_in_the_answer_key": 114,
+  "agreed_by_both_readers": 87,
+  "agreed_and_passed_by_the_verifier": 79,
+  "agreed_but_not_passed": {
+   "n": 8,
+   "by_verifier_result": {
+    "signal": 6,
+    "belief": 1,
+    "provisional": 1
+   },
+   "right_against_the_answer_key": 7,
+   "list": [
+    {
+     "message": "U006",
+     "type": "outcome_reported",
+     "case": "AX-116",
+     "verifier": "signal",
+     "right": false
+    },
+    {
+     "message": "U009",
+     "type": "calendar_edited",
+     "case": "AX-106",
+     "verifier": "belief",
+     "right": true
+    },
+    {
+     "message": "U016",
+     "type": "document_submitted",
+     "case": "AX-119",
+     "verifier": "signal",
+     "right": true
+    },
+    {
+     "message": "U027",
+     "type": "homeowner_confirmed",
+     "case": "AX-117",
+     "verifier": "signal",
+     "right": true
+    },
+    {
+     "message": "U067",
+     "type": "obligation_cleared",
+     "case": "AX-119",
+     "verifier": "provisional",
+     "right": true
+    },
+    {
+     "message": "U080",
+     "type": "rep_recorded",
+     "case": "AX-107",
+     "verifier": "signal",
+     "right": true
+    },
+    {
+     "message": "U083",
+     "type": "outcome_reported",
+     "case": "AX-107",
+     "verifier": "signal",
+     "right": true
+    },
+    {
+     "message": "U083",
+     "type": "outcome_reported",
+     "case": "AX-108",
+     "verifier": "signal",
+     "right": true
+    }
+   ]
+  },
+  "agreed_and_passed_that_the_answer_key_cannot_judge": {
+   "n": 0,
+   "why": "None.",
+   "list": []
+  },
+  "of_agreed_and_passed": {
+   "judged": 79,
+   "right": {
+    "k": 72,
+    "n": 79,
+    "share": 0.9113924050632911,
+    "interval95": [
+     0.828214686221526,
+     0.9564152581542464
+    ]
+   },
+   "wrong": {
+    "k": 7,
+    "n": 79,
+    "share": 0.08860759493670886,
+    "interval95": [
+     0.04358474184575353,
+     0.1717853137784739
+    ]
+   }
+  },
+  "strict_count_unjudged_as_wrong": {
+   "right": {
+    "k": 72,
+    "n": 79,
+    "share": 0.9113924050632911,
+    "interval95": [
+     0.828214686221526,
+     0.9564152581542464
+    ]
+   },
+   "wrong": {
+    "k": 7,
+    "n": 79,
+    "share": 0.08860759493670886,
+    "interval95": [
+     0.04358474184575353,
+     0.1717853137784739
+    ]
+   }
+  },
+  "wrong_by_message": [
+   {
+    "message": "U005",
+    "type": "schedule_changed",
+    "case": "AX-101",
+    "quote": "14 Willow Lane and 28 Willow Lane are listed for Tuesday June 11 at 9 a.m. and 9:30 a.m.",
+    "why_wrong": "The answer key has no reading of this type for this hearing."
+   },
+   {
+    "message": "U005",
+    "type": "schedule_changed",
+    "case": "AX-102",
+    "quote": "14 Willow Lane and 28 Willow Lane are listed for Tuesday June 11 at 9 a.m. and 9:30 a.m.",
+    "why_wrong": "The answer key has no reading of this type for this hearing."
+   },
+   {
+    "message": "U018",
+    "type": "consultant_conditional",
+    "case": "AX-101",
+    "quote": "Larkmere at 9 on Monday for 14 Willow Lane: I can, provided it really is at the main Larkmere office and not out at their annex.",
+    "why_wrong": "date: read 2030-06-10, answer key nothing"
+   },
+   {
+    "message": "U073",
+    "type": "document_submitted",
+    "case": "AX-103",
+    "quote": "we sent his name to Velloran yesterday",
+    "why_wrong": "The answer key has no reading of this type for this hearing."
+   },
+   {
+    "message": "U073",
+    "type": "document_submitted",
+    "case": "AX-104",
+    "quote": "we sent his name to Velloran yesterday",
+    "why_wrong": "The answer key has no reading of this type for this hearing."
+   },
+   {
+    "message": "U081",
+    "type": "schedule_changed",
+    "case": "AX-114",
+    "quote": "The continued hearing will be held on Monday, June 17, 2030 at 9:30 a.m., in person, at the Fenwick Vale hearing office, room 1.",
+    "why_wrong": "The answer key has no reading of this type for this hearing."
+   },
+   {
+    "message": "U083",
+    "type": "schedule_changed",
+    "case": "AX-108",
+    "quote": "New date Wednesday 26 June, 11:30 a.m., in person, same room.",
+    "why_wrong": "The answer key has no reading of this type for this hearing."
+   }
+  ],
+  "answer_key_closing_readings_that_would_file_themselves": {
+   "k": 72,
+   "n": 114,
+   "share": 0.631578947368421,
+   "interval95": [
+    0.540089035819028,
+    0.7144899923000743
+   ]
+  },
+  "held_back_for_a_person": {
+   "n": 30,
+   "in_the_answer_key": 16,
+   "not_in_the_answer_key": 14,
+   "list": [
+    {
+     "message": "U007",
+     "type": "document_submitted",
+     "case": "AX-106",
+     "found_by": "secondary",
+     "in_answer_key": false
+    },
+    {
+     "message": "U009",
+     "type": "consultant_accepted",
+     "case": "AX-105",
+     "found_by": "primary",
+     "in_answer_key": true
+    },
+    {
+     "message": "U013",
+     "type": "change_denied",
+     "case": "AX-103",
+     "found_by": "primary",
+     "in_answer_key": false
+    },
+    {
+     "message": "U013",
+     "type": "change_denied",
+     "case": "AX-104",
+     "found_by": "primary",
+     "in_answer_key": false
+    },
+    {
+     "message": "U015",
+     "type": "outcome_reported",
+     "case": "AX-116",
+     "found_by": "secondary",
+     "in_answer_key": true
+    },
+    {
+     "message": "U019",
+     "type": "rep_recorded",
+     "case": "AX-117",
+     "found_by": "primary",
+     "in_answer_key": true
+    },
+    {
+     "message": "U031",
+     "type": "packet_received",
+     "case": "AX-121",
+     "found_by": "primary",
+     "in_answer_key": true
+    },
+    {
+     "message": "U031",
+     "type": "packet_received",
+     "case": "AX-122",
+     "found_by": "primary",
+     "in_answer_key": true
+    },
+    {
+     "message": "U036",
+     "type": "homeowner_confirmed",
+     "case": "AX-115",
+     "found_by": "primary",
+     "in_answer_key": true
+    },
+    {
+     "message": "U036",
+     "type": "schedule_changed",
+     "case": "AX-115",
+     "found_by": "primary",
+     "in_answer_key": false
+    },
+    {
+     "message": "U054",
+     "type": "consultant_conditional",
+     "case": "AX-110",
+     "found_by": "primary",
+     "in_answer_key": false
+    },
+    {
+     "message": "U055",
+     "type": "hearing_confirmed",
+     "case": "AX-106",
+     "found_by": "primary",
+     "in_answer_key": true
+    },
+    {
+     "message": "U055",
+     "type": "rep_recorded",
+     "case": "AX-105",
+     "found_by": "primary",
+     "in_answer_key": true
+    },
+    {
+     "message": "U064",
+     "type": "outcome_reported",
+     "case": "AX-121",
+     "found_by": "primary",
+     "in_answer_key": true
+    },
+    {
+     "message": "U064",
+     "type": "outcome_reported",
+     "case": "AX-122",
+     "found_by": "primary",
+     "in_answer_key": true
+    },
+    {
+     "message": "U073",
+     "type": "consultant_accepted",
+     "case": "AX-103",
+     "found_by": "primary",
+     "in_answer_key": false
+    },
+    {
+     "message": "U073",
+     "type": "consultant_accepted",
+     "case": "AX-104",
+     "found_by": "primary",
+     "in_answer_key": false
+    },
+    {
+     "message": "U076",
+     "type": "packet_received",
+     "case": "AX-107",
+     "found_by": "primary",
+     "in_answer_key": true
+    },
+    {
+     "message": "U077",
+     "type": "consultant_accepted",
+     "case": "AX-105",
+     "found_by": "primary",
+     "in_answer_key": false
+    },
+    {
+     "message": "U081",
+     "type": "outcome_reported",
+     "case": "AX-114",
+     "found_by": "primary",
+     "in_answer_key": true
+    },
+    {
+     "message": "U082",
+     "type": "schedule_changed",
+     "case": "AX-112",
+     "found_by": "primary",
+     "in_answer_key": true
+    },
+    {
+     "message": "U082",
+     "type": "hearing_confirmed",
+     "case": "AX-112",
+     "found_by": "primary",
+     "in_answer_key": true
+    },
+    {
+     "message": "U086",
+     "type": "hearing_confirmed",
+     "case": "AX-109",
+     "found_by": "primary",
+     "in_answer_key": false
+    },
+    {
+     "message": "U086",
+     "type": "hearing_confirmed",
+     "case": "AX-110",
+     "found_by": "primary",
+     "in_answer_key": false
+    },
+    {
+     "message": "U087",
+     "type": "consultant_conditional",
+     "case": "AX-109",
+     "found_by": "primary",
+     "in_answer_key": false
+    },
+    {
+     "message": "U087",
+     "type": "consultant_conditional",
+     "case": "AX-110",
+     "found_by": "primary",
+     "in_answer_key": false
+    },
+    {
+     "message": "U092",
+     "type": "hearing_confirmed",
+     "case": "AX-105",
+     "found_by": "primary",
+     "in_answer_key": false
+    },
+    {
+     "message": "U100",
+     "type": "outcome_reported",
+     "case": "AX-118",
+     "found_by": "primary",
+     "in_answer_key": true
+    },
+    {
+     "message": "U100",
+     "type": "outcome_reported",
+     "case": "AX-117",
+     "found_by": "primary",
+     "in_answer_key": true
+    },
+    {
+     "message": "U100",
+     "type": "hearing_postponed",
+     "case": "AX-117",
+     "found_by": "secondary",
+     "in_answer_key": false
+    }
+   ]
+  },
+  "by_type": {
+   "outcome_reported": {
+    "agreed_and_passed": 9,
+    "right": 9,
+    "wrong": 0
+   },
+   "rep_recorded": {
+    "agreed_and_passed": 19,
+    "right": 19,
+    "wrong": 0
+   },
+   "schedule_changed": {
+    "agreed_and_passed": 6,
+    "right": 2,
+    "wrong": 4
+   },
+   "packet_received": {
+    "agreed_and_passed": 10,
+    "right": 10,
+    "wrong": 0
+   },
+   "hearing_confirmed": {
+    "agreed_and_passed": 14,
+    "right": 14,
+    "wrong": 0
+   },
+   "consultant_accepted": {
+    "agreed_and_passed": 11,
+    "right": 11,
+    "wrong": 0
+   },
+   "consultant_conditional": {
+    "agreed_and_passed": 3,
+    "right": 2,
+    "wrong": 1
+   },
+   "document_submitted": {
+    "agreed_and_passed": 4,
+    "right": 2,
+    "wrong": 2
+   },
+   "homeowner_confirmed": {
+    "agreed_and_passed": 1,
+    "right": 1,
+    "wrong": 0
+   },
+   "homeowner_declined": {
+    "agreed_and_passed": 1,
+    "right": 1,
+    "wrong": 0
+   },
+   "obligation_cleared": {
+    "agreed_and_passed": 1,
+    "right": 1,
+    "wrong": 0
+   }
+  },
+  "every_reading": [
+   {
+    "message": "U001",
+    "type": "outcome_reported",
+    "case": "AX-113",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "11 Brook Road was heard at 9:05."
+   },
+   {
+    "message": "U001",
+    "type": "outcome_reported",
+    "case": "AX-114",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "29 Brook Road: the assessor's file was incomplete, so it was continued."
+   },
+   {
+    "message": "U003",
+    "type": "rep_recorded",
+    "case": "AX-113",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "Mr Tarris is the representative on both files."
+   },
+   {
+    "message": "U003",
+    "type": "rep_recorded",
+    "case": "AX-114",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "Mr Tarris is the representative on both files."
+   },
+   {
+    "message": "U004",
+    "type": "rep_recorded",
+    "case": "AX-107",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "Both entries are made on the list of representatives as of this morning: Owen Tarris, 37 Meadow Avenue and 52 Meadow Avenue"
+   },
+   {
+    "message": "U004",
+    "type": "rep_recorded",
+    "case": "AX-108",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "Both entries are made on the list of representatives as of this morning: Owen Tarris, 37 Meadow Avenue and 52 Meadow Avenue"
+   },
+   {
+    "message": "U005",
+    "type": "schedule_changed",
+    "case": "AX-101",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": false,
+    "difference": "The answer key has no reading of this type for this hearing.",
+    "quote": "14 Willow Lane and 28 Willow Lane are listed for Tuesday June 11 at 9 a.m. and 9:30 a.m."
+   },
+   {
+    "message": "U005",
+    "type": "schedule_changed",
+    "case": "AX-102",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": false,
+    "difference": "The answer key has no reading of this type for this hearing.",
+    "quote": "14 Willow Lane and 28 Willow Lane are listed for Tuesday June 11 at 9 a.m. and 9:30 a.m."
+   },
+   {
+    "message": "U006",
+    "type": "outcome_reported",
+    "case": "AX-116",
+    "agreed": true,
+    "outside": false,
+    "disposition": "signal",
+    "passed": false,
+    "right": false,
+    "difference": "consultant: read R02, answer key nothing",
+    "quote": "66 Linden Avenue was heard at 10:30 on 6 June in room D, Mr. Arlen appearing."
+   },
+   {
+    "message": "U007",
+    "type": "document_submitted",
+    "case": "AX-106",
+    "agreed": false,
+    "by": "secondary",
+    "why": "Only the second reader found it.",
+    "inKey": false
+   },
+   {
+    "message": "U008",
+    "type": "packet_received",
+    "case": "AX-111",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "We now hold readable packets for both Elm Street cases"
+   },
+   {
+    "message": "U008",
+    "type": "packet_received",
+    "case": "AX-112",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "We now hold readable packets for both Elm Street cases"
+   },
+   {
+    "message": "U009",
+    "type": "consultant_accepted",
+    "case": "AX-105",
+    "agreed": false,
+    "by": "primary",
+    "why": "Only the first reader found it.",
+    "inKey": true
+   },
+   {
+    "message": "U009",
+    "type": "calendar_edited",
+    "case": "AX-106",
+    "agreed": true,
+    "outside": false,
+    "disposition": "belief",
+    "passed": false,
+    "right": true,
+    "difference": "",
+    "quote": "I'd put both on the 18th by mistake, fixed in my diary now"
+   },
+   {
+    "message": "U011",
+    "type": "rep_recorded",
+    "case": "AX-103",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "Leo Arlen has been entered as representative on AX-103 and AX-104."
+   },
+   {
+    "message": "U011",
+    "type": "rep_recorded",
+    "case": "AX-104",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "Leo Arlen has been entered as representative on AX-103 and AX-104."
+   },
+   {
+    "message": "U011",
+    "type": "hearing_confirmed",
+    "case": "AX-103",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "the sitting is Tuesday 11 June, 1.00 pm and 1.30 pm, by video. Nothing about the date has altered."
+   },
+   {
+    "message": "U011",
+    "type": "hearing_confirmed",
+    "case": "AX-104",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "the sitting is Tuesday 11 June, 1.00 pm and 1.30 pm, by video. Nothing about the date has altered."
+   },
+   {
+    "message": "U012",
+    "type": "consultant_accepted",
+    "case": "AX-102",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "I'm a definite yes for 28 Willow Lane at 9:30 on Monday"
+   },
+   {
+    "message": "U013",
+    "type": "change_denied",
+    "case": "AX-103",
+    "agreed": false,
+    "by": "primary",
+    "why": "Only the first reader found it.",
+    "inKey": false
+   },
+   {
+    "message": "U013",
+    "type": "change_denied",
+    "case": "AX-104",
+    "agreed": false,
+    "by": "primary",
+    "why": "Only the first reader found it.",
+    "inKey": false
+   },
+   {
+    "message": "U013",
+    "type": "consultant_conditional",
+    "case": "AX-103",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "If by some miracle it ends up on the 13th, I'm fine for both."
+   },
+   {
+    "message": "U013",
+    "type": "consultant_conditional",
+    "case": "AX-104",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "If by some miracle it ends up on the 13th, I'm fine for both."
+   },
+   {
+    "message": "U014",
+    "type": "hearing_confirmed",
+    "case": "AX-110",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "Appeal status: unchanged. Hearing listed 06/13/2030 10:30."
+   },
+   {
+    "message": "U015",
+    "type": "outcome_reported",
+    "case": "AX-116",
+    "agreed": false,
+    "by": "secondary",
+    "why": "Only the second reader found it.",
+    "inKey": true
+   },
+   {
+    "message": "U016",
+    "type": "document_submitted",
+    "case": "AX-119",
+    "agreed": true,
+    "outside": false,
+    "disposition": "signal",
+    "passed": false,
+    "right": true,
+    "difference": "",
+    "quote": "Attached is my statement for 57 Clover Road"
+   },
+   {
+    "message": "U018",
+    "type": "consultant_conditional",
+    "case": "AX-101",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": false,
+    "difference": "date: read 2030-06-10, answer key nothing",
+    "quote": "Larkmere at 9 on Monday for 14 Willow Lane: I can, provided it really is at the main Larkmere office and not out at their annex."
+   },
+   {
+    "message": "U019",
+    "type": "rep_recorded",
+    "case": "AX-117",
+    "agreed": false,
+    "by": "primary",
+    "why": "Only the first reader found it.",
+    "inKey": true
+   },
+   {
+    "message": "U019",
+    "type": "hearing_confirmed",
+    "case": "AX-117",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "the appeal is live and stays on the 14 June list at 1 p.m."
+   },
+   {
+    "message": "U020",
+    "type": "rep_recorded",
+    "case": "AX-102",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "The notice for 28 Willow Lane is in order and Ms. Venn has gone on the list for that hearing."
+   },
+   {
+    "message": "U022",
+    "type": "packet_received",
+    "case": "AX-111",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "I've downloaded 75-elm-street-packet-v2.txt and 96-elm-street-packet-v2.txt and read both, homeowner statement included."
+   },
+   {
+    "message": "U022",
+    "type": "packet_received",
+    "case": "AX-112",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "I've downloaded 75-elm-street-packet-v2.txt and 96-elm-street-packet-v2.txt and read both, homeowner statement included."
+   },
+   {
+    "message": "U023",
+    "type": "rep_recorded",
+    "case": "AX-101",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "Entered just now: Owen Tarris, 14 Willow Lane (AX-101)."
+   },
+   {
+    "message": "U023",
+    "type": "rep_recorded",
+    "case": "AX-102",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "Maya Venn already down for 28 Willow Lane (AX-102)"
+   },
+   {
+    "message": "U027",
+    "type": "homeowner_confirmed",
+    "case": "AX-117",
+    "agreed": true,
+    "outside": false,
+    "disposition": "signal",
+    "passed": false,
+    "right": true,
+    "difference": "",
+    "quote": "I did ask Iverfen to drop the appeal on 18 Maple, thats right"
+   },
+   {
+    "message": "U028",
+    "type": "document_submitted",
+    "case": "AX-110",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "Rescanned withdrawal statement for 42 Birch Lane attached, as a PDF this time"
+   },
+   {
+    "message": "U029",
+    "type": "document_submitted",
+    "case": "AX-119",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "Filed by email to clerk@juniper-reach.example at 11:20 Saturday."
+   },
+   {
+    "message": "U031",
+    "type": "packet_received",
+    "case": "AX-121",
+    "agreed": false,
+    "by": "primary",
+    "why": "Only the first reader found it.",
+    "inKey": true
+   },
+   {
+    "message": "U031",
+    "type": "packet_received",
+    "case": "AX-122",
+    "agreed": false,
+    "by": "primary",
+    "why": "Only the first reader found it.",
+    "inKey": true
+   },
+   {
+    "message": "U031",
+    "type": "consultant_accepted",
+    "case": "AX-121",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "Confirming for tomorrow: 102 and 118 Willow Lane, 11:00 and 11:30, Larkmere, in person. I'll be there."
+   },
+   {
+    "message": "U031",
+    "type": "consultant_accepted",
+    "case": "AX-122",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "Confirming for tomorrow: 102 and 118 Willow Lane, 11:00 and 11:30, Larkmere, in person. I'll be there."
+   },
+   {
+    "message": "U034",
+    "type": "hearing_confirmed",
+    "case": "AX-123",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "Session: Tue 06/11/2030, 15:00 Matters: AX-123 (15:00), AX-124 (15:30) Room: C"
+   },
+   {
+    "message": "U034",
+    "type": "hearing_confirmed",
+    "case": "AX-124",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "Session: Tue 06/11/2030, 15:00 Matters: AX-123 (15:00), AX-124 (15:30) Room: C"
+   },
+   {
+    "message": "U034",
+    "type": "rep_recorded",
+    "case": "AX-123",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "Representative on file: O. TARRIS"
+   },
+   {
+    "message": "U034",
+    "type": "rep_recorded",
+    "case": "AX-124",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "Representative on file: O. TARRIS"
+   },
+   {
+    "message": "U035",
+    "type": "hearing_confirmed",
+    "case": "AX-121",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "The hearings themselves are as listed, 11:00 and 11:30, same room."
+   },
+   {
+    "message": "U035",
+    "type": "hearing_confirmed",
+    "case": "AX-122",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "The hearings themselves are as listed, 11:00 and 11:30, same room."
+   },
+   {
+    "message": "U036",
+    "type": "homeowner_confirmed",
+    "case": "AX-115",
+    "agreed": false,
+    "by": "primary",
+    "why": "Only the first reader found it.",
+    "inKey": true
+   },
+   {
+    "message": "U036",
+    "type": "schedule_changed",
+    "case": "AX-115",
+    "agreed": false,
+    "by": "primary",
+    "why": "Only the first reader found it.",
+    "inKey": false
+   },
+   {
+    "message": "U037",
+    "type": "consultant_accepted",
+    "case": "AX-123",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "Garden Street tomorrow, 120 and 138: fine, no change."
+   },
+   {
+    "message": "U037",
+    "type": "consultant_accepted",
+    "case": "AX-124",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "Garden Street tomorrow, 120 and 138: fine, no change."
+   },
+   {
+    "message": "U042",
+    "type": "homeowner_confirmed",
+    "case": "AX-117",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "He confirms the withdrawal of 18 Maple Lane was his own request and he still wants it."
+   },
+   {
+    "message": "U043",
+    "type": "rep_recorded",
+    "case": "AX-111",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "he is now on both"
+   },
+   {
+    "message": "U043",
+    "type": "rep_recorded",
+    "case": "AX-112",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "he is now on both"
+   },
+   {
+    "message": "U044",
+    "type": "hearing_confirmed",
+    "case": "AX-110",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "the 13 June hearing at 10:30 stays on the list"
+   },
+   {
+    "message": "U046",
+    "type": "consultant_accepted",
+    "case": "AX-106",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "Fine, I can do that one. 2 p.m. Wednesday, video."
+   },
+   {
+    "message": "U048",
+    "type": "packet_received",
+    "case": "AX-109",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "I got the two Birch Lane packets"
+   },
+   {
+    "message": "U048",
+    "type": "packet_received",
+    "case": "AX-110",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "I got the two Birch Lane packets"
+   },
+   {
+    "message": "U049",
+    "type": "outcome_reported",
+    "case": "AX-102",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "28 Willow Lane is done. They took it at 9:40, about twenty minutes"
+   },
+   {
+    "message": "U051",
+    "type": "outcome_reported",
+    "case": "AX-121",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "Both heard."
+   },
+   {
+    "message": "U051",
+    "type": "outcome_reported",
+    "case": "AX-122",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "Both heard."
+   },
+   {
+    "message": "U052",
+    "type": "rep_recorded",
+    "case": "AX-115",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "We have your email naming Maya Venn for AX-115 on the 13th. She has been entered."
+   },
+   {
+    "message": "U054",
+    "type": "consultant_conditional",
+    "case": "AX-110",
+    "agreed": false,
+    "by": "primary",
+    "why": "Only the first reader found it.",
+    "inKey": false
+   },
+   {
+    "message": "U055",
+    "type": "hearing_confirmed",
+    "case": "AX-106",
+    "agreed": false,
+    "by": "primary",
+    "why": "Only the first reader found it.",
+    "inKey": true
+   },
+   {
+    "message": "U055",
+    "type": "rep_recorded",
+    "case": "AX-105",
+    "agreed": false,
+    "by": "primary",
+    "why": "Only the first reader found it.",
+    "inKey": true
+   },
+   {
+    "message": "U055",
+    "type": "rep_recorded",
+    "case": "AX-106",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "Leo Arlen is now recorded for 24 Orchard Road"
+   },
+   {
+    "message": "U055",
+    "type": "hearing_confirmed",
+    "case": "AX-105",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "9 Orchard Road is unchanged on our side: 18 June, 09:00"
+   },
+   {
+    "message": "U057",
+    "type": "packet_received",
+    "case": "AX-117",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "I have the Maple Lane files, both of them, version 2"
+   },
+   {
+    "message": "U057",
+    "type": "packet_received",
+    "case": "AX-118",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "I have the Maple Lane files, both of them, version 2"
+   },
+   {
+    "message": "U058",
+    "type": "packet_received",
+    "case": "AX-123",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "I have read both packets"
+   },
+   {
+    "message": "U058",
+    "type": "packet_received",
+    "case": "AX-124",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "I have read both packets"
+   },
+   {
+    "message": "U064",
+    "type": "outcome_reported",
+    "case": "AX-121",
+    "agreed": false,
+    "by": "primary",
+    "why": "Only the first reader found it.",
+    "inKey": true
+   },
+   {
+    "message": "U064",
+    "type": "outcome_reported",
+    "case": "AX-122",
+    "agreed": false,
+    "by": "primary",
+    "why": "Only the first reader found it.",
+    "inKey": true
+   },
+   {
+    "message": "U065",
+    "type": "hearing_confirmed",
+    "case": "AX-115",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "the hearing stays where it is unless and until you get one"
+   },
+   {
+    "message": "U067",
+    "type": "obligation_cleared",
+    "case": "AX-119",
+    "agreed": true,
+    "outside": false,
+    "disposition": "provisional",
+    "passed": false,
+    "right": true,
+    "difference": "",
+    "quote": "Yes, they do have the statement, it came by email on Friday at 4:48 pm and she had it open in front of her."
+   },
+   {
+    "message": "U070",
+    "type": "homeowner_declined",
+    "case": "AX-110",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "She says she never asked to withdraw 42 Birch Lane, that was \"the consultant's idea\", and she wants it heard."
+   },
+   {
+    "message": "U071",
+    "type": "consultant_accepted",
+    "case": "AX-115",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "Thursday 10 a.m., Harthmere, video, 48 Linden Avenue: yes, I'll take it."
+   },
+   {
+    "message": "U073",
+    "type": "consultant_accepted",
+    "case": "AX-103",
+    "agreed": false,
+    "by": "primary",
+    "why": "Only the first reader found it.",
+    "inKey": false
+   },
+   {
+    "message": "U073",
+    "type": "consultant_accepted",
+    "case": "AX-104",
+    "agreed": false,
+    "by": "primary",
+    "why": "Only the first reader found it.",
+    "inKey": false
+   },
+   {
+    "message": "U073",
+    "type": "document_submitted",
+    "case": "AX-103",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": false,
+    "difference": "The answer key has no reading of this type for this hearing.",
+    "quote": "we sent his name to Velloran yesterday"
+   },
+   {
+    "message": "U073",
+    "type": "document_submitted",
+    "case": "AX-104",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": false,
+    "difference": "The answer key has no reading of this type for this hearing.",
+    "quote": "we sent his name to Velloran yesterday"
+   },
+   {
+    "message": "U076",
+    "type": "packet_received",
+    "case": "AX-107",
+    "agreed": false,
+    "by": "primary",
+    "why": "Only the first reader found it.",
+    "inKey": true
+   },
+   {
+    "message": "U076",
+    "type": "consultant_accepted",
+    "case": "AX-107",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "Still good for Tesswick tomorrow, 11 and 11:30."
+   },
+   {
+    "message": "U076",
+    "type": "consultant_accepted",
+    "case": "AX-108",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "Still good for Tesswick tomorrow, 11 and 11:30."
+   },
+   {
+    "message": "U077",
+    "type": "consultant_accepted",
+    "case": "AX-105",
+    "agreed": false,
+    "by": "primary",
+    "why": "Only the first reader found it.",
+    "inKey": false
+   },
+   {
+    "message": "U080",
+    "type": "rep_recorded",
+    "case": "AX-107",
+    "agreed": true,
+    "outside": false,
+    "disposition": "signal",
+    "passed": false,
+    "right": true,
+    "difference": "",
+    "quote": "They have me on the list for 37"
+   },
+   {
+    "message": "U081",
+    "type": "outcome_reported",
+    "case": "AX-114",
+    "agreed": false,
+    "by": "primary",
+    "why": "Only the first reader found it.",
+    "inKey": true
+   },
+   {
+    "message": "U081",
+    "type": "schedule_changed",
+    "case": "AX-114",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": false,
+    "difference": "The answer key has no reading of this type for this hearing.",
+    "quote": "The continued hearing will be held on Monday, June 17, 2030 at 9:30 a.m., in person, at the Fenwick Vale hearing office, room 1."
+   },
+   {
+    "message": "U082",
+    "type": "schedule_changed",
+    "case": "AX-112",
+    "agreed": false,
+    "by": "primary",
+    "why": "Only the first reader found it.",
+    "inKey": true
+   },
+   {
+    "message": "U082",
+    "type": "hearing_confirmed",
+    "case": "AX-112",
+    "agreed": false,
+    "by": "primary",
+    "why": "Only the first reader found it.",
+    "inKey": true
+   },
+   {
+    "message": "U082",
+    "type": "schedule_changed",
+    "case": "AX-111",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "Tomorrow afternoon's video list will run in room 2, not room 1, because of an audio fault."
+   },
+   {
+    "message": "U082",
+    "type": "hearing_confirmed",
+    "case": "AX-111",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "75 Elm Street 2:00, 96 Elm Street 2:30, as before."
+   },
+   {
+    "message": "U083",
+    "type": "outcome_reported",
+    "case": "AX-107",
+    "agreed": true,
+    "outside": false,
+    "disposition": "signal",
+    "passed": false,
+    "right": true,
+    "difference": "",
+    "quote": "37 Meadow Avenue: heard in full"
+   },
+   {
+    "message": "U083",
+    "type": "outcome_reported",
+    "case": "AX-108",
+    "agreed": true,
+    "outside": false,
+    "disposition": "signal",
+    "passed": false,
+    "right": true,
+    "difference": "",
+    "quote": "52 Meadow Avenue: adjourned at the assessor's request."
+   },
+   {
+    "message": "U083",
+    "type": "schedule_changed",
+    "case": "AX-108",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": false,
+    "difference": "The answer key has no reading of this type for this hearing.",
+    "quote": "New date Wednesday 26 June, 11:30 a.m., in person, same room."
+   },
+   {
+    "message": "U085",
+    "type": "schedule_changed",
+    "case": "AX-115",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "Room D is double booked at ten tomorrow. 48 Linden Avenue will be taken in video room A instead. The time does not move, still 10 a.m."
+   },
+   {
+    "message": "U086",
+    "type": "hearing_confirmed",
+    "case": "AX-109",
+    "agreed": false,
+    "by": "primary",
+    "why": "Only the first reader found it.",
+    "inKey": false
+   },
+   {
+    "message": "U086",
+    "type": "hearing_confirmed",
+    "case": "AX-110",
+    "agreed": false,
+    "by": "primary",
+    "why": "Only the first reader found it.",
+    "inKey": false
+   },
+   {
+    "message": "U086",
+    "type": "rep_recorded",
+    "case": "AX-109",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "P. Marden entered for AX-109 and AX-110"
+   },
+   {
+    "message": "U086",
+    "type": "rep_recorded",
+    "case": "AX-110",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "P. Marden entered for AX-109 and AX-110"
+   },
+   {
+    "message": "U087",
+    "type": "consultant_conditional",
+    "case": "AX-109",
+    "agreed": false,
+    "by": "primary",
+    "why": "Only the first reader found it.",
+    "inKey": false
+   },
+   {
+    "message": "U087",
+    "type": "consultant_conditional",
+    "case": "AX-110",
+    "agreed": false,
+    "by": "primary",
+    "why": "Only the first reader found it.",
+    "inKey": false
+   },
+   {
+    "message": "U088",
+    "type": "consultant_accepted",
+    "case": "AX-111",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "All fine for tomorrow, 2:00 and 2:30"
+   },
+   {
+    "message": "U088",
+    "type": "consultant_accepted",
+    "case": "AX-112",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "All fine for tomorrow, 2:00 and 2:30"
+   },
+   {
+    "message": "U089",
+    "type": "hearing_confirmed",
+    "case": "AX-117",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "13:00 AX-117 18 Maple Lane"
+   },
+   {
+    "message": "U089",
+    "type": "hearing_confirmed",
+    "case": "AX-118",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "13:30 AX-118 34 Maple Lane"
+   },
+   {
+    "message": "U089",
+    "type": "rep_recorded",
+    "case": "AX-117",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "Rep: N. Pell (both)"
+   },
+   {
+    "message": "U089",
+    "type": "rep_recorded",
+    "case": "AX-118",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "Rep: N. Pell (both)"
+   },
+   {
+    "message": "U092",
+    "type": "hearing_confirmed",
+    "case": "AX-105",
+    "agreed": false,
+    "by": "primary",
+    "why": "Only the first reader found it.",
+    "inKey": false
+   },
+   {
+    "message": "U093",
+    "type": "obligation_cleared",
+    "case": "AX-113",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "Handed in at the counter today: occupancy statement for 11 Brook Road, signed J. Reed and dated 12 June."
+   },
+   {
+    "message": "U096",
+    "type": "outcome_reported",
+    "case": "AX-111",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "75 Elm: heard"
+   },
+   {
+    "message": "U096",
+    "type": "outcome_reported",
+    "case": "AX-112",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "96 Elm: the assessor asked for more time and got it."
+   },
+   {
+    "message": "U099",
+    "type": "outcome_reported",
+    "case": "AX-118",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "34 Maple Lane was heard at 1:40."
+   },
+   {
+    "message": "U099",
+    "type": "outcome_reported",
+    "case": "AX-117",
+    "agreed": true,
+    "outside": false,
+    "disposition": "fact",
+    "passed": true,
+    "right": true,
+    "difference": "",
+    "quote": "put it over to a date to be fixed instead of hearing it"
+   },
+   {
+    "message": "U100",
+    "type": "outcome_reported",
+    "case": "AX-118",
+    "agreed": false,
+    "by": "primary",
+    "why": "Only the first reader found it.",
+    "inKey": true
+   },
+   {
+    "message": "U100",
+    "type": "outcome_reported",
+    "case": "AX-117",
+    "agreed": false,
+    "by": "primary",
+    "why": "Only the first reader found it.",
+    "inKey": true
+   },
+   {
+    "message": "U100",
+    "type": "hearing_postponed",
+    "case": "AX-117",
+    "agreed": false,
+    "by": "secondary",
+    "why": "Only the second reader found it.",
+    "inKey": false
+   }
+  ],
+  "messages_read": [
+   "U001",
+   "U002",
+   "U003",
+   "U004",
+   "U005",
+   "U006",
+   "U007",
+   "U008",
+   "U009",
+   "U010",
+   "U011",
+   "U012",
+   "U013",
+   "U014",
+   "U015",
+   "U016",
+   "U017",
+   "U018",
+   "U019",
+   "U020",
+   "U021",
+   "U022",
+   "U023",
+   "U024",
+   "U025",
+   "U026",
+   "U027",
+   "U028",
+   "U029",
+   "U030",
+   "U031",
+   "U032",
+   "U033",
+   "U034",
+   "U035",
+   "U036",
+   "U037",
+   "U038",
+   "U039",
+   "U040",
+   "U041",
+   "U042",
+   "U043",
+   "U044",
+   "U045",
+   "U046",
+   "U047",
+   "U048",
+   "U049",
+   "U050",
+   "U051",
+   "U052",
+   "U053",
+   "U054",
+   "U055",
+   "U056",
+   "U057",
+   "U058",
+   "U059",
+   "U060",
+   "U061",
+   "U062",
+   "U063",
+   "U064",
+   "U065",
+   "U066",
+   "U067",
+   "U068",
+   "U069",
+   "U070",
+   "U071",
+   "U072",
+   "U073",
+   "U074",
+   "U075",
+   "U076",
+   "U077",
+   "U079",
+   "U080",
+   "U081",
+   "U082",
+   "U083",
+   "U084",
+   "U085",
+   "U086",
+   "U087",
+   "U088",
+   "U089",
+   "U090",
+   "U091",
+   "U092",
+   "U093",
+   "U094",
+   "U095",
+   "U096",
+   "U097",
+   "U098",
+   "U099",
+   "U100"
+  ]
+ }
+}

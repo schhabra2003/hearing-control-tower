@@ -1,0 +1,19 @@
+# Secrets and private material never enter the repository
+.env
+.env.*
+*.key
+*.pem
+_private*/
+handoff/
+assignment.txt
+
+# Build output and local files
+node_modules/
+app/dist-*/
+app/dist/*
+!app/dist/index.html
+app/shots/
+prototype/eval/scale_quick.json
+.DS_Store
+*.log
+__pycache__/

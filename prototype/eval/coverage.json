@@ -1,0 +1,1841 @@
+{
+ "generated_by": "node cli/check.js",
+ "reader": "rules (offline)",
+ "pass": 216,
+ "total": 216,
+ "results": [
+  {
+   "id": "A1",
+   "group": "Examples 1-6 · Willow Lane, Larkmere",
+   "at": 3,
+   "problem": "Maya says she is \"usually free\" and needs to check. The firm writes her name on the planning sheet anyway.",
+   "expect": "A maybe is not a commitment. Neither hearing counts as covered, and the system asks Maya for a yes or no.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "A2",
+   "group": "Examples 1-6 · Willow Lane, Larkmere",
+   "at": 6,
+   "problem": "The office asks three times who will attend, the last time with a deadline of 4 p.m. on June 7.",
+   "expect": "The three requests are counted, the deadline is captured, and the \"representative recorded\" gate shows a problem.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "A3",
+   "group": "Examples 1-6 · Willow Lane, Larkmere",
+   "at": 5,
+   "problem": "Maya accepts only the 9:30 hearing. The 9 a.m. hearing has nobody, but the case record shows Maya on both.",
+   "expect": "Acceptance is tracked per hearing: 28 Willow Lane is covered by Maya, 14 Willow Lane is uncovered and flagged.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "A4",
+   "group": "Examples 1-6 · Willow Lane, Larkmere",
+   "at": "end",
+   "problem": "Someone must cover 14 Willow Lane at 9 a.m. on June 10, in person.",
+   "expect": "The staffing solver proposes Leo: he is already at the Larkmere office that morning and said he left the morning free (message 62).",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "A5",
+   "group": "Examples 1-6 · Willow Lane, Larkmere",
+   "at": "end",
+   "problem": "The draft staffing notice on file for 14 Willow Lane names Maya, who declined that hearing.",
+   "expect": "The draft is flagged and never sent. Notices are generated from the evidence once someone accepts.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "A6",
+   "group": "Examples 1-6 · Willow Lane, Larkmere",
+   "at": "end",
+   "problem": "Larkmere needs a staffing notice for 28 Willow Lane by 4 p.m. on June 7. None has been sent.",
+   "expect": "A staffing notice naming Maya is drafted for 28 Willow Lane only, in Larkmere's format, due at the office deadline.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "A7",
+   "group": "Examples 1-6 · Willow Lane, Larkmere",
+   "at": "end",
+   "problem": "Maya asks for the files \"for the one I can cover\".",
+   "expect": "Maya is sent the packet for 28 Willow Lane only, not for the hearing she declined.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "A8",
+   "group": "Examples 1-6 · Willow Lane, Larkmere",
+   "at": 5,
+   "problem": "Maya answers by text message, not email.",
+   "expect": "A text from a known consultant carries the same weight as an email for her own commitment.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "B1",
+   "group": "Examples 7-12 · Garden Street, Velloran",
+   "at": 8,
+   "problem": "The firm asks the office to move both hearings to June 13.",
+   "expect": "A request changes nothing. The official date stays June 11 until the office approves.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "B2",
+   "group": "Examples 7-12 · Garden Street, Velloran",
+   "at": 10,
+   "problem": "Leo moves both hearings to June 13 in the shared calendar, and the internal case records now show June 13.",
+   "expect": "A calendar edit is recorded as a belief. The official date stays June 11 and the mismatch is flagged.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "B3",
+   "group": "Examples 7-12 · Garden Street, Velloran",
+   "at": 9,
+   "problem": "Leo has a conflict on June 11 and says June 13 \"works for me\".",
+   "expect": "That is a decline for the official date plus a conditional offer. Both hearings are uncovered.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "B4",
+   "group": "Examples 7-12 · Garden Street, Velloran",
+   "at": 11,
+   "problem": "The office says the hearings remain June 11 and that it \"can record Leo\".",
+   "expect": "The move is denied and nothing moves. \"Can record\" is an offer, not a record, so the representative gate stays open.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "B5",
+   "group": "Examples 7-12 · Garden Street, Velloran",
+   "at": "end",
+   "problem": "The case records show June 13 and Leo. Both are wrong.",
+   "expect": "The record audit marks date and consultant as contradicted for both cases.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "B6",
+   "group": "Examples 7-12 · Garden Street, Velloran",
+   "at": "end",
+   "problem": "Leo asks which date he is being asked to cover.",
+   "expect": "An answer is drafted from the evidence: official date June 11, his calendar is wrong, the move was denied, and he told us he cannot attend.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "B7",
+   "group": "Examples 7-12 · Garden Street, Velloran",
+   "at": "end",
+   "problem": "Both Garden Street hearings on June 11 need a new consultant.",
+   "expect": "One offer covers both hearings. Leo is excluded (he declined). Owen ranks as the near-certain option because he said he has no other hearings that afternoon (message 68).",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "B8",
+   "group": "Examples 7-12 · Garden Street, Velloran",
+   "at": "end",
+   "problem": "The shared calendar still shows June 13.",
+   "expect": "The calendar is regenerated from the official record. A calendar is an output, never an input.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "C1",
+   "group": "Examples 13-18 · Orchard Road, Orimere",
+   "at": 14,
+   "problem": "Nora can cover the morning hearing but not the afternoon one. She could cover both on June 18 \"if the county can move them\".",
+   "expect": "Morning hearing covered, afternoon hearing uncovered, and June 18 held as a condition, not a commitment.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "C2",
+   "group": "Examples 13-18 · Orchard Road, Orimere",
+   "at": 16,
+   "problem": "The office records Nora for 9 Orchard Road only, has no assignment for 24 Orchard Road, and is still reviewing the move.",
+   "expect": "Each case is tracked separately: one recorded, one missing, change request pending. The hearings stay on June 12.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "C3",
+   "group": "Examples 13-18 · Orchard Road, Orimere",
+   "at": 17,
+   "problem": "The office moves one hearing to June 18 and refuses to move the other.",
+   "expect": "A split decision is applied per case: 9 Orchard Road moves, 24 Orchard Road stays June 12 at 2 p.m. Nora's yes for June 12 does not carry over without a check.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "C4",
+   "group": "Examples 13-18 · Orchard Road, Orimere",
+   "at": 18,
+   "problem": "Nora clears June 12 and puts both hearings on June 18. Only one of them moved.",
+   "expect": "9 Orchard Road is covered on June 18. 24 Orchard Road is flagged: Nora's calendar is wrong and nobody covers June 12 at 2 p.m.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "C5",
+   "group": "Examples 13-18 · Orchard Road, Orimere",
+   "at": "end",
+   "problem": "The case record still shows 9 Orchard Road on June 12, and the draft notice on file for 24 Orchard Road names Nora, who declined it.",
+   "expect": "The audit marks the date as contradicted, and the wrong draft notice is flagged and never sent.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "C6",
+   "group": "Examples 13-18 · Orchard Road, Orimere",
+   "at": "end",
+   "problem": "24 Orchard Road (June 12, 2 p.m., video) needs a consultant. Owen has in-person hearings in Tesswick until noon that day.",
+   "expect": "Nora is excluded (declined). Leo is proposed (he prefers afternoons). Owen stays feasible because the 60-minute travel gap is met.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "C7",
+   "group": "Examples 13-18 · Orchard Road, Orimere",
+   "at": "end",
+   "problem": "Nora asks for the files and believes both hearings are on June 18.",
+   "expect": "One message tells Nora both facts: she is confirmed for June 18, and 24 Orchard Road stays June 12. She gets the packet for her hearing only.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "D1",
+   "group": "Examples 19-24 · Meadow Avenue, Tesswick",
+   "at": 21,
+   "problem": "The firm leaves a voicemail with the representative's name.",
+   "expect": "A voicemail confirms nothing. The representative gate stays open.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "D2",
+   "group": "Examples 19-24 · Meadow Avenue, Tesswick",
+   "at": 22,
+   "problem": "A clerk says by phone that emailing names is no longer enough: the office now wants its staffing form, then a call. The saved instructions (dated May 15) say to email.",
+   "expect": "The system detects that the county changed its process, proposes a change to the Tesswick playbook, and blocks further sends until a person approves it.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "D3",
+   "group": "Examples 19-24 · Meadow Avenue, Tesswick",
+   "at": 24,
+   "problem": "The firm emails the form details. A second clerk cannot find the form and cannot confirm who is on the list.",
+   "expect": "Sending a form is not the office processing it. The gate shows a problem (\"sent, but the office cannot find it\"), and the stale process blocks an email chaser.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "D4",
+   "group": "Examples 19-24 · Meadow Avenue, Tesswick",
+   "at": 24,
+   "problem": "Once the new process is accepted, the next step is a phone call in office hours (\"please call tomorrow morning\").",
+   "expect": "After one approval the Tesswick playbook is version 2 (form, then call). The next action becomes a call task for a person, with office hours shown. No code changed.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "D5",
+   "group": "Examples 19-24 · Meadow Avenue, Tesswick",
+   "at": 24,
+   "problem": "The clerk confirms the representative on the phone.",
+   "expect": "A phone confirmation is held as provisional. The gate closes only when the office confirms in writing, and the system asks for that.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "D6",
+   "group": "Examples 19-24 · Meadow Avenue, Tesswick",
+   "at": "end",
+   "problem": "Owen accepted both in-person hearings, but nobody has sent the packets to him or to the office.",
+   "expect": "Packet sends to Owen and to Tesswick are queued, due 48 hours before the hearing.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "E1",
+   "group": "Examples 25-30 · Birch Lane, Brindlefen",
+   "at": 26,
+   "problem": "The office wants a name for each hearing. Priya accepts both and asks the firm to tell the county.",
+   "expect": "Both hearings are covered by Priya. The representative gate stays open until the office confirms.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "E2",
+   "group": "Examples 25-30 · Birch Lane, Brindlefen",
+   "at": 27,
+   "problem": "A settlement offer for 16 Birch Lane needs the attending consultant's signature (a Brindlefen rule).",
+   "expect": "An open obligation is created with Priya as signer. The signing request is draft-only and carries the check \"homeowner approval first\".",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "E3",
+   "group": "Examples 25-30 · Birch Lane, Brindlefen",
+   "at": 28,
+   "problem": "The withdrawal statement for 42 Birch Lane was signed by Owen, but the office has Priya on record. The office rejects it.",
+   "expect": "The rejection is recorded, the new signature request goes to Priya (the name on the office's record), and the hearing stays scheduled and staffed.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "E4",
+   "group": "Examples 25-30 · Birch Lane, Brindlefen",
+   "at": 30,
+   "problem": "Priya signs and sends a phone photo. The case number and date cannot be read. The firm has already asked for a clearer copy.",
+   "expect": "The copy is marked unreadable. No second request is sent: the system waits, and falls back to a signing link if nothing readable arrives.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "E5",
+   "group": "Examples 25-30 · Birch Lane, Brindlefen",
+   "at": "end",
+   "problem": "The firm's own file marks the staffing notice for 16 Birch Lane as \"recorded\", but no message from the office says so. The notice on file for 42 Birch Lane has no \"County\" line.",
+   "expect": "A file in the firm's folder is not the office's record: the system asks Brindlefen to confirm. The incomplete notice is flagged.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "E6",
+   "group": "Examples 25-30 · Birch Lane, Brindlefen",
+   "at": "end",
+   "problem": "Priya prefers to be contacted by phone, and has asked for the case files.",
+   "expect": "Messages to Priya are routed by her stated preference (phone, then text), and both packets are queued for her.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "F1",
+   "group": "Examples 31-36 · Elm Street, Caldmere",
+   "at": 32,
+   "problem": "Eli accepts and says he \"will review the case files this week\".",
+   "expect": "An intention to review is not a receipt. The packet gate stays open.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "F2",
+   "group": "Examples 31-36 · Elm Street, Caldmere",
+   "at": 34,
+   "problem": "Version 2 goes to the clerk, but the consultant's links still open version 1. Then the clerk can open one file and not the other.",
+   "expect": "Receipts are tracked per file and per recipient: 75 Elm Street is confirmed by the clerk, 96 Elm Street must be resent, and the stale links are flagged.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "F3",
+   "group": "Examples 31-36 · Elm Street, Caldmere",
+   "at": "end",
+   "problem": "Eli's links open version 1 and he asks what changed. The firm explains, but nothing shows Eli has version 2.",
+   "expect": "One message to Eli carries the current links, what changed, and the answer to his question. The gate stays open until Eli confirms.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "F4",
+   "group": "Examples 31-36 · Elm Street, Caldmere",
+   "at": "end",
+   "problem": "The case records still point to packet version 1.",
+   "expect": "The audit marks the packet reference as contradicted for both cases.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "G1",
+   "group": "Examples 37-42 · Brook Road, Fenwick Vale",
+   "at": 40,
+   "problem": "A normal case: recorded, accepted, packets confirmed. The office adds \"arrive 15 minutes before the first case\".",
+   "expect": "Both hearings show READY with no human work. The arrival instruction is captured and passed on to Maya.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "G2",
+   "group": "Examples 37-42 · Brook Road, Fenwick Vale",
+   "at": 41,
+   "problem": "Maya texts the evening before that she is ill (the packet gives no hour; the prototype's replay places the text at 6:12 p.m., from the simulated timeline in data/timeline.json). Two in-person hearings at 9 a.m. now have nobody, and the office is closed.",
+   "expect": "Both hearings turn at-risk at once. With under 24 hours left, every feasible consultant is asked at the same time and the first yes wins. Maya is excluded.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "G3",
+   "group": "Examples 37-42 · Brook Road, Fenwick Vale",
+   "at": 42,
+   "problem": "Owen volunteers but asks the firm to confirm the assignment and send the files. He has not seen these cases.",
+   "expect": "A volunteer is not yet a commitment. One approval confirms Owen, sends both packets and passes on the arrival instruction.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "G4",
+   "group": "Examples 37-42 · Brook Road, Fenwick Vale",
+   "at": 42,
+   "problem": "The office still has Maya on both staffing notices.",
+   "expect": "After Owen is confirmed, an updated staffing notice per case is drafted naming Owen as the replacement for Maya, which is Fenwick Vale's rule.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "G5",
+   "group": "Examples 37-42 · Brook Road, Fenwick Vale",
+   "at": "end",
+   "problem": "The examples end with nobody confirmed. By June 7 the hearing time has passed, and the record still shows Maya.",
+   "expect": "The hearings are flagged as past with no confirmed attendee and no outcome, and a person is asked to find out what happened.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "H1",
+   "group": "Examples 43-48 · Linden Avenue, Harthmere",
+   "at": 43,
+   "problem": "The schedule arrives as a paper notice (mail transcript).",
+   "expect": "Mail from the office is a written government source: date, times, room B and the listed representative are all taken as official.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "H2",
+   "group": "Examples 43-48 · Linden Avenue, Harthmere",
+   "at": 45,
+   "problem": "The office changes the video room from B to D after Leo accepted.",
+   "expect": "The room changes, the times do not, and Leo is told about the new room.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "H3",
+   "group": "Examples 43-48 · Linden Avenue, Harthmere",
+   "at": 46,
+   "problem": "A clerk says by phone that one hearing moved to June 13 after a request from the homeowner. Written notice \"will follow\".",
+   "expect": "The phone report is held as provisional. June 6 stays official, the system asks for written notice, and Leo is warned about the possible move.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "H4",
+   "group": "Examples 43-48 · Linden Avenue, Harthmere",
+   "at": 47,
+   "problem": "The written notice arrives: 48 Linden Avenue is now June 13 at 10 a.m. Leo accepted June 6.",
+   "expect": "The official date moves. Leo's yes for June 6 does not carry over: the hearing is uncovered until he confirms the new date. 66 Linden Avenue is untouched.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "H5",
+   "group": "Examples 43-48 · Linden Avenue, Harthmere",
+   "at": 48,
+   "problem": "Leo still believes both hearings are on June 6 and says he cannot attend on June 13.",
+   "expect": "48 Linden Avenue is uncovered. A replacement is proposed, and Leo gets an answer that states what changed.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "H6",
+   "group": "Examples 43-48 · Linden Avenue, Harthmere",
+   "at": "end",
+   "problem": "The homeowner went to the county directly, without telling the firm.",
+   "expect": "A person calls the homeowner. The system never writes to a homeowner by itself and never invites one to a hearing.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "H7",
+   "group": "Examples 43-48 · Linden Avenue, Harthmere",
+   "at": "end",
+   "problem": "The office still lists Leo for 48 Linden Avenue, the record still shows June 6, and nobody reported what happened at 66 Linden Avenue on June 6.",
+   "expect": "Wrong representative flagged, record marked contradicted on date and consultant, and Leo is asked for the outcome of 66 Linden Avenue.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "I1",
+   "group": "Examples 49-54 · Maple Lane, Iverfen",
+   "at": 51,
+   "problem": "The homeowner asked the county to withdraw one appeal. The office asks the firm to confirm.",
+   "expect": "An open obligation is created, a person is asked to confirm with the homeowner, and the hearing stays on the schedule.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "I2",
+   "group": "Examples 49-54 · Maple Lane, Iverfen",
+   "at": 53,
+   "problem": "The firm marks the case \"canceled internally\" and emails a withdrawal request. Two days later the office's reminder still lists both hearings.",
+   "expect": "Not processed means still scheduled. The hearing stays staffed, the record's \"canceled\" is marked contradicted, and a chaser to the office is drafted. It is held until a person has confirmed the withdrawal with the homeowner.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "I3",
+   "group": "Examples 49-54 · Maple Lane, Iverfen",
+   "at": "end",
+   "problem": "Nora asks whether she should prepare for both hearings.",
+   "expect": "The answer comes from the evidence: yes, prepare for both until the office processes the withdrawal.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "I4",
+   "group": "Examples 49-54 · Maple Lane, Iverfen",
+   "at": "end",
+   "problem": "How does the firm know the withdrawal is finished?",
+   "expect": "Only the office's written confirmation closes it. The case then closes, Nora is released from that hearing, and her other hearing is untouched.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "J1",
+   "group": "Examples 55-60 · Clover Road, Juniper Reach",
+   "at": 57,
+   "problem": "After the hearings Owen phones in the results: one continued, one heard.",
+   "expect": "An outcome from the consultant who attended is accepted, per case, even by phone note.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "J2",
+   "group": "Examples 55-60 · Clover Road, Juniper Reach",
+   "at": 59,
+   "problem": "The firm marks 57 Clover Road \"awaiting reschedule\". The office says no further hearing is scheduled: a homeowner statement is due by June 8 at 4 p.m.",
+   "expect": "The real open item is a deadline, not a hearing. An obligation with the deadline is created and the record's status is marked contradicted.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "J3",
+   "group": "Examples 55-60 · Clover Road, Juniper Reach",
+   "at": "end",
+   "problem": "The office asks a second time. June 8, 2030 is a Saturday and the office is open Monday to Friday.",
+   "expect": "The reminder escalates the item. The working deadline is pulled back to Friday June 7 at 4 p.m., the last hour the office is open.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "J4",
+   "group": "Examples 55-60 · Clover Road, Juniper Reach",
+   "at": "end",
+   "problem": "A homeowner statement has to be collected from the homeowner and sent.",
+   "expect": "This is a job for a person. The cover email is drafted but cannot go out until someone attaches the statement, and the item closes only when the office confirms receipt.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "K1",
+   "group": "Examples 61-72 · the two clean threads",
+   "at": "end",
+   "problem": "Two threads go right: notices accepted, consultant accepted, packets confirmed by both sides.",
+   "expect": "All four hearings reach READY from the evidence alone, with no action for a person.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "K2",
+   "group": "Examples 61-72 · the two clean threads",
+   "at": "end",
+   "problem": "The office sends \"the same confirmation again\" (messages 66 and 72).",
+   "expect": "A duplicate changes nothing and creates no work.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "K3",
+   "group": "Examples 61-72 · the two clean threads",
+   "at": "end",
+   "problem": "Useful facts sit inside routine replies: Leo \"left the morning free\", Owen has \"no other hearings that afternoon\".",
+   "expect": "Stated availability is captured and used by the staffing solver elsewhere.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "K4",
+   "group": "Examples 61-72 · the two clean threads",
+   "at": 71,
+   "problem": "The office confirms video room C after Owen accepted.",
+   "expect": "A room added later is passed on, unless the consultant shows he already has it. Owen writes \"Room C\" himself, so nothing is sent.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "R1",
+   "group": "Operating rules · tested with new messages",
+   "at": "end",
+   "problem": "Only the government can approve a date change.",
+   "expect": "A consultant who states a new date changes nothing. It is kept as a lead to verify with the office.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "R2",
+   "group": "Operating rules · tested with new messages",
+   "at": "end",
+   "problem": "A message that looks like it is from the office arrives from an address the firm does not know.",
+   "expect": "An unknown sender has no authority. Nothing moves and no gate closes.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "R3",
+   "group": "Operating rules · tested with new messages",
+   "at": "end",
+   "problem": "A message contains text that tries to instruct the AI, and the AI reader is fooled into producing claims.",
+   "expect": "Even then nothing happens. A consultant cannot make the office's statements, a case outside the thread is refused, and a quote that is not in the message is refused.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "R4",
+   "group": "Operating rules · tested with new messages",
+   "at": "end",
+   "problem": "An office writes about a case in another county.",
+   "expect": "An office can only speak for its own cases. The message matches no case of that office, and even if it is forced onto the other county's case the claim is refused.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "R5",
+   "group": "Operating rules · tested with new messages",
+   "at": "end",
+   "problem": "The same message is delivered twice (a retry, a forward, a duplicate webhook).",
+   "expect": "Replaying a message is harmless: no gate changes and no new work appears.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "R6",
+   "group": "Operating rules · tested with new messages",
+   "at": "end",
+   "problem": "A message arrives that matches no known case.",
+   "expect": "It changes nothing and is marked unresolved for a person to look at.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "R7",
+   "group": "Operating rules · tested with new messages",
+   "at": 44,
+   "problem": "Messages arrive out of order: the written notice lands before the phone note about the same change.",
+   "expect": "The result is the same as the normal order: June 13 is official and no stale \"phone only\" warning is left behind.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "R8",
+   "group": "Operating rules · tested with new messages",
+   "at": "end",
+   "problem": "Consultants work part time, most share no calendar, and each has limits: counties, hearings per day, travel time between offices.",
+   "expect": "The solver uses commitments and stated availability, never an assumed calendar. It never proposes someone outside their counties and it respects daily limits and travel gaps.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "R9",
+   "group": "Operating rules · tested with new messages",
+   "at": "end",
+   "problem": "Consultants want to be reached in different ways: Nora by text, Priya by phone, the rest by email.",
+   "expect": "Every outbound draft uses the recipient's stated preference.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "R10",
+   "group": "Operating rules · tested with new messages",
+   "at": "end",
+   "problem": "The display name says \"Larkmere hearing office\", but the address is a look-alike and not the address on file.",
+   "expect": "Identity is the address on file, never the name shown. The message has no authority, nothing moves, and the office is asked at its real address.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "R11",
+   "group": "Operating rules · tested with new messages",
+   "at": "end",
+   "problem": "A statement from someone without authority must not be ignored either: it may be true.",
+   "expect": "The system asks the office (one click). When the office answers in writing, the open question closes and the hearing is READY on the official date.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "T1",
+   "group": "Silence, double answers and repeat clicks",
+   "at": 11,
+   "problem": "A consultant does not answer an offer.",
+   "expect": "Every offer carries a reply-by time: a third of the working time left before the office needs the name, at least one working hour and at most one working day. When it passes, silence counts as a no for this round. The next consultant is asked and the reason is shown.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "T2",
+   "group": "Silence, double answers and repeat clicks",
+   "at": 11,
+   "problem": "The consultant who stayed silent says yes after the next person was already asked.",
+   "expect": "First yes wins, whoever gives it. The late yes covers both hearings, and the second consultant is told the offer is closed.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "T3",
+   "group": "Silence, double answers and repeat clicks",
+   "at": 41,
+   "problem": "An urgent offer goes to several consultants at once, and two of them say yes.",
+   "expect": "The first yes holds the hearing. The second is kept as a standby and is told to stand down, so two people do not turn up and only one fee is due.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "T4",
+   "group": "Silence, double answers and repeat clicks",
+   "at": "end",
+   "problem": "An office does not acknowledge a staffing notice. Sending a form does not mean the government has processed it.",
+   "expect": "Silence has a timer. The system sends a reminder, then a second one, and after that asks a person to call, with what was sent as the script. The gate stays open the whole time.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "T7",
+   "group": "Silence, double answers and repeat clicks",
+   "at": "end",
+   "problem": "A reminder falls due at night or at the weekend.",
+   "expect": "Consultants are not chased at night: the reminder waits until 8 a.m. An office is reminded only once it has had a full working day to answer.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "T8",
+   "group": "Silence, double answers and repeat clicks",
+   "at": "end",
+   "problem": "One consultant has not answered two different requests (a packet and a signature).",
+   "expect": "After two reminders a person makes one call that covers both requests. From then on the matter stays with a person and is not handed back to automatic reminders.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "T5",
+   "group": "Silence, double answers and repeat clicks",
+   "at": "end",
+   "problem": "The same action is triggered twice: a double click, a retry after a timeout, two coordinators on the same item.",
+   "expect": "The second attempt sends nothing. An action goes out only while the evidence still calls for it.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "T6",
+   "group": "Silence, double answers and repeat clicks",
+   "at": 24,
+   "problem": "A person approves a draft after the facts have changed, or tries to send an action that is blocked.",
+   "expect": "Both are refused, with the reason shown. A draft prepared before a new message arrived cannot go out on old facts.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "P1",
+   "group": "People in the loop · homeowners, unread messages, corrections",
+   "at": "end",
+   "problem": "The office says a homeowner asked to withdraw an appeal. The firm had already sent a withdrawal without asking the homeowner.",
+   "expect": "A person calls the homeowner with a script that asks and does not assume. Making the call and logging the answer are separate steps, and the chaser to the office stays blocked until the homeowner has confirmed.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "P2",
+   "group": "People in the loop · homeowners, unread messages, corrections",
+   "at": "end",
+   "problem": "The homeowner says they never asked to withdraw, or has changed their mind. A processed withdrawal cannot be undone.",
+   "expect": "The withdrawal is marked disputed, nothing more is sent in support of it, and a message telling the office not to process it is drafted for a person to send. It names the earlier withdrawal to disregard. The hearing stays staffed. The matter closes only when the office confirms in writing that the appeal stays active.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "P3",
+   "group": "People in the loop · homeowners, unread messages, corrections",
+   "at": "end",
+   "problem": "The office processes the withdrawal even though the homeowner did not want it.",
+   "expect": "The case is not shown as cleanly closed. It is at risk, and a person is asked to call the office the same day about reinstating the appeal.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "P4",
+   "group": "People in the loop · homeowners, unread messages, corrections",
+   "at": "end",
+   "problem": "The homeowner does not pick up.",
+   "expect": "Nothing is assumed. The task waits for a logged answer, and the next day the call is back on the list. The withdrawal is not confirmed in the meantime.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "P5",
+   "group": "People in the loop · homeowners, unread messages, corrections",
+   "at": "end",
+   "problem": "A homeowner had the county move a hearing. The firm does not invite homeowners to hearings, and the homeowner might say they never asked.",
+   "expect": "The call script tells the homeowner that the representative attends for them and that they do not need to come. If they say they did not ask, the office is asked in writing which date stands, and the official date is untouched until it answers.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "P6",
+   "group": "People in the loop · homeowners, unread messages, corrections",
+   "at": "end",
+   "problem": "A stranger writes as \"the new clerk\" and states that a representative is recorded and that a hearing has moved.",
+   "expect": "An unknown address has no authority. Nothing official changes, no gate closes, and the message goes to a person to read.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "P7",
+   "group": "People in the loop · homeowners, unread messages, corrections",
+   "at": "end",
+   "problem": "A message arrives in which the reader recognises nothing. It may be a pleasantry, or something important in words the reader does not know.",
+   "expect": "It is never dropped silently: a person gets it to read. Once read it leaves the list, and a second click does nothing.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "P8",
+   "group": "People in the loop · homeowners, unread messages, corrections",
+   "at": "end",
+   "problem": "A homeowner writes to the firm: the county moved my hearing, the consultant will be there, and I would like to come along.",
+   "expect": "A homeowner is a known party, but only a person answers them. Nothing changes on the record even when the reader takes every sentence at face value, nothing is sent to the homeowner automatically, and a person is asked to call them back.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "P9",
+   "group": "People in the loop · homeowners, unread messages, corrections",
+   "at": "end",
+   "problem": "An office sends a message that names no case and sits in no known thread.",
+   "expect": "It cannot be filed automatically, so a person files it. The task exists even though no case is attached to it.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "P10",
+   "group": "People in the loop · homeowners, unread messages, corrections",
+   "at": "end",
+   "problem": "A safety net that sends every message to a person would undo the saving.",
+   "expect": "On the 72 example messages the reader recognises every incoming message, so none needs a person just to be read.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "P11",
+   "group": "People in the loop · homeowners, unread messages, corrections",
+   "at": "end",
+   "problem": "The reader does not understand an office email written in unusual words. A person reads it and enters what it says. Could a person then also turn hearsay into an official fact?",
+   "expect": "A person can correct WHAT a message says, never WHO said it. Entered for the office email, the new time becomes official and the consultant is asked to reconfirm. Entered for a consultant email, the same statement stays a lead that the office is asked to verify.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "N1",
+   "group": "Beyond the examples · a hearing is postponed",
+   "at": "end",
+   "problem": "An office postpones two hearings that were fully ready and gives no new date.",
+   "expect": "The hearings leave the calendar and are neither ready nor at risk. The booked consultant is told at once not to attend. Nothing else is chased. When the new date arrives the consultant is asked to confirm it: the old yes does not carry over.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "N2",
+   "group": "Beyond the examples · a hearing is postponed",
+   "at": "end",
+   "problem": "A clerk says on the phone that two hearings are off. If that is wrong and nobody attends, the hearings are lost. If it is right and someone attends, one fee is wasted.",
+   "expect": "The two errors do not cost the same, so a spoken postponement changes nothing: the hearings stay official, the consultant stays booked, and one message asks the office to confirm in writing.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "S1",
+   "group": "Scale · more hearings and different local processes",
+   "at": "end",
+   "problem": "The firm opens in an eleventh county with its own rules: 72-hour packet rule, office open 10 to 3, staffing by email.",
+   "expect": "One small data file is added (under 20 fields) and no code. A new hearing in that county runs from first notice to READY through the same gates, with its own 72-hour deadline and office hours.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "S2",
+   "group": "Scale · more hearings and different local processes",
+   "at": "end",
+   "problem": "A rule that applies everywhere changes (for example the packet rule goes from 48 to 72 hours).",
+   "expect": "One edit to the shared default layer changes the deadline for all ten counties at once.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "S3",
+   "group": "Scale · more hearings and different local processes",
+   "at": "end",
+   "problem": "Ten counties must not mean ten separate procedures to maintain.",
+   "expect": "Each county file holds only what differs: under 20 fields of its own, and at least twice as many inherited from the shared layer.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "S4",
+   "group": "Scale · more hearings and different local processes",
+   "at": "end",
+   "problem": "Work should grow with office-days, not with cases: two hearings at the same office on the same day are one conversation.",
+   "expect": "Outbound messages are grouped by office-day and by consultant. The planner produces fewer messages than hearing-tasks.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "S5",
+   "group": "Scale · more hearings and different local processes",
+   "at": "end",
+   "problem": "Does following the system's own next actions actually finish the work?",
+   "expect": "Starting from the end of the examples and taking each proposed action with a cooperative reply, every upcoming hearing reaches READY or is closed. No reply is rejected.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "S6",
+   "group": "Scale · more hearings and different local processes",
+   "at": "end",
+   "problem": "How much of that work needs a person?",
+   "expect": "Most actions are automatic or one click. The actions left to a person are the judgment calls: homeowner contact, a process change, a phone call, a signature or statement.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "S7",
+   "group": "Scale · more hearings and different local processes",
+   "at": "end",
+   "problem": "Offices differ in the proof they give. Some never confirm that a packet arrived.",
+   "expect": "What counts as proof is one field in the county file. By default a packet counts only when the clerk confirms it. For an office that sends no receipts, an on-time send is enough, and no other county changes.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "Q1",
+   "group": "Quality of the output",
+   "at": "end",
+   "problem": "A generated message with a template fault (an unfilled value, a doubled full stop) would reach a clerk or a consultant.",
+   "expect": "Every draft, simulated reply, title and status line produced between the end of the examples and the finish is scanned. None has a fault.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "Q2",
+   "group": "Quality of the output",
+   "at": "end",
+   "problem": "A restart or a replay must not give a different answer.",
+   "expect": "The state is rebuilt from the messages alone. Two independent replays give identical gates and issues for all 24 cases.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "Q3",
+   "group": "Quality of the output",
+   "at": "end",
+   "problem": "A status nobody can trace is the problem the firm has today: the planning sheet, the shared calendar, the case record.",
+   "expect": "Every closed gate on all 24 cases cites at least one message as its evidence.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "Q4",
+   "group": "Quality of the output",
+   "at": "end",
+   "problem": "The offline reader must not miss or invent statements on the 72 example messages.",
+   "expect": "It finds all labelled statements with no extras. This is a development score only: the reader was written while looking at these messages, so it says nothing about unseen ones.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "Q5",
+   "group": "Quality of the output",
+   "at": "end",
+   "problem": "The audit trail (what each message changed, in words) is read by people. A template fault there is as bad as one in a draft.",
+   "expect": "Every line of the audit trail for the 72 examples is free of unfilled values and doubled full stops.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "V1",
+   "group": "Not said plainly · guesses, questions, conditions, promises",
+   "at": "end",
+   "problem": "The right office writes about the right hearing, but only guesses: \"I believe Maya is recorded, but I will need to check the list.\"",
+   "expect": "Authority is not enough. The sentence is held, no representative is recorded, the gate stays open, and nobody has to read the message: the normal follow-up continues.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "V2",
+   "group": "Not said plainly · guesses, questions, conditions, promises",
+   "at": "end",
+   "problem": "A reader (rules or AI) can be wrong about tone. Fifteen sentences that close something on paper but are a guess, a question, a condition, a promise or a denial.",
+   "expect": "Whatever the reader claims, the verifier holds all fifteen, each with the reason, because the check sits after the reader.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "V3",
+   "group": "Not said plainly · guesses, questions, conditions, promises",
+   "at": "end",
+   "problem": "A guard that holds too much creates work: every false hold is one more question to an office or a consultant.",
+   "expect": "Twelve plain statements pass, including notices with boilerplate (\"unless you are notified otherwise\", \"room to be confirmed\") and a yes for one hearing next to a no for another. None of the 89 closing statements in the 72 examples is held.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "V4",
+   "group": "Not said plainly · guesses, questions, conditions, promises",
+   "at": "end",
+   "problem": "The office writes that a ready hearing \"may be moved\". Nothing waits on a gate here, so nothing would follow up by itself.",
+   "expect": "The date on record stays and the hearing stays READY. The office is asked once, with its own sentence quoted, for a plain answer. Its plain answer closes the question.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "V5",
+   "group": "Not said plainly · guesses, questions, conditions, promises",
+   "at": "end",
+   "problem": "An AI reader reports two guesses as a yes: Leo, who holds a hearing, writes \"I think I can still make it\", and Nora writes she \"might be able to cover\" an uncovered one.",
+   "expect": "Neither is a commitment. Nora is recorded as a maybe and the hearing stays uncovered. Nothing is taken away from Leo on a guess: he keeps the hearing, and a person is asked to check with him.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "V6",
+   "group": "Not said plainly · guesses, questions, conditions, promises",
+   "at": "end",
+   "problem": "One forged message names two hearings. Asking the office twice about one message is noise for the clerk and two clicks for the coordinator.",
+   "expect": "One question to the real office covers both hearings, each with its own time on record. One answer closes it, and each hearing keeps its own time.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "V7",
+   "group": "Not said plainly · guesses, questions, conditions, promises",
+   "at": "end",
+   "problem": "A statement from someone without authority repeats what the record already says (\"the hearing is confirmed for June 10\").",
+   "expect": "There is nothing to verify, so the office is not asked. The other statement (a representative recorded) still goes to a person.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "V8",
+   "group": "Not said plainly · guesses, questions, conditions, promises",
+   "at": "end",
+   "problem": "Two parts of the system must agree on which statements close something: the verifier that holds unclear ones, and the cross-check that wants two readers to agree.",
+   "expect": "Both use the same 16 claim types.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "W1",
+   "group": "Independent review · what two reviewers broke, and the fixes",
+   "at": "end",
+   "problem": "Our own offer says: reply YES, or answer per hearing, for example \"YES 1, NO 2\". A consultant does exactly that, by text, with no thread and no case named. Before the review the reader understood none of it, counted it as silence and offered the hearings to the next person.",
+   "expect": "The reply is matched to the numbered question it answers: yes for hearing 1, no for hearing 2. Nothing goes to a person.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "W2",
+   "group": "Independent review · what two reviewers broke, and the fixes",
+   "at": "end",
+   "problem": "People answer a yes/no question in many short ways. Reading too little wastes a clear answer. Reading too much turns \"Yes, but only the first\" into a yes for everything.",
+   "expect": "30 short replies to a two-hearing question are read exactly: 21 are an answer, 9 are not and are left for a person. A bare \"YES\" from someone who was asked nothing changes nothing and goes to a person.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "W3",
+   "group": "Independent review · what two reviewers broke, and the fixes",
+   "at": "end",
+   "problem": "A consultant has two questions open, from two different messages, and texts back \"YES\".",
+   "expect": "Nothing is assumed. The message goes to a person with the reason: it could be the answer to either question.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "W4",
+   "group": "Independent review · what two reviewers broke, and the fixes",
+   "at": "end",
+   "problem": "A consultant who is not on the roster for that county says yes. Before the review this closed the consultant gate, and the firm was one click from naming her to the office.",
+   "expect": "A yes is the consultant's to give, but the roster decides where she may appear. The yes is kept and shown, it does not count as cover, she is told why with one click, and someone else is asked.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "W5",
+   "group": "Independent review · what two reviewers broke, and the fixes",
+   "at": "end",
+   "problem": "A consultant says yes to two hearings at exactly the times of two hearings he already holds. Before the review all four showed him as committed.",
+   "expect": "Nobody can be in two hearings at once. The new yes does not count, the hearings he already holds are untouched, he is told which ones clash, and someone else is asked.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "W6",
+   "group": "Independent review · what two reviewers broke, and the fixes",
+   "at": 11,
+   "problem": "The office refused to move the hearings from June 11 to June 13. Leo, who cannot attend on June 11, writes again that he can cover June 13. Before the review this erased his June 11 conflict, stopped the search for cover and drafted a message saying the office had moved the hearings.",
+   "expect": "A yes for another date is not a yes for this hearing. His no for June 11 stays, cover for June 11 is still sought, and nothing says the hearings moved.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "W7",
+   "group": "Independent review · what two reviewers broke, and the fixes",
+   "at": "end",
+   "problem": "One office sentence carries two times, an old and a new time, or two names. Before the review the reader gave every hearing the first value: 5 wrong official facts from 5 such sentences, with no task for a person.",
+   "expect": "Each value goes to the hearing it was said about: two times in the order the hearings are named, the new time and not the old one, each name to its own hearing, and a sentence about two hearings is read as two statements.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "W8",
+   "group": "Independent review · what two reviewers broke, and the fixes",
+   "at": "end",
+   "problem": "Some sentences cannot be paired exactly: one time for two hearings (do both start at 2 p.m., or is that the start of the block?), or two names with no word on who has which hearing.",
+   "expect": "The reader does not guess an official fact. It says what it could not read, nothing changes, and a person reads the message with that reason in front of them.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "W9",
+   "group": "Independent review · what two reviewers broke, and the fixes",
+   "at": 10,
+   "problem": "The office approves the move. Leo, who only said the new date would work, is asked for a plain yes and does not answer. Before the review the offer to the next consultant was then sent again on every pass: 12 times in the test, 60 times in the closed loop.",
+   "expect": "The next consultant is asked once. After that the plan shows the offer as waiting for an answer.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "W10",
+   "group": "Independent review · what two reviewers broke, and the fixes",
+   "at": "end",
+   "problem": "It is Friday 11:16 a.m. The office needs the name by 4 p.m. and the hearing is on Tuesday. Before the review the urgency was counted to the hearing, so consultants were asked one at a time with a day each, across the weekend, and a person first heard of it on Monday at 4 a.m.",
+   "expect": "Time is counted in working hours to the moment the office needs the name: under five. Every consultant who can take the hearing is asked at once, the answer is due the same afternoon, and if nobody answers a person has the task while the office is still open.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "W11",
+   "group": "Independent review · what two reviewers broke, and the fixes",
+   "at": 3,
+   "problem": "Maya said \"maybe\" on Monday. Before the review her maybe held both hearings until Friday 9 a.m., 94 hours later, which left one working day to find anyone else.",
+   "expect": "A maybe holds a hearing for one working day. Maya is told the time by which she must answer, and when it passes the next consultant is asked. If Maya still says yes first, the first yes wins.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "W12",
+   "group": "Independent review · what two reviewers broke, and the fixes",
+   "at": "end",
+   "problem": "The notice naming Maya has gone to the office, which has not answered yet. Maya falls ill and Leo takes over. Before the review the system then waited for the office to acknowledge Leo, in a notice that was never sent, and its reminder called the old notice \"naming Leo\".",
+   "expect": "A notice that names someone who is no longer attending is out of date the moment that changes. As soon as Leo has accepted, an updated notice is ready that says he replaces Maya.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "W13",
+   "group": "Independent review · what two reviewers broke, and the fixes",
+   "at": 61,
+   "problem": "The office writes that the notices naming Leo are accepted, 90 minutes before Leo's own yes reaches the firm. Before the review this raised the alarm \"the office has the wrong representative\" and automatically offered both hearings to another consultant.",
+   "expect": "If the office has someone recorded, somebody arranged it. That person is asked first, no one else is offered the hearing, and there is no alarm. His plain \"YES\" closes both gates.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "W14",
+   "group": "Independent review · what two reviewers broke, and the fixes",
+   "at": 11,
+   "problem": "One consultant was offered two hearings. Someone else takes one of them. Before the review the first consultant was told \"the hearing we asked you about is now covered, you do not need to reply\", although the question about the other hearing was still open.",
+   "expect": "The message says which hearing is covered and which one still needs an answer, with its number from the original question and the reply-by time.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "W15",
+   "group": "Independent review · what two reviewers broke, and the fixes",
+   "at": "end",
+   "problem": "The notice for one hearing is out and waiting for the office. A second hearing at the same office now needs a notice naming the same consultant. Before the review the second sat inside the first one's \"waiting\" line for 77 minutes and first appeared as a reminder of a message that was never sent.",
+   "expect": "A hearing that still needs a message never hides inside a line that is only waiting. There are two lines: one to send, one waiting.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "W16",
+   "group": "Independent review · what two reviewers broke, and the fixes",
+   "at": "end",
+   "problem": "A consultant reports sick in a message about one hearing and holds a second hearing the same day in another thread. Found by the scale simulation: before the fix the second hearing still showed him as committed and \"ready\" (4 of 191 hearings in the rough scenario, 2 of them shown as ready).",
+   "expect": "Being ill is about the day, not about one hearing. Every hearing that consultant holds that day is opened, the message says so, and cover is sought for all of them.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "W17",
+   "group": "Independent review · what two reviewers broke, and the fixes",
+   "at": "end",
+   "problem": "People answer \"Thanks!\" all day. Before this rule every such message became a task for a person, which at scale would cost more person time than everything else together.",
+   "expect": "A message that is only thanks is recorded and needs nobody. The same words while the firm is waiting for an answer from that sender go to a person, because \"OK\" may be the answer. Thanks plus anything else is read normally.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "W18",
+   "group": "Independent review · what two reviewers broke, and the fixes",
+   "at": "end",
+   "problem": "A clerk leaves a voicemail that moves a hearing. The channel is called \"voicemail transcript\", and the word contains \"mail\". In the unseen test set this was treated as writing: the official time changed and the consultant was released on the strength of a voicemail.",
+   "expect": "A voicemail is speech, whoever typed it out. The new time is held as likely, the official time and the consultant stay, and the office is asked for it in writing.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "W19",
+   "group": "Independent review · what two reviewers broke, and the fixes",
+   "at": 14,
+   "problem": "A message names two properties in one sentence. The second AI reader quotes only the part about one of them by leaving words out: \"37 Meadow Avenue, Tesswick, June 12 at 11 a.m. ...\" from \"37 Meadow Avenue, Tesswick and 52 Meadow Avenue, Tesswick, June 12 at 11 a.m. ...\". Before the fix only a word-for-word quote counted, so its reading was dropped, the first reader stood alone, and the hearing got no date.",
+   "expect": "A quote that leaves words out is accepted under a strict rule: its words in order inside one sentence, at least 4 of them, at least half of the stretch they come from, and no negation or condition left out. Both readers then agree, AX-107 gets June 12 at 11 a.m. in writing, and nothing goes to a person.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "W20",
+   "group": "Independent review · what two reviewers broke, and the fixes",
+   "at": 43,
+   "problem": "A reader quotes \"48 Linden Avenue moved to June 13\" from \"48 Linden Avenue has not moved to June 13.\" Leaving out \"not\" turns the sentence around, and the words left out would be the whole difference.",
+   "expect": "Leaving out a negation or a condition (not, never, unless, only, cancelled and the like) makes a quote fail. The quote is refused by the guard and by the verifier, the date stays June 6, and the message goes to a person. The same quote from \"48 Linden Avenue has moved to June 13.\" passes, so it is the \"not\" that fails it.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "W21",
+   "group": "Independent review · what two reviewers broke, and the fixes",
+   "at": "end",
+   "problem": "Larkmere confirms the packets twice: \"Both packets received and readable.\" (message 64), then \"we have the current packets\" (message 66). Before the fix the repeat replaced the first receipt as the evidence for AX-121 and AX-122.",
+   "expect": "The first receipt stays the evidence: the clerk half of G4 cites message 64, not 66, and a repeat from the consultant keeps his first receipt (message 65). A later \"unreadable\" still replaces the receipt, and a receipt after that is recorded as new evidence.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "M1",
+   "group": "Business case · the arithmetic a founder will run",
+   "at": "end",
+   "problem": "A critical reader ran the return on investment: 12.4 minutes saved at $35 to $50 an hour is $7 to $10 per hearing, so a dedicated engineer at $150,000 to $200,000 needs about 15,000 to 28,000 hearings a year. The plan must run this sum itself.",
+   "expect": "The economics module reproduces the reader's figures: $7.23 to $10.33 per hearing, and 14,516 to 27,650 hearings a year for an engineer.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "M2",
+   "group": "Business case · the arithmetic a founder will run",
+   "at": "end",
+   "problem": "A plan that hires an engineer before the volume pays for one is a bet the firm cannot afford.",
+   "expect": "At the default inputs a dedicated engineer pays only above 14,000 hearings a year and the lean build before it, at the cautious and the hopeful end too. The software is measured against the minutes it removes from today’s process, never against the sheet’s extra minutes or the misses the kit already prevents. The standing control is not sold as a saving: with no block rate agreed it costs money and the model says \"never\". If the tower removes 30% of the minutes and not 60%, the lean build needs more than 10,000 hearings.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "M3",
+   "group": "Business case · the arithmetic a founder will run",
+   "at": "end",
+   "problem": "A missed hearing loses the fee on that appeal. The plan must say what that is worth, and must not overstate it.",
+   "expect": "One missed hearing loses the share of this year’s fee that the office’s rules take away, and later yearly fees only for the clients who leave. Preventing it costs the consultant who now attends. The page says at which miss rate misses are worth as much as the time saved, and with the default inputs that rate is above 5%. The default counts a quarter of the misses as prevented, which is what reminder trials support, not half. It also says what a missed hearing must cost the firm, all in, for the sheet to pay for itself, and how much win chance a consultant in the room has to add, as a range over the unknown fee.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "M4",
+   "group": "Business case · the arithmetic a founder will run",
+   "at": "end",
+   "problem": "Figures in a business case must add up: the margin gained is the time saved, and a year is the hearing times the volume.",
+   "expect": "One assumption about productive hours sets both the dollars and the head count: the coordinators a peak week needs, paid for 40 hours, cost exactly the week’s hearings times the coordination cost per hearing. The kit is worth its prevented misses and any agreed block rate less the minutes the sheet takes. The yearly effect equals the per-hearing effect times the hearings. Coordinators at peak fall by exactly the share of minutes removed. The build decision in timed minutes is the break-even solved for minutes, and it is also stated as minutes to remove, with no ratio in it. Paying stacked mornings by the half day is an illustration whose yearly figure is the per-hearing figure times the volume.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "M5",
+   "group": "Business case · the arithmetic a founder will run",
+   "at": "end",
+   "problem": "A visitor will drag every slider to its end. A page that then shows NaN, or a break-even for a change that is worth nothing, would be wrong at the moment it matters.",
+   "expect": "At every corner of the inputs all figures are numbers. A change worth nothing never pays (\"never\", not a number). When a hearing costs more than it earns, the margin is negative and the page can say so.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "O1",
+   "group": "Observability · the AI readers can drift without an error",
+   "at": "end",
+   "problem": "A trace of model calls that contains the messages would copy homeowners' mail into a monitoring tool.",
+   "expect": "Every model call becomes one trace record with the model, the provider, the hash of the instructions, tokens, cost and time, under OpenTelemetry's names. No record contains message text or the answer.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "O2",
+   "group": "Observability · the AI readers can drift without an error",
+   "at": "end",
+   "problem": "A cost or a latency figure that does not add up to the records behind it cannot be trusted when it moves.",
+   "expect": "The summary per model equals the sum of its calls. The pair's agreement counts only statements that need two keys, and a message where the second reader misses one counts as a disagreement.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "O3",
+   "group": "Observability · the AI readers can drift without an error",
+   "at": "end",
+   "problem": "Numbers nobody looks at protect nothing. Drift has to raise an alarm by itself.",
+   "expect": "Healthy numbers raise nothing. A slow provider, a costly model, a pair that stopped agreeing, too many messages to a person, a cold cache and a wrong closing each raise their own alarm.",
+   "ok": true,
+   "error": null
+  },
+  {
+   "id": "R15-CAP1",
+   "group": "The reply rule and the daily cap",
+   "problem": "Offers for two dockets on one day go out together. Eli's cap is 4; he answers YES ALL to three hearings while two more are on offer to him on the other docket.",
+   "expect": "The rule does not file the YES. It hands the reply to a person and gives the numbers: 0 held, 3 taken, 2 on offer elsewhere, which makes 5, cap 4.",
+   "ok": true
+  },
+  {
+   "id": "R15-CAP2",
+   "group": "The reply rule and the daily cap",
+   "problem": "A YES that brings the consultant exactly to the cap.",
+   "expect": "It is filed, and the reason shows the count: 8 of 8.",
+   "ok": true
+  },
+  {
+   "id": "R15-CAP3",
+   "group": "The reply rule and the daily cap",
+   "problem": "A consultant who already holds as many hearings as the cap allows says YES to one more.",
+   "expect": "To a person: over the daily cap, with the hearings held and the cap in the reason.",
+   "ok": true
+  },
+  {
+   "id": "R15-CAP4",
+   "group": "The reply rule and the daily cap",
+   "problem": "A NO from a consultant who is at the cap.",
+   "expect": "A NO is never held up by the cap: it is filed as a decline.",
+   "ok": true
+  },
+  {
+   "id": "R15-CAP5",
+   "group": "The reply rule and the daily cap",
+   "problem": "The caller sends the hearings held but no cap, or a number that is not a whole number.",
+   "expect": "The rule does not guess a cap. A YES goes to a person, who checks it.",
+   "ok": true
+  },
+  {
+   "id": "R15-CAP6",
+   "group": "The reply rule and the daily cap",
+   "problem": "A caller that supplies no numbers for the day (every caller before round 15).",
+   "expect": "The rule works as before: the YES is filed, the result carries no cap numbers, and the cap is not claimed to be checked.",
+   "ok": true
+  },
+  {
+   "id": "R15-CAP7",
+   "group": "The reply rule and the daily cap",
+   "problem": "A reply that is not a clean YES, with a day far over the cap.",
+   "expect": "The reason is the form of the reply, as before. The cap is checked only on a YES the fixed form would file.",
+   "ok": true
+  },
+  {
+   "id": "R15-CAP8",
+   "group": "The reply rule and the daily cap",
+   "problem": "The example replies carry seven hypothetical days near a cap (R33 to R39).",
+   "expect": "Every example reply is handled as a coordinator would decide by hand, and the cap sends exactly R33, R35, R38 and R39 to a person.",
+   "ok": true
+  },
+  {
+   "id": "R15-CAP9",
+   "group": "The reply rule and the daily cap",
+   "problem": "A user tries a reply on the command line with the day's numbers, and once without them.",
+   "expect": "With the numbers the command says TO A PERSON and why. Without them it files the YES and says that the cap was not checked. With only one of the two needed numbers it stops and says what is missing.",
+   "ok": true
+  },
+  {
+   "id": "R15-TRY1",
+   "group": "Try the readers on a typed message",
+   "problem": "A user types a message and has no API key.",
+   "expect": "The command says plainly that no key is set and that the message was not read, calls nothing, and shows a recorded example.",
+   "ok": true
+  },
+  {
+   "id": "R15-TRY2",
+   "group": "Try the readers on a typed message",
+   "problem": "Without a key, the user types the exact text of an example message, or asks for an example by number.",
+   "expect": "The recorded reading of that message is shown, with what the verifier did and why a person is needed.",
+   "ok": true
+  },
+  {
+   "id": "R15-TRY3",
+   "group": "Try the readers on a typed message",
+   "problem": "With readers available, a typed message goes through the same steps as a recorded one. (Two stand-in readers are used here, so the check calls no model.)",
+   "expect": "A yes from the consultant that both readers find is accepted as a fact. The same words from an unknown sender prove nothing. A yes that only one reader finds is held back for a person.",
+   "ok": true
+  },
+  {
+   "id": "R15-TRY4",
+   "group": "Try the readers on a typed message",
+   "problem": "The command is run from a shell with no OPENAI_API_KEY in the environment.",
+   "expect": "It exits normally, prints that no key is set, and its help says that the key comes from the environment only. The source of the command reads no key file.",
+   "ok": true
+  },
+  {
+   "id": "R15-QUOTE1",
+   "group": "The words shown for a consultant's yes",
+   "problem": "A reader's quote for a yes is a true sentence of the message that is not the acceptance (\"I have left the morning free for these hearings.\").",
+   "expect": "Fixed code finds the sentence of the message that says yes: \"I accept both.\" for messages 62 and 68, \"Accepted.\" for message 50.",
+   "ok": true
+  },
+  {
+   "id": "R15-QUOTE2",
+   "group": "The words shown for a consultant's yes",
+   "problem": "The quote already holds the acceptance, or the only accepting sentence carries a \"but\" or a \"cannot\" (message 5), or the words \"I can cover\" sit inside a request for files.",
+   "expect": "Nothing is replaced. A sentence with a negation or a condition is never shown as a yes.",
+   "ok": true
+  },
+  {
+   "id": "R15-QUOTE3",
+   "group": "The words shown for a consultant's yes",
+   "problem": "The readers' proposals for the sheet: each consultant's own yes must show the words that say yes (clean threads 61 to 72 and message 50).",
+   "expect": "All 14 own-yes proposals show an acceptance. The six that showed other words before (AX-117, AX-118, AX-121 to AX-124) keep the earlier words in \"quoteBefore\".",
+   "ok": true
+  },
+  {
+   "id": "R15-QUOTE4",
+   "group": "The words shown for a consultant's yes",
+   "problem": "The sheet generator reads the --json output of cli/sheet.js.",
+   "expect": "Every field of the earlier output is still there under the same name: the seven top-level fields, the seven fields of each proposal, 63 proposals to close and 40 to leave open. New fields are only added.",
+   "ok": true
+  },
+  {
+   "id": "R15-QUOTE5",
+   "group": "The words shown for a consultant's yes",
+   "problem": "Brook Road (message 40): the clerk confirms the case files, but nobody is committed, so the files cell is not closed and the receipt was never shown.",
+   "expect": "The receipt is listed as a half proof for Hearings L of both hearings, with the words \"Confirming receipt of both case packets.\"",
+   "ok": true
+  },
+  {
+   "id": "R15-CHANGE1",
+   "group": "Process-change detector",
+   "problem": "Message 22: a clerk says by phone that emailing names is no longer enough. The firm writes it down as a call note.",
+   "expect": "Fixed code flags it as a proposal for Offices M of the Tesswick row, with HOLD, for a person. It is the only flag among the 72 example messages.",
+   "ok": true
+  },
+  {
+   "id": "R15-CHANGE2",
+   "group": "Process-change detector",
+   "problem": "False alarms: an office message that changes nothing must not raise a HOLD for that office.",
+   "expect": "Measured on both sets: 0 false alarms on the 33 checked example messages without a process change and 0 on the 28 unseen ones; the three process changes in the answer key (22, H036, H057) are all flagged.",
+   "ok": true
+  },
+  {
+   "id": "R15-CHANGE3",
+   "group": "Process-change detector",
+   "problem": "A consultant writes \"I am no longer available on Fridays\", and the firm writes an email that says \"from now on\".",
+   "expect": "Neither is checked: the detector looks only at messages from an office and at the firm's call notes.",
+   "ok": true
+  },
+  {
+   "id": "R15-AUTO1",
+   "group": "Auto-file analysis",
+   "problem": "The auto-file numbers must come from the recorded runs and agree with them.",
+   "expect": "The count of closing readings both readers agree on equals the recorded run's own count on both sets (128 on the examples; 32 on the unseen set plus 4 of a type its answer key predates).",
+   "ok": true
+  },
+  {
+   "id": "R15-AUTO2",
+   "group": "Auto-file analysis",
+   "problem": "Agreed and verified is not the same as right.",
+   "expect": "The analysis names the wrong ones by message: message 17 on the examples (1 wrong of 125) and H059 on the unseen set (1 wrong of 26 the key can judge, 5 of 30 on the strict count). Every count carries its denominator.",
+   "ok": true
+  },
+  {
+   "id": "R15-AUTO3",
+   "group": "Auto-file analysis",
+   "problem": "The two clean threads (messages 61 to 72) and Brook Road (37 to 42): how many person actions does each hearing need on the gate sheet with the rules of round 15?",
+   "expect": "Changed in round 15d, because the analysis now applies sheet rules S1, S11, S12 and S15. Larkmere: 10 actions with auto-file off and 5 with it on. Velloran: 7 and 1. Brook Road: 4 and 2, and three open cells that need work either way. The earlier figures (5 and 0, 6 and 0, 3 and 1) are kept as the count of proof links only.",
+   "ok": true
+  },
+  {
+   "id": "R15-AUTO4",
+   "group": "Auto-file analysis",
+   "problem": "The stored file eval/autofile.json could go stale when the code or the recorded answers change.",
+   "expect": "The stored file equals a fresh analysis, and on the sheet all 63 proposed proof links are agreed, passed and right, while 2 links of the answer key were not proposed.",
+   "ok": true
+  },
+  {
+   "id": "R15-INBOX1",
+   "group": "Inbox connector on exported files",
+   "problem": "A folder of exported messages: 13 emails and 2 texts from the case packet.",
+   "expect": "Every file is read, every message finds its recorded answer, and one list comes out. Each line has the tab, the row, the column, the value, the link, who proposed it, and \"files itself\" or \"for a person\". Since round 17 the list has 33 lines: 29 for the Hearings tab, each with its row number, and 4 for a new row of the Availability tab (the illness report of message 41). It had 35 in round 16: four lines of message 66 (K and BD on rows 9 and 10) are now listed as repeats of message 61 and are not proposed, and two lines for Hearings AZ are new, because message 66 names the case-file version.",
+   "ok": true
+  },
+  {
+   "id": "R15-INBOX2",
+   "group": "Inbox connector on exported files",
+   "problem": "The office rule sorts 13 of 30 unseen office messages right, so what it proposes must never be filed without a person. Auto-filing of reader proposals is the firm's decision and is off unless asked for.",
+   "expect": "With auto-file off all 33 lines (35 in round 16, 31 before it) are for a person. With --autofile, 17 lines file themselves, each one a reader proposal that both readers agree on and the verifier passes; no line that only the office rule proposed files itself.",
+   "ok": true
+  },
+  {
+   "id": "R15-INBOX3",
+   "group": "Inbox connector on exported files",
+   "problem": "Two texts in free wording (messages 5 and 41) answer a numbered offer and a day-before text.",
+   "expect": "The reply rule files neither and says why. The readers still propose Maya's yes for 28 Willow Lane from the text (Hearings J, row 8), and the clerk's receipt for Brook Road goes to Hearings L of rows 4 and 5.",
+   "ok": true
+  },
+  {
+   "id": "R15-INBOX4",
+   "group": "Inbox connector on exported files",
+   "problem": "A text in the fixed form: YES 1 to a numbered offer, with the day's numbers inside the cap. Then another consultant answers Yes all to the same docket, and a third says YES ALL with five hearings already held and a cap of six.",
+   "expect": "The first files itself: the link goes to Hearings J and the name to Hearings H of the first hearing of the docket. The second goes to a person, because hearing 1 is taken. The third goes to a person, because of the daily cap.",
+   "ok": true
+  },
+  {
+   "id": "R15-INBOX5",
+   "group": "Inbox connector on exported files",
+   "problem": "An office email, base64 encoded, says that filings must now go to another address and on a new form. Another email has no recorded answer. A third file is not valid JSON.",
+   "expect": "The process change is listed as HOLD for that office and its Offices M proposal is for a person even with --autofile. The message without a recorded answer is handed to a person and is not read by a model. The broken file is reported and does not stop the run.",
+   "ok": true
+  },
+  {
+   "id": "R15-INBOX6",
+   "group": "Inbox connector on exported files",
+   "problem": "The connector works on exported files. Somebody could take it for a live connection to the firm's mailbox.",
+   "expect": "The help text and every run say that the live hookup needs the firm's accounts, and the help names the two questions to ask. The command exits normally on the example folder and prints the table.",
+   "ok": true
+  },
+  {
+   "id": "R15D-INBOX7",
+   "group": "Inbox connector on exported files",
+   "problem": "Fenwick Vale writes \"Please arrive 15 minutes before the first case\" (message 40). Until round 15d the connector proposed those words for Hearings AV; the sheet wants the minutes in column CI (rule S15), and words in AV are read by the link check.",
+   "expect": "The connector proposes 15 for Hearings CI on rows 4 and 5 (AX-113 and AX-114), for a person, and proposes nothing for AV from that message. The list has 33 lines (35 in round 16; round 17 lists four lines of message 66 as repeats and adds two for Hearings AZ).",
+   "ok": true
+  },
+  {
+   "id": "R15D-AUTO5",
+   "group": "The tools say what the installed sheet says",
+   "problem": "The Velloran clean thread: the readers close 4 of 4 cells, but the office names video room C and sends no link (S11), and neither receipt names a version (S12). The analysis must not say that these hearings need nobody.",
+   "expect": "AX-123 and AX-124 read OPEN: 3 missing after the filing, each lists the room question, the GOT IT 2 request and the files email under what remains, and the docket has 3 messages still to send. The count of proofs missing equals column U of the installed sheet on all six rows (0, 0, 3, 3, 4, 4).",
+   "ok": true
+  },
+  {
+   "id": "R15D-AUTO6",
+   "group": "The tools say what the installed sheet says",
+   "problem": "The Larkmere clean thread: the readers link the clerk's first receipt (message 64), which names no version; the office's later message 66 says \"current\". Leo says he arrives at 10:45 for an 11:00 first case. Brook Road: the office asks for 15 minutes.",
+   "expect": "Larkmere reads READY; a person pastes message 66 over message 64 in L and types AZ, BW, AY and CH, and one reply to Leo about 10:30 a.m. remains. Brook Road lists CI with 15 and says the clerk's receipt names no version. A room letter, a date or an address is not a link; a web address and a ten-digit number are.",
+   "ok": true
+  },
+  {
+   "id": "R15D-HOLD1",
+   "group": "The tools say what the installed sheet says",
+   "problem": "An office changes its route. Round 16 reversed the rule of round 15d: a changed route is BLOCKED until a person approves it, because sending by both routes kept a route alive that the office had said was no longer enough. A tool that still said \"both routes\" or \"notices do not stop\" would send a notice the sheet now holds back.",
+   "expect": "The inbox connector's HOLD line, its note on the Offices M line and its help, the summary and the --process-changes output of cli/sheet.js, and the --csv row all say NO NOTICE GOES TO THIS OFFICE UNTIL A PERSON APPROVES THE CHANGE TODAY, and none says both routes or that notices keep going. The HOLD line is the sheet's sentence word for word.",
+   "ok": true
+  },
+  {
+   "id": "R15D-SHEET1",
+   "group": "The tools say what the installed sheet says",
+   "problem": "The installed gate sheet was built from the output of node cli/sheet.js --json. A later change to a tool could change that input without anybody rebuilding the sheet.",
+   "expect": "The --json output is byte for byte the generator input of round 18 (sheet_ai.v18.json, SHA-256 cd8a9110...deee21; it differs from sheet_ai.v17.json, 05787c5b...5fe9da, only by the 15 lines of round 18 appended to newCellProposals and their count in the summary). Round 17: sheet_ai.v17.json; round 16: sheet_ai.v16.json, 82a452f6...23263f. The new file differs from the old one in additions only: the lists repeatProposals and questionProposals, and their three counts in the summary (repeats, notRepeats, questionProposals). Every field of the v16 input is unchanged, byte for byte, so a sheet built from either input has the same cells until the generator prints the new lists. When the sheet is rebuilt from a new input, this value is updated on purpose.",
+   "ok": true
+  },
+  {
+   "id": "R15D-HEADERS1",
+   "group": "The tools say what the installed sheet says",
+   "problem": "The tools name cells of the sheet by column letter and heading. Round 15 changed headings (AV) and added columns (BW, BX, CI), and a tool that still shows an old heading sends a person to the wrong cell.",
+   "expect": "Every heading that cli/inbox.js (REPLY_CELLS), cli/sheet.js (CELLS) and the office rule name is word for word row 1 of the installed sheet, as read from the sheet dump on 20 Nov 2026 (21 cells of the Hearings tab and Offices M).",
+   "ok": true
+  },
+  {
+   "id": "R15D-DOCKETS1",
+   "group": "The tools say what the installed sheet says",
+   "problem": "node cli/sheet.js --dockets printed an offer and a day-before text for each docket in the wording of the sheet before round 15: no office time zone, no clock time to be at the office, and a Velloran text that the sheet itself holds back with DO NOT SEND YET.",
+   "expect": "The option prints the list of the 9 dockets only, prints no offer and no day-before text, and says that the Dockets tab of the gate sheet (columns H and I) is the source of both.",
+   "ok": true
+  },
+  {
+   "id": "R15D-OFFICE1",
+   "group": "The tools say what the installed sheet says",
+   "problem": "On the 30 unseen office messages the office rule sorts 13 right. Three of the wrong ones are not handed to a person as a whole message (H038, H047, H059), and two of those propose a cell the label does not have. Could such a proposal reach the sheet without a person?",
+   "expect": "No. The 30 messages are run through the inbox connector as exported emails, with auto-file off and with --autofile: the office rule proposes 24 lines (20 before round 16; the 4 new ones are Offices AS and AT for the two process changes H036 and H057), 5 of them for a cell the label does not have (H047 L; H059 AW and BH on two hearings), and 0 of the 23 lines that the office rule alone proposes file themselves either way. The one line that files itself with --autofile (H032, Hearings I) is also proposed by both AI readers and is in the label.",
+   "ok": true
+  },
+  {
+   "id": "R16-D2a",
+   "group": "The tools follow the sheet's rules (D2, D3, D4, X14, X17, X9, C2)",
+   "problem": "D2. The gate sheet now blocks a changed office route until a person approves it. The generator input still held the sentence of round 15, and a tool could propose the approval itself.",
+   "expect": "node cli/sheet.js --json writes one Offices M proposal for message 22 whose HOLD sentence is word for word the sheet's (Reader suggestions C171). Beside it the fixed code proposes Offices AS = \"no\" (the clerk said emailing names is no longer enough) and Offices AT, and nothing for the approval cells AQ and AR.",
+   "ok": true
+  },
+  {
+   "id": "R16-D2b",
+   "group": "The tools follow the sheet's rules (D2, D3, D4, X14, X17, X9, C2)",
+   "problem": "D2. After the approval the new route is the route, and the old one may be printed only while the office still accepts it. For Tesswick the clerk said the email is no longer enough.",
+   "expect": "The fixed code that mirrors Offices AV gives state 1 (blocked, no route printed) for Tesswick as the example stands, state 2 (the new route only, the old email route printed nowhere) once a name and a date are typed, and state 3 only when Offices AS says yes or not known.",
+   "ok": true
+  },
+  {
+   "id": "R16-D3",
+   "group": "The tools follow the sheet's rules (D2, D3, D4, X14, X17, X9, C2)",
+   "problem": "D3. Clerk Sol cannot find the staffing form the firm sent (messages 23 and 24). Until round 16 no cell recorded that it went, and the row read as if nothing had been sent.",
+   "expect": "For AX-107 and AX-108 the fixed code proposes Hearings CP (the link to message 24) and Hearings CQ (the link to message 23, the firm's own message with the form). For AX-106 (message 16: the office has not received an assignment, and the thread holds no notice the firm sent) CP is proposed only on the condition that a notice went, with the instruction to leave CP and CQ empty and send it now if none did.",
+   "ok": true
+  },
+  {
+   "id": "R16-D4",
+   "group": "The tools follow the sheet's rules (D2, D3, D4, X14, X17, X9, C2)",
+   "problem": "D4. The clerk asked for a call \"tomorrow morning\" (message 24). The call was in the kit only; nothing proposed it as a task on the row.",
+   "expect": "For AX-107 and AX-108 the fixed code proposes the task in Hearings Y (resend the completed form, then call the office in its hours) and \"tomorrow morning, as the office asked\" in Hearings AA. A call the new route needs is printed with the office's hours only after the approval.",
+   "ok": true
+  },
+  {
+   "id": "R16-X17a",
+   "group": "The tools follow the sheet's rules (D2, D3, D4, X14, X17, X9, C2)",
+   "problem": "X17. Maya reports ill for June 6 (message 41) and holds 28 Willow Lane on June 10. Nothing tied the illness report to her later hearing.",
+   "expect": "The fixed code proposes one row of the Availability tab from message 41: Maya Venn, not free, reason illness, said on June 5 (the timestamp of the replay). The line names AX-102 on June 10 as the hearing she holds in the 7 days after, to be asked about the same day. Brook Road, which she has just given up, is not listed. No other message of the 72 is read as an illness report.",
+   "ok": true
+  },
+  {
+   "id": "R16-X17b",
+   "group": "The tools follow the sheet's rules (D2, D3, D4, X14, X17, X9, C2)",
+   "problem": "X17. Words that are not an illness report must not open an Availability row: \"I am not ill\", \"the homeowner is ill\", a decline for another reason, and an office's message.",
+   "expect": "Only a consultant's own \"I am ill\", \"I'm sick\", \"I am feeling unwell\" or \"I have the flu\" counts. Four other texts give no proposal, and the same words from an office give none.",
+   "ok": true
+  },
+  {
+   "id": "R16-X17c",
+   "group": "The tools follow the sheet's rules (D2, D3, D4, X14, X17, X9, C2)",
+   "problem": "X17. The illness text arrives in the mailbox connector as an exported text message. It must reach a person the same day and must never file itself.",
+   "expect": "node cli/inbox.js lists four lines for a new row of the Availability tab from 041-maya-venn.json, all for a person with auto-file off and with --autofile, and hands the message to a person with the line that names AX-102. The list has 33 lines (35 in round 16, 31 before it).",
+   "ok": true
+  },
+  {
+   "id": "R16-C2",
+   "group": "The tools follow the sheet's rules (D2, D3, D4, X14, X17, X9, C2)",
+   "problem": "C2. Message 27 says a settlement offer for 16 Birch Lane is ready to sign. A tool that filed a settlement cell from that message would take a staffed hearing off the list on nothing.",
+   "expect": "The fixed code proposes no link for any settlement cell. It lists the four cells of AX-109 that no message proves (Hearings BG, O, AF and BA) as \"leave empty\", with the question for the office, and nothing for AX-110, whose hearing is still scheduled.",
+   "ok": true
+  },
+  {
+   "id": "R16-X14",
+   "group": "The tools follow the sheet's rules (D2, D3, D4, X14, X17, X9, C2)",
+   "problem": "X14. The packet gives no telephone number for any of the six consultants, yet a tool or a list could still say \"text\" or \"call\" for them.",
+   "expect": "reachOf mirrors Bench R of the sheet: 0 (email only) for all six packet consultants, whatever their preferred channel; 1 with a number and no agreement; 2 with both. node cli/sheet.js --dockets marks every holder (EMAIL ONLY), as the Dockets tab does, and says that the day-before message and the evening offer go by email and that no noon call and no arrival call can reach them.",
+   "ok": true
+  },
+  {
+   "id": "R16-X9a",
+   "group": "The tools follow the sheet's rules (D2, D3, D4, X14, X17, X9, C2)",
+   "problem": "X9. A calendar export in local time shows the wrong hour to a consultant whose calendar is set to another zone.",
+   "expect": "node cli/calendar.js writes hearings.ics with one event for each of the 19 hearings of the --dockets list, every start and end in UTC with the letter Z. Read back with the built-in RFC 5545 parser, every event parses, no line is longer than 75 octets, and each UTC start equals the local time plus 5 hours for these offices at UTC-05:00.",
+   "ok": true
+  },
+  {
+   "id": "R16-X9b",
+   "group": "The tools follow the sheet's rules (D2, D3, D4, X14, X17, X9, C2)",
+   "problem": "X9. A clock change was typed by hand. Whether an office changes its clocks is not in the packet, so the tool must not guess, and when an office says yes the rule must be the United States one.",
+   "expect": "With no answer (ASK) or no, the standard hours from UTC are used all year. With yes, one hour is added from the second Sunday of March up to the day before the first Sunday of November: March 10 and November 2, 2030 are inside, March 9 and November 3 are outside. With --clocks \"Larkmere=yes\" the four Larkmere events of June 10 start one hour earlier in UTC and no other event moves.",
+   "ok": true
+  },
+  {
+   "id": "R16-X9c",
+   "group": "The tools follow the sheet's rules (D2, D3, D4, X14, X17, X9, C2)",
+   "problem": "X9. A check that cannot fail proves nothing. The calendar check must reject a wrong hour, a local time without Z, a line that is too long, a comma that is not escaped, a missing event and a doubled UID.",
+   "expect": "Six broken copies of the file are each rejected with the reason, and text with a comma, a semicolon, a backslash and a line break reads back unchanged after escaping, folding at 75 octets and unfolding.",
+   "ok": true
+  },
+  {
+   "id": "R16-HEADERS2",
+   "group": "The tools follow the sheet's rules (D2, D3, D4, X14, X17, X9, C2)",
+   "problem": "The tools name the cells the sheet gained in round 16 by column letter and heading. A wrong heading sends a person to the wrong cell.",
+   "expect": "The 14 headings in NEW_CELLS of cli/sheet.js and the 5 new headings the office rule shows (Hearings AA, CP, CQ and Offices AS, AT) are word for word row 1 of the installed sheet, as read from the sheet dump on 20 Nov 2026.",
+   "ok": true
+  },
+  {
+   "id": "R16-G2TEXT",
+   "group": "The tools follow the sheet's rules (D2, D3, D4, X14, X17, X9, C2)",
+   "problem": "The G2 row of this list said \"Maya texts at 6:12 p.m.\" as plain fact. The packet gives no hour for message 41; 6:12 p.m. is where the prototype's replay places it.",
+   "expect": "The row says that the packet gives no hour and that 6:12 p.m. comes from the simulated timeline, and the timeline file itself says its timestamps are simulated and holds 18:12 for message 41.",
+   "ok": true
+  },
+  {
+   "id": "R17-P1a",
+   "group": "New mail onto the sheet, repeats, questions (R8, K2, I3)",
+   "problem": "R8. A coordinator has new mail and no named way to get the readers' proposals for it onto the sheet: the \"Reader suggestions\" tab was example data only.",
+   "expect": "node cli/sheet.js --paste data/paste-example/new-messages.json, run with no key, exits normally and writes a tab-separated file of 26 rows (22 in round 17; the 4 new rows are Hearings DT and DU of round 18 for U001, Owen Tarris's report of the Brook Road results). Every row has exactly seven cells, the seven columns of the tab, and the seventh (the person's yes or no) is empty. No heading row is written unless --header is passed.",
+   "ok": true
+  },
+  {
+   "id": "R17-P1b",
+   "group": "New mail onto the sheet, repeats, questions (R8, K2, I3)",
+   "problem": "R8. Without a key the command replays recorded answers. A reader of the output could take a replay for a reading, or miss that a new message was not read at all.",
+   "expect": "The output says in capitals that NO MODEL WAS CALLED, names the 5 of 6 messages whose recorded answers were replayed (66, 72, H031, H036, U001) and the one that has none (new-1), and says that one was NOT READ. The file holds one row for new-1 that starts NOT READ and hands it to a person, and no other row for it.",
+   "ok": true
+  },
+  {
+   "id": "R17-P1c",
+   "group": "New mail onto the sheet, repeats, questions (R8, K2, I3)",
+   "problem": "R8. The rows must carry what the tab needs for each kind of proposal: a proof link, a half proof, a cell to leave open, an office change with HOLD, a message for a person, and a repeat.",
+   "expect": "On the example file: H031 gives two half proofs for Hearings L and three cells to leave open; H036 gives the HOLD row for Offices M with the block sentence and two rows for Offices AS and AT; U001 is handed to a person, and since round 18 also gives four rows for Hearings DT and DU (who reported the results of AX-113 and AX-114, and the link); message 72 gives four rows that read REPEAT: THE CELL KEEPS ITS FIRST LINK; message 66 gives four such rows and four rows that are not repeats (Hearings L and AZ on two hearings).",
+   "ok": true
+  },
+  {
+   "id": "R17-P1d",
+   "group": "New mail onto the sheet, repeats, questions (R8, K2, I3)",
+   "problem": "R8. With a key the same command must send each new message to the two live readers. No paid run is approved, so the live path can only be tested up to the request.",
+   "expect": "With a stand-in for the network (no request leaves the machine, no model is called), one new message makes exactly two requests, the first reader and the second: a POST to the Responses address with the model, the instructions, the message text in the input and the JSON schema. The stand-in's answer then goes through the same cross-check and comes out as rows. This is a test of the request and the plumbing, not of a model.",
+   "ok": true
+  },
+  {
+   "id": "R17-P1e",
+   "group": "New mail onto the sheet, repeats, questions (R8, K2, I3)",
+   "problem": "R8. The text of a message comes from outside the firm. Pasted into a sheet, a cell that starts with an equals sign is read as a formula, and a tab or a line break inside a cell shifts every cell after it.",
+   "expect": "A cell of the file is one line with no tab, and a cell that would start with =, +, - or @ starts with a space, so that it is pasted as text. A file with two messages of the same id, or with the number of an example message and another text, is refused with a plain sentence.",
+   "ok": true
+  },
+  {
+   "id": "R17-P2a",
+   "group": "New mail onto the sheet, repeats, questions (R8, K2, I3)",
+   "problem": "K2. Message 72 says again what message 70 said (Owen is recorded, room C, no changes). The engine keeps the first link, so nothing was proposed, but nothing showed that the message had been read and found to be a repeat.",
+   "expect": "The --json output lists four repeats for message 72 in repeatProposals: Hearings K of AX-123 and AX-124 with repeatOf 70, and Hearings I of both with repeatOf 67. None of its lines is a non-repeat, and the list of proposals holds no line from message 72, as before. On the 72 messages there are 18 repeats.",
+   "ok": true
+  },
+  {
+   "id": "R17-P2b",
+   "group": "New mail onto the sheet, repeats, questions (R8, K2, I3)",
+   "problem": "K2. Message 66 repeats message 61 (Leo is recorded) but it also says \"we have the current packets\", and message 64 named no version. Marking it a pure repeat would leave the clerk's half of the files check open on rows 9 and 10.",
+   "expect": "For message 66 the list holds repeats for Hearings K and I (of message 61) and, for Hearings L, a line that is NOT a repeat: it carries no repeatOf, names message 64 as the first link and the case-file version as what is new, and a second line proposes the version for Hearings AZ. The test is the kit's: a later message replaces the first link only when it states something the cell needs that the first did not.",
+   "ok": true
+  },
+  {
+   "id": "R17-P2c",
+   "group": "New mail onto the sheet, repeats, questions (R8, K2, I3)",
+   "problem": "K2. The mailbox connector listed six fresh proposals from message 66 (K, L and BD on rows 9 and 10) for a person to dismiss by hand.",
+   "expect": "node cli/inbox.js prints \"REPEAT of message 61: no cell changes\" for Hearings K and BD on rows 9 and 10 and proposes nothing for those cells from message 66. The link of message 66 stays a proposal for Hearings L on both rows, with the note that it is not a repeat, and Hearings AZ is proposed beside it. The readers' own repeats for Hearings I are listed too: 8 repeats in all.",
+   "ok": true
+  },
+  {
+   "id": "R17-P2d",
+   "group": "New mail onto the sheet, repeats, questions (R8, K2, I3)",
+   "problem": "K2. The office-reply helper, run on the text of message 72, told a person to type the link to this message in Hearings K, BD and AV: an overwrite of the first link, against the kit's rule.",
+   "expect": "node cli/office.js --try with the text of message 72 and --county Velloran says that the text is message 72 of the packet, compares it with messages 67 and 70, and prints REPEAT of message 70: no cell changes for Hearings K, BD and AV. It proposes no cell. With the text of message 66 it prints the repeat for K and BD and keeps Hearings L as NOT A REPEAT, with Hearings AZ.",
+   "ok": true
+  },
+  {
+   "id": "R17-P2e",
+   "group": "New mail onto the sheet, repeats, questions (R8, K2, I3)",
+   "problem": "K2. The repeat test must not swallow a change: a new room, a new name, another version or a second reminder said by the same office is not a repeat.",
+   "expect": "The office rule's markRepeats marks \"Owen is recorded for both cases\" after the same sentence as a repeat, and does not mark: room D after room C, Leo after Owen, a reminder that asks again who attends (Hearings BH counts every time). Readers' side: message 45 (room D in place of room B) and message 70 (room C) stay proposals for Hearings I and are in no repeat list.",
+   "ok": true
+  },
+  {
+   "id": "R17-I3",
+   "group": "New mail onto the sheet, repeats, questions (R8, K2, I3)",
+   "problem": "I3. Nora asks \"Should I prepare for both?\" (message 54). A question proves nothing and closes nothing, so no tool proposed anything for it and nothing showed that it waits for an answer.",
+   "expect": "The --json output lists a proposal for Hearings BN on AX-117 and AX-118 from message 54, for a person, with Nora's question in its words, so that the sheet prints TELL until the answer is linked in BO. The same for the other three questions of consultants in the examples (messages 12, 35 and 48): 8 proposals in all. The code does not write the answer.",
+   "ok": true
+  },
+  {
+   "id": "R17-P3",
+   "group": "New mail onto the sheet, repeats, questions (R8, K2, I3)",
+   "problem": "P3. node eval/autofile.js printed \"on the round-15 sheet\" above its count of person actions, two rounds after that sheet was replaced.",
+   "expect": "The heading names the gate sheet as it is installed, says which rules the count covers (S1, S11, S12 and S15, on the sheet since round 15) and says that the cells gained in rounds 16 and 17 are not in the count. The words \"round-15 sheet\" are printed nowhere, and the stored file eval/autofile.json does not hold them either.",
+   "ok": true
+  },
+  {
+   "id": "R18-K1",
+   "group": "The tools follow Part K of the sheet (K1, K2, K3, K5, K6) and the live run of --paste",
+   "problem": "K1 (X30). Message 16 records Nora for 9 Orchard Road while the hearing is on June 12; message 17 moves it to June 18. A link in K from before a move must not close G3 for the new date, and nothing told a person which date the office's record was for.",
+   "expect": "The fixed code proposes Hearings DQ = 2030-06-12 for AX-105 from message 16 and DR = 2030-06-12 from message 17, and for AX-115 (message 47 moves 48 Linden Avenue from June 6 to June 13) DQ = 2030-06-06 from message 43 and DR = 2030-06-06. No DQ is proposed for a hearing that was never moved after its record (AX-116, AX-121 and the others), because an empty DQ lets K count there. The headings are word for word row 1 of the installed sheet.",
+   "ok": true
+  },
+  {
+   "id": "R18-K1b",
+   "group": "The tools follow Part K of the sheet (K1, K2, K3, K5, K6) and the live run of --paste",
+   "problem": "K1, K2. When an office moves a hearing in writing, the office rule cleared J and H only, so the office's record of the name for the old date stayed in K, and no cell held the old date.",
+   "expect": "On message 47 the office rule also proposes K \"(clear the cell; keep the old link in a note in Y)\" and DR \"June 6\" for 48 Linden Avenue only; on message 17 it proposes both for 9 Orchard Road, with DR as the date now in D (the message gives no old date). A new time on the same day (H032), a move reported by phone and a refusal propose neither.",
+   "ok": true
+  },
+  {
+   "id": "R18-K3",
+   "group": "The tools follow Part K of the sheet (K1, K2, K3, K5, K6) and the live run of --paste",
+   "problem": "K3 (J1). A result in S had no source on the row: who reported it and the link to the note or message.",
+   "expect": "The fixed code proposes Hearings DT (who, how) and DU (the link) for AX-119 and AX-120 from Owen Tarris's phone note (message 57, by telephone) and from the Juniper Reach office's written word (message 59, in writing): 8 lines. Message 60, the office's reminder of the same request, and the firm's own note (message 58) give none. DT asks a person to type the day, because no message carries a date.",
+   "ok": true
+  },
+  {
+   "id": "R18-K6",
+   "group": "The tools follow Part K of the sheet (K1, K2, K3, K5, K6) and the live run of --paste",
+   "problem": "K6 (X31). Hearings AA held \"tomorrow morning\" in words, and a paper notice gave no cell for the day it arrived.",
+   "expect": "Beside the call task of message 24 (\"please call tomorrow morning\") the fixed code proposes Hearings DX for AX-107 and AX-108, as a day a person types (the packet gives none). AX-106 (message 16, whose words say no day) gets none. Offices BB = yes is proposed once, for Harthmere, from message 43, which came as a mail transcript; Hearings DW is never proposed, because no message says when a notice arrived.",
+   "ok": true
+  },
+  {
+   "id": "R18-NEVER",
+   "group": "The tools follow Part K of the sheet (K1, K2, K3, K5, K6) and the live run of --paste",
+   "problem": "K4, K5. A tool that proposed an office's address, a decider's name or a homeowner's word from no statement would invent a fact.",
+   "expect": "No proposal of any list names Offices BA (the address), Hearings DS, DV or DW, on the 72 messages and on the paste example. The --new-cells list says so in a last line.",
+   "ok": true
+  },
+  {
+   "id": "R18-K5",
+   "group": "The tools follow Part K of the sheet (K1, K2, K3, K5, K6) and the live run of --paste",
+   "problem": "K5 (X29). The calendar entry of a hearing in person named only \"Larkmere hearing office\": no street, no room, no place to report.",
+   "expect": "node cli/calendar.js writes LOCATION \"<County> hearing office: ADDRESS NOT ON RECORD: Offices BA<row>\" for each hearing in person, with the office's row on the Offices tab (Larkmere BA2, Tesswick BA5), as the sheet's Calendar tab does; video hearings are unchanged. With an address given for Larkmere (commas and a semicolon in it) the location carries it, the file still passes the RFC 5545 check, and the text reads back unchanged.",
+   "ok": true
+  },
+  {
+   "id": "R18-PASTE",
+   "group": "The tools follow Part K of the sheet (K1, K2, K3, K5, K6) and the live run of --paste",
+   "problem": "The --paste help said the live path \"was not run on a real model in round 17\", and a run behind a proxy failed for every message until Node was told to use the proxy.",
+   "expect": "node cli/sheet.js --paste-help gives the measured live run of 21 November 2026 (4 messages read live, 8 requests, 0.0911 US dollars, 9 of 9 rows equal to the recorded rows, a smoke test and not an accuracy measure) and says to start Node with NODE_USE_ENV_PROXY=1 behind a proxy (Node 22.21 or newer). The old sentence is gone.",
+   "ok": true
+  }
+ ],
+ "loop": {
+  "steps": 88,
+  "actions": 50,
+  "replies": 38,
+  "rejected": 0,
+  "unparsed": 0,
+  "reminders": 0,
+  "refused": 0,
+  "byLevel": {
+   "L2": 16,
+   "L1": 25,
+   "L0": 4,
+   "human": 5
+  },
+  "humanKinds": [
+   "find_out",
+   "obligation",
+   "playbook",
+   "call_office",
+   "homeowner",
+   "signature"
+  ],
+  "counts": {
+   "ready": 17,
+   "in_progress": 0,
+   "at_risk": 0,
+   "past": 2,
+   "post": 3,
+   "closed": 2
+  },
+  "glitches": [],
+  "notReady": []
+ }
+}

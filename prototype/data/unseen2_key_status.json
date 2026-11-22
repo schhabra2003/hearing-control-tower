@@ -1,0 +1,1232 @@
+{
+ "note": "Status of every statement (type-and-case pair, as eval/run.js scores it) in unseen2_labels.json: \"both\" means both blind labellers gave it; \"adjudicated\" means one labeller gave it and the adjudicator kept it. Statements one labeller gave and the adjudicator dropped are listed under \"dropped\" and are not in the key.",
+ "counts": {
+  "statements": 196,
+  "both": 183,
+  "adjudicated_kept": 13,
+  "adjudicated_dropped": 4,
+  "kept_from_A": 10,
+  "kept_from_B": 3,
+  "dropped_from_A": 2,
+  "dropped_from_B": 2,
+  "claims": 150,
+  "messages": 100,
+  "messages_with_empty_list": 19,
+  "messages_marked_ambiguous": 39,
+  "field_differences_decided": 7
+ },
+ "statements": {
+  "U001": [
+   {
+    "type": "outcome_reported",
+    "case": "AX-113",
+    "status": "both"
+   },
+   {
+    "type": "outcome_reported",
+    "case": "AX-114",
+    "status": "both"
+   },
+   {
+    "type": "obligation_created",
+    "case": "AX-113",
+    "status": "adjudicated",
+    "given_by": "A"
+   }
+  ],
+  "U002": [],
+  "U003": [
+   {
+    "type": "rep_recorded",
+    "case": "AX-113",
+    "status": "both"
+   },
+   {
+    "type": "rep_recorded",
+    "case": "AX-114",
+    "status": "both"
+   }
+  ],
+  "U004": [
+   {
+    "type": "rep_recorded",
+    "case": "AX-107",
+    "status": "both"
+   },
+   {
+    "type": "rep_recorded",
+    "case": "AX-108",
+    "status": "both"
+   }
+  ],
+  "U005": [
+   {
+    "type": "hearing_confirmed",
+    "case": "AX-101",
+    "status": "adjudicated",
+    "given_by": "B"
+   },
+   {
+    "type": "hearing_confirmed",
+    "case": "AX-102",
+    "status": "adjudicated",
+    "given_by": "B"
+   }
+  ],
+  "U006": [
+   {
+    "type": "outcome_reported",
+    "case": "AX-116",
+    "status": "both"
+   },
+   {
+    "type": "decision_pending",
+    "case": "AX-116",
+    "status": "both"
+   }
+  ],
+  "U007": [
+   {
+    "type": "rep_not_recorded",
+    "case": "AX-106",
+    "status": "both"
+   },
+   {
+    "type": "rep_requested",
+    "case": "AX-106",
+    "status": "both"
+   },
+   {
+    "type": "consultant_declined",
+    "case": "AX-106",
+    "status": "both"
+   }
+  ],
+  "U008": [
+   {
+    "type": "packet_received",
+    "case": "AX-111",
+    "status": "both"
+   },
+   {
+    "type": "packet_received",
+    "case": "AX-112",
+    "status": "both"
+   }
+  ],
+  "U009": [
+   {
+    "type": "consultant_accepted",
+    "case": "AX-105",
+    "status": "both"
+   },
+   {
+    "type": "consultant_declined",
+    "case": "AX-106",
+    "status": "both"
+   },
+   {
+    "type": "calendar_edited",
+    "case": "AX-106",
+    "status": "both"
+   }
+  ],
+  "U010": [],
+  "U011": [
+   {
+    "type": "rep_recorded",
+    "case": "AX-103",
+    "status": "both"
+   },
+   {
+    "type": "rep_recorded",
+    "case": "AX-104",
+    "status": "both"
+   },
+   {
+    "type": "hearing_confirmed",
+    "case": "AX-103",
+    "status": "both"
+   },
+   {
+    "type": "hearing_confirmed",
+    "case": "AX-104",
+    "status": "both"
+   }
+  ],
+  "U012": [
+   {
+    "type": "consultant_accepted",
+    "case": "AX-102",
+    "status": "both"
+   },
+   {
+    "type": "consultant_declined",
+    "case": "AX-101",
+    "status": "both"
+   }
+  ],
+  "U013": [
+   {
+    "type": "consultant_declined",
+    "case": "AX-103",
+    "status": "both"
+   },
+   {
+    "type": "consultant_declined",
+    "case": "AX-104",
+    "status": "both"
+   },
+   {
+    "type": "consultant_conditional",
+    "case": "AX-103",
+    "status": "both"
+   },
+   {
+    "type": "consultant_conditional",
+    "case": "AX-104",
+    "status": "both"
+   }
+  ],
+  "U014": [
+   {
+    "type": "doc_unreadable",
+    "case": "AX-110",
+    "kind": "withdrawal",
+    "status": "both"
+   },
+   {
+    "type": "hearing_confirmed",
+    "case": "AX-110",
+    "status": "both"
+   }
+  ],
+  "U015": [
+   {
+    "type": "consultant_declined",
+    "case": "AX-115",
+    "status": "both"
+   },
+   {
+    "type": "outcome_reported",
+    "case": "AX-116",
+    "status": "both"
+   }
+  ],
+  "U016": [
+   {
+    "type": "document_submitted",
+    "case": "AX-119",
+    "kind": "homeowner_statement",
+    "status": "both"
+   }
+  ],
+  "U017": [
+   {
+    "type": "rep_not_recorded",
+    "case": "AX-101",
+    "status": "both"
+   },
+   {
+    "type": "rep_not_recorded",
+    "case": "AX-102",
+    "status": "both"
+   }
+  ],
+  "U018": [
+   {
+    "type": "consultant_conditional",
+    "case": "AX-101",
+    "status": "both"
+   }
+  ],
+  "U019": [
+   {
+    "type": "signature_required",
+    "case": "AX-117",
+    "kind": "withdrawal",
+    "status": "both"
+   },
+   {
+    "type": "rep_recorded",
+    "case": "AX-117",
+    "status": "both"
+   },
+   {
+    "type": "hearing_confirmed",
+    "case": "AX-117",
+    "status": "both"
+   }
+  ],
+  "U020": [
+   {
+    "type": "rep_recorded",
+    "case": "AX-102",
+    "status": "both"
+   },
+   {
+    "type": "rep_not_recorded",
+    "case": "AX-101",
+    "status": "both"
+   },
+   {
+    "type": "rep_requested",
+    "case": "AX-101",
+    "status": "both"
+   }
+  ],
+  "U021": [
+   {
+    "type": "obligation_created",
+    "case": "AX-119",
+    "status": "both"
+   }
+  ],
+  "U022": [
+   {
+    "type": "packet_received",
+    "case": "AX-111",
+    "status": "both"
+   },
+   {
+    "type": "packet_received",
+    "case": "AX-112",
+    "status": "both"
+   }
+  ],
+  "U023": [
+   {
+    "type": "rep_recorded",
+    "case": "AX-101",
+    "status": "both"
+   },
+   {
+    "type": "rep_recorded",
+    "case": "AX-102",
+    "status": "both"
+   }
+  ],
+  "U024": [
+   {
+    "type": "acknowledgement",
+    "case": "AX-111",
+    "status": "both"
+   },
+   {
+    "type": "acknowledgement",
+    "case": "AX-112",
+    "status": "both"
+   }
+  ],
+  "U025": [],
+  "U026": [],
+  "U027": [
+   {
+    "type": "homeowner_confirmed",
+    "case": "AX-117",
+    "status": "both"
+   }
+  ],
+  "U028": [
+   {
+    "type": "document_submitted",
+    "case": "AX-110",
+    "kind": "withdrawal",
+    "status": "both"
+   }
+  ],
+  "U029": [
+   {
+    "type": "internal_note",
+    "case": "AX-119",
+    "status": "adjudicated",
+    "given_by": "A"
+   },
+   {
+    "type": "document_submitted",
+    "case": "AX-119",
+    "kind": "homeowner_statement",
+    "status": "both"
+   }
+  ],
+  "U030": [
+   {
+    "type": "consultant_tentative",
+    "case": "AX-115",
+    "status": "both"
+   }
+  ],
+  "U031": [
+   {
+    "type": "consultant_accepted",
+    "case": "AX-121",
+    "status": "both"
+   },
+   {
+    "type": "consultant_accepted",
+    "case": "AX-122",
+    "status": "both"
+   },
+   {
+    "type": "packet_received",
+    "case": "AX-121",
+    "status": "both"
+   },
+   {
+    "type": "packet_received",
+    "case": "AX-122",
+    "status": "both"
+   },
+   {
+    "type": "consultant_question",
+    "case": "AX-121",
+    "status": "both"
+   },
+   {
+    "type": "consultant_question",
+    "case": "AX-122",
+    "status": "both"
+   }
+  ],
+  "U032": [
+   {
+    "type": "consultant_accepted",
+    "case": "AX-102",
+    "status": "both"
+   }
+  ],
+  "U033": [],
+  "U034": [
+   {
+    "type": "hearing_confirmed",
+    "case": "AX-123",
+    "status": "both"
+   },
+   {
+    "type": "hearing_confirmed",
+    "case": "AX-124",
+    "status": "both"
+   },
+   {
+    "type": "rep_recorded",
+    "case": "AX-123",
+    "status": "both"
+   },
+   {
+    "type": "rep_recorded",
+    "case": "AX-124",
+    "status": "both"
+   },
+   {
+    "type": "hearing_instruction",
+    "case": "AX-123",
+    "status": "both"
+   },
+   {
+    "type": "hearing_instruction",
+    "case": "AX-124",
+    "status": "both"
+   }
+  ],
+  "U035": [
+   {
+    "type": "hearing_instruction",
+    "case": "AX-121",
+    "status": "both"
+   },
+   {
+    "type": "hearing_instruction",
+    "case": "AX-122",
+    "status": "both"
+   },
+   {
+    "type": "hearing_confirmed",
+    "case": "AX-121",
+    "status": "both"
+   },
+   {
+    "type": "hearing_confirmed",
+    "case": "AX-122",
+    "status": "both"
+   }
+  ],
+  "U036": [
+   {
+    "type": "homeowner_confirmed",
+    "case": "AX-115",
+    "status": "both"
+   }
+  ],
+  "U037": [
+   {
+    "type": "consultant_accepted",
+    "case": "AX-123",
+    "status": "both"
+   },
+   {
+    "type": "consultant_accepted",
+    "case": "AX-124",
+    "status": "both"
+   },
+   {
+    "type": "consultant_accepted",
+    "case": "AX-107",
+    "status": "both"
+   },
+   {
+    "type": "consultant_declined",
+    "case": "AX-108",
+    "status": "both"
+   }
+  ],
+  "U038": [],
+  "U039": [],
+  "U040": [
+   {
+    "type": "obligation_created",
+    "case": "AX-119",
+    "status": "both"
+   }
+  ],
+  "U041": [
+   {
+    "type": "obligation_created",
+    "case": "AX-113",
+    "status": "both"
+   }
+  ],
+  "U042": [
+   {
+    "type": "homeowner_confirmed",
+    "case": "AX-117",
+    "status": "both"
+   }
+  ],
+  "U043": [
+   {
+    "type": "rep_recorded",
+    "case": "AX-111",
+    "status": "both"
+   },
+   {
+    "type": "rep_recorded",
+    "case": "AX-112",
+    "status": "both"
+   }
+  ],
+  "U044": [
+   {
+    "type": "hearing_confirmed",
+    "case": "AX-110",
+    "status": "both"
+   }
+  ],
+  "U045": [],
+  "U046": [
+   {
+    "type": "consultant_accepted",
+    "case": "AX-106",
+    "status": "both"
+   }
+  ],
+  "U047": [
+   {
+    "type": "hearing_instruction",
+    "case": "AX-107",
+    "status": "both"
+   },
+   {
+    "type": "hearing_instruction",
+    "case": "AX-108",
+    "status": "both"
+   }
+  ],
+  "U048": [
+   {
+    "type": "packet_received",
+    "case": "AX-109",
+    "status": "both"
+   },
+   {
+    "type": "packet_received",
+    "case": "AX-110",
+    "status": "both"
+   }
+  ],
+  "U049": [
+   {
+    "type": "outcome_reported",
+    "case": "AX-102",
+    "status": "both"
+   },
+   {
+    "type": "decision_pending",
+    "case": "AX-102",
+    "status": "adjudicated",
+    "given_by": "A"
+   }
+  ],
+  "U050": [],
+  "U051": [
+   {
+    "type": "outcome_reported",
+    "case": "AX-121",
+    "status": "both"
+   },
+   {
+    "type": "outcome_reported",
+    "case": "AX-122",
+    "status": "both"
+   },
+   {
+    "type": "decision_pending",
+    "case": "AX-121",
+    "status": "adjudicated",
+    "given_by": "A"
+   },
+   {
+    "type": "obligation_created",
+    "case": "AX-122",
+    "status": "adjudicated",
+    "given_by": "A"
+   }
+  ],
+  "U052": [
+   {
+    "type": "rep_recorded",
+    "case": "AX-115",
+    "status": "both"
+   }
+  ],
+  "U053": [
+   {
+    "type": "calendar_edited",
+    "case": "AX-106",
+    "status": "both"
+   }
+  ],
+  "U054": [
+   {
+    "type": "consultant_conditional",
+    "case": "AX-109",
+    "status": "adjudicated",
+    "given_by": "A"
+   },
+   {
+    "type": "consultant_tentative",
+    "case": "AX-110",
+    "status": "both"
+   }
+  ],
+  "U055": [
+   {
+    "type": "rep_recorded",
+    "case": "AX-106",
+    "status": "both"
+   },
+   {
+    "type": "hearing_confirmed",
+    "case": "AX-106",
+    "status": "both"
+   },
+   {
+    "type": "rep_recorded",
+    "case": "AX-105",
+    "status": "both"
+   },
+   {
+    "type": "hearing_confirmed",
+    "case": "AX-105",
+    "status": "both"
+   }
+  ],
+  "U056": [
+   {
+    "type": "acknowledgement",
+    "case": "AX-103",
+    "status": "both"
+   },
+   {
+    "type": "acknowledgement",
+    "case": "AX-104",
+    "status": "both"
+   }
+  ],
+  "U057": [
+   {
+    "type": "packet_received",
+    "case": "AX-117",
+    "status": "both"
+   },
+   {
+    "type": "packet_received",
+    "case": "AX-118",
+    "status": "both"
+   },
+   {
+    "type": "packet_received",
+    "case": "AX-105",
+    "status": "both"
+   }
+  ],
+  "U058": [
+   {
+    "type": "consultant_accepted",
+    "case": "AX-123",
+    "status": "both"
+   },
+   {
+    "type": "consultant_accepted",
+    "case": "AX-124",
+    "status": "both"
+   },
+   {
+    "type": "packet_received",
+    "case": "AX-123",
+    "status": "both"
+   },
+   {
+    "type": "packet_received",
+    "case": "AX-124",
+    "status": "both"
+   }
+  ],
+  "U059": [],
+  "U060": [
+   {
+    "type": "change_requested",
+    "case": "AX-111",
+    "status": "both"
+   },
+   {
+    "type": "change_requested",
+    "case": "AX-112",
+    "status": "both"
+   }
+  ],
+  "U061": [],
+  "U062": [
+   {
+    "type": "signature_required",
+    "case": "AX-109",
+    "kind": "settlement",
+    "status": "both"
+   },
+   {
+    "type": "obligation_created",
+    "case": "AX-109",
+    "status": "both"
+   }
+  ],
+  "U063": [
+   {
+    "type": "homeowner_declined",
+    "case": "AX-117",
+    "status": "both"
+   },
+   {
+    "type": "obligation_created",
+    "case": "AX-117",
+    "status": "both"
+   }
+  ],
+  "U064": [
+   {
+    "type": "outcome_reported",
+    "case": "AX-121",
+    "status": "both"
+   },
+   {
+    "type": "outcome_reported",
+    "case": "AX-122",
+    "status": "both"
+   },
+   {
+    "type": "decision_pending",
+    "case": "AX-121",
+    "status": "both"
+   },
+   {
+    "type": "obligation_created",
+    "case": "AX-122",
+    "status": "both"
+   }
+  ],
+  "U065": [
+   {
+    "type": "change_pending",
+    "case": "AX-115",
+    "status": "both"
+   },
+   {
+    "type": "hearing_confirmed",
+    "case": "AX-115",
+    "status": "both"
+   }
+  ],
+  "U066": [],
+  "U067": [
+   {
+    "type": "obligation_cleared",
+    "case": "AX-119",
+    "kind": "homeowner_statement",
+    "status": "both"
+   }
+  ],
+  "U068": [
+   {
+    "type": "rep_not_recorded",
+    "case": "AX-107",
+    "status": "both"
+   },
+   {
+    "type": "rep_not_recorded",
+    "case": "AX-108",
+    "status": "both"
+   },
+   {
+    "type": "doc_unreadable",
+    "case": "AX-107",
+    "kind": "staffing_form",
+    "status": "both"
+   },
+   {
+    "type": "doc_unreadable",
+    "case": "AX-108",
+    "kind": "staffing_form",
+    "status": "both"
+   },
+   {
+    "type": "rep_requested",
+    "case": "AX-107",
+    "status": "adjudicated",
+    "given_by": "A"
+   },
+   {
+    "type": "rep_requested",
+    "case": "AX-108",
+    "status": "adjudicated",
+    "given_by": "A"
+   }
+  ],
+  "U069": [],
+  "U070": [
+   {
+    "type": "homeowner_declined",
+    "case": "AX-110",
+    "status": "both"
+   }
+  ],
+  "U071": [
+   {
+    "type": "consultant_accepted",
+    "case": "AX-115",
+    "status": "both"
+   }
+  ],
+  "U072": [
+   {
+    "type": "outcome_reported",
+    "case": "AX-123",
+    "status": "both"
+   },
+   {
+    "type": "outcome_reported",
+    "case": "AX-124",
+    "status": "both"
+   },
+   {
+    "type": "decision_pending",
+    "case": "AX-123",
+    "status": "both"
+   },
+   {
+    "type": "decision_pending",
+    "case": "AX-124",
+    "status": "both"
+   }
+  ],
+  "U073": [
+   {
+    "type": "internal_note",
+    "case": "AX-103",
+    "status": "both"
+   },
+   {
+    "type": "internal_note",
+    "case": "AX-104",
+    "status": "both"
+   },
+   {
+    "type": "internal_note",
+    "case": "AX-123",
+    "status": "both"
+   },
+   {
+    "type": "internal_note",
+    "case": "AX-124",
+    "status": "both"
+   }
+  ],
+  "U074": [
+   {
+    "type": "consultant_declined",
+    "case": "AX-115",
+    "status": "both"
+   }
+  ],
+  "U075": [
+   {
+    "type": "acknowledgement",
+    "case": "AX-123",
+    "status": "both"
+   },
+   {
+    "type": "acknowledgement",
+    "case": "AX-124",
+    "status": "both"
+   }
+  ],
+  "U076": [
+   {
+    "type": "consultant_accepted",
+    "case": "AX-107",
+    "status": "both"
+   },
+   {
+    "type": "consultant_accepted",
+    "case": "AX-108",
+    "status": "both"
+   },
+   {
+    "type": "packet_received",
+    "case": "AX-107",
+    "status": "both"
+   },
+   {
+    "type": "doc_unreadable",
+    "case": "AX-108",
+    "kind": "packet",
+    "status": "both"
+   }
+  ],
+  "U077": [],
+  "U078": [],
+  "U079": [
+   {
+    "type": "signature_required",
+    "case": "AX-109",
+    "kind": "settlement",
+    "status": "both"
+   }
+  ],
+  "U080": [
+   {
+    "type": "rep_recorded",
+    "case": "AX-107",
+    "status": "both"
+   },
+   {
+    "type": "rep_not_recorded",
+    "case": "AX-108",
+    "status": "both"
+   }
+  ],
+  "U081": [
+   {
+    "type": "hearing_scheduled",
+    "case": "AX-114",
+    "status": "both"
+   },
+   {
+    "type": "rep_requested",
+    "case": "AX-114",
+    "status": "both"
+   },
+   {
+    "type": "outcome_reported",
+    "case": "AX-114",
+    "status": "adjudicated",
+    "given_by": "B"
+   }
+  ],
+  "U082": [
+   {
+    "type": "schedule_changed",
+    "case": "AX-111",
+    "status": "both"
+   },
+   {
+    "type": "schedule_changed",
+    "case": "AX-112",
+    "status": "both"
+   },
+   {
+    "type": "hearing_confirmed",
+    "case": "AX-111",
+    "status": "both"
+   },
+   {
+    "type": "hearing_confirmed",
+    "case": "AX-112",
+    "status": "both"
+   },
+   {
+    "type": "hearing_instruction",
+    "case": "AX-111",
+    "status": "both"
+   },
+   {
+    "type": "hearing_instruction",
+    "case": "AX-112",
+    "status": "both"
+   }
+  ],
+  "U083": [
+   {
+    "type": "outcome_reported",
+    "case": "AX-107",
+    "status": "both"
+   },
+   {
+    "type": "decision_pending",
+    "case": "AX-107",
+    "status": "both"
+   },
+   {
+    "type": "outcome_reported",
+    "case": "AX-108",
+    "status": "both"
+   },
+   {
+    "type": "hearing_scheduled",
+    "case": "AX-108",
+    "status": "both"
+   }
+  ],
+  "U084": [
+   {
+    "type": "rep_requested",
+    "case": "AX-106",
+    "status": "both"
+   }
+  ],
+  "U085": [
+   {
+    "type": "schedule_changed",
+    "case": "AX-115",
+    "status": "both"
+   },
+   {
+    "type": "hearing_confirmed",
+    "case": "AX-115",
+    "status": "both"
+   },
+   {
+    "type": "hearing_instruction",
+    "case": "AX-115",
+    "status": "both"
+   }
+  ],
+  "U086": [
+   {
+    "type": "rep_recorded",
+    "case": "AX-109",
+    "status": "both"
+   },
+   {
+    "type": "rep_recorded",
+    "case": "AX-110",
+    "status": "both"
+   }
+  ],
+  "U087": [
+   {
+    "type": "consultant_accepted",
+    "case": "AX-109",
+    "status": "both"
+   },
+   {
+    "type": "consultant_accepted",
+    "case": "AX-110",
+    "status": "both"
+   }
+  ],
+  "U088": [
+   {
+    "type": "consultant_accepted",
+    "case": "AX-111",
+    "status": "both"
+   },
+   {
+    "type": "consultant_accepted",
+    "case": "AX-112",
+    "status": "both"
+   },
+   {
+    "type": "consultant_question",
+    "case": "AX-111",
+    "status": "both"
+   },
+   {
+    "type": "consultant_question",
+    "case": "AX-112",
+    "status": "both"
+   }
+  ],
+  "U089": [
+   {
+    "type": "hearing_confirmed",
+    "case": "AX-117",
+    "status": "both"
+   },
+   {
+    "type": "hearing_confirmed",
+    "case": "AX-118",
+    "status": "both"
+   },
+   {
+    "type": "rep_recorded",
+    "case": "AX-117",
+    "status": "both"
+   },
+   {
+    "type": "rep_recorded",
+    "case": "AX-118",
+    "status": "both"
+   },
+   {
+    "type": "hearing_instruction",
+    "case": "AX-117",
+    "status": "both"
+   },
+   {
+    "type": "hearing_instruction",
+    "case": "AX-118",
+    "status": "both"
+   }
+  ],
+  "U090": [
+   {
+    "type": "internal_note",
+    "case": "AX-115",
+    "status": "both"
+   }
+  ],
+  "U091": [],
+  "U092": [
+   {
+    "type": "packet_version_issue",
+    "case": "AX-105",
+    "status": "both"
+   },
+   {
+    "type": "obligation_created",
+    "case": "AX-105",
+    "status": "both"
+   }
+  ],
+  "U093": [
+   {
+    "type": "obligation_cleared",
+    "case": "AX-113",
+    "kind": "homeowner_statement",
+    "status": "both"
+   }
+  ],
+  "U094": [],
+  "U095": [],
+  "U096": [
+   {
+    "type": "outcome_reported",
+    "case": "AX-111",
+    "status": "both"
+   },
+   {
+    "type": "decision_pending",
+    "case": "AX-111",
+    "status": "adjudicated",
+    "given_by": "A"
+   },
+   {
+    "type": "outcome_reported",
+    "case": "AX-112",
+    "status": "both"
+   }
+  ],
+  "U097": [
+   {
+    "type": "consultant_accepted",
+    "case": "AX-118",
+    "status": "both"
+   },
+   {
+    "type": "consultant_question",
+    "case": "AX-117",
+    "status": "both"
+   }
+  ],
+  "U098": [],
+  "U099": [
+   {
+    "type": "outcome_reported",
+    "case": "AX-118",
+    "status": "both"
+   },
+   {
+    "type": "decision_pending",
+    "case": "AX-118",
+    "status": "adjudicated",
+    "given_by": "A"
+   },
+   {
+    "type": "outcome_reported",
+    "case": "AX-117",
+    "status": "both"
+   }
+  ],
+  "U100": [
+   {
+    "type": "outcome_reported",
+    "case": "AX-118",
+    "status": "both"
+   },
+   {
+    "type": "decision_pending",
+    "case": "AX-118",
+    "status": "both"
+   },
+   {
+    "type": "outcome_reported",
+    "case": "AX-117",
+    "status": "both"
+   }
+  ]
+ },
+ "dropped": [
+  {
+   "id": "U025",
+   "type": "consultant_declined",
+   "case": "AX-102",
+   "given_by": "A"
+  },
+  {
+   "id": "U054",
+   "type": "consultant_accepted",
+   "case": "AX-109",
+   "given_by": "B"
+  },
+  {
+   "id": "U062",
+   "type": "hearing_confirmed",
+   "case": "AX-109",
+   "given_by": "A"
+  },
+  {
+   "id": "U100",
+   "type": "hearing_postponed",
+   "case": "AX-117",
+   "given_by": "B"
+  }
+ ]
+}

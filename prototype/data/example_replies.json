@@ -1,0 +1,718 @@
+{
+ "note": "Fictional replies to the messages the Dockets tab writes for the example week, to the Wednesday text that lists next week's dockets (Reply YES ALL), and to the two messages that follow a YES: the case files with a version number (Reply GOT IT) and a change from the office (Reply OK). Those are drawn from the packet's threads: Caldmere case files version 2, Harthmere video room D instead of B and the move of 48 Linden Avenue to June 13. R22 answers a hypothetical change that the packet does not contain (see its note): the packet's Velloran room C confirmation needs no change notice, because Owen's own message 71 shows he has it (kit section 7, row K4). A reply without 'channel' is a text. R30 to R32 arrive by email with the earlier message quoted below the answer; the rule reads the first line the consultant wrote, and files it only when every other line of their own is a sign-off or their name (R32 has a condition on its second line, so it goes to a person). 'expect' is what a coordinator would decide by hand: 'rule' = file it without a person, 'person' = somebody has to read it. Used by node cli/replies.js. R33 to R39 test the daily cap and are hypothetical: the packet has no day on which a consultant comes near the cap, so the dockets (Fri June 21) and the day's numbers in 'day' are invented for the test. Only the caps are from the packet (max_hearings_per_day: Eli Corven 4, Owen Tarris 8). 'day' holds what the caller supplies with the reply: cap, held (hearings the consultant already holds that day) and offered (hearings still on offer to them on other dockets that day). A YES is filed only when held plus offered plus the hearings it takes stay within the cap. R33 and R34 test this case: a consultant with a cap of 4 who is first name on two same-day dockets with 3 and 2 open hearings.",
+ "replies": [
+  {
+   "id": "R01",
+   "docket": "Mon June 10, Larkmere, in person",
+   "sent": {
+    "kind": "offer",
+    "to": "Maya Venn",
+    "open": [
+     1
+    ]
+   },
+   "reply": {
+    "from": "Maya Venn",
+    "text": "YES"
+   },
+   "expect": "rule"
+  },
+  {
+   "id": "R02",
+   "docket": "Tue June 11, Velloran, by video",
+   "sent": {
+    "kind": "offer",
+    "to": "Owen Tarris",
+    "open": [
+     1,
+     2
+    ]
+   },
+   "reply": {
+    "from": "Owen Tarris",
+    "text": "Yes all"
+   },
+   "expect": "rule"
+  },
+  {
+   "id": "R03",
+   "docket": "Tue June 11, Velloran, by video",
+   "sent": {
+    "kind": "offer",
+    "to": "Priya Marden",
+    "open": [
+     1,
+     2
+    ]
+   },
+   "reply": {
+    "from": "Priya Marden",
+    "text": "YES 2"
+   },
+   "expect": "person"
+  },
+  {
+   "id": "R04",
+   "docket": "Tue June 11, Velloran, by video",
+   "sent": {
+    "kind": "offer",
+    "to": "Eli Corven",
+    "open": [
+     1,
+     2
+    ]
+   },
+   "reply": {
+    "from": "Eli Corven",
+    "text": "yes"
+   },
+   "expect": "person"
+  },
+  {
+   "id": "R05",
+   "docket": "Wed June 12, Orimere, by video",
+   "sent": {
+    "kind": "offer",
+    "to": "Nora Pell",
+    "open": [
+     1
+    ]
+   },
+   "reply": {
+    "from": "Nora Pell",
+    "text": "Yes, but only if it does not start before 2:30"
+   },
+   "expect": "person"
+  },
+  {
+   "id": "R06",
+   "docket": "Thu June 13, Harthmere, by video",
+   "sent": {
+    "kind": "offer",
+    "to": "Leo Arlen",
+    "open": [
+     1
+    ]
+   },
+   "reply": {
+    "from": "Leo Arlen",
+    "text": "No"
+   },
+   "expect": "rule"
+  },
+  {
+   "id": "R07",
+   "docket": "Thu June 13, Harthmere, by video",
+   "sent": {
+    "kind": "offer",
+    "to": "Priya Marden",
+    "open": [
+     1
+    ]
+   },
+   "reply": {
+    "from": "Priya Marden",
+    "text": "YES 3"
+   },
+   "expect": "person"
+  },
+  {
+   "id": "R08",
+   "docket": "Tue June 18, Orimere, by video",
+   "sent": {
+    "kind": "offer",
+    "to": "Owen Tarris",
+    "open": [
+     1
+    ]
+   },
+   "reply": {
+    "from": "Maya Venn",
+    "text": "YES"
+   },
+   "expect": "person"
+  },
+  {
+   "id": "R09",
+   "docket": "Tue June 18, Orimere, by video",
+   "sent": {
+    "kind": "offer",
+    "to": "Owen Tarris",
+    "open": [
+     1
+    ]
+   },
+   "reply": {
+    "from": "Owen Tarris",
+    "text": "Which link is it this time?"
+   },
+   "expect": "person"
+  },
+  {
+   "id": "R10",
+   "docket": "Mon June 10, Larkmere, in person",
+   "sent": {
+    "kind": "day_before",
+    "to": "Leo Arlen",
+    "held": [
+     3,
+     4
+    ],
+    "format": "in person"
+   },
+   "reply": {
+    "from": "Leo Arlen",
+    "text": "Yes."
+   },
+   "expect": "rule"
+  },
+  {
+   "id": "R11",
+   "docket": "Thu June 13, Brindlefen, by video",
+   "sent": {
+    "kind": "day_before",
+    "to": "Priya Marden",
+    "held": [
+     1,
+     2
+    ],
+    "format": "video"
+   },
+   "reply": {
+    "from": "Priya Marden",
+    "text": "YES"
+   },
+   "expect": "rule"
+  },
+  {
+   "id": "R12",
+   "docket": "Thu June 13, Caldmere, by video",
+   "sent": {
+    "kind": "day_before",
+    "to": "Eli Corven",
+    "held": [
+     1,
+     2
+    ],
+    "format": "video"
+   },
+   "reply": {
+    "from": "Eli Corven",
+    "text": "Yes for the first one, the second link will not open"
+   },
+   "expect": "person"
+  },
+  {
+   "id": "R13",
+   "docket": "Wed June 12, Tesswick, in person",
+   "sent": {
+    "kind": "arrival",
+    "to": "Owen Tarris",
+    "held": [
+     1
+    ],
+    "format": "in person"
+   },
+   "reply": {
+    "from": "Owen Tarris",
+    "text": "ARRIVED"
+   },
+   "expect": "rule"
+  },
+  {
+   "id": "R14",
+   "docket": "Fri June 14, Iverfen, by video",
+   "sent": {
+    "kind": "arrival",
+    "to": "Nora Pell",
+    "held": [
+     1,
+     2
+    ],
+    "format": "video"
+   },
+   "reply": {
+    "from": "Nora Pell",
+    "text": "in"
+   },
+   "expect": "rule"
+  },
+  {
+   "id": "R15",
+   "docket": "Mon June 10, Larkmere, in person",
+   "sent": {
+    "kind": "arrival",
+    "to": "Maya Venn",
+    "held": [
+     2
+    ],
+    "format": "in person"
+   },
+   "reply": {
+    "from": "Maya Venn",
+    "text": "Running 10 minutes late, parking"
+   },
+   "expect": "person"
+  },
+  {
+   "id": "R16",
+   "docket": "Mon June 10, Larkmere, in person",
+   "sent": {
+    "kind": "offer",
+    "to": "Leo Arlen",
+    "open": [
+     1,
+     2,
+     3,
+     4
+    ]
+   },
+   "reply": {
+    "from": "Leo Arlen",
+    "text": "YES 1 3"
+   },
+   "expect": "person"
+  },
+  {
+   "id": "R17",
+   "docket": "Thu June 13, Caldmere, by video",
+   "sent": {
+    "kind": "files",
+    "to": "Eli Corven",
+    "version": 2,
+    "held": [
+     1,
+     2
+    ]
+   },
+   "reply": {
+    "from": "Eli Corven",
+    "text": "GOT IT"
+   },
+   "expect": "rule"
+  },
+  {
+   "id": "R18",
+   "docket": "Thu June 13, Caldmere, by video",
+   "sent": {
+    "kind": "files",
+    "to": "Eli Corven",
+    "version": 2,
+    "held": [
+     1,
+     2
+    ]
+   },
+   "reply": {
+    "from": "Eli Corven",
+    "text": "My links open version 1. Has anything changed?"
+   },
+   "expect": "person"
+  },
+  {
+   "id": "R19",
+   "docket": "Thu June 13, Caldmere, by video",
+   "sent": {
+    "kind": "files",
+    "to": "Eli Corven",
+    "version": 2,
+    "held": [
+     1,
+     2
+    ]
+   },
+   "reply": {
+    "from": "Eli Corven",
+    "text": "got it 1"
+   },
+   "expect": "person"
+  },
+  {
+   "id": "R20",
+   "docket": "Thu June 6, Harthmere, by video",
+   "sent": {
+    "kind": "change",
+    "to": "Leo Arlen",
+    "held": [
+     1,
+     2
+    ],
+    "what": "video room D instead of B, times unchanged"
+   },
+   "reply": {
+    "from": "Leo Arlen",
+    "text": "OK"
+   },
+   "expect": "rule"
+  },
+  {
+   "id": "R21",
+   "docket": "Thu June 6, Harthmere, by video",
+   "sent": {
+    "kind": "change",
+    "to": "Leo Arlen",
+    "held": [
+     1
+    ],
+    "what": "hearing 1 moves to Thursday, June 13 at 10:00 a.m., room D; hearing 2 unchanged"
+   },
+   "reply": {
+    "from": "Leo Arlen",
+    "text": "Which date is it now?"
+   },
+   "expect": "person"
+  },
+  {
+   "id": "R22",
+   "docket": "Wed June 12, Tesswick, in person",
+   "note": "Hypothetical: the packet contains no such change and Owen has not acknowledged one. It stands in for the Velloran video room C confirmation (message 70), which gets no change notice because Owen's own message 71 ('Room C and both times are in my work calendar') shows he already has it (kit section 7, row K4).",
+   "sent": {
+    "kind": "change",
+    "to": "Owen Tarris",
+    "held": [
+     1
+    ],
+    "what": "hypothetical, not in the packet: hearing 1 at 12:30 p.m. instead of 11:30 a.m., same office"
+   },
+   "reply": {
+    "from": "Owen Tarris",
+    "text": "ok thanks"
+   },
+   "expect": "rule"
+  },
+  {
+   "id": "R23",
+   "docket": "Thu June 13, Caldmere, by video",
+   "sent": {
+    "kind": "files",
+    "to": "Eli Corven",
+    "version": 2,
+    "held": [
+     1,
+     2
+    ]
+   },
+   "reply": {
+    "from": "Priya Marden",
+    "text": "GOT IT"
+   },
+   "expect": "person"
+  },
+  {
+   "id": "R24",
+   "docket": "Thu June 13, Caldmere, by video",
+   "sent": {
+    "kind": "files",
+    "to": "Eli Corven",
+    "version": 2,
+    "held": [
+     1,
+     2
+    ]
+   },
+   "reply": {
+    "from": "Eli Corven",
+    "text": "GOT IT 2"
+   },
+   "expect": "rule"
+  },
+  {
+   "id": "R25",
+   "docket": "Thu June 13, Caldmere, by video",
+   "sent": {
+    "kind": "files",
+    "to": "Eli Corven",
+    "version": 2,
+    "held": [
+     1,
+     2
+    ]
+   },
+   "reply": {
+    "from": "Eli Corven",
+    "text": "Got it, but the second file will not open"
+   },
+   "expect": "person"
+  },
+  {
+   "id": "R26",
+   "docket": "Thu June 6, Harthmere, by video",
+   "sent": {
+    "kind": "change",
+    "to": "Leo Arlen",
+    "held": [
+     1
+    ],
+    "what": "hearing 1 moves to Thursday, June 13 at 10:00 a.m., room D; hearing 2 unchanged"
+   },
+   "reply": {
+    "from": "Leo Arlen",
+    "text": "I cannot attend on June 13."
+   },
+   "expect": "person"
+  },
+  {
+   "id": "R27",
+   "docket": "Week of Mon June 10 (Wednesday text, June 5)",
+   "sent": {
+    "kind": "week",
+    "to": "Owen Tarris",
+    "dockets": [
+     "Tue June 11, Velloran, by video",
+     "Wed June 12, Tesswick, in person"
+    ]
+   },
+   "reply": {
+    "from": "Owen Tarris",
+    "text": "Yes all"
+   },
+   "expect": "rule"
+  },
+  {
+   "id": "R28",
+   "docket": "Week of Mon June 10 (Wednesday text, June 5)",
+   "sent": {
+    "kind": "week",
+    "to": "Eli Corven",
+    "dockets": [
+     "Thu June 13, Caldmere, by video"
+    ]
+   },
+   "reply": {
+    "from": "Eli Corven",
+    "text": "YES"
+   },
+   "expect": "rule"
+  },
+  {
+   "id": "R29",
+   "docket": "Week of Mon June 10 (Wednesday text, June 5)",
+   "sent": {
+    "kind": "week",
+    "to": "Owen Tarris",
+    "dockets": [
+     "Tue June 11, Velloran, by video",
+     "Wed June 12, Tesswick, in person"
+    ]
+   },
+   "reply": {
+    "from": "Owen Tarris",
+    "text": "Yes all except Wednesday, something came up"
+   },
+   "expect": "person"
+  },
+  {
+   "id": "R30",
+   "docket": "Thu June 13, Harthmere, by video",
+   "sent": {
+    "kind": "offer",
+    "to": "Eli Corven",
+    "open": [
+     1
+    ]
+   },
+   "reply": {
+    "from": "Eli Corven",
+    "channel": "email",
+    "text": "Yes\n\nEli\n\nOn Fri, Jun 7, 2030 at 10:15 AM, Alice’s Law Firm operations wrote:\n> One hearing, Harthmere office, Thursday, June 13, by video, at your usual rate: 1) 10:00 a.m. 48 Linden Avenue. Reply YES to take it, or NO.\n> Please answer by noon on Monday, June 10. After that we offer it to the next person."
+   },
+   "expect": "rule"
+  },
+  {
+   "id": "R31",
+   "docket": "Mon June 10, Larkmere, in person",
+   "sent": {
+    "kind": "day_before",
+    "to": "Maya Venn",
+    "held": [
+     2
+    ],
+    "format": "in person"
+   },
+   "reply": {
+    "from": "Maya Venn",
+    "channel": "email",
+    "text": "Thanks, I will be there. Is there parking near the office?\n\nMaya Venn\n\n-----Original Message-----\nFrom: Alice’s Law Firm operations\nSent: Friday, June 7, 2030 8:00 AM\nTo: Maya Venn\nSubject: Monday, June 10, Larkmere office\n\nWe are expecting you on Monday, June 10, from 9:30 a.m. at the Larkmere office for one hearing. If nobody attends, this homeowner's appeal can be dismissed. Reply YES to confirm, or call 555-0100 now if anything has changed. Please text ARRIVED when you are at the office, 30 minutes before the start."
+   },
+   "expect": "person"
+  },
+  {
+   "id": "R32",
+   "docket": "Thu June 13, Harthmere, by video",
+   "sent": {
+    "kind": "offer",
+    "to": "Eli Corven",
+    "open": [
+     1
+    ]
+   },
+   "reply": {
+    "from": "Eli Corven",
+    "channel": "email",
+    "text": "Yes\nbut not before 10:30, I have a call\n\nEli\n\nOn Fri, Jun 7, 2030 at 10:15 AM, Alice’s Law Firm operations wrote:\n> One hearing, Harthmere office, Thursday, June 13, by video, at your usual rate: 1) 10:00 a.m. 48 Linden Avenue. Reply YES to take it, or NO."
+   },
+   "expect": "person",
+   "what": "hypothetical, not in the packet: a YES with a condition on the next line of an email"
+  },
+  {
+   "id": "R33",
+   "docket": "Fri June 21, Caldmere, by video (hypothetical)",
+   "sent": {
+    "kind": "offer",
+    "to": "Eli Corven",
+    "open": [
+     1,
+     2,
+     3
+    ]
+   },
+   "day": {
+    "cap": 4,
+    "held": 0,
+    "offered": 2
+   },
+   "reply": {
+    "from": "Eli Corven",
+    "text": "YES ALL"
+   },
+   "expect": "person",
+   "note": "Hypothetical: the packet has no day near a cap. Eli is first name on two dockets that day, with 3 and 2 open hearings, and his cap is 4. YES ALL here would allow 5 with the other offer still out, so a person decides which offer to take back."
+  },
+  {
+   "id": "R34",
+   "docket": "Fri June 21, Harthmere, by video (hypothetical)",
+   "sent": {
+    "kind": "offer",
+    "to": "Eli Corven",
+    "open": [
+     1,
+     2
+    ]
+   },
+   "day": {
+    "cap": 4,
+    "held": 0,
+    "offered": 3
+   },
+   "reply": {
+    "from": "Eli Corven",
+    "text": "YES 1"
+   },
+   "expect": "rule",
+   "note": "Hypothetical: the packet has no day near a cap. The other docket of the same day: one hearing here plus the 3 still on offer on the Caldmere docket is 4, which is the cap, so the YES is filed."
+  },
+  {
+   "id": "R35",
+   "docket": "Fri June 21, Fenwick Vale, in person (hypothetical)",
+   "sent": {
+    "kind": "offer",
+    "to": "Eli Corven",
+    "open": [
+     1
+    ]
+   },
+   "day": {
+    "cap": 4,
+    "held": 4,
+    "offered": 0
+   },
+   "reply": {
+    "from": "Eli Corven",
+    "text": "YES"
+   },
+   "expect": "person",
+   "note": "Hypothetical: the packet has no day near a cap. Eli already holds 4 hearings that day, his cap. A fifth is not filed by rule."
+  },
+  {
+   "id": "R36",
+   "docket": "Fri June 21, Iverfen, by video (hypothetical)",
+   "sent": {
+    "kind": "offer",
+    "to": "Owen Tarris",
+    "open": [
+     1,
+     2
+    ]
+   },
+   "day": {
+    "cap": 8,
+    "held": 6,
+    "offered": 0
+   },
+   "reply": {
+    "from": "Owen Tarris",
+    "text": "Yes all"
+   },
+   "expect": "rule",
+   "note": "Hypothetical: the packet has no day near a cap. 6 held plus 2 is exactly the cap of 8, so the YES is filed."
+  },
+  {
+   "id": "R37",
+   "docket": "Fri June 21, Fenwick Vale, in person (hypothetical)",
+   "sent": {
+    "kind": "offer",
+    "to": "Eli Corven",
+    "open": [
+     1
+    ]
+   },
+   "day": {
+    "cap": 4,
+    "held": 4,
+    "offered": 0
+   },
+   "reply": {
+    "from": "Eli Corven",
+    "text": "No"
+   },
+   "expect": "rule",
+   "note": "Hypothetical: the packet has no day near a cap. A NO is never held up by the cap."
+  },
+  {
+   "id": "R38",
+   "docket": "Fri June 21, Juniper Reach, in person (hypothetical)",
+   "sent": {
+    "kind": "offer",
+    "to": "Owen Tarris",
+    "open": [
+     1,
+     2
+    ]
+   },
+   "day": {
+    "held": 3
+   },
+   "reply": {
+    "from": "Owen Tarris",
+    "text": "YES ALL"
+   },
+   "expect": "person",
+   "note": "Hypothetical: the packet has no day near a cap. The caller sent the hearings held but no cap. The rule does not guess a cap, so a person checks it."
+  },
+  {
+   "id": "R39",
+   "docket": "Fri June 21, Brindlefen, by video (hypothetical)",
+   "sent": {
+    "kind": "offer",
+    "to": "Eli Corven",
+    "open": [
+     1,
+     2,
+     3
+    ]
+   },
+   "day": {
+    "cap": 4,
+    "held": 2,
+    "offered": 0
+   },
+   "reply": {
+    "from": "Eli Corven",
+    "channel": "email",
+    "text": "Yes all\n\nEli\n\nOn Mon, Jun 17, 2030 at 9:05 AM, Alice’s Law Firm operations wrote:\n> Three hearings, Brindlefen office, Friday, June 21, by video, at your usual rate: 1) 10:00 a.m. 2) 10:30 a.m. 3) 11:00 a.m. Reply YES ALL, the numbers you can take (for example YES 1 3), or NO."
+   },
+   "expect": "person",
+   "note": "Hypothetical: the packet has no day near a cap. By email: the first line is a clean YES ALL, but 2 held plus 3 is 5 and the cap is 4."
+  }
+ ]
+}

@@ -1,0 +1,776 @@
+{
+  "note": "Labels for the office-reply rule (src/office_rule.js). Everything here is fictional. The labels were written by the author of the rule, by hand, before the rule was run on these messages for the first time, so they show whether the rule does what its author intends and not how often real office messages fit it. The block called measured was added after the runs and is checked by cli/check_office.js.",
+  "labelled_by": "the author of the rule",
+  "order_note": "A message can carry more than one kind. The label is the kind that comes first in this fixed order, which is also the order the rule uses: process_change, cannot_find, cancellation_processed, date_time_change, deadline, ack_named, link_or_number, ack_no_name. A message with none of these, or with a request or a problem that none of these explains, is for_person.",
+  "cells_note": "cells lists the sheet cells a careful coordinator would fill or change from this one message, among the cells the rule covers: Hearings K, BD, AW, N, BA, BH, AF, AV, BN, BJ, D, E, I, J, H, L, Y and Offices M. A message for a person has none, because the rule proposes nothing for it.",
+  "round16_note": "On 20 Nov 2026 (round 16) the gate sheet gained cells, and the labels were extended by one fixed rule, not message by message: every label of the kind process_change gained \"Offices AS\" and \"Offices AT\" (3 labels), and every label of the kind cannot_find gained \"Hearings AA\", \"Hearings CP\" and \"Hearings CQ\" (3 labels). No kind was changed and no other cell was added or removed.",
+  "round18_note": "On 21 Nov 2026 (round 18) the gate sheet gained Hearings DR (the date a moved hearing had before) and the kit's rule became \"clear K as well as J and H, and keep the old link in a note\". The labels were extended by one fixed rule, not message by message: every label of the kind date_time_change that holds \"Hearings D\" (a new date in writing) gained \"Hearings DR\" and \"Hearings K\" (2 labels: messages 17 and 47). No kind was changed and no other cell was added or removed.",
+  "packet_office_messages": [
+    {
+      "message": 1,
+      "kind": "for_person",
+      "cells": [],
+      "label_why": "A new hearing notice that asks who will attend. A person makes the rows; none of the eight kinds applies."
+    },
+    {
+      "message": 4,
+      "kind": "for_person",
+      "cells": [],
+      "label_why": "The office asks again who will attend. No kind for that: a person adds 1 to BH and answers."
+    },
+    {
+      "message": 6,
+      "kind": "deadline",
+      "cells": [
+        "Hearings AW",
+        "Hearings BH"
+      ],
+      "label_why": "Staffing notices are due by 4 p.m. on June 7. The office is asking again, so BH goes up."
+    },
+    {
+      "message": 7,
+      "kind": "for_person",
+      "cells": [],
+      "label_why": "A new hearing notice. A person makes the rows."
+    },
+    {
+      "message": 11,
+      "kind": "for_person",
+      "cells": [],
+      "label_why": "The office can record Leo, which is an offer and not a record, and it refuses the move. A person answers and links the refusal in BJ."
+    },
+    {
+      "message": 13,
+      "kind": "for_person",
+      "cells": [],
+      "label_why": "A new hearing notice. A person makes the rows."
+    },
+    {
+      "message": 16,
+      "kind": "cannot_find",
+      "cells": [
+        "Hearings AA",
+        "Hearings BD",
+        "Hearings CP",
+        "Hearings CQ",
+        "Hearings K",
+        "Hearings Y"
+      ],
+      "label_why": "No assignment has arrived for 24 Orchard Road (first in the order). Nora is on record for 9 Orchard Road only, so K and BD are for that row alone."
+    },
+    {
+      "message": 17,
+      "kind": "date_time_change",
+      "cells": [
+        "Hearings BJ",
+        "Hearings D",
+        "Hearings DR",
+        "Hearings E",
+        "Hearings H",
+        "Hearings I",
+        "Hearings J",
+        "Hearings K"
+      ],
+      "label_why": "9 Orchard Road moves to June 18 at 9 a.m. as the answer to our request; 24 Orchard Road stays."
+    },
+    {
+      "message": 19,
+      "kind": "for_person",
+      "cells": [],
+      "label_why": "A new hearing notice that asks for the representative. A person makes the rows."
+    },
+    {
+      "message": 24,
+      "kind": "cannot_find",
+      "cells": [
+        "Hearings AA",
+        "Hearings CP",
+        "Hearings CQ",
+        "Hearings Y"
+      ],
+      "label_why": "By phone, the clerk cannot find the form. Not a record: resend complete, then call."
+    },
+    {
+      "message": 25,
+      "kind": "for_person",
+      "cells": [],
+      "label_why": "A new hearing notice that asks for a name for each hearing. A person makes the rows."
+    },
+    {
+      "message": 28,
+      "kind": "for_person",
+      "cells": [],
+      "label_why": "The office rejects a withdrawal statement and asks for a corrected one signed by the name on its record. Too much for a fixed rule, although it also names Priya as the representative on its record."
+    },
+    {
+      "message": 31,
+      "kind": "ack_named",
+      "cells": [
+        "Hearings BD",
+        "Hearings K"
+      ],
+      "label_why": "Eli is recorded as representative for both."
+    },
+    {
+      "message": 34,
+      "kind": "for_person",
+      "cells": [],
+      "label_why": "One file opened and the other was unreadable, with a request to resend. A problem with the case files goes to a person."
+    },
+    {
+      "message": 37,
+      "kind": "ack_named",
+      "cells": [
+        "Hearings BD",
+        "Hearings K"
+      ],
+      "label_why": "Maya is recorded on both staffing notices."
+    },
+    {
+      "message": 40,
+      "kind": "link_or_number",
+      "cells": [
+        "Hearings CI",
+        "Hearings L"
+      ],
+      "label_why": "An arrival instruction (first in the order) and a receipt for both case packets without a name. Relabelled on 20 Nov 2026 from Hearings AV to Hearings CI: since sheet rule S15 the office's arrival instruction is typed in CI as minutes, and AV holds only a room, link or number."
+    },
+    {
+      "message": 43,
+      "kind": "ack_named",
+      "cells": [
+        "Hearings AV",
+        "Hearings BD",
+        "Hearings K"
+      ],
+      "label_why": "A paper notice that lists Leo as representative and names video room B."
+    },
+    {
+      "message": 45,
+      "kind": "link_or_number",
+      "cells": [
+        "Hearings AV",
+        "Hearings BN"
+      ],
+      "label_why": "Video room D instead of B: AV changes and the consultant is told (BN)."
+    },
+    {
+      "message": 47,
+      "kind": "date_time_change",
+      "cells": [
+        "Hearings AV",
+        "Hearings D",
+        "Hearings DR",
+        "Hearings E",
+        "Hearings H",
+        "Hearings I",
+        "Hearings J",
+        "Hearings K"
+      ],
+      "label_why": "48 Linden Avenue moves from June 6 to June 13 at 10 a.m., video room D, in writing. 66 Linden Avenue stays."
+    },
+    {
+      "message": 49,
+      "kind": "ack_named",
+      "cells": [
+        "Hearings BD",
+        "Hearings K",
+        "Hearings L"
+      ],
+      "label_why": "Nora is recorded for both; packets received."
+    },
+    {
+      "message": 51,
+      "kind": "for_person",
+      "cells": [],
+      "label_why": "A homeowner's withdrawal request that the office has not processed. A person phones the homeowner first (BG)."
+    },
+    {
+      "message": 53,
+      "kind": "for_person",
+      "cells": [],
+      "label_why": "A reminder that both hearings remain listed. Nothing is processed; a person decides what to chase."
+    },
+    {
+      "message": 55,
+      "kind": "ack_named",
+      "cells": [
+        "Hearings BD",
+        "Hearings K",
+        "Hearings L"
+      ],
+      "label_why": "Owen is recorded and packets received."
+    },
+    {
+      "message": 59,
+      "kind": "deadline",
+      "cells": [
+        "Hearings BA",
+        "Hearings BH",
+        "Hearings N"
+      ],
+      "label_why": "A homeowner statement is owed by June 8 at 4 p.m.: something owed goes in N and BA, and the office has asked (BH)."
+    },
+    {
+      "message": 60,
+      "kind": "deadline",
+      "cells": [
+        "Hearings BA",
+        "Hearings BH",
+        "Hearings N"
+      ],
+      "label_why": "The same statement is asked for again by June 8 at 4 p.m."
+    },
+    {
+      "message": 61,
+      "kind": "ack_named",
+      "cells": [
+        "Hearings BD",
+        "Hearings K"
+      ],
+      "label_why": "Staffing notices naming Leo have been accepted."
+    },
+    {
+      "message": 64,
+      "kind": "ack_no_name",
+      "cells": [
+        "Hearings L"
+      ],
+      "label_why": "Both packets received and readable; no name."
+    },
+    {
+      "message": 66,
+      "kind": "ack_named",
+      "cells": [
+        "Hearings BD",
+        "Hearings K",
+        "Hearings L"
+      ],
+      "label_why": "Leo is recorded for both, and the office has the current packets."
+    },
+    {
+      "message": 67,
+      "kind": "for_person",
+      "cells": [],
+      "label_why": "A new hearing notice that asks for the representative. A person makes the rows."
+    },
+    {
+      "message": 70,
+      "kind": "ack_named",
+      "cells": [
+        "Hearings AV",
+        "Hearings BD",
+        "Hearings K",
+        "Hearings L"
+      ],
+      "label_why": "Owen is recorded for both, both packets received, video room C."
+    },
+    {
+      "message": 72,
+      "kind": "ack_named",
+      "cells": [
+        "Hearings AV",
+        "Hearings BD",
+        "Hearings K"
+      ],
+      "label_why": "The same confirmation again: Owen is recorded, room C. From this message alone the rule cannot know it is a repeat."
+    }
+  ],
+  "packet_call_notes_note": "Three notes in the packet were written by the firm about a call with an office. They are not office messages, so they are counted apart. Message 22 is the packet's only process change.",
+  "packet_call_notes": [
+    {
+      "message": 21,
+      "kind": "for_person",
+      "cells": [],
+      "label_why": "The firm reached voicemail. The office said nothing, and a voicemail is not a record."
+    },
+    {
+      "message": 22,
+      "kind": "process_change",
+      "cells": [
+        "Offices AS",
+        "Offices AT",
+        "Offices M"
+      ],
+      "label_why": "Emailing names is no longer enough: the staffing form, then a call. HOLD."
+    },
+    {
+      "message": 46,
+      "kind": "date_time_change",
+      "cells": [
+        "Hearings BN",
+        "Hearings Y"
+      ],
+      "label_why": "A move reported by phone. Only the written notice moves a date, so D and E stay; the consultant is warned (BN) and the notice is asked for (Y)."
+    }
+  ],
+  "unseen_note": "The 30 unseen messages in data/heldout.json are all office messages about new situations, written by a separate writer for the readers. The author of the rule labelled them here by hand after the rule was frozen and before the rule was run on them, and the rule was not changed afterwards. One of them, H031, was seen by the author before the rule was written, so the counts are also given without it. Here cells may name a cell the rule does not cover (Hearings O, the proof that something owed was processed): the rule cannot be right on the cells of such a message.",
+  "unseen_office_messages": [
+    {
+      "message": "H031",
+      "kind": "deadline",
+      "cells": [
+        "Hearings BA",
+        "Hearings BH",
+        "Hearings L",
+        "Hearings N"
+      ],
+      "label_why": "A survey is owed for 81 Garden Street by noon on Monday June 10. The office also holds both packets."
+    },
+    {
+      "message": "H032",
+      "kind": "date_time_change",
+      "cells": [
+        "Hearings BH",
+        "Hearings E",
+        "Hearings H",
+        "Hearings I",
+        "Hearings J"
+      ],
+      "label_why": "28 Willow Lane is brought forward from 9:30 a.m. to 9 a.m., and the office asks who will appear."
+    },
+    {
+      "message": "H033",
+      "kind": "ack_named",
+      "cells": [
+        "Hearings BD",
+        "Hearings K"
+      ],
+      "label_why": "Owen Tarris is now entered as representative for both in place of Maya Venn."
+    },
+    {
+      "message": "H034",
+      "kind": "for_person",
+      "cells": [],
+      "label_why": "By phone, the board refuses a second move. Nothing changes and nothing is proved."
+    },
+    {
+      "message": "H035",
+      "kind": "for_person",
+      "cells": [],
+      "label_why": "The format changes from in person to video and the joining details will follow. No kind covers a change of format."
+    },
+    {
+      "message": "H036",
+      "kind": "process_change",
+      "cells": [
+        "Offices AS",
+        "Offices AT",
+        "Offices M"
+      ],
+      "label_why": "A new address for filings and a form for a change of representative, with immediate effect. HOLD."
+    },
+    {
+      "message": "H037",
+      "kind": "for_person",
+      "cells": [],
+      "label_why": "Our request is reopened and not decided. The office says not to read it as approval."
+    },
+    {
+      "message": "H038",
+      "kind": "cannot_find",
+      "cells": [
+        "Hearings AA",
+        "Hearings BD",
+        "Hearings CP",
+        "Hearings CQ",
+        "Hearings K",
+        "Hearings Y"
+      ],
+      "label_why": "Nothing has been filed for 14 Willow Lane (first in the order). Owen Tarris is shown for 28 Willow Lane only."
+    },
+    {
+      "message": "H039",
+      "kind": "ack_no_name",
+      "cells": [],
+      "label_why": "An automatic reply: our email was received and queued. It names nobody and proves nothing, so nothing is typed."
+    },
+    {
+      "message": "H040",
+      "kind": "ack_no_name",
+      "cells": [
+        "Hearings O"
+      ],
+      "label_why": "The office has the homeowner statement that was owed: a receipt without a name. The proof belongs in O, which the rule does not cover. The decision date is the board's own timing."
+    },
+    {
+      "message": "H041",
+      "kind": "deadline",
+      "cells": [
+        "Hearings AW",
+        "Hearings BD",
+        "Hearings BH"
+      ],
+      "label_why": "A replacement's name is due by noon on Tuesday June 11. Leo Arlen stays on the office's record (BD), which is not G3 for anyone else, so K is not linked."
+    },
+    {
+      "message": "H042",
+      "kind": "for_person",
+      "cells": [],
+      "label_why": "24 Orchard Road changes from video to in person, with a room and things to bring. No kind covers a change of format, so a person reads it."
+    },
+    {
+      "message": "H043",
+      "kind": "ack_named",
+      "cells": [
+        "Hearings BD",
+        "Hearings K"
+      ],
+      "label_why": "Both entries are made: Owen Tarris for 37 Meadow Avenue and Leo Arlen for 52 Meadow Avenue."
+    },
+    {
+      "message": "H044",
+      "kind": "date_time_change",
+      "cells": [
+        "Hearings E",
+        "Hearings H",
+        "Hearings I",
+        "Hearings J"
+      ],
+      "label_why": "The two hearings trade places: 42 Birch Lane at 10 a.m. and 16 Birch Lane at 10:30 a.m."
+    },
+    {
+      "message": "H045",
+      "kind": "for_person",
+      "cells": [],
+      "label_why": "For information: a homeowner's request for a later date was refused and the hearing remains. Nothing to type by rule."
+    },
+    {
+      "message": "H046",
+      "kind": "for_person",
+      "cells": [],
+      "label_why": "The office is closed on June 12 and every hearing that day gets a new date later. Postponed without a date: a person handles it."
+    },
+    {
+      "message": "H047",
+      "kind": "cancellation_processed",
+      "cells": [
+        "Hearings AF"
+      ],
+      "label_why": "The withdrawal for 18 Maple Lane is processed and the file is closed."
+    },
+    {
+      "message": "H048",
+      "kind": "date_time_change",
+      "cells": [
+        "Hearings BH",
+        "Hearings E",
+        "Hearings H",
+        "Hearings I",
+        "Hearings J"
+      ],
+      "label_why": "63 Garden Street moves to 1:30 p.m. and 81 Garden Street to 2 p.m. The office still has no representative entered."
+    },
+    {
+      "message": "H049",
+      "kind": "link_or_number",
+      "cells": [
+        "Hearings AV",
+        "Hearings BN"
+      ],
+      "label_why": "A new sign-in link replaces the earlier one, with an instruction to connect ten minutes ahead."
+    },
+    {
+      "message": "H050",
+      "kind": "date_time_change",
+      "cells": [
+        "Hearings BN",
+        "Hearings Y"
+      ],
+      "label_why": "A voicemail: Owen Tarris is down for both and both cases are pushed back half an hour. By phone nothing is proved and no date moves; the consultant is warned and the email is asked for."
+    },
+    {
+      "message": "H051",
+      "kind": "date_time_change",
+      "cells": [
+        "Hearings E",
+        "Hearings H",
+        "Hearings I",
+        "Hearings J"
+      ],
+      "label_why": "9 Orchard Road will begin at 9:30 a.m., not 9 a.m."
+    },
+    {
+      "message": "H052",
+      "kind": "deadline",
+      "cells": [
+        "Hearings AW",
+        "Hearings BH"
+      ],
+      "label_why": "The notice for 16 Birch Lane is treated as not filed, and a complete notice is due by 3 p.m. on Wednesday June 12."
+    },
+    {
+      "message": "H053",
+      "kind": "for_person",
+      "cells": [],
+      "label_why": "Advance warning of a possible move, nothing decided, with a question for the consultant."
+    },
+    {
+      "message": "H054",
+      "kind": "deadline",
+      "cells": [
+        "Hearings BA",
+        "Hearings BH",
+        "Hearings N"
+      ],
+      "label_why": "A floor-area survey is owed for 73 Clover Road by 4 p.m. on Friday June 14."
+    },
+    {
+      "message": "H055",
+      "kind": "cancellation_processed",
+      "cells": [
+        "Hearings AF"
+      ],
+      "label_why": "A portal notice: 42 Birch Lane is withdrawn and closed, processed on 06/11/2030."
+    },
+    {
+      "message": "H056",
+      "kind": "for_person",
+      "cells": [],
+      "label_why": "Both hearings are postponed and no new dates are offered yet."
+    },
+    {
+      "message": "H057",
+      "kind": "process_change",
+      "cells": [
+        "Offices AS",
+        "Offices AT",
+        "Offices M"
+      ],
+      "label_why": "From July 1 names are no longer accepted by email and must be entered in the portal. HOLD."
+    },
+    {
+      "message": "H058",
+      "kind": "cancellation_processed",
+      "cells": [
+        "Hearings AF",
+        "Hearings O"
+      ],
+      "label_why": "The settlement for 16 Birch Lane is approved and the matter is closed. The label treats that as the office's written proof that the hearing is off; O is outside the rule."
+    },
+    {
+      "message": "H059",
+      "kind": "ack_named",
+      "cells": [
+        "Hearings BD",
+        "Hearings K"
+      ],
+      "label_why": "A second hearing is set, and Owen Tarris remains the representative of record. A person makes the new row. The June 14 date is for requests to change the date and is not something owed."
+    },
+    {
+      "message": "H060",
+      "kind": "for_person",
+      "cells": [],
+      "label_why": "For the file only: the hearing officer changed. Nothing to type."
+    }
+  ],
+  "measured": {
+    "note": "Measured on 19 Nov 2026 by running node cli/office.js --measure. cli/check_office.js fails if a run no longer gives these counts. Right means the kind equals the label. Cells right means the rule proposes exactly the label's set of cells.",
+    "packet_first_run": {
+      "n": 31,
+      "right": 28,
+      "wrong": [
+        59,
+        66,
+        72
+      ],
+      "note": "All three failed for one reason: the pattern for statements that need nothing typed did not match a sentence that starts with a capital, such as \"No changes.\" The pattern was made to ignore capitals. Nothing was added for a single message."
+    },
+    "packet_office_messages": {
+      "n": 31,
+      "right": 31,
+      "wrong": [],
+      "for_person": 12,
+      "for_person_where_label_has_a_kind": [],
+      "wrong_kind_with_proposals": [],
+      "cells_right": 31,
+      "cells_wrong": [],
+      "cells_proposed_that_the_label_does_not_have": [],
+      "hold": [],
+      "mis_sorted_not_handed_to_a_person": [],
+      "wrong_cells_proposed": 0
+    },
+    "packet_call_notes": {
+      "n": 3,
+      "right": 3,
+      "wrong": [],
+      "for_person": 1,
+      "for_person_where_label_has_a_kind": [],
+      "wrong_kind_with_proposals": [],
+      "cells_right": 3,
+      "cells_wrong": [],
+      "cells_proposed_that_the_label_does_not_have": [],
+      "hold": [
+        22
+      ],
+      "mis_sorted_not_handed_to_a_person": [],
+      "wrong_cells_proposed": 0
+    },
+    "unseen_office_messages": {
+      "n": 30,
+      "right": 13,
+      "wrong": [
+        "H031",
+        "H033",
+        "H038",
+        "H039",
+        "H040",
+        "H041",
+        "H043",
+        "H044",
+        "H048",
+        "H049",
+        "H050",
+        "H051",
+        "H052",
+        "H054",
+        "H055",
+        "H058",
+        "H059"
+      ],
+      "for_person": 24,
+      "for_person_where_label_has_a_kind": [
+        "H031",
+        "H033",
+        "H039",
+        "H040",
+        "H041",
+        "H043",
+        "H044",
+        "H048",
+        "H049",
+        "H050",
+        "H051",
+        "H052",
+        "H054",
+        "H055",
+        "H058"
+      ],
+      "wrong_kind_with_proposals": [
+        "H038",
+        "H059"
+      ],
+      "cells_right": 13,
+      "cells_wrong": [
+        "H031",
+        "H033",
+        "H038",
+        "H040",
+        "H041",
+        "H043",
+        "H044",
+        "H047",
+        "H048",
+        "H049",
+        "H050",
+        "H051",
+        "H052",
+        "H054",
+        "H055",
+        "H058",
+        "H059"
+      ],
+      "cells_proposed_that_the_label_does_not_have": [
+        "H047",
+        "H059"
+      ],
+      "hold": [
+        "H036",
+        "H057"
+      ],
+      "right_without_H031": 13,
+      "n_without_H031": 29,
+      "mis_sorted_not_handed_to_a_person": [
+        "H038",
+        "H047",
+        "H059"
+      ],
+      "wrong_cells_proposed": 3
+    },
+    "unseen_total": 30,
+    "unseen_from_offices": 30,
+    "office_senders_in_packet": [
+      1,
+      4,
+      6,
+      7,
+      11,
+      13,
+      16,
+      17,
+      19,
+      24,
+      25,
+      28,
+      31,
+      34,
+      37,
+      40,
+      43,
+      45,
+      47,
+      49,
+      51,
+      53,
+      55,
+      59,
+      60,
+      61,
+      64,
+      66,
+      67,
+      70,
+      72
+    ],
+    "hold_on_all_72": [
+      22
+    ],
+    "hold_on_all_unseen": [
+      "H036",
+      "H057"
+    ],
+    "frozen_note": "The rule was frozen before the unseen messages were labelled and run. Afterwards only the wording of the reason sentence was changed; kind, hold and proposals of the shipped rule were compared with the frozen copy on all 72 packet messages and all 30 unseen ones, with and without context (204 comparisons, 0 differ). On 20 Nov 2026 (round 15d) two things were changed in the rule, neither from the unseen results: the HOLD sentence was reworded (the recorded route waits for a person; notices go by both routes until the office confirms in writing), and an office's arrival instruction is now proposed for Hearings CI as minutes and no longer for Hearings AV (sheet rule S15). Compared with the copy before the change on the same 204 comparisons, 2 differ, both on packet message 40, and 0 of the 60 on the unseen messages.",
+    "round16_note": "On 20 Nov 2026 (round 16) the rule was changed again, not from the unseen results but because the gate sheet gained cells: the HOLD sentence became the sheet's block sentence (no notice goes to the office until a person approves the change), a process change now also proposes Offices AS and AT, and a notice the office cannot find now also proposes Hearings CP, CQ and AA, with a reworded task in Hearings Y. Compared with the copy before the change on the same 204 comparisons (72 packet messages and 30 unseen ones, with and without context): kind differs in 0, hold and forPerson differ in 0, and the proposals differ in 10, on packet messages 16, 22 and 24 and on unseen messages H036 and H057, every one of them only by the new cells and the reworded Y. Through the inbox connector the office rule therefore proposes 24 lines on the unseen messages (20 before): the 4 new ones are Offices AS and AT for H036 and H057.",
+    "simulation": {
+      "offices": 10,
+      "prepared_answers": 90,
+      "sorted_as_prepared": 90,
+      "note": "The prepared answers were written by the author of the rule, so this shows the handling of each kind and is not a measure of accuracy."
+    },
+    "unseen_wrong_proposals_note": "On three unseen messages the rule proposed a cell that a person should not fill. H047: it also proposed Hearings L, because \"We have now processed the withdrawal ... and the file was closed\" matched the pattern for a receipt of case files. H059: it read \"Requests to change this date must be made in writing no later than June 14\" as a deadline and proposed Hearings AW and BH. H038: it read \"A staffing notice reached us ... and has been processed\" as an acknowledgment without a name, missed \"Our Monday list now shows Owen Tarris\" and \"Nothing has been filed for 14 Willow Lane\", and proposed only Hearings Y. The rule was not changed after this run, so these three defects are still in it.",
+    "unseen_through_the_inbox_connector": {
+      "messages": 30,
+      "office_messages_checked": 30,
+      "auto_file_off": {
+        "office_lines": 24,
+        "office_lines_by_the_office_rule_alone": 23,
+        "office_lines_by_the_office_rule_alone_that_file_themselves": 0,
+        "office_lines_also_proposed_by_the_readers_that_file_themselves": [],
+        "wrong_office_lines": [
+          "H047 Hearings L AX-117",
+          "H059 Hearings AW AX-119",
+          "H059 Hearings BH AX-119",
+          "H059 Hearings AW AX-120",
+          "H059 Hearings BH AX-120"
+        ],
+        "wrong_office_lines_that_file_themselves": 0
+      },
+      "auto_file_on": {
+        "office_lines": 24,
+        "office_lines_by_the_office_rule_alone": 23,
+        "office_lines_by_the_office_rule_alone_that_file_themselves": 0,
+        "office_lines_also_proposed_by_the_readers_that_file_themselves": [
+          "H032 Hearings I"
+        ],
+        "wrong_office_lines": [
+          "H047 Hearings L AX-117",
+          "H059 Hearings AW AX-119",
+          "H059 Hearings BH AX-119",
+          "H059 Hearings AW AX-120",
+          "H059 Hearings BH AX-120"
+        ],
+        "wrong_office_lines_that_file_themselves": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,819 @@
+1
+00:00:00,400 --> 00:00:03,447
+Wednesday afternoon,
+Orimere sends one line:
+
+2
+00:00:03,487 --> 00:00:07,075
+9 Orchard Road moves to June 18.
+
+3
+00:00:07,115 --> 00:00:10,828
+It lands in a shared inbox,
+among two dozen hearings.
+
+4
+00:00:10,868 --> 00:00:14,715
+Miss it,
+and nobody shows up on the new day.
+
+5
+00:00:14,755 --> 00:00:17,930
+In some offices,
+the appeal can then be dismissed.
+
+6
+00:00:20,014 --> 00:00:22,345
+Hearing Desk is built to catch it.
+
+7
+00:00:22,385 --> 00:00:27,534
+The promise: every hearing,
+a named yes, three working days ahead.
+
+8
+00:00:27,574 --> 00:00:33,381
+People make every judgment call;
+a fixed rule files only a plain yes.
+
+9
+00:00:33,421 --> 00:00:37,392
+You'll see two layers:
+this season's week-one kit,
+
+10
+00:00:37,432 --> 00:00:40,844
+and a control tower built only if it pays.
+
+11
+00:00:45,200 --> 00:00:49,045
+Let's spend a day at the desk:
+Friday, June 7,
+
+12
+00:00:49,085 --> 00:00:52,830
+with 24 hearings this
+week across 10 counties.
+
+13
+00:00:53,573 --> 00:00:57,640
+Today shows only what needs you:
+ten hearings at risk,
+
+14
+00:00:57,680 --> 00:01:01,414
+and four close ones with no yes yet.
+
+15
+00:01:01,454 --> 00:01:03,550
+We start with the mail.
+
+16
+00:01:04,367 --> 00:01:06,227
+Proposals wait here for a person.
+
+17
+00:01:06,267 --> 00:01:10,732
+Six new messages came in, and two AI
+readers go through the new ones:
+
+18
+00:01:10,772 --> 00:01:13,687
+one says what each proves,
+the other checks it.
+
+19
+00:01:13,727 --> 00:01:16,254
+The badge says live or recorded;
+
+20
+00:01:16,294 --> 00:01:19,017
+a live read
+takes 7 to 10 seconds a message,
+
+21
+00:01:19,057 --> 00:01:21,108
+measured, so we trim the wait.
+
+22
+00:01:21,148 --> 00:01:23,197
+Anything unclear goes to a person.
+
+23
+00:01:23,690 --> 00:01:26,514
+Step one of the 9:00 a.m. pass.
+
+24
+00:01:26,554 --> 00:01:29,308
+Nothing files itself: on unseen mail,
+
+25
+00:01:29,348 --> 00:01:33,258
+about one agreed reading in ten was
+still wrong in our measurements.
+
+26
+00:01:33,298 --> 00:01:35,250
+So a person decides.
+
+27
+00:01:35,290 --> 00:01:38,983
+Velloran's email confirms
+the date for 63 Garden Street.
+
+28
+00:01:39,023 --> 00:01:41,980
+You accept,
+and the desk shows where the link goes.
+
+29
+00:01:44,273 --> 00:01:46,888
+Back to 9 Orchard Road.
+
+30
+00:01:46,928 --> 00:01:49,060
+The firm planned this
+move with the office:
+
+31
+00:01:49,100 --> 00:01:52,654
+Nora could cover both hearings
+on the 18th, so we asked.
+
+32
+00:01:52,694 --> 00:01:55,479
+Orimere moved one and kept the other.
+
+33
+00:01:55,519 --> 00:01:58,528
+Only the office's written
+word can close the date check,
+
+34
+00:01:58,568 --> 00:02:01,343
+so you accept it,
+and the desk lists what follows.
+
+35
+00:02:04,300 --> 00:02:08,380
+Each office has its own rules,
+so each is a row of settings:
+
+36
+00:02:08,420 --> 00:02:12,869
+how to tell it who's coming,
+how far ahead, what proof it accepts.
+
+37
+00:02:12,909 --> 00:02:15,136
+Where an office lets us plan dates,
+
+38
+00:02:15,176 --> 00:02:17,719
+we ask for the days
+our consultants promised;
+
+39
+00:02:17,759 --> 00:02:19,530
+Larkmere hasn't answered yet.
+
+40
+00:02:20,457 --> 00:02:22,503
+Tesswick changed its process by phone.
+
+41
+00:02:22,543 --> 00:02:23,777
+A call isn't proof,
+
+42
+00:02:23,817 --> 00:02:26,977
+so its notices wait until
+Alice approves the change,
+
+43
+00:02:27,017 --> 00:02:28,657
+with her name on it.
+
+44
+00:02:28,697 --> 00:02:30,487
+She can always undo it.
+
+45
+00:02:32,716 --> 00:02:36,772
+When a clerk writes back,
+the office rule reads the reply.
+
+46
+00:02:36,812 --> 00:02:39,352
+Tesswick's clerk can't find our form.
+
+47
+00:02:39,392 --> 00:02:41,236
+That doesn't put our name on their record,
+
+48
+00:02:41,276 --> 00:02:45,746
+so the check stays open,
+and a call goes on today's list.
+
+49
+00:02:47,198 --> 00:02:51,318
+To jump to any hearing,
+press Control K and type the street.
+
+50
+00:02:51,358 --> 00:02:53,416
+Here's a name check that's closed.
+
+51
+00:02:53,456 --> 00:02:55,318
+Larkmere's clerk wrote back:
+
+52
+00:02:55,358 --> 00:02:57,998
+staffing notices naming
+Leo have been accepted.
+
+53
+00:02:58,038 --> 00:03:00,248
+That written line is the proof.
+
+54
+00:03:00,450 --> 00:03:01,956
+Now the consultants.
+
+55
+00:03:01,996 --> 00:03:05,689
+They run their own businesses;
+some keep no digital calendar.
+
+56
+00:03:05,729 --> 00:03:10,748
+Maya gets one page from a link:
+her week, where to be, what to bring.
+
+57
+00:03:10,788 --> 00:03:15,200
+Her day-before message comes by email,
+and she answers with one tap.
+
+58
+00:03:16,847 --> 00:03:20,167
+Others would rather not share
+their calendars, and they don't have to.
+
+59
+00:03:20,207 --> 00:03:21,809
+The desk never looks at theirs;
+
+60
+00:03:21,849 --> 00:03:25,567
+it hands them ours,
+one file with 17 hearings.
+
+61
+00:03:25,607 --> 00:03:27,917
+Editing that copy moves no hearing.
+
+62
+00:03:28,821 --> 00:03:32,201
+Who to ask starts on the bench:
+counties, daily caps,
+
+63
+00:03:32,241 --> 00:03:35,347
+and what each consultant
+told us about their days.
+
+64
+00:03:35,387 --> 00:03:38,421
+Hearings come in groups,
+one office, one day,
+
+65
+00:03:38,461 --> 00:03:41,298
+so the whole docket goes
+in one numbered text.
+
+66
+00:03:41,853 --> 00:03:44,242
+When the offer was hearings one and three,
+
+67
+00:03:44,282 --> 00:03:48,457
+YES 1 3 takes both,
+and the reply rule files it.
+
+68
+00:03:48,497 --> 00:03:50,148
+Take only part of a whole docket,
+
+69
+00:03:50,188 --> 00:03:52,639
+like Leo here, and it goes to a person.
+
+70
+00:03:52,679 --> 00:03:56,964
+So does anything unclear:
+22 of 39 replies in our tests.
+
+71
+00:03:58,816 --> 00:04:00,313
+Case files go out by version.
+
+72
+00:04:00,353 --> 00:04:03,161
+Eli taps to say he has version 2.
+
+73
+00:04:03,201 --> 00:04:05,356
+The files check closes only when the clerk
+
+74
+00:04:05,396 --> 00:04:08,066
+and the consultant both
+hold the current one.
+
+75
+00:04:08,666 --> 00:04:10,846
+Some hearings end in an agreement.
+
+76
+00:04:10,886 --> 00:04:13,486
+Priya's settlement for 16 Birch Lane needs
+
+77
+00:04:13,526 --> 00:04:16,206
+her signature before
+the hearing can close.
+
+78
+00:04:16,246 --> 00:04:18,106
+She signs on her page.
+
+79
+00:04:18,146 --> 00:04:22,016
+It's simulated here; at the firm,
+it's their e-signature tool.
+
+80
+00:04:22,633 --> 00:04:24,346
+Then a cancellation.
+
+81
+00:04:24,386 --> 00:04:28,855
+Nora is ill and can't
+make 34 Maple Lane on June 14.
+
+82
+00:04:28,895 --> 00:04:31,573
+She taps Can't make it, picks the reason,
+
+83
+00:04:31,613 --> 00:04:34,543
+and the coordinator has it days ahead,
+not on the day.
+
+84
+00:04:36,573 --> 00:04:39,846
+You accept,
+and the desk says what to change:
+
+85
+00:04:39,886 --> 00:04:41,633
+mark Nora unavailable that day,
+
+86
+00:04:41,673 --> 00:04:44,462
+and offer the hearing
+to the next consultant.
+
+87
+00:04:44,502 --> 00:04:45,979
+Once someone says yes,
+
+88
+00:04:46,019 --> 00:04:49,263
+the files and the office
+notice start over for them.
+
+89
+00:04:49,417 --> 00:04:52,532
+At 2 o'clock, the second pass:
+
+90
+00:04:52,572 --> 00:04:58,007
+every flagged hearing gets a next step,
+an owner and a time.
+
+91
+00:04:58,047 --> 00:05:03,844
+Top of the list, 57 Clover Road:
+the office asked twice for a statement,
+
+92
+00:05:03,884 --> 00:05:07,487
+due at 4, and the coordinator
+on duty owns it.
+
+93
+00:05:07,583 --> 00:05:12,284
+A hearing is covered by proof,
+not feel: five of them.
+
+94
+00:05:12,324 --> 00:05:13,699
+The office's date.
+
+95
+00:05:13,739 --> 00:05:15,460
+The consultant's yes.
+
+96
+00:05:15,500 --> 00:05:19,011
+Our name on the office's record.
+The files.
+
+97
+00:05:19,051 --> 00:05:20,741
+And anything still owed.
+
+98
+00:05:20,781 --> 00:05:25,683
+Until all five are in, or not needed,
+it isn't ready.
+
+99
+00:05:25,723 --> 00:05:28,273
+This morning, that's two of nineteen.
+
+100
+00:05:29,250 --> 00:05:31,608
+Now jump ahead to the layer
+that isn't built:
+
+101
+00:05:31,648 --> 00:05:36,071
+the planned control tower,
+where routine steps run themselves.
+
+102
+00:05:36,111 --> 00:05:40,837
+A different case:
+Leo can do 102 Willow Lane on June 10,
+
+103
+00:05:40,877 --> 00:05:43,544
+but not 118 Willow Lane.
+
+104
+00:05:43,584 --> 00:05:46,780
+The tower offers that one to Maya,
+next on the list.
+
+105
+00:05:48,080 --> 00:05:51,047
+Play the queue forward
+as if everyone says yes.
+
+106
+00:05:51,087 --> 00:05:53,857
+Maya accepts, the current files follow,
+
+107
+00:05:53,897 --> 00:05:56,050
+and the Larkmere office records her name.
+
+108
+00:05:58,090 --> 00:06:03,799
+On the board, 118 Willow Lane
+is ready again, with Maya attending.
+
+109
+00:06:03,839 --> 00:06:06,201
+Every check is done or not needed,
+
+110
+00:06:06,241 --> 00:06:08,663
+each proven by the party
+that can prove it:
+
+111
+00:06:08,703 --> 00:06:12,460
+Maya's yes, her files receipt,
+and Larkmere's record.
+
+112
+00:06:14,690 --> 00:06:17,809
+In code,
+only the government moves a hearing date.
+
+113
+00:06:17,849 --> 00:06:19,110
+Edit a shared calendar,
+
+114
+00:06:19,150 --> 00:06:23,450
+and it's noted as what someone believes,
+but the date stays.
+
+115
+00:06:23,490 --> 00:06:28,040
+When the office moves it in writing,
+the date changes and offers go out.
+
+116
+00:06:28,933 --> 00:06:33,025
+Under the hood,
+the AI has one narrow job: reading.
+
+117
+00:06:33,065 --> 00:06:35,207
+Our recorded run, on this page:
+
+118
+00:06:35,247 --> 00:06:39,833
+72 of 79 agreed readings
+right on unseen mail.
+
+119
+00:06:39,873 --> 00:06:43,793
+Run live on November 22: 275 messages,
+
+120
+00:06:43,833 --> 00:06:48,967
+about $1.16, no failed calls,
+73 of 81 right.
+
+121
+00:06:49,007 --> 00:06:53,263
+Good, but not good enough to file alone,
+so a person decides.
+
+122
+00:06:54,381 --> 00:06:58,034
+Agents use the desk the way people do:
+every page has an address,
+
+123
+00:06:58,074 --> 00:07:00,961
+nine tasks are written out step by step,
+
+124
+00:07:01,001 --> 00:07:04,770
+and a read-only browser
+API returns the same data.
+
+125
+00:07:04,810 --> 00:07:08,891
+An agent can read and propose,
+but never send or move a date.
+
+126
+00:07:10,547 --> 00:07:13,687
+The firm keeps its own tools: mail, files,
+
+127
+00:07:13,727 --> 00:07:17,100
+calendars, texts,
+e-signature, case system.
+
+128
+00:07:17,140 --> 00:07:20,077
+None is connected here; six are simulated.
+
+129
+00:07:20,117 --> 00:07:23,399
+A text comes in:
+Maya's YES is filed by the rule;
+
+130
+00:07:23,439 --> 00:07:28,117
+Leo's YES 1 3 goes to a person,
+since he took only part of a docket.
+
+131
+00:07:28,803 --> 00:07:31,070
+The stack is small on purpose.
+
+132
+00:07:31,110 --> 00:07:33,906
+The record is a spreadsheet
+the firm already knows;
+
+133
+00:07:33,946 --> 00:07:36,423
+an outside tester rebuilt
+its rules and matched
+
+134
+00:07:36,463 --> 00:07:42,383
+an earlier build on all 893,010 cells
+compared, in LibreOffice.
+
+135
+00:07:42,423 --> 00:07:45,483
+The app is one offline React file,
+
+136
+00:07:45,523 --> 00:07:48,453
+and a local server calls
+the readers and holds the key.
+
+137
+00:07:48,650 --> 00:07:50,882
+Five measures steer the firm.
+
+138
+00:07:50,922 --> 00:07:55,642
+Close hearings with no yes:
+four today, target zero.
+
+139
+00:07:55,682 --> 00:08:00,554
+Ready three working days ahead:
+18 percent, aiming for 90.
+
+140
+00:08:00,594 --> 00:08:05,742
+Hearings per consultant-day:
+1.7, aiming for 2.4.
+
+141
+00:08:05,782 --> 00:08:09,830
+Estimated: about 92 hearings
+per coordinator in a peak week,
+
+142
+00:08:09,870 --> 00:08:14,064
+and $104 a hearing. The guardrail:
+
+143
+00:08:14,104 --> 00:08:18,400
+results by format and consultant
+must not fall as days get fuller.
+
+144
+00:08:19,026 --> 00:08:23,412
+Growth means new counties,
+and a new county is data, not code.
+
+145
+00:08:23,452 --> 00:08:28,421
+Paste how its office works,
+check what word matching read, approve.
+
+146
+00:08:28,461 --> 00:08:31,072
+Kestrel Bay joins
+with the same five checks.
+
+147
+00:08:32,914 --> 00:08:37,030
+In simulated runs of up to 3,200 hearings,
+
+148
+00:08:37,070 --> 00:08:41,534
+the tower keeps a person's time
+near six minutes a hearing.
+
+149
+00:08:41,574 --> 00:08:45,404
+By hand, in the same simulation,
+it's about 37;
+
+150
+00:08:45,444 --> 00:08:49,021
+with our measured reading errors,
+under 15.
+
+151
+00:08:49,061 --> 00:08:54,379
+No safety rule broke
+in 45,300 simulated hearings.
+
+152
+00:08:54,419 --> 00:08:57,068
+Coordinators per thousand
+peak-week hearings:
+
+153
+00:08:57,108 --> 00:09:01,024
+about 11 today,
+5 with the tower, estimated.
+
+154
+00:09:01,800 --> 00:09:04,139
+The business case, in estimates.
+
+155
+00:09:04,179 --> 00:09:07,953
+A hearing costs about $104 today.
+
+156
+00:09:07,993 --> 00:09:13,195
+The weakest number is what each hearing
+earns, so pin that down first.
+
+157
+00:09:13,235 --> 00:09:16,283
+Season one is about $12,000 to set up,
+
+158
+00:09:16,323 --> 00:09:19,163
+no new software beyond a reply rule.
+
+159
+00:09:19,203 --> 00:09:20,760
+Today's coordinators run it,
+
+160
+00:09:20,800 --> 00:09:24,788
+and about $10,000 of payroll
+covers four counted weeks.
+
+161
+00:09:25,240 --> 00:09:29,060
+A lean control tower
+costs $40,000 to $70,000 a year,
+
+162
+00:09:29,100 --> 00:09:31,800
+and pays for itself only above roughly
+
+163
+00:09:31,840 --> 00:09:34,574
+five to nine thousand hearings a year.
+
+164
+00:09:34,614 --> 00:09:37,971
+The firm handles
+about 300, so the tower waits.
+
+165
+00:09:38,400 --> 00:09:42,044
+Plainly:
+nothing is connected to real systems yet,
+
+166
+00:09:42,084 --> 00:09:44,664
+the reader tests are small and fictional,
+
+167
+00:09:44,704 --> 00:09:47,104
+and every minute and dollar stays an
+
+168
+00:09:47,144 --> 00:09:49,354
+estimate until the firm's work is timed.
+
+169
+00:09:49,633 --> 00:09:52,135
+So the answer comes in three steps.
+
+170
+00:09:52,175 --> 00:09:56,625
+First, this season:
+the week-one kit in all ten counties,
+
+171
+00:09:56,665 --> 00:09:59,716
+with five checks a hearing,
+two daily passes,
+
+172
+00:09:59,756 --> 00:10:01,823
+and whole dockets in one text.
+
+173
+00:10:02,432 --> 00:10:04,853
+Next, fuller consultant-days:
+
+174
+00:10:04,893 --> 00:10:08,807
+whole video days at a day rate
+when a consultant chooses,
+
+175
+00:10:08,847 --> 00:10:12,336
+and offices asked
+for one day for our cases.
+
+176
+00:10:12,376 --> 00:10:17,065
+Later, only if the firm's numbers
+say it pays, the control tower.
+
+177
+00:10:18,170 --> 00:10:21,629
+Either way, the next time
+an office moves 9 Orchard Road,
+
+178
+00:10:21,669 --> 00:10:23,506
+it's on the next morning's pass,
+
+179
+00:10:23,546 --> 00:10:26,280
+and a named consultant
+is there on the new day.

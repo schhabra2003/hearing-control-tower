@@ -1,0 +1,4168 @@
+{
+ "note": "Reader evaluation runs on the second unseen set (data/unseen2.json, 100 messages, two blind labellers and an adjudicator). Written by eval/run.js --out. The paid run was made once on 20 Nov 2026: 3 messages as a trial, then the other 97; the last entry scores all 100 from the recorded reads (data/recorded_reads_unseen2.json). Measured cost from usage: 0.53 US dollars.",
+ "runs": {
+  "unseen2.json | openai:gpt-6.1-sol x openai:gpt-6-luna (trial, U001 to U003)": {
+   "generated_at": "2026-11-20T22:50:30.069Z",
+   "generated_by": "node eval/run.js --set data/unseen2.json --reader openai:gpt-6.1-sol --crosscheck openai:gpt-6-luna --baseline none --concurrency 4 --labels-current --only U001,U002,U003 --save-reads data/recorded_reads_unseen2.json --out eval/reader_runs_unseen2.json",
+   "set": {
+    "file": "data/unseen2.json",
+    "format": "unseen",
+    "messages": 3,
+    "left_out": 0,
+    "labels_predate": [],
+    "unknown_label_types": {},
+    "base": "makeWorld(\"end\") from cli/check.js (the examples replayed with the rules reader)"
+   },
+   "reader": {
+    "spec": "openai:gpt-6.1-sol",
+    "label": "gpt-6.1-sol (reader-1)",
+    "provenance": null,
+    "paths": null
+   },
+   "crosscheck": {
+    "spec": "openai:gpt-6-luna",
+    "label": "gpt-6-luna (reader-1, second reader)",
+    "provenance": null
+   },
+   "prompt": {
+    "version": "reader-1",
+    "hash": "eb88cb65dd1f6bae",
+    "second_hash": "e38fe29a0b618d81"
+   },
+   "warnings": [],
+   "claims": {
+    "found": 5,
+    "missed": 0,
+    "extra": 0,
+    "precision": {
+     "k": 5,
+     "n": 5,
+     "p": 1,
+     "lo": 0.5655085052479191,
+     "hi": 1
+    },
+    "recall": {
+     "k": 5,
+     "n": 5,
+     "p": 1,
+     "lo": 0.5655085052479191,
+     "hi": 1
+    },
+    "f1": 1,
+    "by_message_bootstrap": {
+     "precision": {
+      "est": 1,
+      "lo": 1,
+      "hi": 1,
+      "B": 2000
+     },
+     "recall": {
+      "est": 1,
+      "lo": 1,
+      "hi": 1,
+      "B": 2000
+     },
+     "f1": {
+      "est": 1,
+      "lo": 1,
+      "hi": 1,
+      "B": 2000
+     }
+    }
+   },
+   "fields": {
+    "right": 6,
+    "wrong": 0,
+    "missing": 0,
+    "accuracy": {
+     "k": 6,
+     "n": 6,
+     "p": 1,
+     "lo": 0.6096569663469354,
+     "hi": 0.9999999999999999
+    }
+   },
+   "messages": {
+    "n": 3,
+    "exact": {
+     "k": 3,
+     "n": 3,
+     "p": 1,
+     "lo": 0.43849391955098227,
+     "hi": 1
+    }
+   },
+   "by_type": {
+    "outcome_reported": {
+     "found": 2,
+     "missed": 0,
+     "extra": 0,
+     "precision": {
+      "k": 2,
+      "n": 2,
+      "p": 1,
+      "lo": 0.34237195288961925,
+      "hi": 1
+     },
+     "recall": {
+      "k": 2,
+      "n": 2,
+      "p": 1,
+      "lo": 0.34237195288961925,
+      "hi": 1
+     }
+    },
+    "rep_recorded": {
+     "found": 2,
+     "missed": 0,
+     "extra": 0,
+     "precision": {
+      "k": 2,
+      "n": 2,
+      "p": 1,
+      "lo": 0.34237195288961925,
+      "hi": 1
+     },
+     "recall": {
+      "k": 2,
+      "n": 2,
+      "p": 1,
+      "lo": 0.34237195288961925,
+      "hi": 1
+     }
+    },
+    "obligation_created": {
+     "found": 1,
+     "missed": 0,
+     "extra": 0,
+     "precision": {
+      "k": 1,
+      "n": 1,
+      "p": 1,
+      "lo": 0.20654329147389294,
+      "hi": 1
+     },
+     "recall": {
+      "k": 1,
+      "n": 1,
+      "p": 1,
+      "lo": 0.20654329147389294,
+      "hi": 1
+     }
+    }
+   },
+   "by_channel": {
+    "email": {
+     "messages": 3,
+     "exact": {
+      "k": 3,
+      "n": 3,
+      "p": 1,
+      "lo": 0.43849391955098227,
+      "hi": 1
+     },
+     "found": 5,
+     "missed": 0,
+     "extra": 0,
+     "precision": {
+      "k": 5,
+      "n": 5,
+      "p": 1,
+      "lo": 0.5655085052479191,
+      "hi": 1
+     },
+     "recall": {
+      "k": 5,
+      "n": 5,
+      "p": 1,
+      "lo": 0.5655085052479191,
+      "hi": 1
+     }
+    }
+   },
+   "by_sender": {
+    "consultant": {
+     "messages": 1,
+     "exact": {
+      "k": 1,
+      "n": 1,
+      "p": 1,
+      "lo": 0.20654329147389294,
+      "hi": 1
+     },
+     "found": 3,
+     "missed": 0,
+     "extra": 0,
+     "precision": {
+      "k": 3,
+      "n": 3,
+      "p": 1,
+      "lo": 0.43849391955098227,
+      "hi": 1
+     },
+     "recall": {
+      "k": 3,
+      "n": 3,
+      "p": 1,
+      "lo": 0.43849391955098227,
+      "hi": 1
+     }
+    },
+    "homeowner": {
+     "messages": 1,
+     "exact": {
+      "k": 1,
+      "n": 1,
+      "p": 1,
+      "lo": 0.20654329147389294,
+      "hi": 1
+     },
+     "found": 0,
+     "missed": 0,
+     "extra": 0,
+     "precision": {
+      "k": 0,
+      "n": 0,
+      "p": null,
+      "lo": null,
+      "hi": null
+     },
+     "recall": {
+      "k": 0,
+      "n": 0,
+      "p": null,
+      "lo": null,
+      "hi": null
+     }
+    },
+    "government": {
+     "messages": 1,
+     "exact": {
+      "k": 1,
+      "n": 1,
+      "p": 1,
+      "lo": 0.20654329147389294,
+      "hi": 1
+     },
+     "found": 2,
+     "missed": 0,
+     "extra": 0,
+     "precision": {
+      "k": 2,
+      "n": 2,
+      "p": 1,
+      "lo": 0.34237195288961925,
+      "hi": 1
+     },
+     "recall": {
+      "k": 2,
+      "n": 2,
+      "p": 1,
+      "lo": 0.34237195288961925,
+      "hi": 1
+     }
+    }
+   },
+   "by_group": {
+    "unseen2_consultant": {
+     "messages": 1,
+     "exact": {
+      "k": 1,
+      "n": 1,
+      "p": 1,
+      "lo": 0.20654329147389294,
+      "hi": 1
+     },
+     "found": 3,
+     "missed": 0,
+     "extra": 0,
+     "precision": {
+      "k": 3,
+      "n": 3,
+      "p": 1,
+      "lo": 0.43849391955098227,
+      "hi": 1
+     },
+     "recall": {
+      "k": 3,
+      "n": 3,
+      "p": 1,
+      "lo": 0.43849391955098227,
+      "hi": 1
+     }
+    },
+    "unseen2_homeowner": {
+     "messages": 1,
+     "exact": {
+      "k": 1,
+      "n": 1,
+      "p": 1,
+      "lo": 0.20654329147389294,
+      "hi": 1
+     },
+     "found": 0,
+     "missed": 0,
+     "extra": 0,
+     "precision": {
+      "k": 0,
+      "n": 0,
+      "p": null,
+      "lo": null,
+      "hi": null
+     },
+     "recall": {
+      "k": 0,
+      "n": 0,
+      "p": null,
+      "lo": null,
+      "hi": null
+     }
+    },
+    "unseen2_office": {
+     "messages": 1,
+     "exact": {
+      "k": 1,
+      "n": 1,
+      "p": 1,
+      "lo": 0.20654329147389294,
+      "hi": 1
+     },
+     "found": 2,
+     "missed": 0,
+     "extra": 0,
+     "precision": {
+      "k": 2,
+      "n": 2,
+      "p": 1,
+      "lo": 0.34237195288961925,
+      "hi": 1
+     },
+     "recall": {
+      "k": 2,
+      "n": 2,
+      "p": 1,
+      "lo": 0.34237195288961925,
+      "hi": 1
+     }
+    }
+   },
+   "safety": {
+    "closing_claims_read": 4,
+    "false_closings": {
+     "n": 0,
+     "of_closing_claims_read": {
+      "k": 0,
+      "n": 4,
+      "p": 0,
+      "lo": 0,
+      "hi": 0.48990002040399916
+     },
+     "would_be_applied": 0,
+     "upper_bound_if_zero": 0.527129195498412,
+     "list": []
+    },
+    "closings_with_a_wrong_detail": {
+     "n": 0,
+     "of_closing_claims_read": {
+      "k": 0,
+      "n": 4,
+      "p": 0,
+      "lo": 0,
+      "hi": 0.48990002040399916
+     },
+     "would_be_applied": 0,
+     "list": []
+    },
+    "unsafe_closings": {
+     "n": 0,
+     "of_closing_claims_read": {
+      "k": 0,
+      "n": 4,
+      "p": 0,
+      "lo": 0,
+      "hi": 0.48990002040399916
+     },
+     "would_be_applied": 0,
+     "messages": {
+      "k": 0,
+      "n": 3,
+      "p": 0,
+      "lo": 0,
+      "hi": 0.5615060804490177
+     },
+     "upper_bound_if_zero": 0.527129195498412
+    }
+   },
+   "newer_types": {
+    "n": 0,
+    "closing": 0,
+    "would_be_applied": 0,
+    "by_type": {},
+    "list": []
+   },
+   "effects": {
+    "base": "makeWorld(\"end\") from cli/check.js (the examples replayed with the rules reader)",
+    "no_effect": {
+     "messages": 1,
+     "fact_changed": 0,
+     "gate_closed": 0,
+     "readiness_changed": 0,
+     "with_effect": {
+      "k": 0,
+      "n": 1,
+      "p": 0,
+      "lo": 0,
+      "hi": 0.7934567085261071
+     },
+     "labels_with_effect": 0
+    },
+    "trap": {
+     "messages": 0,
+     "fact_changed": 0,
+     "gate_closed": 0,
+     "readiness_changed": 0,
+     "differs": {
+      "k": 0,
+      "n": 0,
+      "p": null,
+      "lo": null,
+      "hi": null
+     }
+    },
+    "either": {
+     "messages": 1,
+     "fact_changed": 0,
+     "gate_closed": 0,
+     "readiness_changed": 0
+    },
+    "list": []
+   },
+   "state": null,
+   "pipeline": {
+    "messages_for_a_person": {
+     "k": 1,
+     "n": 3,
+     "p": 0.3333333333333333,
+     "lo": 0.0614903152761605,
+     "hi": 0.7923450448735121
+    },
+    "dropped_by_guard": 0,
+    "unclassified": 2,
+    "failed_reads": 0,
+    "unresolved": 0,
+    "held_back": {
+     "n": 0,
+     "primary": 0,
+     "secondary": 0,
+     "both": 0,
+     "true_closings_held": 0,
+     "false_closings_stopped": 0
+    }
+   },
+   "ambiguous": {
+    "left_out": 1,
+    "precision": {
+     "k": 2,
+     "n": 2,
+     "p": 1,
+     "lo": 0.34237195288961925,
+     "hi": 1
+    },
+    "recall": {
+     "k": 2,
+     "n": 2,
+     "p": 1,
+     "lo": 0.34237195288961925,
+     "hi": 1
+    },
+    "exact": {
+     "k": 2,
+     "n": 2,
+     "p": 1,
+     "lo": 0.34237195288961925,
+     "hi": 1
+    }
+   },
+   "baseline": null,
+   "cost": {
+    "requests": 6,
+    "total_usd": 0.022978960000000003,
+    "per_message_usd": 0.007659653333333335,
+    "median_ms": 5231,
+    "input_tokens": 12136,
+    "output_tokens": 1733,
+    "cache_read_tokens": 21276,
+    "cache_write_tokens": 0,
+    "reasoning_tokens": 792,
+    "provider": "openai",
+    "p95_ms": 11411
+   },
+   "per_message": [
+    {
+     "id": "U001",
+     "exact": true,
+     "found": 3,
+     "missed": [],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": false,
+     "applied": [
+      "outcome_reported AX-113",
+      "obligation_created AX-113",
+      "outcome_reported AX-114"
+     ],
+     "held": [],
+     "not_classified": [],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U002",
+     "exact": true,
+     "found": 0,
+     "missed": [],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": true,
+     "applied": [],
+     "held": [],
+     "not_classified": [
+      "do I need to come on Monday for the Willow Lane hearings or does your person handle it?",
+      "I never got anything telling me who is going."
+     ],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U003",
+     "exact": true,
+     "found": 2,
+     "missed": [],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": false,
+     "applied": [
+      "rep_recorded AX-113",
+      "rep_recorded AX-114"
+     ],
+     "held": [],
+     "not_classified": [],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    }
+   ],
+   "saved_reads": {
+    "file": "data/recorded_reads_unseen2.json",
+    "reads": 3,
+    "second_reads": 3
+   }
+  },
+  "unseen2.json | recorded:data/recorded_reads_unseen2.json x recorded:data/recorded_reads_unseen2.json": {
+   "generated_at": "2026-11-20T22:59:59.480Z",
+   "generated_by": "node eval/run.js --set data/unseen2.json --reader recorded:data/recorded_reads_unseen2.json --crosscheck recorded:data/recorded_reads_unseen2.json --baseline none --labels-current --out eval/reader_runs_unseen2.json",
+   "set": {
+    "file": "data/unseen2.json",
+    "format": "unseen",
+    "messages": 100,
+    "left_out": 0,
+    "labels_predate": [],
+    "unknown_label_types": {},
+    "base": "makeWorld(\"end\") from cli/check.js (the examples replayed with the rules reader)"
+   },
+   "reader": {
+    "spec": "recorded:data/recorded_reads_unseen2.json",
+    "label": "recorded gpt-6.1-sol (reader-1)",
+    "provenance": {
+     "read_by": "gpt-6.1-sol",
+     "harness": "eval/run.js, OpenAI Responses API, one request per message, structured output",
+     "variant": "primary",
+     "prompt_version": "reader-1",
+     "prompt_hash": "eb88cb65dd1f6bae",
+     "schema_hash": "efbbd96fbcd32dc7",
+     "recorded_at": "2026-11-20T22:50:30.071Z",
+     "note": "Set data/unseen2.json"
+    },
+    "paths": {
+     "recorded": 99,
+     "byContent": 0,
+     "fallback": 0,
+     "missing": 0,
+     "contextChanged": 0,
+     "stale": 0
+    }
+   },
+   "crosscheck": {
+    "spec": "recorded:data/recorded_reads_unseen2.json",
+    "label": "recorded gpt-6-luna (reader-1, second reader)",
+    "provenance": {
+     "read_by": "gpt-6-luna",
+     "harness": "eval/run.js, OpenAI Responses API, one request per message, structured output",
+     "variant": "second",
+     "prompt_version": "reader-1",
+     "prompt_hash": "e38fe29a0b618d81",
+     "schema_hash": "efbbd96fbcd32dc7",
+     "recorded_at": "2026-11-20T22:50:30.071Z",
+     "note": "Set data/unseen2.json"
+    }
+   },
+   "prompt": {
+    "version": "reader-1",
+    "hash": "eb88cb65dd1f6bae",
+    "second_hash": "e38fe29a0b618d81"
+   },
+   "warnings": [],
+   "claims": {
+    "found": 152,
+    "missed": 44,
+    "extra": 27,
+    "precision": {
+     "k": 152,
+     "n": 179,
+     "p": 0.8491620111731844,
+     "lo": 0.7894334567697371,
+     "hi": 0.8942184036383977
+    },
+    "recall": {
+     "k": 152,
+     "n": 196,
+     "p": 0.7755102040816326,
+     "lo": 0.7121218394178983,
+     "hi": 0.8283061795731426
+    },
+    "f1": 0.8106666666666666,
+    "by_message_bootstrap": {
+     "precision": {
+      "est": 0.8491620111731844,
+      "lo": 0.7817191649578109,
+      "hi": 0.9162412739965096,
+      "B": 2000
+     },
+     "recall": {
+      "est": 0.7755102040816326,
+      "lo": 0.707686170212766,
+      "hi": 0.8374448714311505,
+      "B": 2000
+     },
+     "f1": {
+      "est": 0.8106666666666666,
+      "lo": 0.7565908474826881,
+      "hi": 0.8619786576602472,
+      "B": 2000
+     }
+    }
+   },
+   "fields": {
+    "right": 121,
+    "wrong": 0,
+    "missing": 3,
+    "accuracy": {
+     "k": 121,
+     "n": 124,
+     "p": 0.9758064516129032,
+     "lo": 0.9312787028423261,
+     "hi": 0.9917385309845347
+    }
+   },
+   "messages": {
+    "n": 100,
+    "exact": {
+     "k": 60,
+     "n": 100,
+     "p": 0.6,
+     "lo": 0.5020007846184025,
+     "hi": 0.6906002538863971
+    }
+   },
+   "by_type": {
+    "rep_recorded": {
+     "found": 20,
+     "missed": 2,
+     "extra": 0,
+     "precision": {
+      "k": 20,
+      "n": 20,
+      "p": 1,
+      "lo": 0.8388698745050667,
+      "hi": 1
+     },
+     "recall": {
+      "k": 20,
+      "n": 22,
+      "p": 0.9090909090909091,
+      "lo": 0.7218461934161421,
+      "hi": 0.9747051037171622
+     }
+    },
+    "outcome_reported": {
+     "found": 12,
+     "missed": 8,
+     "extra": 0,
+     "precision": {
+      "k": 12,
+      "n": 12,
+      "p": 1,
+      "lo": 0.7574992425007574,
+      "hi": 1
+     },
+     "recall": {
+      "k": 12,
+      "n": 20,
+      "p": 0.6,
+      "lo": 0.3865779423152061,
+      "hi": 0.7811960325858074
+     }
+    },
+    "hearing_confirmed": {
+     "found": 14,
+     "missed": 5,
+     "extra": 0,
+     "precision": {
+      "k": 14,
+      "n": 14,
+      "p": 1,
+      "lo": 0.7846829880728186,
+      "hi": 1
+     },
+     "recall": {
+      "k": 14,
+      "n": 19,
+      "p": 0.7368421052631579,
+      "lo": 0.5120803155892935,
+      "hi": 0.8819376166045982
+     }
+    },
+    "consultant_accepted": {
+     "found": 11,
+     "missed": 8,
+     "extra": 0,
+     "precision": {
+      "k": 11,
+      "n": 11,
+      "p": 1,
+      "lo": 0.7411599827511859,
+      "hi": 1
+     },
+     "recall": {
+      "k": 11,
+      "n": 19,
+      "p": 0.5789473684210527,
+      "lo": 0.36275551465160105,
+      "hi": 0.7685837960796962
+     }
+    },
+    "packet_received": {
+     "found": 10,
+     "missed": 4,
+     "extra": 0,
+     "precision": {
+      "k": 10,
+      "n": 10,
+      "p": 1,
+      "lo": 0.7224598312333834,
+      "hi": 1
+     },
+     "recall": {
+      "k": 10,
+      "n": 14,
+      "p": 0.7142857142857143,
+      "lo": 0.4535045882751561,
+      "hi": 0.882788120898909
+     }
+    },
+    "hearing_instruction": {
+     "found": 11,
+     "missed": 0,
+     "extra": 7,
+     "precision": {
+      "k": 11,
+      "n": 18,
+      "p": 0.6111111111111112,
+      "lo": 0.3861866858065617,
+      "hi": 0.7969500807306884
+     },
+     "recall": {
+      "k": 11,
+      "n": 11,
+      "p": 1,
+      "lo": 0.7411599827511859,
+      "hi": 1
+     }
+    },
+    "decision_pending": {
+     "found": 10,
+     "missed": 0,
+     "extra": 0,
+     "precision": {
+      "k": 10,
+      "n": 10,
+      "p": 1,
+      "lo": 0.7224598312333834,
+      "hi": 1
+     },
+     "recall": {
+      "k": 10,
+      "n": 10,
+      "p": 1,
+      "lo": 0.7224598312333834,
+      "hi": 1
+     }
+    },
+    "obligation_created": {
+     "found": 9,
+     "missed": 0,
+     "extra": 1,
+     "precision": {
+      "k": 9,
+      "n": 10,
+      "p": 0.9,
+      "lo": 0.5958436145024278,
+      "hi": 0.9821242504842788
+     },
+     "recall": {
+      "k": 9,
+      "n": 9,
+      "p": 1,
+      "lo": 0.7008472464490407,
+      "hi": 1
+     }
+    },
+    "consultant_declined": {
+     "found": 7,
+     "missed": 1,
+     "extra": 0,
+     "precision": {
+      "k": 7,
+      "n": 7,
+      "p": 1,
+      "lo": 0.6456611570247934,
+      "hi": 1
+     },
+     "recall": {
+      "k": 7,
+      "n": 8,
+      "p": 0.875,
+      "lo": 0.5291051942301386,
+      "hi": 0.9775830911367038
+     }
+    },
+    "rep_not_recorded": {
+     "found": 7,
+     "missed": 0,
+     "extra": 0,
+     "precision": {
+      "k": 7,
+      "n": 7,
+      "p": 1,
+      "lo": 0.6456611570247934,
+      "hi": 1
+     },
+     "recall": {
+      "k": 7,
+      "n": 7,
+      "p": 1,
+      "lo": 0.6456611570247934,
+      "hi": 1
+     }
+    },
+    "rep_requested": {
+     "found": 3,
+     "missed": 3,
+     "extra": 0,
+     "precision": {
+      "k": 3,
+      "n": 3,
+      "p": 1,
+      "lo": 0.43849391955098227,
+      "hi": 1
+     },
+     "recall": {
+      "k": 3,
+      "n": 6,
+      "p": 0.5,
+      "lo": 0.18761280689940868,
+      "hi": 0.8123871931005913
+     }
+    },
+    "internal_note": {
+     "found": 4,
+     "missed": 2,
+     "extra": 7,
+     "precision": {
+      "k": 4,
+      "n": 11,
+      "p": 0.36363636363636365,
+      "lo": 0.15166223614131383,
+      "hi": 0.6462032231083628
+     },
+     "recall": {
+      "k": 4,
+      "n": 6,
+      "p": 0.6666666666666666,
+      "lo": 0.29998832134152864,
+      "hi": 0.9032306674407831
+     }
+    },
+    "acknowledgement": {
+     "found": 4,
+     "missed": 2,
+     "extra": 0,
+     "precision": {
+      "k": 4,
+      "n": 4,
+      "p": 1,
+      "lo": 0.5100999795960008,
+      "hi": 1
+     },
+     "recall": {
+      "k": 4,
+      "n": 6,
+      "p": 0.6666666666666666,
+      "lo": 0.29998832134152864,
+      "hi": 0.9032306674407831
+     }
+    },
+    "consultant_question": {
+     "found": 5,
+     "missed": 0,
+     "extra": 2,
+     "precision": {
+      "k": 5,
+      "n": 7,
+      "p": 0.7142857142857143,
+      "lo": 0.35892909014821267,
+      "hi": 0.9177828342909844
+     },
+     "recall": {
+      "k": 5,
+      "n": 5,
+      "p": 1,
+      "lo": 0.5655085052479191,
+      "hi": 1
+     }
+    },
+    "consultant_conditional": {
+     "found": 3,
+     "missed": 1,
+     "extra": 0,
+     "precision": {
+      "k": 3,
+      "n": 3,
+      "p": 1,
+      "lo": 0.43849391955098227,
+      "hi": 1
+     },
+     "recall": {
+      "k": 3,
+      "n": 4,
+      "p": 0.75,
+      "lo": 0.3006360524426366,
+      "hi": 0.9544139373553637
+     }
+    },
+    "doc_unreadable": {
+     "found": 4,
+     "missed": 0,
+     "extra": 0,
+     "precision": {
+      "k": 4,
+      "n": 4,
+      "p": 1,
+      "lo": 0.5100999795960008,
+      "hi": 1
+     },
+     "recall": {
+      "k": 4,
+      "n": 4,
+      "p": 1,
+      "lo": 0.5100999795960008,
+      "hi": 1
+     }
+    },
+    "schedule_changed": {
+     "found": 2,
+     "missed": 1,
+     "extra": 4,
+     "precision": {
+      "k": 2,
+      "n": 6,
+      "p": 0.3333333333333333,
+      "lo": 0.09676933255921683,
+      "hi": 0.7000116786584712
+     },
+     "recall": {
+      "k": 2,
+      "n": 3,
+      "p": 0.6666666666666666,
+      "lo": 0.2076549551264879,
+      "hi": 0.9385096847238394
+     }
+    },
+    "document_submitted": {
+     "found": 3,
+     "missed": 0,
+     "extra": 2,
+     "precision": {
+      "k": 3,
+      "n": 5,
+      "p": 0.6,
+      "lo": 0.23071993220883708,
+      "hi": 0.8823817688407467
+     },
+     "recall": {
+      "k": 3,
+      "n": 3,
+      "p": 1,
+      "lo": 0.43849391955098227,
+      "hi": 1
+     }
+    },
+    "signature_required": {
+     "found": 3,
+     "missed": 0,
+     "extra": 0,
+     "precision": {
+      "k": 3,
+      "n": 3,
+      "p": 1,
+      "lo": 0.43849391955098227,
+      "hi": 1
+     },
+     "recall": {
+      "k": 3,
+      "n": 3,
+      "p": 1,
+      "lo": 0.43849391955098227,
+      "hi": 1
+     }
+    },
+    "homeowner_confirmed": {
+     "found": 2,
+     "missed": 1,
+     "extra": 0,
+     "precision": {
+      "k": 2,
+      "n": 2,
+      "p": 1,
+      "lo": 0.34237195288961925,
+      "hi": 1
+     },
+     "recall": {
+      "k": 2,
+      "n": 3,
+      "p": 0.6666666666666666,
+      "lo": 0.2076549551264879,
+      "hi": 0.9385096847238394
+     }
+    },
+    "calendar_edited": {
+     "found": 2,
+     "missed": 0,
+     "extra": 0,
+     "precision": {
+      "k": 2,
+      "n": 2,
+      "p": 1,
+      "lo": 0.34237195288961925,
+      "hi": 1
+     },
+     "recall": {
+      "k": 2,
+      "n": 2,
+      "p": 1,
+      "lo": 0.34237195288961925,
+      "hi": 1
+     }
+    },
+    "consultant_tentative": {
+     "found": 1,
+     "missed": 1,
+     "extra": 1,
+     "precision": {
+      "k": 1,
+      "n": 2,
+      "p": 0.5,
+      "lo": 0.09452865480086614,
+      "hi": 0.9054713451991339
+     },
+     "recall": {
+      "k": 1,
+      "n": 2,
+      "p": 0.5,
+      "lo": 0.09452865480086614,
+      "hi": 0.9054713451991339
+     }
+    },
+    "change_requested": {
+     "found": 0,
+     "missed": 2,
+     "extra": 0,
+     "precision": {
+      "k": 0,
+      "n": 0,
+      "p": null,
+      "lo": null,
+      "hi": null
+     },
+     "recall": {
+      "k": 0,
+      "n": 2,
+      "p": 0,
+      "lo": 0,
+      "hi": 0.6576280471103807
+     }
+    },
+    "homeowner_declined": {
+     "found": 1,
+     "missed": 1,
+     "extra": 0,
+     "precision": {
+      "k": 1,
+      "n": 1,
+      "p": 1,
+      "lo": 0.20654329147389294,
+      "hi": 1
+     },
+     "recall": {
+      "k": 1,
+      "n": 2,
+      "p": 0.5,
+      "lo": 0.09452865480086614,
+      "hi": 0.9054713451991339
+     }
+    },
+    "obligation_cleared": {
+     "found": 2,
+     "missed": 0,
+     "extra": 0,
+     "precision": {
+      "k": 2,
+      "n": 2,
+      "p": 1,
+      "lo": 0.34237195288961925,
+      "hi": 1
+     },
+     "recall": {
+      "k": 2,
+      "n": 2,
+      "p": 1,
+      "lo": 0.34237195288961925,
+      "hi": 1
+     }
+    },
+    "hearing_scheduled": {
+     "found": 0,
+     "missed": 2,
+     "extra": 0,
+     "precision": {
+      "k": 0,
+      "n": 0,
+      "p": null,
+      "lo": null,
+      "hi": null
+     },
+     "recall": {
+      "k": 0,
+      "n": 2,
+      "p": 0,
+      "lo": 0,
+      "hi": 0.6576280471103807
+     }
+    },
+    "change_pending": {
+     "found": 1,
+     "missed": 0,
+     "extra": 0,
+     "precision": {
+      "k": 1,
+      "n": 1,
+      "p": 1,
+      "lo": 0.20654329147389294,
+      "hi": 1
+     },
+     "recall": {
+      "k": 1,
+      "n": 1,
+      "p": 1,
+      "lo": 0.20654329147389294,
+      "hi": 1
+     }
+    },
+    "packet_version_issue": {
+     "found": 1,
+     "missed": 0,
+     "extra": 0,
+     "precision": {
+      "k": 1,
+      "n": 1,
+      "p": 1,
+      "lo": 0.20654329147389294,
+      "hi": 1
+     },
+     "recall": {
+      "k": 1,
+      "n": 1,
+      "p": 1,
+      "lo": 0.20654329147389294,
+      "hi": 1
+     }
+    },
+    "signature_rejected": {
+     "found": 0,
+     "missed": 0,
+     "extra": 2,
+     "precision": {
+      "k": 0,
+      "n": 2,
+      "p": 0,
+      "lo": 0,
+      "hi": 0.6576280471103807
+     },
+     "recall": {
+      "k": 0,
+      "n": 0,
+      "p": null,
+      "lo": null,
+      "hi": null
+     }
+    },
+    "process_rule_changed": {
+     "found": 0,
+     "missed": 0,
+     "extra": 1,
+     "precision": {
+      "k": 0,
+      "n": 1,
+      "p": 0,
+      "lo": 0,
+      "hi": 0.7934567085261071
+     },
+     "recall": {
+      "k": 0,
+      "n": 0,
+      "p": null,
+      "lo": null,
+      "hi": null
+     }
+    }
+   },
+   "by_channel": {
+    "email": {
+     "messages": 70,
+     "exact": {
+      "k": 44,
+      "n": 70,
+      "p": 0.6285714285714286,
+      "lo": 0.5114698481852806,
+      "hi": 0.7322951839917036
+     },
+     "found": 124,
+     "missed": 32,
+     "extra": 17,
+     "precision": {
+      "k": 124,
+      "n": 141,
+      "p": 0.8794326241134752,
+      "lo": 0.8153920951986041,
+      "hi": 0.9233459469108453
+     },
+     "recall": {
+      "k": 124,
+      "n": 156,
+      "p": 0.7948717948717948,
+      "lo": 0.7247853117175942,
+      "hi": 0.8507845023983804
+     }
+    },
+    "text note": {
+     "messages": 14,
+     "exact": {
+      "k": 10,
+      "n": 14,
+      "p": 0.7142857142857143,
+      "lo": 0.4535045882751561,
+      "hi": 0.882788120898909
+     },
+     "found": 7,
+     "missed": 4,
+     "extra": 0,
+     "precision": {
+      "k": 7,
+      "n": 7,
+      "p": 1,
+      "lo": 0.6456611570247934,
+      "hi": 1
+     },
+     "recall": {
+      "k": 7,
+      "n": 11,
+      "p": 0.6363636363636364,
+      "lo": 0.35379677689163724,
+      "hi": 0.8483377638586862
+     }
+    },
+    "phone note": {
+     "messages": 9,
+     "exact": {
+      "k": 5,
+      "n": 9,
+      "p": 0.5555555555555556,
+      "lo": 0.2666473457440297,
+      "hi": 0.811224570528086
+     },
+     "found": 9,
+     "missed": 0,
+     "extra": 7,
+     "precision": {
+      "k": 9,
+      "n": 16,
+      "p": 0.5625,
+      "lo": 0.33178195606776517,
+      "hi": 0.7690163666481448
+     },
+     "recall": {
+      "k": 9,
+      "n": 9,
+      "p": 1,
+      "lo": 0.7008472464490407,
+      "hi": 1
+     }
+    },
+    "voicemail transcript": {
+     "messages": 3,
+     "exact": {
+      "k": 1,
+      "n": 3,
+      "p": 0.3333333333333333,
+      "lo": 0.0614903152761605,
+      "hi": 0.7923450448735121
+     },
+     "found": 6,
+     "missed": 4,
+     "extra": 0,
+     "precision": {
+      "k": 6,
+      "n": 6,
+      "p": 1,
+      "lo": 0.6096569663469354,
+      "hi": 0.9999999999999999
+     },
+     "recall": {
+      "k": 6,
+      "n": 10,
+      "p": 0.6,
+      "lo": 0.3126695474501864,
+      "hi": 0.8318224187964902
+     }
+    },
+    "mail transcript": {
+     "messages": 2,
+     "exact": {
+      "k": 0,
+      "n": 2,
+      "p": 0,
+      "lo": 0,
+      "hi": 0.6576280471103807
+     },
+     "found": 3,
+     "missed": 4,
+     "extra": 1,
+     "precision": {
+      "k": 3,
+      "n": 4,
+      "p": 0.75,
+      "lo": 0.3006360524426366,
+      "hi": 0.9544139373553637
+     },
+     "recall": {
+      "k": 3,
+      "n": 7,
+      "p": 0.42857142857142855,
+      "lo": 0.15821692226262685,
+      "hi": 0.7495457695909742
+     }
+    },
+    "portal notice": {
+     "messages": 1,
+     "exact": {
+      "k": 0,
+      "n": 1,
+      "p": 0,
+      "lo": 0,
+      "hi": 0.7934567085261071
+     },
+     "found": 2,
+     "missed": 0,
+     "extra": 1,
+     "precision": {
+      "k": 2,
+      "n": 3,
+      "p": 0.6666666666666666,
+      "lo": 0.2076549551264879,
+      "hi": 0.9385096847238394
+     },
+     "recall": {
+      "k": 2,
+      "n": 2,
+      "p": 1,
+      "lo": 0.34237195288961925,
+      "hi": 1
+     }
+    },
+    "calendar activity": {
+     "messages": 1,
+     "exact": {
+      "k": 0,
+      "n": 1,
+      "p": 0,
+      "lo": 0,
+      "hi": 0.7934567085261071
+     },
+     "found": 1,
+     "missed": 0,
+     "extra": 1,
+     "precision": {
+      "k": 1,
+      "n": 2,
+      "p": 0.5,
+      "lo": 0.09452865480086614,
+      "hi": 0.9054713451991339
+     },
+     "recall": {
+      "k": 1,
+      "n": 1,
+      "p": 1,
+      "lo": 0.20654329147389294,
+      "hi": 1
+     }
+    }
+   },
+   "by_sender": {
+    "government": {
+     "messages": 44,
+     "exact": {
+      "k": 25,
+      "n": 44,
+      "p": 0.5681818181818182,
+      "lo": 0.42223890740554393,
+      "hi": 0.7031749583514542
+     },
+     "found": 81,
+     "missed": 23,
+     "extra": 15,
+     "precision": {
+      "k": 81,
+      "n": 96,
+      "p": 0.84375,
+      "lo": 0.7580833433259717,
+      "hi": 0.9029637552782173
+     },
+     "recall": {
+      "k": 81,
+      "n": 104,
+      "p": 0.7788461538461539,
+      "lo": 0.6899541983878468,
+      "hi": 0.8478716498933361
+     }
+    },
+    "consultant": {
+     "messages": 39,
+     "exact": {
+      "k": 27,
+      "n": 39,
+      "p": 0.6923076923076923,
+      "lo": 0.535784513844354,
+      "hi": 0.8143424655401694
+     },
+     "found": 56,
+     "missed": 15,
+     "extra": 3,
+     "precision": {
+      "k": 56,
+      "n": 59,
+      "p": 0.9491525423728814,
+      "lo": 0.8608327667771333,
+      "hi": 0.9825575988405467
+     },
+     "recall": {
+      "k": 56,
+      "n": 71,
+      "p": 0.7887323943661971,
+      "lo": 0.6802480275046751,
+      "hi": 0.8675756427535769
+     }
+    },
+    "firm": {
+     "messages": 9,
+     "exact": {
+      "k": 2,
+      "n": 9,
+      "p": 0.2222222222222222,
+      "lo": 0.06322376231222723,
+      "hi": 0.5474166563271946
+     },
+     "found": 11,
+     "missed": 3,
+     "extra": 9,
+     "precision": {
+      "k": 11,
+      "n": 20,
+      "p": 0.55,
+      "lo": 0.3420820083075997,
+      "hi": 0.7418049791429071
+     },
+     "recall": {
+      "k": 11,
+      "n": 14,
+      "p": 0.7857142857142857,
+      "lo": 0.5241027622679172,
+      "hi": 0.9242875166308363
+     }
+    },
+    "homeowner": {
+     "messages": 8,
+     "exact": {
+      "k": 6,
+      "n": 8,
+      "p": 0.75,
+      "lo": 0.40926987910258916,
+      "hi": 0.9285223111419724
+     },
+     "found": 4,
+     "missed": 3,
+     "extra": 0,
+     "precision": {
+      "k": 4,
+      "n": 4,
+      "p": 1,
+      "lo": 0.5100999795960008,
+      "hi": 1
+     },
+     "recall": {
+      "k": 4,
+      "n": 7,
+      "p": 0.5714285714285714,
+      "lo": 0.2504542304090258,
+      "hi": 0.8417830777373732
+     }
+    }
+   },
+   "by_group": {
+    "unseen2_office": {
+     "messages": 44,
+     "exact": {
+      "k": 25,
+      "n": 44,
+      "p": 0.5681818181818182,
+      "lo": 0.42223890740554393,
+      "hi": 0.7031749583514542
+     },
+     "found": 81,
+     "missed": 23,
+     "extra": 15,
+     "precision": {
+      "k": 81,
+      "n": 96,
+      "p": 0.84375,
+      "lo": 0.7580833433259717,
+      "hi": 0.9029637552782173
+     },
+     "recall": {
+      "k": 81,
+      "n": 104,
+      "p": 0.7788461538461539,
+      "lo": 0.6899541983878468,
+      "hi": 0.8478716498933361
+     }
+    },
+    "unseen2_consultant": {
+     "messages": 39,
+     "exact": {
+      "k": 27,
+      "n": 39,
+      "p": 0.6923076923076923,
+      "lo": 0.535784513844354,
+      "hi": 0.8143424655401694
+     },
+     "found": 56,
+     "missed": 15,
+     "extra": 3,
+     "precision": {
+      "k": 56,
+      "n": 59,
+      "p": 0.9491525423728814,
+      "lo": 0.8608327667771333,
+      "hi": 0.9825575988405467
+     },
+     "recall": {
+      "k": 56,
+      "n": 71,
+      "p": 0.7887323943661971,
+      "lo": 0.6802480275046751,
+      "hi": 0.8675756427535769
+     }
+    },
+    "unseen2_firm_staff": {
+     "messages": 9,
+     "exact": {
+      "k": 2,
+      "n": 9,
+      "p": 0.2222222222222222,
+      "lo": 0.06322376231222723,
+      "hi": 0.5474166563271946
+     },
+     "found": 11,
+     "missed": 3,
+     "extra": 9,
+     "precision": {
+      "k": 11,
+      "n": 20,
+      "p": 0.55,
+      "lo": 0.3420820083075997,
+      "hi": 0.7418049791429071
+     },
+     "recall": {
+      "k": 11,
+      "n": 14,
+      "p": 0.7857142857142857,
+      "lo": 0.5241027622679172,
+      "hi": 0.9242875166308363
+     }
+    },
+    "unseen2_homeowner": {
+     "messages": 8,
+     "exact": {
+      "k": 6,
+      "n": 8,
+      "p": 0.75,
+      "lo": 0.40926987910258916,
+      "hi": 0.9285223111419724
+     },
+     "found": 4,
+     "missed": 3,
+     "extra": 0,
+     "precision": {
+      "k": 4,
+      "n": 4,
+      "p": 1,
+      "lo": 0.5100999795960008,
+      "hi": 1
+     },
+     "recall": {
+      "k": 4,
+      "n": 7,
+      "p": 0.5714285714285714,
+      "lo": 0.2504542304090258,
+      "hi": 0.8417830777373732
+     }
+    }
+   },
+   "safety": {
+    "closing_claims_read": 87,
+    "false_closings": {
+     "n": 6,
+     "of_closing_claims_read": {
+      "k": 6,
+      "n": 87,
+      "p": 0.06896551724137931,
+      "lo": 0.031988403572147155,
+      "hi": 0.14239866138487695
+     },
+     "would_be_applied": 6,
+     "upper_bound_if_zero": null,
+     "list": [
+      {
+       "id": "U005",
+       "type": "schedule_changed",
+       "case": "AX-101",
+       "disposition": "fact",
+       "quote": "14 Willow Lane and 28 Willow Lane are listed for Tuesday June 11 at 9 a.m. and 9:30 a.m."
+      },
+      {
+       "id": "U005",
+       "type": "schedule_changed",
+       "case": "AX-102",
+       "disposition": "fact",
+       "quote": "14 Willow Lane and 28 Willow Lane are listed for Tuesday June 11 at 9 a.m. and 9:30 a.m."
+      },
+      {
+       "id": "U073",
+       "type": "document_submitted",
+       "case": "AX-103",
+       "disposition": "fact",
+       "quote": "we sent his name to Velloran yesterday"
+      },
+      {
+       "id": "U073",
+       "type": "document_submitted",
+       "case": "AX-104",
+       "disposition": "fact",
+       "quote": "we sent his name to Velloran yesterday"
+      },
+      {
+       "id": "U081",
+       "type": "schedule_changed",
+       "case": "AX-114",
+       "disposition": "fact",
+       "quote": "The continued hearing will be held on Monday, June 17, 2030 at 9:30 a.m., in person, at the Fenwick Vale hearing office, room 1."
+      },
+      {
+       "id": "U083",
+       "type": "schedule_changed",
+       "case": "AX-108",
+       "disposition": "fact",
+       "quote": "New date Wednesday 26 June, 11:30 a.m., in person, same room."
+      }
+     ]
+    },
+    "closings_with_a_wrong_detail": {
+     "n": 2,
+     "of_closing_claims_read": {
+      "k": 2,
+      "n": 87,
+      "p": 0.022988505747126436,
+      "lo": 0.006326952471398799,
+      "hi": 0.07999473274770788
+     },
+     "would_be_applied": 1,
+     "list": [
+      {
+       "id": "U006",
+       "type": "outcome_reported",
+       "case": "AX-116",
+       "disposition": "signal",
+       "difference": "consultant: read R02, labelled nothing"
+      },
+      {
+       "id": "U018",
+       "type": "consultant_conditional",
+       "case": "AX-101",
+       "disposition": "fact",
+       "difference": "date: read 2030-06-10, labelled nothing"
+      }
+     ]
+    },
+    "unsafe_closings": {
+     "n": 8,
+     "of_closing_claims_read": {
+      "k": 8,
+      "n": 87,
+      "p": 0.09195402298850575,
+      "lo": 0.04733232597752604,
+      "hi": 0.1710874288484568
+     },
+     "would_be_applied": 7,
+     "messages": {
+      "k": 6,
+      "n": 100,
+      "p": 0.06,
+      "lo": 0.02778574526665662,
+      "hi": 0.12476968531222507
+     },
+     "upper_bound_if_zero": null
+    }
+   },
+   "newer_types": {
+    "n": 0,
+    "closing": 0,
+    "would_be_applied": 0,
+    "by_type": {},
+    "list": []
+   },
+   "effects": {
+    "base": "makeWorld(\"end\") from cli/check.js (the examples replayed with the rules reader)",
+    "no_effect": {
+     "messages": 24,
+     "fact_changed": 0,
+     "gate_closed": 0,
+     "readiness_changed": 0,
+     "with_effect": {
+      "k": 0,
+      "n": 24,
+      "p": 0,
+      "lo": 0,
+      "hi": 0.13798057582897535
+     },
+     "labels_with_effect": 0
+    },
+    "trap": {
+     "messages": 0,
+     "fact_changed": 0,
+     "gate_closed": 0,
+     "readiness_changed": 0,
+     "differs": {
+      "k": 0,
+      "n": 0,
+      "p": null,
+      "lo": null,
+      "hi": null
+     }
+    },
+    "either": {
+     "messages": 24,
+     "fact_changed": 0,
+     "gate_closed": 0,
+     "readiness_changed": 0
+    },
+    "list": []
+   },
+   "state": null,
+   "pipeline": {
+    "messages_for_a_person": {
+     "k": 59,
+     "n": 100,
+     "p": 0.59,
+     "lo": 0.4920125056109662,
+     "hi": 0.6813284290433533
+    },
+    "dropped_by_guard": 10,
+    "unclassified": 50,
+    "failed_reads": 0,
+    "unresolved": 1,
+    "held_back": {
+     "n": 30,
+     "primary": 27,
+     "secondary": 3,
+     "both": 0,
+     "true_closings_held": 15,
+     "false_closings_stopped": 12
+    }
+   },
+   "ambiguous": {
+    "left_out": 39,
+    "precision": {
+     "k": 96,
+     "n": 111,
+     "p": 0.8648648648648649,
+     "lo": 0.7889529841041635,
+     "hi": 0.9163663426903083
+    },
+    "recall": {
+     "k": 96,
+     "n": 113,
+     "p": 0.8495575221238938,
+     "lo": 0.7722291199082653,
+     "hi": 0.9038999300191578
+    },
+    "exact": {
+     "k": 43,
+     "n": 61,
+     "p": 0.7049180327868853,
+     "lo": 0.5811036064161055,
+     "hi": 0.8044513459601468
+    }
+   },
+   "baseline": null,
+   "cost": null,
+   "per_message": [
+    {
+     "id": "U001",
+     "exact": true,
+     "found": 3,
+     "missed": [],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": false,
+     "applied": [
+      "outcome_reported AX-113",
+      "obligation_created AX-113",
+      "outcome_reported AX-114"
+     ],
+     "held": [],
+     "not_classified": [],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U002",
+     "exact": true,
+     "found": 0,
+     "missed": [],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": true,
+     "applied": [],
+     "held": [],
+     "not_classified": [
+      "do I need to come on Monday for the Willow Lane hearings or does your person handle it?",
+      "I never got anything telling me who is going."
+     ],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U003",
+     "exact": true,
+     "found": 2,
+     "missed": [],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": false,
+     "applied": [
+      "rep_recorded AX-113",
+      "rep_recorded AX-114"
+     ],
+     "held": [],
+     "not_classified": [],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U004",
+     "exact": true,
+     "found": 2,
+     "missed": [],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": false,
+     "applied": [
+      "rep_recorded AX-107",
+      "rep_recorded AX-108"
+     ],
+     "held": [],
+     "not_classified": [],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U005",
+     "exact": false,
+     "found": 0,
+     "missed": [
+      "hearing_confirmed|AX-101|",
+      "hearing_confirmed|AX-102|"
+     ],
+     "extra": [
+      "schedule_changed|AX-101|",
+      "schedule_changed|AX-102|",
+      "hearing_instruction|AX-101|",
+      "hearing_instruction|AX-102|"
+     ],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": false,
+     "applied": [
+      "schedule_changed AX-101",
+      "schedule_changed AX-102",
+      "hearing_instruction AX-101",
+      "hearing_instruction AX-102"
+     ],
+     "held": [],
+     "not_classified": [],
+     "dropped": 0,
+     "false_closings": [
+      "schedule_changed AX-101",
+      "schedule_changed AX-102"
+     ],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U006",
+     "exact": true,
+     "found": 2,
+     "missed": [],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": false,
+     "applied": [
+      "outcome_reported AX-116",
+      "decision_pending AX-116"
+     ],
+     "held": [],
+     "not_classified": [],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U007",
+     "exact": true,
+     "found": 3,
+     "missed": [],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": true,
+     "applied": [
+      "consultant_declined AX-106",
+      "rep_not_recorded AX-106",
+      "rep_requested AX-106"
+     ],
+     "held": [
+      {
+       "claim": "document_submitted AX-106",
+       "reason": "Only the second reader found it."
+      }
+     ],
+     "not_classified": [],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U008",
+     "exact": true,
+     "found": 2,
+     "missed": [],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": false,
+     "applied": [
+      "packet_received AX-111",
+      "packet_received AX-112"
+     ],
+     "held": [],
+     "not_classified": [],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U009",
+     "exact": false,
+     "found": 2,
+     "missed": [
+      "consultant_accepted|AX-105|"
+     ],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": true,
+     "applied": [
+      "consultant_declined AX-106",
+      "calendar_edited AX-106"
+     ],
+     "held": [
+      {
+       "claim": "consultant_accepted AX-105",
+       "reason": "Only the first reader found it."
+      }
+     ],
+     "not_classified": [],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U010",
+     "exact": true,
+     "found": 0,
+     "missed": [],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": true,
+     "applied": [],
+     "held": [],
+     "not_classified": [
+      "She has signed the 16 Birch Lane settlement and is posting the original today, with a scan to follow by email tonight.",
+      "For 42 Birch Lane she will take the photo again in daylight."
+     ],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U011",
+     "exact": true,
+     "found": 4,
+     "missed": [],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": false,
+     "applied": [
+      "rep_recorded AX-103",
+      "rep_recorded AX-104",
+      "hearing_confirmed AX-103",
+      "hearing_confirmed AX-104"
+     ],
+     "held": [],
+     "not_classified": [],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U012",
+     "exact": true,
+     "found": 2,
+     "missed": [],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": false,
+     "applied": [
+      "consultant_accepted AX-102",
+      "consultant_declined AX-101"
+     ],
+     "held": [],
+     "not_classified": [],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U013",
+     "exact": true,
+     "found": 4,
+     "missed": [],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": true,
+     "applied": [
+      "consultant_declined AX-103",
+      "consultant_declined AX-104",
+      "consultant_conditional AX-103",
+      "consultant_conditional AX-104"
+     ],
+     "held": [
+      {
+       "claim": "change_denied AX-103, AX-104",
+       "reason": "Only the first reader found it."
+      }
+     ],
+     "not_classified": [],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U014",
+     "exact": false,
+     "found": 2,
+     "missed": [],
+     "extra": [
+      "signature_rejected|AX-110|withdrawal"
+     ],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": true,
+     "applied": [
+      "signature_rejected AX-110",
+      "doc_unreadable AX-110",
+      "hearing_confirmed AX-110"
+     ],
+     "held": [],
+     "not_classified": [
+      "Upload a replacement file to continue."
+     ],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U015",
+     "exact": false,
+     "found": 1,
+     "missed": [
+      "outcome_reported|AX-116|"
+     ],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": true,
+     "applied": [
+      "consultant_declined AX-115"
+     ],
+     "held": [
+      {
+       "claim": "outcome_reported AX-116",
+       "reason": "Only the second reader found it."
+      }
+     ],
+     "not_classified": [],
+     "dropped": 1,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U016",
+     "exact": true,
+     "found": 1,
+     "missed": [],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": true,
+     "applied": [
+      "document_submitted AX-119"
+     ],
+     "held": [],
+     "not_classified": [
+      "I have NOT sent it to the county myself, I assumed you do that.",
+      "The deadline is tomorrow at 4, I think?"
+     ],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U017",
+     "exact": false,
+     "found": 2,
+     "missed": [],
+     "extra": [
+      "internal_note|AX-101|",
+      "internal_note|AX-102|"
+     ],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": true,
+     "applied": [
+      "rep_not_recorded AX-101",
+      "rep_not_recorded AX-102",
+      "internal_note AX-101",
+      "internal_note AX-102"
+     ],
+     "held": [],
+     "not_classified": [
+      "Clerk says they will take notices naming two different reps for 14 and 28 Willow, no problem."
+     ],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U018",
+     "exact": true,
+     "found": 1,
+     "missed": [],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": false,
+     "applied": [
+      "consultant_conditional AX-101"
+     ],
+     "held": [],
+     "not_classified": [],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U019",
+     "exact": false,
+     "found": 2,
+     "missed": [
+      "rep_recorded|AX-117|"
+     ],
+     "extra": [
+      "process_rule_changed|AX-117|"
+     ],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": true,
+     "applied": [
+      "process_rule_changed AX-117",
+      "signature_required AX-117",
+      "hearing_confirmed AX-117"
+     ],
+     "held": [
+      {
+       "claim": "rep_recorded AX-117",
+       "reason": "Only the first reader found it."
+      }
+     ],
+     "not_classified": [],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U020",
+     "exact": false,
+     "found": 2,
+     "missed": [
+      "rep_requested|AX-101|"
+     ],
+     "extra": [
+      "signature_rejected|AX-101|staffing_form",
+      "obligation_created|AX-101|"
+     ],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": false,
+     "applied": [
+      "rep_recorded AX-102",
+      "signature_rejected AX-101",
+      "rep_not_recorded AX-101",
+      "obligation_created AX-101"
+     ],
+     "held": [],
+     "not_classified": [],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U021",
+     "exact": true,
+     "found": 1,
+     "missed": [],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": true,
+     "applied": [
+      "obligation_created AX-119"
+     ],
+     "held": [],
+     "not_classified": [
+      "Our counter is closed on Saturdays, so send it by email or use the drop box in the lobby.",
+      "Nothing has reached us yet."
+     ],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U022",
+     "exact": true,
+     "found": 2,
+     "missed": [],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": false,
+     "applied": [
+      "packet_received AX-111",
+      "packet_received AX-112"
+     ],
+     "held": [],
+     "not_classified": [],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U023",
+     "exact": true,
+     "found": 2,
+     "missed": [],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": true,
+     "applied": [
+      "rep_recorded AX-101",
+      "rep_recorded AX-102"
+     ],
+     "held": [],
+     "not_classified": [
+      "Signed copy for 14 Willow Lane arrived 3:52 p.m., inside the cut-off."
+     ],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U024",
+     "exact": true,
+     "found": 2,
+     "missed": [],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": false,
+     "applied": [
+      "acknowledgement AX-111",
+      "acknowledgement AX-112"
+     ],
+     "held": [],
+     "not_classified": [],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U025",
+     "exact": false,
+     "found": 0,
+     "missed": [],
+     "extra": [
+      "consultant_question|AX-113|",
+      "consultant_question|AX-114|"
+     ],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": true,
+     "applied": [
+      "consultant_question AX-113",
+      "consultant_question AX-114"
+     ],
+     "held": [],
+     "not_classified": [
+      "I still have a temperature, so nothing in person before Tuesday at the earliest."
+     ],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U026",
+     "exact": true,
+     "found": 0,
+     "missed": [],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": false,
+     "applied": [],
+     "held": [],
+     "not_classified": [],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U027",
+     "exact": true,
+     "found": 1,
+     "missed": [],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": true,
+     "applied": [
+      "homeowner_confirmed AX-117"
+     ],
+     "held": [],
+     "not_classified": [
+      "Keep 34 going though!!"
+     ],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U028",
+     "exact": true,
+     "found": 1,
+     "missed": [],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": false,
+     "applied": [
+      "document_submitted AX-110"
+     ],
+     "held": [],
+     "not_classified": [],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U029",
+     "exact": true,
+     "found": 2,
+     "missed": [],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": false,
+     "applied": [
+      "document_submitted AX-119",
+      "internal_note AX-119"
+     ],
+     "held": [],
+     "not_classified": [],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U030",
+     "exact": false,
+     "found": 0,
+     "missed": [
+      "consultant_tentative|AX-115|"
+     ],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": false,
+     "applied": [],
+     "held": [],
+     "not_classified": [],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U031",
+     "exact": false,
+     "found": 4,
+     "missed": [
+      "packet_received|AX-121|",
+      "packet_received|AX-122|"
+     ],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": true,
+     "applied": [
+      "consultant_accepted AX-121",
+      "consultant_accepted AX-122",
+      "consultant_question AX-121",
+      "consultant_question AX-122"
+     ],
+     "held": [
+      {
+       "claim": "packet_received AX-121, AX-122",
+       "reason": "Only the first reader found it."
+      }
+     ],
+     "not_classified": [],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U032",
+     "exact": false,
+     "found": 0,
+     "missed": [
+      "consultant_accepted|AX-102|"
+     ],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": true,
+     "applied": [],
+     "held": [],
+     "not_classified": [],
+     "dropped": 2,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U033",
+     "exact": true,
+     "found": 0,
+     "missed": [],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": true,
+     "applied": [],
+     "held": [],
+     "not_classified": [
+      "My neighbour says the Garden Street hearings were moved to Thursday the 13th. Is that right? Your reminder email said the 13th as well, but the county website still shows the 11th. Which one do I tell"
+     ],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U034",
+     "exact": true,
+     "found": 6,
+     "missed": [],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": false,
+     "applied": [
+      "hearing_confirmed AX-123",
+      "hearing_confirmed AX-124",
+      "rep_recorded AX-123",
+      "rep_recorded AX-124",
+      "hearing_instruction AX-123",
+      "hearing_instruction AX-124"
+     ],
+     "held": [],
+     "not_classified": [],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U035",
+     "exact": true,
+     "found": 4,
+     "missed": [],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": false,
+     "applied": [
+      "hearing_instruction AX-121",
+      "hearing_instruction AX-122",
+      "hearing_instruction AX-121",
+      "hearing_instruction AX-122",
+      "hearing_confirmed AX-121",
+      "hearing_confirmed AX-122"
+     ],
+     "held": [],
+     "not_classified": [],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U036",
+     "exact": false,
+     "found": 0,
+     "missed": [
+      "homeowner_confirmed|AX-115|"
+     ],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": true,
+     "applied": [],
+     "held": [
+      {
+       "claim": "homeowner_confirmed AX-115",
+       "reason": "Only the first reader found it."
+      },
+      {
+       "claim": "schedule_changed AX-115",
+       "reason": "Only the first reader found it."
+      }
+     ],
+     "not_classified": [
+      "Please don't ask them to move it again."
+     ],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U037",
+     "exact": false,
+     "found": 2,
+     "missed": [
+      "consultant_accepted|AX-107|",
+      "consultant_declined|AX-108|"
+     ],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": true,
+     "applied": [
+      "consultant_accepted AX-123",
+      "consultant_accepted AX-124"
+     ],
+     "held": [],
+     "not_classified": [
+      "Meadow Avenue on Wednesday: I can only do the first one now. 52 needs to go to someone else, I have to be out of the building by 11:20."
+     ],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U038",
+     "exact": true,
+     "found": 0,
+     "missed": [],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": true,
+     "applied": [],
+     "held": [],
+     "not_classified": [
+      "Here at Larkmere, signed in.",
+      "They're running abt 10 min behind"
+     ],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U039",
+     "exact": true,
+     "found": 0,
+     "missed": [],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": true,
+     "applied": [],
+     "held": [],
+     "not_classified": [
+      "If you still want 63 Garden Street and 81 Garden Street on that day at 1 and 1:30, tell us by 3 p.m. today and we will move them. If we hear nothing they go ahead tomorrow as listed."
+     ],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U040",
+     "exact": true,
+     "found": 1,
+     "missed": [],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": true,
+     "applied": [
+      "obligation_created AX-119"
+     ],
+     "held": [],
+     "not_classified": [
+      "No statement for 57 Clover Road had arrived when the time ran out on Saturday.",
+      "After that the case will be decided on the record as it stands."
+     ],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U041",
+     "exact": true,
+     "found": 1,
+     "missed": [],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": true,
+     "applied": [
+      "obligation_created AX-113"
+     ],
+     "held": [],
+     "not_classified": [
+      "29 Brook Road: nothing is needed from you at present. You will get a separate notice."
+     ],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U042",
+     "exact": false,
+     "found": 1,
+     "missed": [],
+     "extra": [
+      "internal_note|AX-118|"
+     ],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": false,
+     "applied": [
+      "homeowner_confirmed AX-117",
+      "internal_note AX-118"
+     ],
+     "held": [],
+     "not_classified": [],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U043",
+     "exact": true,
+     "found": 2,
+     "missed": [],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": false,
+     "applied": [
+      "rep_recorded AX-111",
+      "rep_recorded AX-112"
+     ],
+     "held": [],
+     "not_classified": [],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U044",
+     "exact": false,
+     "found": 1,
+     "missed": [],
+     "extra": [
+      "hearing_instruction|AX-110|"
+     ],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": true,
+     "applied": [
+      "hearing_confirmed AX-110",
+      "hearing_instruction AX-110"
+     ],
+     "held": [],
+     "not_classified": [
+      "The rescanned withdrawal for 42 Birch Lane can be read and is signed by Ms Marden. It now goes to the board secretary for the signature check, which takes up to two working days."
+     ],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U045",
+     "exact": true,
+     "found": 0,
+     "missed": [],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": true,
+     "applied": [],
+     "held": [],
+     "not_classified": [
+      "Parked. Walking in now."
+     ],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U046",
+     "exact": true,
+     "found": 1,
+     "missed": [],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": true,
+     "applied": [
+      "consultant_accepted AX-106"
+     ],
+     "held": [],
+     "not_classified": [
+      "Get me recorded with Orimere and send the files today please, not Tuesday night."
+     ],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U047",
+     "exact": true,
+     "found": 2,
+     "missed": [],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": false,
+     "applied": [
+      "hearing_instruction AX-107",
+      "hearing_instruction AX-108"
+     ],
+     "held": [],
+     "not_classified": [],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U048",
+     "exact": true,
+     "found": 2,
+     "missed": [],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": false,
+     "applied": [
+      "packet_received AX-109",
+      "packet_received AX-110"
+     ],
+     "held": [],
+     "not_classified": [],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U049",
+     "exact": true,
+     "found": 2,
+     "missed": [],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": true,
+     "applied": [
+      "outcome_reported AX-102",
+      "decision_pending AX-102"
+     ],
+     "held": [],
+     "not_classified": [
+      "The clerk asked me about number 14 too. I told her I wasn't on that one. I didn't see anyone else from the firm in the room."
+     ],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U050",
+     "exact": true,
+     "found": 0,
+     "missed": [],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": true,
+     "applied": [],
+     "held": [],
+     "not_classified": [
+      "The hearing for 41 Meadow Avenue, Tesswick is confirmed for June 12 at 11:15 a.m. in person, and Owen Tarris is on the list of representatives for it."
+     ],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U051",
+     "exact": true,
+     "found": 4,
+     "missed": [],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": true,
+     "applied": [
+      "outcome_reported AX-121",
+      "outcome_reported AX-122",
+      "decision_pending AX-121",
+      "obligation_created AX-122"
+     ],
+     "held": [],
+     "not_classified": [
+      "By Friday I think she said, but check that with the clerk, I didn't write it down."
+     ],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U052",
+     "exact": true,
+     "found": 1,
+     "missed": [],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": true,
+     "applied": [
+      "rep_recorded AX-115"
+     ],
+     "held": [],
+     "not_classified": [
+      "Mr Arlen comes off that case only.",
+      "AX-116 was his and is finished, so nothing changes there."
+     ],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U053",
+     "exact": false,
+     "found": 1,
+     "missed": [],
+     "extra": [
+      "internal_note|AX-106|"
+     ],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": false,
+     "applied": [
+      "calendar_edited AX-106",
+      "internal_note AX-106"
+     ],
+     "held": [],
+     "not_classified": [],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U054",
+     "exact": false,
+     "found": 1,
+     "missed": [
+      "consultant_conditional|AX-109|"
+     ],
+     "extra": [
+      "consultant_tentative|AX-109|"
+     ],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": true,
+     "applied": [
+      "consultant_tentative AX-109",
+      "consultant_tentative AX-110"
+     ],
+     "held": [
+      {
+       "claim": "consultant_conditional AX-110",
+       "reason": "Only the first reader found it."
+      }
+     ],
+     "not_classified": [],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U055",
+     "exact": false,
+     "found": 2,
+     "missed": [
+      "hearing_confirmed|AX-106|",
+      "rep_recorded|AX-105|"
+     ],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": true,
+     "applied": [
+      "rep_recorded AX-106",
+      "hearing_confirmed AX-105"
+     ],
+     "held": [
+      {
+       "claim": "hearing_confirmed AX-106",
+       "reason": "Only the first reader found it."
+      },
+      {
+       "claim": "rep_recorded AX-105",
+       "reason": "Only the first reader found it."
+      }
+     ],
+     "not_classified": [],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U056",
+     "exact": false,
+     "found": 0,
+     "missed": [
+      "acknowledgement|AX-103|",
+      "acknowledgement|AX-104|"
+     ],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": false,
+     "applied": [],
+     "held": [],
+     "not_classified": [],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U057",
+     "exact": false,
+     "found": 2,
+     "missed": [
+      "packet_received|AX-105|"
+     ],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": true,
+     "applied": [
+      "packet_received AX-117",
+      "packet_received AX-118"
+     ],
+     "held": [],
+     "not_classified": [
+      "and 9 Orchard Road version 2 as well.",
+      "I have nothing for 24 Orchard and I don't need it."
+     ],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U058",
+     "exact": false,
+     "found": 2,
+     "missed": [
+      "consultant_accepted|AX-123|",
+      "consultant_accepted|AX-124|"
+     ],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": false,
+     "applied": [
+      "packet_received AX-123",
+      "packet_received AX-124"
+     ],
+     "held": [],
+     "not_classified": [],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U059",
+     "exact": true,
+     "found": 0,
+     "missed": [],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": true,
+     "applied": [],
+     "held": [],
+     "not_classified": [
+      "I thought we were withdrawing that one?",
+      "I haven't signed anything for the settlement on number 16, nobody has sent me a form."
+     ],
+     "dropped": 1,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U060",
+     "exact": false,
+     "found": 0,
+     "missed": [
+      "change_requested|AX-111|",
+      "change_requested|AX-112|"
+     ],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": true,
+     "applied": [],
+     "held": [],
+     "not_classified": [],
+     "dropped": 2,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U061",
+     "exact": true,
+     "found": 0,
+     "missed": [],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": true,
+     "applied": [],
+     "held": [],
+     "not_classified": [
+      "Could you tell us whether Mr Corven will be joining Thursday's hearings from the firm's premises or from his own office?"
+     ],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U062",
+     "exact": true,
+     "found": 2,
+     "missed": [],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": false,
+     "applied": [
+      "signature_required AX-109",
+      "obligation_created AX-109"
+     ],
+     "held": [],
+     "not_classified": [],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U063",
+     "exact": false,
+     "found": 1,
+     "missed": [
+      "homeowner_declined|AX-117|"
+     ],
+     "extra": [],
+     "field_errors": [
+      "obligation_created|AX-117| deadline: missing (want 2030-06-12T16:00)"
+     ],
+     "outside": 0,
+     "for_person": true,
+     "applied": [
+      "obligation_created AX-117"
+     ],
+     "held": [],
+     "not_classified": [
+      "He now says he would like 18 Maple Lane heard after all.",
+      "we cannot act on a telephone call, in either direction."
+     ],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U064",
+     "exact": false,
+     "found": 2,
+     "missed": [
+      "outcome_reported|AX-121|",
+      "outcome_reported|AX-122|"
+     ],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": true,
+     "applied": [
+      "decision_pending AX-121",
+      "obligation_created AX-122"
+     ],
+     "held": [
+      {
+       "claim": "outcome_reported AX-121, AX-122",
+       "reason": "Only the first reader found it."
+      }
+     ],
+     "not_classified": [],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U065",
+     "exact": false,
+     "found": 2,
+     "missed": [],
+     "extra": [],
+     "field_errors": [
+      "hearing_confirmed|AX-115| date: missing (want 2030-06-13)"
+     ],
+     "outside": 0,
+     "for_person": false,
+     "applied": [
+      "change_pending AX-115",
+      "hearing_confirmed AX-115"
+     ],
+     "held": [],
+     "not_classified": [],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U066",
+     "exact": false,
+     "found": 0,
+     "missed": [],
+     "extra": [
+      "hearing_instruction|AX-111|",
+      "hearing_instruction|AX-112|"
+     ],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": false,
+     "applied": [
+      "hearing_instruction AX-111",
+      "hearing_instruction AX-112"
+     ],
+     "held": [],
+     "not_classified": [],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U067",
+     "exact": true,
+     "found": 1,
+     "missed": [],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": false,
+     "applied": [
+      "obligation_cleared AX-119"
+     ],
+     "held": [],
+     "not_classified": [],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U068",
+     "exact": false,
+     "found": 4,
+     "missed": [
+      "rep_requested|AX-107|",
+      "rep_requested|AX-108|"
+     ],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": true,
+     "applied": [
+      "doc_unreadable AX-107",
+      "doc_unreadable AX-108",
+      "rep_not_recorded AX-107",
+      "rep_not_recorded AX-108"
+     ],
+     "held": [],
+     "not_classified": [
+      "Can you ring me back before four."
+     ],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U069",
+     "exact": true,
+     "found": 0,
+     "missed": [],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": true,
+     "applied": [],
+     "held": [],
+     "not_classified": [
+      "Logged in to room C, waiting to be let in"
+     ],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U070",
+     "exact": false,
+     "found": 1,
+     "missed": [],
+     "extra": [
+      "internal_note|AX-109|",
+      "internal_note|AX-110|"
+     ],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": false,
+     "applied": [
+      "homeowner_declined AX-110",
+      "internal_note AX-109",
+      "internal_note AX-110"
+     ],
+     "held": [],
+     "not_classified": [],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U071",
+     "exact": true,
+     "found": 1,
+     "missed": [],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": true,
+     "applied": [
+      "consultant_accepted AX-115"
+     ],
+     "held": [],
+     "not_classified": [
+      "I haven't got a packet for it though. The only files in my folder are the Brook Road ones. Could you send it over today?"
+     ],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U072",
+     "exact": false,
+     "found": 2,
+     "missed": [
+      "outcome_reported|AX-123|",
+      "outcome_reported|AX-124|"
+     ],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": true,
+     "applied": [
+      "decision_pending AX-123",
+      "decision_pending AX-124"
+     ],
+     "held": [],
+     "not_classified": [],
+     "dropped": 1,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U073",
+     "exact": false,
+     "found": 2,
+     "missed": [
+      "internal_note|AX-123|",
+      "internal_note|AX-124|"
+     ],
+     "extra": [
+      "document_submitted|AX-103|staffing",
+      "document_submitted|AX-104|staffing"
+     ],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": true,
+     "applied": [
+      "internal_note AX-103",
+      "internal_note AX-104",
+      "document_submitted AX-103",
+      "document_submitted AX-104",
+      "internal_note AX-103",
+      "internal_note AX-104"
+     ],
+     "held": [
+      {
+       "claim": "consultant_accepted AX-103, AX-104",
+       "reason": "Only the first reader found it."
+      }
+     ],
+     "not_classified": [
+      "120 and 138 are his 3 pm block and that one is fully papered."
+     ],
+     "dropped": 0,
+     "false_closings": [
+      "document_submitted AX-103",
+      "document_submitted AX-104"
+     ],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U074",
+     "exact": true,
+     "found": 1,
+     "missed": [],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": false,
+     "applied": [
+      "consultant_declined AX-115"
+     ],
+     "held": [],
+     "not_classified": [],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U075",
+     "exact": true,
+     "found": 2,
+     "missed": [],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": false,
+     "applied": [
+      "acknowledgement AX-123",
+      "acknowledgement AX-124"
+     ],
+     "held": [],
+     "not_classified": [],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U076",
+     "exact": false,
+     "found": 3,
+     "missed": [
+      "packet_received|AX-107|"
+     ],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": true,
+     "applied": [
+      "consultant_accepted AX-107",
+      "consultant_accepted AX-108",
+      "doc_unreadable AX-108"
+     ],
+     "held": [
+      {
+       "claim": "packet_received AX-107",
+       "reason": "Only the first reader found it."
+      }
+     ],
+     "not_classified": [],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U077",
+     "exact": true,
+     "found": 0,
+     "missed": [],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": true,
+     "applied": [],
+     "held": [
+      {
+       "claim": "consultant_accepted AX-105",
+       "reason": "Only the first reader found it."
+      }
+     ],
+     "not_classified": [],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U078",
+     "exact": true,
+     "found": 0,
+     "missed": [],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": false,
+     "applied": [],
+     "held": [],
+     "not_classified": [],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U079",
+     "exact": false,
+     "found": 1,
+     "missed": [],
+     "extra": [
+      "internal_note|AX-109|"
+     ],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": false,
+     "applied": [
+      "signature_required AX-109",
+      "internal_note AX-109",
+      "internal_note AX-109"
+     ],
+     "held": [],
+     "not_classified": [],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U080",
+     "exact": true,
+     "found": 2,
+     "missed": [],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": false,
+     "applied": [
+      "rep_recorded AX-107",
+      "rep_not_recorded AX-108"
+     ],
+     "held": [],
+     "not_classified": [],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U081",
+     "exact": false,
+     "found": 1,
+     "missed": [
+      "hearing_scheduled|AX-114|",
+      "outcome_reported|AX-114|"
+     ],
+     "extra": [
+      "schedule_changed|AX-114|"
+     ],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": true,
+     "applied": [
+      "schedule_changed AX-114",
+      "rep_requested AX-114"
+     ],
+     "held": [
+      {
+       "claim": "outcome_reported AX-114",
+       "reason": "Only the first reader found it."
+      }
+     ],
+     "not_classified": [],
+     "dropped": 0,
+     "false_closings": [
+      "schedule_changed AX-114"
+     ],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U082",
+     "exact": false,
+     "found": 4,
+     "missed": [
+      "schedule_changed|AX-112|",
+      "hearing_confirmed|AX-112|"
+     ],
+     "extra": [],
+     "field_errors": [
+      "hearing_confirmed|AX-111| date: missing (want 2030-06-13)"
+     ],
+     "outside": 0,
+     "for_person": true,
+     "applied": [
+      "schedule_changed AX-111",
+      "hearing_confirmed AX-111",
+      "hearing_instruction AX-111",
+      "hearing_instruction AX-112"
+     ],
+     "held": [
+      {
+       "claim": "schedule_changed AX-112",
+       "reason": "Only the first reader found it."
+      },
+      {
+       "claim": "hearing_confirmed AX-112",
+       "reason": "Only the first reader found it."
+      }
+     ],
+     "not_classified": [],
+     "dropped": 1,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U083",
+     "exact": false,
+     "found": 3,
+     "missed": [
+      "hearing_scheduled|AX-108|"
+     ],
+     "extra": [
+      "schedule_changed|AX-108|"
+     ],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": true,
+     "applied": [
+      "outcome_reported AX-107",
+      "decision_pending AX-107",
+      "outcome_reported AX-108",
+      "schedule_changed AX-108"
+     ],
+     "held": [],
+     "not_classified": [
+      "A fresh staffing form is not needed if the representative is the same."
+     ],
+     "dropped": 0,
+     "false_closings": [
+      "schedule_changed AX-108"
+     ],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U084",
+     "exact": true,
+     "found": 1,
+     "missed": [],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": true,
+     "applied": [
+      "rep_requested AX-106"
+     ],
+     "held": [],
+     "not_classified": [
+      "The 2 o'clock video for 24 Orchard Road hasn't started, the board is sitting there and nobody from our side is in the waiting room. They will hold it open till 2:40. After that it goes down as a non-a"
+     ],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U085",
+     "exact": false,
+     "found": 2,
+     "missed": [
+      "hearing_confirmed|AX-115|"
+     ],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": false,
+     "applied": [
+      "schedule_changed AX-115",
+      "hearing_instruction AX-115"
+     ],
+     "held": [],
+     "not_classified": [],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U086",
+     "exact": false,
+     "found": 2,
+     "missed": [],
+     "extra": [
+      "hearing_instruction|AX-109|",
+      "hearing_instruction|AX-110|"
+     ],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": true,
+     "applied": [
+      "rep_recorded AX-109",
+      "rep_recorded AX-110",
+      "hearing_instruction AX-109",
+      "hearing_instruction AX-110"
+     ],
+     "held": [
+      {
+       "claim": "hearing_confirmed AX-109, AX-110",
+       "reason": "Only the first reader found it."
+      }
+     ],
+     "not_classified": [],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U087",
+     "exact": false,
+     "found": 0,
+     "missed": [
+      "consultant_accepted|AX-109|",
+      "consultant_accepted|AX-110|"
+     ],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": true,
+     "applied": [],
+     "held": [
+      {
+       "claim": "consultant_conditional AX-109, AX-110",
+       "reason": "Only the first reader found it."
+      }
+     ],
+     "not_classified": [],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U088",
+     "exact": true,
+     "found": 4,
+     "missed": [],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": false,
+     "applied": [
+      "consultant_accepted AX-111",
+      "consultant_accepted AX-112",
+      "consultant_question AX-111",
+      "consultant_question AX-112"
+     ],
+     "held": [],
+     "not_classified": [],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U089",
+     "exact": true,
+     "found": 6,
+     "missed": [],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": false,
+     "applied": [
+      "hearing_confirmed AX-117",
+      "hearing_confirmed AX-118",
+      "rep_recorded AX-117",
+      "rep_recorded AX-118",
+      "hearing_instruction AX-117",
+      "hearing_instruction AX-118"
+     ],
+     "held": [],
+     "not_classified": [],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U090",
+     "exact": true,
+     "found": 1,
+     "missed": [],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": false,
+     "applied": [
+      "internal_note AX-115",
+      "internal_note AX-115"
+     ],
+     "held": [],
+     "not_classified": [],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U091",
+     "exact": true,
+     "found": 0,
+     "missed": [],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": true,
+     "applied": [],
+     "held": [],
+     "not_classified": [
+      "No code came through for 42 Birch, only for 16"
+     ],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U092",
+     "exact": true,
+     "found": 2,
+     "missed": [],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": true,
+     "applied": [
+      "packet_version_issue AX-105",
+      "obligation_created AX-105"
+     ],
+     "held": [
+      {
+       "claim": "hearing_confirmed AX-105",
+       "reason": "Only the first reader found it."
+      }
+     ],
+     "not_classified": [],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U093",
+     "exact": true,
+     "found": 1,
+     "missed": [],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": false,
+     "applied": [
+      "obligation_cleared AX-113"
+     ],
+     "held": [],
+     "not_classified": [],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U094",
+     "exact": true,
+     "found": 0,
+     "missed": [],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": true,
+     "applied": [],
+     "held": [],
+     "not_classified": [
+      "on the caldmere link now. it says host has not started"
+     ],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U095",
+     "exact": true,
+     "found": 0,
+     "missed": [],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": true,
+     "applied": [],
+     "held": [],
+     "not_classified": [
+      "The decision in 73 Clover Road (AX-120) was issued today. A copy is in the post to the homeowner and one to your firm.",
+      "Any further appeal must be brought within 30 days of today's date."
+     ],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U096",
+     "exact": true,
+     "found": 3,
+     "missed": [],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": false,
+     "applied": [
+      "outcome_reported AX-111",
+      "decision_pending AX-111",
+      "outcome_reported AX-112"
+     ],
+     "held": [],
+     "not_classified": [],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U097",
+     "exact": false,
+     "found": 1,
+     "missed": [
+      "consultant_accepted|AX-118|"
+     ],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": true,
+     "applied": [
+      "consultant_question AX-117"
+     ],
+     "held": [],
+     "not_classified": [],
+     "dropped": 2,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U098",
+     "exact": true,
+     "found": 0,
+     "missed": [],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": true,
+     "applied": [],
+     "held": [],
+     "not_classified": [
+      "in the Iverfen waiting room, 2 ahead of us"
+     ],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U099",
+     "exact": true,
+     "found": 3,
+     "missed": [],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": true,
+     "applied": [
+      "outcome_reported AX-118",
+      "decision_pending AX-118",
+      "outcome_reported AX-117"
+     ],
+     "held": [],
+     "not_classified": [
+      "the chair said he had no paperwork for that"
+     ],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    },
+    {
+     "id": "U100",
+     "exact": false,
+     "found": 1,
+     "missed": [
+      "outcome_reported|AX-118|",
+      "outcome_reported|AX-117|"
+     ],
+     "extra": [],
+     "field_errors": [],
+     "outside": 0,
+     "for_person": true,
+     "applied": [
+      "decision_pending AX-118"
+     ],
+     "held": [
+      {
+       "claim": "outcome_reported AX-118",
+       "reason": "Only the first reader found it."
+      },
+      {
+       "claim": "outcome_reported AX-117",
+       "reason": "Only the first reader found it."
+      },
+      {
+       "claim": "hearing_postponed AX-117",
+       "reason": "Only the second reader found it."
+      }
+     ],
+     "not_classified": [
+      "There was no withdrawal form on the file"
+     ],
+     "dropped": 0,
+     "false_closings": [],
+     "failed": null,
+     "second_failed": null
+    }
+   ]
+  }
+ }
+}

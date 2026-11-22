@@ -1,0 +1,229 @@
+@import 'tailwindcss';
+@import './fonts.css';
+/* tokens.css stays outside any layer: Tailwind's @theme writes self-references (--radius-card: var(--radius-card)) that only resolve because of that. */
+@import './tokens.css';
+@import './layout.css';
+@import '../layout/layout.css';
+
+/* Tailwind reads the tokens: bg-surface, text-ink-2, border-border-strong, font-serif and so on. */
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-sunken: var(--sunken);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-on-accent: var(--on-accent);
+  --color-danger: var(--danger);
+  --color-danger-bg: var(--danger-bg);
+  --color-warn: var(--warn);
+  --color-warn-bg: var(--warn-bg);
+  --color-ok: var(--ok);
+  --color-ok-bg: var(--ok-bg);
+  --color-measured: var(--measured);
+  --color-measured-bg: var(--measured-bg);
+  --color-simulated: var(--simulated);
+  --color-simulated-bg: var(--simulated-bg);
+  --color-estimate: var(--estimate);
+  --color-estimate-bg: var(--estimate-bg);
+  --color-packet: var(--packet);
+  --color-packet-bg: var(--packet-bg);
+  --color-later: var(--later);
+  --color-later-bg: var(--later-bg);
+  --color-block-fg: var(--block-fg);
+  --color-block-bg: var(--block-bg);
+
+  --font-serif: var(--font-serif);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+
+  --radius-chip: var(--radius-chip);
+  --radius-nav: var(--radius-nav);
+  --radius-control: var(--radius-control);
+  --radius-quote: var(--radius-quote);
+  --radius-card: var(--radius-card);
+  --radius-feature: var(--radius-feature);
+
+  --shadow-e1: var(--shadow-e1);
+  --shadow-e2: var(--shadow-e2);
+  --shadow-e3: var(--shadow-e3);
+
+  --ease-out: var(--ease-out);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-on-primary: var(--on-primary);
+  --color-dot-danger: var(--dot-danger);
+  --color-dot-warn: var(--dot-warn);
+  --color-dot-ok: var(--dot-ok);
+  --color-border-control: var(--border-control);
+  --color-scrim: var(--scrim);
+  --shadow-control: var(--shadow-control);
+  --shadow-primary: var(--shadow-primary);
+}
+
+/*
+ * The type scale. Five sizes
+ * and mono, Inter everywhere: title 24/32, section 16/24, body 14/20, small 13/18, figure 28/32
+ * tabular, mono 13/18. Nothing above 24 px inside the app except figures. The old names below the
+ * line are aliases kept for one release; write new code with the six names only.
+ */
+@utility text-title {
+  font-family: var(--font-sans);
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  text-wrap: balance;
+}
+@utility text-section {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  text-wrap: balance;
+}
+@utility text-body {
+  font-size: 14px;
+  line-height: 20px;
+}
+@utility text-small {
+  font-size: 13px;
+  line-height: 18px;
+}
+@utility text-figure {
+  font-family: var(--font-sans);
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  font-variant-numeric: lining-nums tabular-nums;
+}
+@utility text-mono {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* Aliases for one release (same values as the names they point to). */
+@utility text-headline {
+  font-family: var(--font-sans);
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  text-wrap: balance;
+}
+@utility text-h1 {
+  font-family: var(--font-sans);
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  text-wrap: balance;
+}
+@utility text-h2 {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  text-wrap: balance;
+}
+@utility text-h2-card {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  text-wrap: balance;
+}
+@utility text-h3 {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  text-wrap: balance;
+}
+@utility text-quote {
+  font-size: 14px;
+  line-height: 20px;
+}
+@utility text-lede {
+  font-size: 14px;
+  line-height: 20px;
+}
+@utility text-eyebrow {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 600;
+}
+
+@layer base {
+  /* Every disclosure is at least 32 px tall, the app's smallest control (WCAG 2.5.8 asks 24). */
+  summary {
+    min-height: 32px;
+    padding-block: 4px;
+    box-sizing: border-box;
+  }
+  input[type='range'] {
+    min-height: 24px;
+  }
+
+  html {
+    background: var(--bg);
+  }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--font-sans);
+    font-size: 14px;
+    line-height: 20px;
+    font-feature-settings: 'cv11';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+  /* Focus the app moves to a page's h1 on a route change: announced, not drawn. */
+  h1[tabindex='-1']:focus {
+    outline: none;
+  }
+  ::selection {
+    background: var(--accent-soft);
+    color: var(--ink);
+  }
+  button,
+  [role='button'] {
+    cursor: pointer;
+  }
+  button:disabled {
+    cursor: not-allowed;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* The hearing drawer is not modal: the list column makes room for it. Unlayered,
+   so it wins over the main column's padding utility. */
+@media (min-width: 640px) {
+  body[data-drawer-open] #main {
+    padding-right: calc(var(--drawer-width) + 24px);
+  }
+}

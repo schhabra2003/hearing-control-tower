@@ -1,0 +1,37 @@
+{
+ "note": "The numbered messages of the firm that the two texts in this folder answer. The case packet does not hold these outgoing texts: they are written for this example in the form the Dockets tab of the gate sheet writes them, from the hearings of the packet. S1 is the offer of the Larkmere docket of Monday, June 10 to Maya Venn (messages 1 to 5 of the packet). S2 is the day-before text for the Fenwick Vale docket of Thursday, June 6, sent on Wednesday, June 5 at 8:00 a.m. (message 41 of the packet answers it). The times follow data/timeline.json, which is simulated. \"hearings\" lists the hearings of the docket in order, so that number 1 is the first. An offer may carry \"day\": { \"cap\", \"held\", \"offered\" } for the daily cap; S1 carries none, so the cap is not checked.",
+ "sent": [
+  {
+   "id": "S1",
+   "at": "2030-06-03T11:30:00-05:00",
+   "channel": "text",
+   "kind": "offer",
+   "to": "Maya Venn",
+   "docket": "Mon June 10, Larkmere, in person",
+   "hearings": [
+    "14 Willow Lane, Larkmere",
+    "28 Willow Lane, Larkmere"
+   ],
+   "open": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "S2",
+   "at": "2030-06-05T08:00:00-05:00",
+   "channel": "text",
+   "kind": "day_before",
+   "to": "Maya Venn",
+   "docket": "Thu June 6, Fenwick Vale, in person",
+   "hearings": [
+    "11 Brook Road, Fenwick Vale",
+    "29 Brook Road, Fenwick Vale"
+   ],
+   "held": [
+    1,
+    2
+   ]
+  }
+ ]
+}

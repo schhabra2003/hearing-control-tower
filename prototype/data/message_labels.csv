@@ -1,0 +1,73 @@
+id,from_,channel,type,exception,body
+1,government,email,gov_schedule_and_staffing_request,0,"We have set 14 Willow Lane, Larkmere and 28 Willow Lane, Larkmere for June 10 at 9 a.m. and 9:30 a.m., in person. Please tell us who will attend."
+2,consultant,email,consultant_tentative,1,I am usually free that morning. I need to check another commitment before I can say yes to either case.
+3,firm,email,firm_placeholder_assignment,1,Thanks. I have put your name on our planning sheet while we wait to hear back.
+4,government,email,gov_chaser_no_rep,1,Please confirm who will attend the hearings for 14 and 28 Willow Lane on June 10. We do not yet have a representative recorded.
+5,consultant,text note,consultant_partial_accept,1,"I can take the 9:30 a.m. case on June 10, but cannot get there for 9 a.m. Please send me the files for the one I can cover."
+6,government,email,gov_deadline,0,"Please return the staffing notices for 14 Willow Lane, Larkmere and 28 Willow Lane, Larkmere by 4 p.m. on June 7. We have not recorded a representative yet."
+7,government,email,gov_schedule,0,"The hearings for 63 Garden Street, Velloran and 81 Garden Street, Velloran are scheduled for June 11, 1 p.m. and 1:30 p.m. by video."
+8,firm,email,firm_date_change_request,0,Could we move both cases to June 13 at the same times? Leo is available then.
+9,consultant,email,consultant_calendar_edit,1,"I have a conflict on June 11, so I moved both hearings to June 13 in the shared calendar. That date works for me."
+10,firm,calendar activity,calendar_change_overwrote_record,1,Leo changed both shared calendar events from June 11 to June 13. The internal case records now show June 13.
+11,government,email,gov_ack_rep_and_denied_change,1,"We can record Leo as representative, but the hearings remain June 11. The June 13 hearing schedule is full."
+12,consultant,email,consultant_confused_date,1,The invitation says June 13. Please confirm which date I am being asked to cover.
+13,government,email,gov_schedule,0,"The hearing for 9 Orchard Road, Orimere is June 12 at 9 a.m. The hearing for 24 Orchard Road, Orimere is June 12 at 2 p.m. Both are by video and should take 30 minutes."
+14,consultant,email,consultant_partial_accept_conditional,1,"I can cover the morning hearing on June 12, but not the afternoon. I could cover both on June 18 if the county can move them."
+15,firm,email,firm_date_change_request,0,Could you move both hearings to June 18 at the same times? Nora can attend both that day.
+16,government,email,gov_partial_ack_pending_request,1,"Nora is recorded as representative for 9 Orchard Road, Orimere. We have not received an assignment for 24 Orchard Road, Orimere. We are still reviewing your date-change request."
+17,government,email,gov_partial_change_approval,1,"We can move 9 Orchard Road, Orimere to June 18 at 9 a.m. The hearing for 24 Orchard Road, Orimere must stay on June 12 at 2 p.m. We cannot move that one."
+18,consultant,text note,consultant_misread_change,1,"Thanks, I have cleared June 12 and put both hearings on June 18. Please send the files."
+19,government,email,gov_staffing_request,0,"Please identify the representative for 37 Meadow Avenue, Tesswick and 52 Meadow Avenue, Tesswick, June 12 at 11 a.m. and 11:30 a.m. in person."
+20,consultant,email,consultant_accept,0,I accept both hearings. I will be at the Tesswick office by 10:45 a.m.
+21,firm,phone note,firm_call_voicemail,0,"Called the Tesswick office about recording Owen for 37 Meadow Avenue, Tesswick and 52 Meadow Avenue, Tesswick. Reached voicemail and left the property addresses, name and callback details."
+22,firm,phone note,county_process_changed,1,"Called again. Clerk Ren said emailing names is no longer enough: send the staffing form, then call to have it entered on the list of representatives. Our saved instructions say to email the property addresses and name. Ren emailed the blank form, saved as 52-meadow-avenue-staffing-form.txt. No list of representatives entry was confirmed."
+23,firm,email,firm_submission,0,"Following our call, here are the staffing details on your form: 37 Meadow Avenue, Tesswick and 52 Meadow Avenue, Tesswick, Owen Tarris, June 12 at 11 a.m. and 11:30 a.m. Please confirm they have been recorded."
+24,government,phone note,gov_cannot_confirm,1,Clerk Sol returned our call: I cannot find the form in the shared inbox yet. Ren is away today. I cannot confirm who is on the list of representatives; please call tomorrow morning.
+25,government,email,gov_schedule_and_staffing_request,0,16 Birch Lane and 42 Birch Lane will be heard June 13 at 10 a.m. and 10:30 a.m. by video. Please send the name of the representative attending each hearing.
+26,consultant,email,consultant_accept,0,I can cover both hearings. Please send me the case files and let the county know I will attend.
+27,firm,email,firm_signature_needed,0,The settlement offer for 16 Birch Lane is ready for Priya to sign. This county requires the attending consultant’s signature. The hearing for 42 Birch Lane is still scheduled.
+28,government,email,gov_rejected_wrong_signer,1,"The withdrawal statement for 42 Birch Lane names Owen, but Priya is the representative on our record. Please return a corrected statement signed by Priya. The hearing remains on our schedule until we process the withdrawal."
+29,consultant,email,consultant_doc_upload,0,I signed the withdrawal statement for 42 Birch Lane and photographed it. The photo is attached as 42-birch-lane-withdrawal-statement.png.
+30,firm,email,doc_unreadable,1,"We received the photo, but cannot read the case number or date. Please send a clearer copy of the withdrawal statement. The hearing is still scheduled."
+31,government,email,gov_schedule_and_rep_recorded,0,"75 Elm Street, Caldmere and 96 Elm Street, Caldmere: June 13 at 2 p.m. and 2:30 p.m. by video. Eli is recorded as representative for both."
+32,consultant,email,consultant_accept,0,I accept both hearings and will review the case files this week.
+33,firm,email,packet_version_mismatch,1,The current files are 75-elm-street-packet-v2.txt and 96-elm-street-packet-v2.txt. Both were sent to the clerk today. The consultant links in the tracker still point to v1.
+34,government,email,doc_unreadable,1,"The attachment for 75 Elm Street, Caldmere opened. The file for 96 Elm Street, Caldmere was unreadable. Please resend it."
+35,consultant,email,consultant_confused_version,1,My links open version 1. Has anything changed? I need the versions you intend me to use.
+36,firm,email,firm_clarification,0,Version 2 adds the homeowner statement to both. The current copies are in the documents folder.
+37,government,email,gov_schedule_and_rep_recorded,0,"11 Brook Road, Fenwick Vale and 29 Brook Road, Fenwick Vale: June 6 at 9 a.m. and 9:30 a.m., in person. Maya is recorded on both staffing notices."
+38,consultant,email,consultant_accept,0,I accept both and have reviewed the current packets.
+39,firm,email,firm_status,0,Thank you. The homeowner notices name Maya and the files are ready.
+40,government,email,gov_packet_receipt,0,Confirming receipt of both case packets. Please arrive 15 minutes before the first case.
+41,consultant,text note,consultant_cancel_short_notice,1,I am ill and cannot attend tomorrow. I am sorry for the short notice.
+42,consultant,email,replacement_offer,0,Owen here. I can cover both tomorrow at the quoted rate. Please confirm the assignment and send the files; I have not seen these cases.
+43,government,mail transcript,gov_mail_notice,0,"Notice dated May 30: 48 Linden Avenue, Harthmere and 66 Linden Avenue, Harthmere, June 6 at 10 a.m. and 10:30 a.m., video room B. Leo is listed as representative."
+44,consultant,email,consultant_accept,0,I accept the June 6 hearings at the times on the notice.
+45,government,email,gov_room_change,0,"For 48 Linden Avenue, Harthmere and 66 Linden Avenue, Harthmere, use video room D instead of B. The hearing times are unchanged."
+46,firm,phone note,firm_phone_note_unofficial_change,1,County clerk called: the hearing for 48 Linden Avenue has been moved to June 13 at 10 a.m. following the homeowner request. A written notice will follow. The hearing for 66 Linden Avenue has not changed.
+47,government,email,gov_date_change_homeowner_initiated,1,"The homeowner asked us to move the hearing for 48 Linden Avenue. We have approved the request and moved it from June 6 to June 13 at 10 a.m., video room D. The hearing for 66 Linden Avenue remains June 6 at 10:30 a.m. Please update your representative."
+48,consultant,email,consultant_stale_schedule,1,"I still have both Linden Avenue hearings tomorrow, room D at 10 and 10:30 a.m. I cannot attend on June 13. Please let me know what has changed."
+49,government,email,gov_schedule_rep_packets,0,"18 Maple Lane, Iverfen and 34 Maple Lane, Iverfen: June 14 at 1 p.m. and 1:30 p.m. by video. Nora is recorded for both; packets received."
+50,consultant,email,consultant_accept,0,Accepted. I have both case files and will attend.
+51,government,email,gov_homeowner_withdrawal_needs_confirmation,1,The homeowner for 18 Maple Lane has asked our office to withdraw the appeal. Please confirm the request with us so we can process it. The hearing for 34 Maple Lane is unaffected.
+52,firm,email,firm_premature_cancel,1,"We have marked 18 Maple Lane, Iverfen canceled internally and emailed a withdrawal request to the clerk. We have not received a reply."
+53,government,email,gov_still_listed,1,"Reminder: hearings for 18 Maple Lane, Iverfen and 34 Maple Lane, Iverfen remain listed for June 14."
+54,consultant,email,consultant_confused_status,1,Both cases are still in my calendar. Should I prepare for both?
+55,government,email,gov_confirmed,0,"57 Clover Road, Juniper Reach and 73 Clover Road, Juniper Reach are confirmed for June 4 at 9 a.m. and 9:30 a.m. in person. Owen is recorded and packets received."
+56,consultant,email,consultant_accept,0,Accepted. I have the files and will attend both.
+57,consultant,phone note,consultant_post_hearing_report,0,"After attending both hearings: They are giving us more time on 57 Clover Road, Juniper Reach. 73 Clover Road, Juniper Reach was heard and no additional material was requested."
+58,firm,email,firm_status,0,"I marked 57 Clover Road, Juniper Reach awaiting reschedule, and 73 Clover Road, Juniper Reach awaiting decision."
+59,government,email,gov_post_hearing_deadline,0,"For 57 Clover Road, Juniper Reach, submit the requested homeowner statement by June 8 at 4 p.m. No further hearing is scheduled. 73 Clover Road, Juniper Reach is awaiting a written decision."
+60,government,email,gov_duplicate_deadline,0,"For 57 Clover Road, we are waiting for the homeowner statement requested at the hearing. Please send it by June 8 at 4 p.m. There is no further hearing scheduled."
+61,government,email,gov_schedule_and_rep_recorded,0,"102 Willow Lane, Larkmere and 118 Willow Lane, Larkmere: June 10 at 11 a.m. and 11:30 a.m. in person. Staffing notices naming Leo have been accepted."
+62,consultant,email,consultant_accept,0,I accept both. I have left the morning free for these hearings.
+63,firm,email,firm_submission,0,Current packets sent to the government and Leo. Please confirm receipt.
+64,government,email,gov_packet_receipt,0,Both packets received and readable. The hearing details are unchanged.
+65,consultant,email,consultant_receipt,0,Both current packets received and reviewed. I will arrive at 10:45 a.m.
+66,government,email,gov_confirmed,0,"The June 10 hearings for 102 and 118 Willow Lane remain confirmed. Leo is recorded for both, and we have the current packets. No further documents are requested at this time."
+67,government,email,gov_staffing_request,0,"120 Garden Street, Velloran and 138 Garden Street, Velloran: June 11 at 3 p.m. and 3:30 p.m. by video. Please confirm your representative."
+68,consultant,email,consultant_accept,0,I accept both. I have no other hearings that afternoon.
+69,firm,email,firm_submission,0,"Owen Tarris will attend 120 Garden Street, Velloran and 138 Garden Street, Velloran. Both current packets are attached."
+70,government,email,gov_ack,0,Owen is recorded for both cases. Both packets received. Video room C is confirmed.
+71,consultant,email,consultant_receipt,0,Files reviewed. Room C and both times are in my work calendar.
+72,government,email,gov_duplicate_confirmation,0,"Sending the same confirmation again for your records: Owen is recorded for 120 Garden Street, Velloran and 138 Garden Street, Velloran, June 11 at 3 p.m. and 3:30 p.m., room C. No changes."

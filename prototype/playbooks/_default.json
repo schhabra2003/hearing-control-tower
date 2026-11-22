@@ -1,0 +1,92 @@
+{
+  "id": "_default",
+  "layer": "default",
+  "note": "Rules every county inherits unless its own file says otherwise. County files hold only their differences.",
+  "office": {
+    "contact_hours": {
+      "days": "Mon-Fri",
+      "start": "09:00",
+      "end": "16:00"
+    },
+    "tz": "-05:00"
+  },
+  "gates": [
+    "G1",
+    "G2",
+    "G3",
+    "G4",
+    "G5"
+  ],
+  "hearing_minutes": 30,
+  "deadlines": {
+    "consultant_hours_before": 72,
+    "rep_hours_before": 48,
+    "note": "Estimates. The packet gives only the 48-hour packet rule; an office deadline in a message overrides these."
+  },
+  "staffing": {
+    "requires_gov_ack": true,
+    "channel": "email"
+  },
+  "schedule_changes": {
+    "who_can_approve": "government",
+    "request_channel": "email",
+    "source_text": "Only the government can approve a hearing date change. The firm, consultants and homeowners can request a change, but moving a calendar event does not move the hearing."
+  },
+  "packet": {
+    "lead_hours": 48,
+    "recipients": [
+      "clerk",
+      "consultant"
+    ],
+    "late_requires_clerk_confirmation": true,
+    "source_text": "Send current case packet to the clerk and consultant at least 48 hours before the hearing. Late material requires clerk confirmation.",
+    "clerk_evidence": "receipt",
+    "clerk_evidence_note": "receipt = the gate closes only when the clerk confirms a readable packet (message 34 shows a sent file that could not be opened). sent_on_time = for an office that never sends receipts, an on-time send is enough; late material still needs the clerk."
+  },
+  "signatures": {
+    "attending_consultant_signs": false,
+    "accepted_modes": [
+      "e_sign",
+      "scan"
+    ],
+    "legibility_check": true
+  },
+  "travel": {
+    "in_person_cross_county_gap_min": 60,
+    "video_gap_min": 15,
+    "same_block_gap_min": 0
+  },
+  "autonomy": {
+    "consultant_offer": "L2",
+    "consultant_update": "L2",
+    "consultant_reminder": "L2",
+    "answer_question": "L2",
+    "request_outcome": "L2",
+    "confirm_assignment": "L1",
+    "unusable_yes": "L1",
+    "staffing_submission": "L1",
+    "packet_send": "L1",
+    "chaser": "L1",
+    "change_request": "L1",
+    "request_clear_copy": "L1",
+    "signature_request": "L0",
+    "obligation_submission": "L0",
+    "withdrawal_confirmation": "L0",
+    "call_task": "human",
+    "homeowner_contact": "human",
+    "playbook_change": "human",
+    "dispute_notice": "L0",
+    "triage": "human"
+  },
+  "autonomy_note": "L0 = draft only, a person sends. L1 = one-click approval. L2 = sends automatically and logs. 'human' = a task only a person can do.",
+  "timers": {
+    "consultant_reply_hours": 24,
+    "office_reply_hours": 24,
+    "max_reminders": 2,
+    "note": "Estimates. How long silence is tolerated before a reminder: never longer than a third of the time left before the deadline, counted in office hours for offices, and not at night for consultants unless the deadline is under 24 hours away. After max_reminders a person calls.",
+    "quiet_hours": {
+      "start": "21:00",
+      "end": "08:00"
+    }
+  }
+}

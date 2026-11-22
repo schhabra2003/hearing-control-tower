@@ -1,0 +1,2708 @@
+{
+ "title": "How well the readers read",
+ "generated": "2026-11-19T17:09:11.052Z",
+ "recorded": {
+  "primary": "gpt-6.1-sol",
+  "second": "gpt-6-luna",
+  "recorded_at": "2026-11-18T03:39:47.619Z",
+  "prompt_version": "reader-1",
+  "file": "data/recorded_reads.json"
+ },
+ "headline": {
+  "unseen_n": 30,
+  "offline_recall": "9%",
+  "ai_recall": "89%",
+  "ai_precision": "96%",
+  "ai_found": "51 of 57 (89%, 79 to 95)",
+  "ai_right": "51 of 53 (96%, 87 to 99)",
+  "ai_to_person": "8 of 30 (27%)",
+  "ai_wrong_closings": "1 of 32",
+  "ai_cost": null,
+  "examples_found": "208 of 215 (97%, 93 to 98)",
+  "examples_to_person": "8 of 72 (11%)"
+ },
+ "per_message": {
+  "1": {
+   "id": "1",
+   "exact": true,
+   "found": 4,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "hearing_scheduled AX-101",
+    "hearing_scheduled AX-102",
+    "rep_requested AX-101",
+    "rep_requested AX-102"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "2": {
+   "id": "2",
+   "exact": true,
+   "found": 2,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "consultant_tentative AX-101",
+    "consultant_tentative AX-102"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "3": {
+   "id": "3",
+   "exact": true,
+   "found": 2,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "internal_note AX-101",
+    "internal_note AX-102"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "4": {
+   "id": "4",
+   "exact": true,
+   "found": 4,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "rep_requested AX-101",
+    "rep_requested AX-102",
+    "rep_not_recorded AX-101",
+    "rep_not_recorded AX-102"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "5": {
+   "id": "5",
+   "exact": true,
+   "found": 2,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "consultant_accepted AX-102",
+    "consultant_declined AX-101"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "6": {
+   "id": "6",
+   "exact": true,
+   "found": 4,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "rep_requested AX-101",
+    "rep_requested AX-102",
+    "rep_not_recorded AX-101",
+    "rep_not_recorded AX-102"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "7": {
+   "id": "7",
+   "exact": true,
+   "found": 2,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "hearing_scheduled AX-103",
+    "hearing_scheduled AX-104"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "8": {
+   "id": "8",
+   "exact": false,
+   "found": 2,
+   "missed": [],
+   "extra": [
+    "internal_note|AX-103|",
+    "internal_note|AX-104|"
+   ],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "change_requested AX-103",
+    "change_requested AX-104",
+    "internal_note AX-103",
+    "internal_note AX-104"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "9": {
+   "id": "9",
+   "exact": true,
+   "found": 6,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "consultant_declined AX-103",
+    "consultant_declined AX-104",
+    "calendar_edited AX-103",
+    "calendar_edited AX-104",
+    "consultant_conditional AX-103",
+    "consultant_conditional AX-104"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "10": {
+   "id": "10",
+   "exact": false,
+   "found": 2,
+   "missed": [],
+   "extra": [
+    "internal_note|AX-103|",
+    "internal_note|AX-104|"
+   ],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "calendar_edited AX-103",
+    "calendar_edited AX-104",
+    "internal_note AX-103",
+    "internal_note AX-104"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "11": {
+   "id": "11",
+   "exact": false,
+   "found": 2,
+   "missed": [
+    "change_denied|AX-103|",
+    "change_denied|AX-104|"
+   ],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "hearing_confirmed AX-103",
+    "hearing_confirmed AX-104"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "12": {
+   "id": "12",
+   "exact": true,
+   "found": 2,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "consultant_question AX-103",
+    "consultant_question AX-104"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "13": {
+   "id": "13",
+   "exact": true,
+   "found": 2,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "hearing_scheduled AX-105",
+    "hearing_scheduled AX-106"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "14": {
+   "id": "14",
+   "exact": false,
+   "found": 3,
+   "missed": [
+    "consultant_accepted|AX-105|"
+   ],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": true,
+   "applied": [
+    "consultant_declined AX-106",
+    "consultant_conditional AX-105",
+    "consultant_conditional AX-106"
+   ],
+   "held": [
+    {
+     "claim": "consultant_accepted AX-105",
+     "reason": "Only the first reader found it."
+    }
+   ],
+   "not_classified": [],
+   "dropped": 1,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "15": {
+   "id": "15",
+   "exact": true,
+   "found": 2,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": true,
+   "applied": [
+    "change_requested AX-105",
+    "change_requested AX-106"
+   ],
+   "held": [
+    {
+     "claim": "consultant_conditional AX-105, AX-106",
+     "reason": "Only the first reader found it."
+    }
+   ],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "16": {
+   "id": "16",
+   "exact": true,
+   "found": 4,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "rep_recorded AX-105",
+    "rep_not_recorded AX-106",
+    "change_pending AX-105",
+    "change_pending AX-106"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "17": {
+   "id": "17",
+   "exact": false,
+   "found": 2,
+   "missed": [],
+   "extra": [
+    "hearing_confirmed|AX-106|"
+   ],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "schedule_changed AX-105",
+    "change_denied AX-106",
+    "hearing_confirmed AX-106"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [
+    "hearing_confirmed AX-106"
+   ],
+   "failed": null,
+   "second_failed": null
+  },
+  "18": {
+   "id": "18",
+   "exact": false,
+   "found": 1,
+   "missed": [
+    "calendar_edited|AX-105|"
+   ],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": true,
+   "applied": [
+    "calendar_edited AX-106"
+   ],
+   "held": [
+    {
+     "claim": "calendar_edited AX-105",
+     "reason": "Only the first reader found it."
+    }
+   ],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "19": {
+   "id": "19",
+   "exact": true,
+   "found": 4,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "rep_requested AX-107",
+    "rep_requested AX-108",
+    "hearing_scheduled AX-107",
+    "hearing_scheduled AX-108"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "20": {
+   "id": "20",
+   "exact": true,
+   "found": 2,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "consultant_accepted AX-107",
+    "consultant_accepted AX-108"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "21": {
+   "id": "21",
+   "exact": true,
+   "found": 2,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "internal_note AX-107",
+    "internal_note AX-108"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "22": {
+   "id": "22",
+   "exact": true,
+   "found": 4,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "process_rule_changed AX-107",
+    "process_rule_changed AX-108",
+    "rep_not_recorded AX-107",
+    "rep_not_recorded AX-108"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "23": {
+   "id": "23",
+   "exact": true,
+   "found": 2,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "document_submitted AX-107",
+    "document_submitted AX-108"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "24": {
+   "id": "24",
+   "exact": true,
+   "found": 2,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": true,
+   "applied": [
+    "rep_not_recorded AX-107",
+    "rep_not_recorded AX-108"
+   ],
+   "held": [],
+   "not_classified": [
+    "I cannot find the form in the shared inbox yet.",
+    "please call tomorrow morning."
+   ],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "25": {
+   "id": "25",
+   "exact": true,
+   "found": 4,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "hearing_scheduled AX-109",
+    "hearing_scheduled AX-110",
+    "rep_requested AX-109",
+    "rep_requested AX-110"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "26": {
+   "id": "26",
+   "exact": true,
+   "found": 2,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "consultant_accepted AX-109",
+    "consultant_accepted AX-110"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "27": {
+   "id": "27",
+   "exact": false,
+   "found": 1,
+   "missed": [],
+   "extra": [
+    "internal_note|AX-110|"
+   ],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "signature_required AX-109",
+    "internal_note AX-110"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "28": {
+   "id": "28",
+   "exact": true,
+   "found": 4,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "signature_rejected AX-110",
+    "rep_recorded AX-110",
+    "signature_required AX-110",
+    "hearing_confirmed AX-110"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "29": {
+   "id": "29",
+   "exact": true,
+   "found": 1,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "document_submitted AX-110"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "30": {
+   "id": "30",
+   "exact": false,
+   "found": 1,
+   "missed": [],
+   "extra": [
+    "internal_note|AX-109|",
+    "internal_note|AX-110|"
+   ],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "doc_unreadable AX-110",
+    "internal_note AX-109",
+    "internal_note AX-110"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "31": {
+   "id": "31",
+   "exact": true,
+   "found": 4,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "hearing_scheduled AX-111",
+    "hearing_scheduled AX-112",
+    "rep_recorded AX-111",
+    "rep_recorded AX-112"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "32": {
+   "id": "32",
+   "exact": true,
+   "found": 2,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "consultant_accepted AX-111",
+    "consultant_accepted AX-112"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "33": {
+   "id": "33",
+   "exact": true,
+   "found": 4,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "document_submitted AX-111",
+    "document_submitted AX-112",
+    "packet_version_issue AX-111",
+    "packet_version_issue AX-112"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "34": {
+   "id": "34",
+   "exact": false,
+   "found": 1,
+   "missed": [
+    "packet_received|AX-111|"
+   ],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": true,
+   "applied": [
+    "doc_unreadable AX-112"
+   ],
+   "held": [
+    {
+     "claim": "packet_received AX-111",
+     "reason": "Only the first reader found it."
+    }
+   ],
+   "not_classified": [
+    "Please resend it."
+   ],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "35": {
+   "id": "35",
+   "exact": true,
+   "found": 4,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "packet_version_issue AX-111",
+    "packet_version_issue AX-112",
+    "consultant_question AX-111",
+    "consultant_question AX-112"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "36": {
+   "id": "36",
+   "exact": true,
+   "found": 2,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "internal_note AX-111",
+    "internal_note AX-112"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "37": {
+   "id": "37",
+   "exact": true,
+   "found": 4,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "hearing_scheduled AX-113",
+    "hearing_scheduled AX-114",
+    "rep_recorded AX-113",
+    "rep_recorded AX-114"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "38": {
+   "id": "38",
+   "exact": true,
+   "found": 4,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "consultant_accepted AX-113",
+    "consultant_accepted AX-114",
+    "packet_received AX-113",
+    "packet_received AX-114"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "39": {
+   "id": "39",
+   "exact": true,
+   "found": 2,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "internal_note AX-113",
+    "internal_note AX-114"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "40": {
+   "id": "40",
+   "exact": true,
+   "found": 4,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "packet_received AX-113",
+    "packet_received AX-114",
+    "hearing_instruction AX-113",
+    "hearing_instruction AX-114"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "41": {
+   "id": "41",
+   "exact": true,
+   "found": 2,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "consultant_declined AX-113",
+    "consultant_declined AX-114"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "42": {
+   "id": "42",
+   "exact": false,
+   "found": 0,
+   "missed": [
+    "coverage_offered|AX-113|",
+    "coverage_offered|AX-114|"
+   ],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": true,
+   "applied": [],
+   "held": [
+    {
+     "claim": "coverage_offered AX-113, AX-114",
+     "reason": "Only the first reader found it."
+    }
+   ],
+   "not_classified": [],
+   "dropped": 1,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "43": {
+   "id": "43",
+   "exact": true,
+   "found": 4,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "hearing_scheduled AX-115",
+    "hearing_scheduled AX-116",
+    "rep_recorded AX-115",
+    "rep_recorded AX-116"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "44": {
+   "id": "44",
+   "exact": true,
+   "found": 2,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "consultant_accepted AX-115",
+    "consultant_accepted AX-116"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "45": {
+   "id": "45",
+   "exact": true,
+   "found": 4,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "schedule_changed AX-115",
+    "schedule_changed AX-116",
+    "hearing_confirmed AX-115",
+    "hearing_confirmed AX-116"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "46": {
+   "id": "46",
+   "exact": true,
+   "found": 2,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "schedule_changed AX-115",
+    "hearing_confirmed AX-116"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "47": {
+   "id": "47",
+   "exact": true,
+   "found": 2,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": true,
+   "applied": [
+    "schedule_changed AX-115",
+    "hearing_confirmed AX-116"
+   ],
+   "held": [],
+   "not_classified": [
+    "Please update your representative."
+   ],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "48": {
+   "id": "48",
+   "exact": true,
+   "found": 3,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": true,
+   "applied": [
+    "consultant_declined AX-115",
+    "consultant_question AX-115",
+    "consultant_question AX-116"
+   ],
+   "held": [],
+   "not_classified": [
+    "I still have both Linden Avenue hearings tomorrow, room D at 10 and 10:30 a.m."
+   ],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "49": {
+   "id": "49",
+   "exact": true,
+   "found": 6,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "hearing_scheduled AX-117",
+    "hearing_scheduled AX-118",
+    "rep_recorded AX-117",
+    "rep_recorded AX-118",
+    "packet_received AX-117",
+    "packet_received AX-118"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "50": {
+   "id": "50",
+   "exact": true,
+   "found": 4,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "consultant_accepted AX-117",
+    "consultant_accepted AX-118",
+    "packet_received AX-117",
+    "packet_received AX-118"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "51": {
+   "id": "51",
+   "exact": true,
+   "found": 2,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "withdrawal_requested AX-117",
+    "hearing_confirmed AX-118"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "52": {
+   "id": "52",
+   "exact": true,
+   "found": 2,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "internal_note AX-117",
+    "document_submitted AX-117"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "53": {
+   "id": "53",
+   "exact": true,
+   "found": 2,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "hearing_confirmed AX-117",
+    "hearing_confirmed AX-118"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "54": {
+   "id": "54",
+   "exact": true,
+   "found": 2,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "consultant_question AX-117",
+    "consultant_question AX-118"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "55": {
+   "id": "55",
+   "exact": true,
+   "found": 6,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "hearing_scheduled AX-119",
+    "hearing_scheduled AX-120",
+    "rep_recorded AX-119",
+    "rep_recorded AX-120",
+    "packet_received AX-119",
+    "packet_received AX-120"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "56": {
+   "id": "56",
+   "exact": true,
+   "found": 4,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "consultant_accepted AX-119",
+    "consultant_accepted AX-120",
+    "packet_received AX-119",
+    "packet_received AX-120"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "57": {
+   "id": "57",
+   "exact": true,
+   "found": 2,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "outcome_reported AX-119",
+    "outcome_reported AX-120"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "58": {
+   "id": "58",
+   "exact": true,
+   "found": 2,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "internal_note AX-119",
+    "internal_note AX-120"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "59": {
+   "id": "59",
+   "exact": true,
+   "found": 2,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "obligation_created AX-119",
+    "decision_pending AX-120"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "60": {
+   "id": "60",
+   "exact": true,
+   "found": 1,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "obligation_created AX-119"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "61": {
+   "id": "61",
+   "exact": true,
+   "found": 4,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "hearing_scheduled AX-121",
+    "hearing_scheduled AX-122",
+    "rep_recorded AX-121",
+    "rep_recorded AX-122"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "62": {
+   "id": "62",
+   "exact": true,
+   "found": 4,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "consultant_accepted AX-121",
+    "consultant_accepted AX-122",
+    "availability_stated AX-121",
+    "availability_stated AX-122"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "63": {
+   "id": "63",
+   "exact": true,
+   "found": 2,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "document_submitted AX-121",
+    "document_submitted AX-122"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "64": {
+   "id": "64",
+   "exact": true,
+   "found": 4,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "packet_received AX-121",
+    "packet_received AX-122",
+    "hearing_confirmed AX-121",
+    "hearing_confirmed AX-122"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "65": {
+   "id": "65",
+   "exact": true,
+   "found": 2,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "packet_received AX-121",
+    "packet_received AX-122"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "66": {
+   "id": "66",
+   "exact": true,
+   "found": 6,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "hearing_confirmed AX-121",
+    "hearing_confirmed AX-122",
+    "rep_recorded AX-121",
+    "rep_recorded AX-122",
+    "packet_received AX-121",
+    "packet_received AX-122"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "67": {
+   "id": "67",
+   "exact": true,
+   "found": 4,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "hearing_scheduled AX-123",
+    "hearing_scheduled AX-124",
+    "rep_requested AX-123",
+    "rep_requested AX-124"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "68": {
+   "id": "68",
+   "exact": true,
+   "found": 4,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "consultant_accepted AX-123",
+    "consultant_accepted AX-124",
+    "availability_stated AX-123",
+    "availability_stated AX-124"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "69": {
+   "id": "69",
+   "exact": true,
+   "found": 4,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "document_submitted AX-123",
+    "document_submitted AX-124",
+    "document_submitted AX-123",
+    "document_submitted AX-124"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "70": {
+   "id": "70",
+   "exact": true,
+   "found": 6,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "rep_recorded AX-123",
+    "rep_recorded AX-124",
+    "packet_received AX-123",
+    "packet_received AX-124",
+    "hearing_confirmed AX-123",
+    "hearing_confirmed AX-124"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "71": {
+   "id": "71",
+   "exact": true,
+   "found": 2,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "packet_received AX-123",
+    "packet_received AX-124"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "72": {
+   "id": "72",
+   "exact": true,
+   "found": 4,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "rep_recorded AX-123",
+    "rep_recorded AX-124",
+    "hearing_confirmed AX-123",
+    "hearing_confirmed AX-124"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "H031": {
+   "id": "H031",
+   "exact": true,
+   "found": 3,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "packet_received AX-103",
+    "packet_received AX-104",
+    "obligation_created AX-104"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "H032": {
+   "id": "H032",
+   "exact": false,
+   "found": 3,
+   "missed": [
+    "hearing_confirmed|AX-101|"
+   ],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": true,
+   "applied": [
+    "schedule_changed AX-102",
+    "rep_requested AX-101",
+    "rep_requested AX-102"
+   ],
+   "held": [
+    {
+     "claim": "hearing_confirmed AX-101",
+     "reason": "Only the second reader found it."
+    }
+   ],
+   "not_classified": [],
+   "dropped": 1,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "H033": {
+   "id": "H033",
+   "exact": true,
+   "found": 2,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "rep_recorded AX-113",
+    "rep_recorded AX-114"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "H034": {
+   "id": "H034",
+   "exact": true,
+   "found": 1,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "change_denied AX-115"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "H035": {
+   "id": "H035",
+   "exact": true,
+   "found": 2,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "schedule_changed AX-121",
+    "schedule_changed AX-122"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "H036": {
+   "id": "H036",
+   "exact": true,
+   "found": 2,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "process_rule_changed AX-111",
+    "process_rule_changed AX-112"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "H037": {
+   "id": "H037",
+   "exact": true,
+   "found": 1,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "change_pending AX-106"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "H038": {
+   "id": "H038",
+   "exact": true,
+   "found": 2,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "rep_recorded AX-102",
+    "rep_not_recorded AX-101"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "H039": {
+   "id": "H039",
+   "exact": true,
+   "found": 0,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "H040": {
+   "id": "H040",
+   "exact": true,
+   "found": 2,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "obligation_cleared AX-119",
+    "decision_pending AX-120"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "H041": {
+   "id": "H041",
+   "exact": true,
+   "found": 3,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "consultant_declined AX-115",
+    "rep_recorded AX-115",
+    "rep_requested AX-115"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "H042": {
+   "id": "H042",
+   "exact": true,
+   "found": 3,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "schedule_changed AX-106",
+    "hearing_instruction AX-106",
+    "hearing_confirmed AX-105"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "H043": {
+   "id": "H043",
+   "exact": true,
+   "found": 2,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "rep_recorded AX-107",
+    "rep_recorded AX-108"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "H044": {
+   "id": "H044",
+   "exact": true,
+   "found": 2,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "schedule_changed AX-110",
+    "schedule_changed AX-109"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "H045": {
+   "id": "H045",
+   "exact": false,
+   "found": 2,
+   "missed": [],
+   "extra": [
+    "change_requested|AX-111|"
+   ],
+   "field_errors": [
+    "change_denied|AX-111| homeowner_initiated: missing (want true)"
+   ],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "change_requested AX-111",
+    "change_denied AX-111",
+    "hearing_confirmed AX-111"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "H046": {
+   "id": "H046",
+   "exact": false,
+   "found": 0,
+   "missed": [
+    "schedule_changed|AX-107|",
+    "schedule_changed|AX-108|"
+   ],
+   "extra": [],
+   "field_errors": [],
+   "outside": 2,
+   "for_person": true,
+   "applied": [
+    "hearing_postponed AX-107",
+    "hearing_postponed AX-108"
+   ],
+   "held": [],
+   "not_classified": [
+    "Please do not call the office to ask for a particular date; requests will not be taken until the notices are out."
+   ],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "H047": {
+   "id": "H047",
+   "exact": true,
+   "found": 2,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "obligation_cleared AX-117",
+    "hearing_confirmed AX-118"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "H048": {
+   "id": "H048",
+   "exact": true,
+   "found": 4,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "schedule_changed AX-103",
+    "schedule_changed AX-104",
+    "rep_not_recorded AX-103",
+    "rep_not_recorded AX-104"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "H049": {
+   "id": "H049",
+   "exact": true,
+   "found": 2,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "hearing_instruction AX-123",
+    "hearing_instruction AX-124"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "H050": {
+   "id": "H050",
+   "exact": false,
+   "found": 4,
+   "missed": [],
+   "extra": [],
+   "field_errors": [
+    "schedule_changed|AX-107| date: missing (want 2030-06-12)",
+    "schedule_changed|AX-108| date: missing (want 2030-06-12)"
+   ],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "rep_recorded AX-107",
+    "rep_recorded AX-108",
+    "schedule_changed AX-107",
+    "schedule_changed AX-108"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "H051": {
+   "id": "H051",
+   "exact": true,
+   "found": 1,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "schedule_changed AX-105"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "H052": {
+   "id": "H052",
+   "exact": true,
+   "found": 2,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": true,
+   "applied": [
+    "rep_not_recorded AX-109",
+    "rep_requested AX-109"
+   ],
+   "held": [],
+   "not_classified": [
+    "The staffing notice we hold for 16 Birch Lane cannot be entered as it stands. The case number box is empty and the representative line shows only the initials P. M."
+   ],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "H053": {
+   "id": "H053",
+   "exact": true,
+   "found": 0,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": true,
+   "applied": [],
+   "held": [],
+   "not_classified": [
+    "The board is thinking about moving Friday's afternoon video list to the morning because of a staff meeting, which would put the Maple Lane cases at about 10 a.m. Nothing has been decided, and if it ha",
+    "Could you ask Ms. Pell whether a morning start would be possible for her?"
+   ],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "H054": {
+   "id": "H054",
+   "exact": true,
+   "found": 1,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": true,
+   "applied": [
+    "obligation_created AX-120"
+   ],
+   "held": [],
+   "not_classified": [
+    "A further homeowner statement will not do in its place."
+   ],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "H055": {
+   "id": "H055",
+   "exact": true,
+   "found": 1,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "obligation_cleared AX-110"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "H056": {
+   "id": "H056",
+   "exact": false,
+   "found": 0,
+   "missed": [
+    "schedule_changed|AX-111|",
+    "schedule_changed|AX-112|"
+   ],
+   "extra": [],
+   "field_errors": [],
+   "outside": 2,
+   "for_person": true,
+   "applied": [
+    "hearing_postponed AX-111",
+    "hearing_postponed AX-112"
+   ],
+   "held": [],
+   "not_classified": [
+    "Please let Mr. Corven know."
+   ],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "H057": {
+   "id": "H057",
+   "exact": true,
+   "found": 2,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "process_rule_changed AX-115",
+    "process_rule_changed AX-116"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "H058": {
+   "id": "H058",
+   "exact": true,
+   "found": 1,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": false,
+   "applied": [
+    "obligation_cleared AX-109"
+   ],
+   "held": [],
+   "not_classified": [],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  },
+  "H059": {
+   "id": "H059",
+   "exact": false,
+   "found": 1,
+   "missed": [
+    "hearing_scheduled|AX-119|"
+   ],
+   "extra": [
+    "schedule_changed|AX-119|"
+   ],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": true,
+   "applied": [
+    "schedule_changed AX-119",
+    "rep_recorded AX-119"
+   ],
+   "held": [],
+   "not_classified": [
+    "Requests to change this date must be made in writing no later than June 14."
+   ],
+   "dropped": 0,
+   "false_closings": [
+    "schedule_changed AX-119"
+   ],
+   "failed": null,
+   "second_failed": null
+  },
+  "H060": {
+   "id": "H060",
+   "exact": true,
+   "found": 0,
+   "missed": [],
+   "extra": [],
+   "field_errors": [],
+   "outside": 0,
+   "for_person": true,
+   "applied": [],
+   "held": [],
+   "not_classified": [
+    "the hearing officer for 9 Orchard Road on June 18 has changed from Mr. Lund to Ms. Okafor."
+   ],
+   "dropped": 0,
+   "false_closings": [],
+   "failed": null,
+   "second_failed": null
+  }
+ },
+ "recorded_cost": {
+  "messages": 102,
+  "answers_usd": 0.35454085999999996,
+  "median_ms": 4414,
+  "per_message_usd": 0.0034758907843137252
+ },
+ "rows": [
+  {
+   "key": "heldout.json | recorded:data/recorded_reads.json x recorded:data/recorded_reads.json",
+   "set": "unseen",
+   "messages": 30,
+   "reader": "gpt-6.1-sol, checked by gpt-6-luna",
+   "first": "gpt-6.1-sol",
+   "second": "gpt-6-luna",
+   "kind": "recorded",
+   "found": "51 of 57 (89%, 79 to 95)",
+   "right": "51 of 53 (96%, 87 to 99)",
+   "exact": "24 of 30 (80%)",
+   "wrong_closings": "1 of 32",
+   "wrong_closings_applied": 1,
+   "to_person": "8 of 30 (27%)",
+   "failed_reads": 0,
+   "held_back": 1,
+   "cost_per_message": "$0.0035",
+   "cost_total": null,
+   "no_effect": "0 of 11",
+   "end_state": null,
+   "without_ambiguous": {
+    "found": "46 of 48 (96%, 86 to 99)",
+    "right": "46 of 48 (96%, 86 to 99)"
+   },
+   "generated_at": "2026-11-19T17:09:03.390Z",
+   "command": "node eval/run.js --set data/heldout.json --reader recorded:data/recorded_reads.json --crosscheck recorded:data/recorded_reads.json --baseline none --out eval/reader_runs.json"
+  },
+  {
+   "key": "heldout.json | rules",
+   "set": "unseen",
+   "messages": 30,
+   "reader": "Offline pattern reader",
+   "first": "Offline pattern reader",
+   "second": null,
+   "kind": "offline",
+   "found": "5 of 57 (9%, 4 to 19)",
+   "right": "5 of 10 (50%, 24 to 76)",
+   "exact": "3 of 30 (10%)",
+   "wrong_closings": "4 of 9",
+   "wrong_closings_applied": 5,
+   "to_person": "18 of 30 (60%)",
+   "failed_reads": 0,
+   "held_back": 0,
+   "cost_per_message": null,
+   "cost_total": null,
+   "no_effect": "0 of 11",
+   "end_state": null,
+   "without_ambiguous": {
+    "found": "5 of 48 (10%, 5 to 22)",
+    "right": "5 of 10 (50%, 24 to 76)"
+   },
+   "generated_at": "2026-11-18T03:45:35.070Z",
+   "command": "node eval/run.js --set data/heldout.json --reader rules --baseline none --out eval/reader_runs.json"
+  },
+  {
+   "key": "heldout.json | openai:gpt-6-luna x openai:gpt-6-luna",
+   "set": "unseen",
+   "messages": 30,
+   "reader": "gpt-6-luna, checked by gpt-6-luna",
+   "first": "gpt-6-luna",
+   "second": "gpt-6-luna",
+   "kind": "live",
+   "found": "50 of 57 (88%, 77 to 94)",
+   "right": "50 of 51 (98%, 90 to 100)",
+   "exact": "24 of 30 (80%)",
+   "wrong_closings": "0 of 30",
+   "wrong_closings_applied": 0,
+   "to_person": "10 of 30 (33%)",
+   "failed_reads": 0,
+   "held_back": 4,
+   "cost_per_message": "$0.00062",
+   "cost_total": 0.01857421,
+   "no_effect": "1 of 11",
+   "end_state": null,
+   "without_ambiguous": {
+    "found": "45 of 48 (94%, 83 to 98)",
+    "right": "45 of 46 (98%, 89 to 100)"
+   },
+   "generated_at": "2026-11-18T03:17:23.168Z",
+   "command": "node eval/run.js --set data/heldout.json --reader openai:gpt-6-luna --crosscheck openai:gpt-6-luna --key-file <your key file> --baseline none --concurrency 4 --out eval/reader_runs.json"
+  },
+  {
+   "key": "heldout.json | openai:gpt-6-luna x openai:gpt-6.1-terra",
+   "set": "unseen",
+   "messages": 30,
+   "reader": "gpt-6-luna, checked by gpt-6.1-terra",
+   "first": "gpt-6-luna",
+   "second": "gpt-6.1-terra",
+   "kind": "live",
+   "found": "50 of 57 (88%, 77 to 94)",
+   "right": "50 of 52 (96%, 87 to 99)",
+   "exact": "24 of 30 (80%)",
+   "wrong_closings": "0 of 30",
+   "wrong_closings_applied": 0,
+   "to_person": "9 of 30 (30%)",
+   "failed_reads": 0,
+   "held_back": 3,
+   "cost_per_message": "$0.0022",
+   "cost_total": 0.06459709000000001,
+   "no_effect": "1 of 11",
+   "end_state": null,
+   "without_ambiguous": {
+    "found": "45 of 48 (94%, 83 to 98)",
+    "right": "45 of 47 (96%, 86 to 99)"
+   },
+   "generated_at": "2026-11-18T03:18:47.987Z",
+   "command": "node eval/run.js --set data/heldout.json --reader openai:gpt-6-luna --crosscheck openai:gpt-6.1-terra --key-file <your key file> --baseline none --concurrency 4 --out eval/reader_runs.json"
+  },
+  {
+   "key": "heldout.json | openai:gpt-6.1-sol x openai:gpt-6-luna",
+   "set": "unseen",
+   "messages": 30,
+   "reader": "gpt-6.1-sol, checked by gpt-6-luna",
+   "first": "gpt-6.1-sol",
+   "second": "gpt-6-luna",
+   "kind": "live",
+   "found": "49 of 57 (86%, 75 to 93)",
+   "right": "49 of 51 (96%, 87 to 99)",
+   "exact": "22 of 30 (73%)",
+   "wrong_closings": "1 of 32",
+   "wrong_closings_applied": 1,
+   "to_person": "12 of 30 (40%)",
+   "failed_reads": 1,
+   "held_back": 1,
+   "cost_per_message": "$0.0056",
+   "cost_total": 0.16669547999999998,
+   "no_effect": "1 of 11",
+   "end_state": null,
+   "without_ambiguous": {
+    "found": "44 of 48 (92%, 80 to 97)",
+    "right": "44 of 46 (96%, 85 to 99)"
+   },
+   "generated_at": "2026-11-18T03:29:59.420Z",
+   "command": "node eval/run.js --set data/heldout.json --reader openai:gpt-6.1-sol --crosscheck openai:gpt-6-luna --key-file <your key file> --baseline none --concurrency 4 --out eval/reader_runs.json"
+  },
+  {
+   "key": "heldout.json | openai:gpt-6.1-sol x openai:gpt-6-luna (run 2)",
+   "set": "unseen",
+   "messages": 30,
+   "reader": "gpt-6.1-sol, checked by gpt-6-luna",
+   "first": "gpt-6.1-sol",
+   "second": "gpt-6-luna",
+   "kind": "live",
+   "found": "48 of 57 (84%, 73 to 91)",
+   "right": "48 of 50 (96%, 87 to 99)",
+   "exact": "22 of 30 (73%)",
+   "wrong_closings": "1 of 30",
+   "wrong_closings_applied": 1,
+   "to_person": "10 of 30 (33%)",
+   "failed_reads": 2,
+   "held_back": 1,
+   "cost_per_message": "$0.0075",
+   "cost_total": 0.22475937000000004,
+   "no_effect": "1 of 11",
+   "end_state": null,
+   "without_ambiguous": {
+    "found": "43 of 48 (90%, 78 to 95)",
+    "right": "43 of 45 (96%, 85 to 99)"
+   },
+   "generated_at": "2026-11-18T03:41:39.316Z",
+   "command": "node eval/run.js --set data/heldout.json --reader openai:gpt-6.1-sol --crosscheck openai:gpt-6-luna --key-file <your key file> --baseline none --concurrency 4 --save-reads data/recorded_reads.json --out eval/reader_runs.json"
+  },
+  {
+   "key": "heldout.json | openai:gpt-6-luna",
+   "set": "unseen",
+   "messages": 30,
+   "reader": "gpt-6-luna",
+   "first": "gpt-6-luna",
+   "second": null,
+   "kind": "live",
+   "found": "51 of 57 (89%, 79 to 95)",
+   "right": "51 of 53 (96%, 87 to 99)",
+   "exact": "25 of 30 (83%)",
+   "wrong_closings": "1 of 32",
+   "wrong_closings_applied": 1,
+   "to_person": "5 of 30 (17%)",
+   "failed_reads": 0,
+   "held_back": 0,
+   "cost_per_message": "$0.00030",
+   "cost_total": 0.0090449,
+   "no_effect": "1 of 11",
+   "end_state": null,
+   "without_ambiguous": {
+    "found": "46 of 48 (96%, 86 to 99)",
+    "right": "46 of 48 (96%, 86 to 99)"
+   },
+   "generated_at": "2026-11-18T03:13:24.442Z",
+   "command": "node eval/run.js --set data/heldout.json --reader openai:gpt-6-luna --key-file <your key file> --baseline none --concurrency 4 --save-reads data/recorded_reads.json --out eval/reader_runs.json"
+  },
+  {
+   "key": "heldout.json | openai:gpt-6.1-terra",
+   "set": "unseen",
+   "messages": 30,
+   "reader": "gpt-6.1-terra",
+   "first": "gpt-6.1-terra",
+   "second": null,
+   "kind": "live",
+   "found": "46 of 57 (81%, 69 to 89)",
+   "right": "46 of 49 (94%, 83 to 98)",
+   "exact": "23 of 30 (77%)",
+   "wrong_closings": "2 of 30",
+   "wrong_closings_applied": 2,
+   "to_person": "9 of 30 (30%)",
+   "failed_reads": 0,
+   "held_back": 0,
+   "cost_per_message": "$0.0023",
+   "cost_total": 0.07025650000000001,
+   "no_effect": "1 of 11",
+   "end_state": null,
+   "without_ambiguous": {
+    "found": "41 of 48 (85%, 73 to 93)",
+    "right": "41 of 44 (93%, 82 to 98)"
+   },
+   "generated_at": "2026-11-18T03:14:22.870Z",
+   "command": "node eval/run.js --set data/heldout.json --reader openai:gpt-6.1-terra --key-file <your key file> --baseline none --concurrency 4 --save-reads data/recorded_reads.json --out eval/reader_runs.json"
+  },
+  {
+   "key": "heldout.json | openai:gpt-6.1-sol",
+   "set": "unseen",
+   "messages": 30,
+   "reader": "gpt-6.1-sol",
+   "first": "gpt-6.1-sol",
+   "second": null,
+   "kind": "live",
+   "found": "48 of 57 (84%, 73 to 91)",
+   "right": "48 of 51 (94%, 84 to 98)",
+   "exact": "23 of 30 (77%)",
+   "wrong_closings": "2 of 32",
+   "wrong_closings_applied": 2,
+   "to_person": "8 of 30 (27%)",
+   "failed_reads": 0,
+   "held_back": 0,
+   "cost_per_message": "$0.0038",
+   "cost_total": 0.11331300000000002,
+   "no_effect": "1 of 11",
+   "end_state": null,
+   "without_ambiguous": {
+    "found": "43 of 48 (90%, 78 to 95)",
+    "right": "43 of 46 (93%, 82 to 98)"
+   },
+   "generated_at": "2026-11-18T03:15:17.732Z",
+   "command": "node eval/run.js --set data/heldout.json --reader openai:gpt-6.1-sol --key-file <your key file> --baseline none --concurrency 4 --save-reads data/recorded_reads.json --out eval/reader_runs.json"
+  },
+  {
+   "key": "gold_dev.json | recorded:data/recorded_reads.json x recorded:data/recorded_reads.json",
+   "set": "examples",
+   "messages": 72,
+   "reader": "gpt-6.1-sol, checked by gpt-6-luna",
+   "first": "gpt-6.1-sol",
+   "second": "gpt-6-luna",
+   "kind": "recorded",
+   "found": "208 of 215 (97%, 93 to 98)",
+   "right": "208 of 216 (96%, 93 to 98)",
+   "exact": "62 of 72 (86%)",
+   "wrong_closings": "1 of 128",
+   "wrong_closings_applied": 1,
+   "to_person": "8 of 72 (11%)",
+   "failed_reads": 0,
+   "held_back": 7,
+   "cost_per_message": "$0.0035",
+   "cost_total": null,
+   "no_effect": null,
+   "end_state": "22 of 24",
+   "without_ambiguous": null,
+   "generated_at": "2026-11-19T17:08:57.322Z",
+   "command": "node eval/run.js --set data/gold_dev.json --reader recorded:data/recorded_reads.json --crosscheck recorded:data/recorded_reads.json --baseline none --out eval/reader_runs.json"
+  },
+  {
+   "key": "gold_dev.json | rules",
+   "set": "examples",
+   "messages": 72,
+   "reader": "Offline pattern reader",
+   "first": "Offline pattern reader",
+   "second": null,
+   "kind": "offline",
+   "found": "215 of 215 (100%, 98 to 100)",
+   "right": "215 of 215 (100%, 98 to 100)",
+   "exact": "72 of 72 (100%)",
+   "wrong_closings": "0 of 134",
+   "wrong_closings_applied": 0,
+   "to_person": "0 of 72 (0%)",
+   "failed_reads": 0,
+   "held_back": 0,
+   "cost_per_message": null,
+   "cost_total": null,
+   "no_effect": null,
+   "end_state": "24 of 24",
+   "without_ambiguous": null,
+   "generated_at": "2026-11-18T03:45:35.860Z",
+   "command": "node eval/run.js --set data/gold_dev.json --reader rules --baseline none --out eval/reader_runs.json"
+  },
+  {
+   "key": "gold_dev.json | openai:gpt-6-luna x openai:gpt-6-luna",
+   "set": "examples",
+   "messages": 72,
+   "reader": "gpt-6-luna, checked by gpt-6-luna",
+   "first": "gpt-6-luna",
+   "second": "gpt-6-luna",
+   "kind": "live",
+   "found": "184 of 215 (86%, 80 to 90)",
+   "right": "184 of 193 (95%, 91 to 98)",
+   "exact": "52 of 72 (72%)",
+   "wrong_closings": "3 of 111",
+   "wrong_closings_applied": 1,
+   "to_person": "21 of 72 (29%)",
+   "failed_reads": 0,
+   "held_back": 22,
+   "cost_per_message": "$0.00054",
+   "cost_total": 0.038976419999999984,
+   "no_effect": null,
+   "end_state": "10 of 24",
+   "without_ambiguous": null,
+   "generated_at": "2026-11-18T03:25:11.712Z",
+   "command": "node eval/run.js --set data/gold_dev.json --reader openai:gpt-6-luna --crosscheck openai:gpt-6-luna --key-file <your key file> --baseline none --concurrency 4 --out eval/reader_runs.json"
+  },
+  {
+   "key": "gold_dev.json | openai:gpt-6.1-sol x openai:gpt-6-luna",
+   "set": "examples",
+   "messages": 72,
+   "reader": "gpt-6.1-sol, checked by gpt-6-luna",
+   "first": "gpt-6.1-sol",
+   "second": "gpt-6-luna",
+   "kind": "live",
+   "found": "201 of 215 (93%, 89 to 96)",
+   "right": "201 of 210 (96%, 92 to 98)",
+   "exact": "58 of 72 (81%)",
+   "wrong_closings": "3 of 125",
+   "wrong_closings_applied": 1,
+   "to_person": "10 of 72 (14%)",
+   "failed_reads": 1,
+   "held_back": 8,
+   "cost_per_message": "$0.0045",
+   "cost_total": 0.3235097999999999,
+   "no_effect": null,
+   "end_state": "18 of 24",
+   "without_ambiguous": null,
+   "generated_at": "2026-11-18T03:28:18.666Z",
+   "command": "node eval/run.js --set data/gold_dev.json --reader openai:gpt-6.1-sol --crosscheck openai:gpt-6-luna --key-file <your key file> --baseline none --concurrency 4 --out eval/reader_runs.json"
+  },
+  {
+   "key": "gold_dev.json | openai:gpt-6.1-sol x openai:gpt-6-luna (run 2)",
+   "set": "examples",
+   "messages": 72,
+   "reader": "gpt-6.1-sol, checked by gpt-6-luna",
+   "first": "gpt-6.1-sol",
+   "second": "gpt-6-luna",
+   "kind": "live",
+   "found": "200 of 215 (93%, 89 to 96)",
+   "right": "200 of 206 (97%, 94 to 99)",
+   "exact": "58 of 72 (81%)",
+   "wrong_closings": "1 of 124",
+   "wrong_closings_applied": 1,
+   "to_person": "12 of 72 (17%)",
+   "failed_reads": 2,
+   "held_back": 9,
+   "cost_per_message": "$0.0050",
+   "cost_total": 0.35713494,
+   "no_effect": null,
+   "end_state": "20 of 24",
+   "without_ambiguous": null,
+   "generated_at": "2026-11-18T03:39:47.613Z",
+   "command": "node eval/run.js --set data/gold_dev.json --reader openai:gpt-6.1-sol --crosscheck openai:gpt-6-luna --key-file <your key file> --baseline none --concurrency 4 --save-reads data/recorded_reads.json --out eval/reader_runs.json"
+  },
+  {
+   "key": "gold_dev.json | openai:gpt-6-luna",
+   "set": "examples",
+   "messages": 72,
+   "reader": "gpt-6-luna",
+   "first": "gpt-6-luna",
+   "second": null,
+   "kind": "live",
+   "found": "193 of 215 (90%, 85 to 93)",
+   "right": "193 of 204 (95%, 91 to 97)",
+   "exact": "57 of 72 (79%)",
+   "wrong_closings": "5 of 124",
+   "wrong_closings_applied": 5,
+   "to_person": "11 of 72 (15%)",
+   "failed_reads": 0,
+   "held_back": 0,
+   "cost_per_message": "$0.00029",
+   "cost_total": 0.02065413000000001,
+   "no_effect": null,
+   "end_state": "19 of 24",
+   "without_ambiguous": null,
+   "generated_at": "2026-11-18T03:08:58.122Z",
+   "command": "node eval/run.js --set data/gold_dev.json --reader openai:gpt-6-luna --key-file <your key file> --baseline none --concurrency 6 --save-reads data/recorded_reads.json --out eval/reader_runs.json"
+  },
+  {
+   "key": "gold_dev.json | openai:gpt-6.1-sol",
+   "set": "examples",
+   "messages": 72,
+   "reader": "gpt-6.1-sol",
+   "first": "gpt-6.1-sol",
+   "second": null,
+   "kind": "live",
+   "found": "206 of 215 (96%, 92 to 98)",
+   "right": "206 of 216 (95%, 92 to 97)",
+   "exact": "63 of 72 (88%)",
+   "wrong_closings": "3 of 132",
+   "wrong_closings_applied": 1,
+   "to_person": "6 of 72 (8%)",
+   "failed_reads": 1,
+   "held_back": 0,
+   "cost_per_message": "$0.0044",
+   "cost_total": 0.3176914999999998,
+   "no_effect": null,
+   "end_state": "22 of 24",
+   "without_ambiguous": null,
+   "generated_at": "2026-11-18T03:10:20.122Z",
+   "command": "node eval/run.js --set data/gold_dev.json --reader openai:gpt-6.1-sol --key-file <your key file> --baseline none --concurrency 6 --save-reads data/recorded_reads.json --out eval/reader_runs.json"
+  },
+  {
+   "key": "gold_dev.json | openai:gpt-6.1-terra",
+   "set": "examples",
+   "messages": 72,
+   "reader": "gpt-6.1-terra",
+   "first": "gpt-6.1-terra",
+   "second": null,
+   "kind": "live",
+   "found": "189 of 215 (88%, 83 to 92)",
+   "right": "189 of 201 (94%, 90 to 97)",
+   "exact": "55 of 72 (76%)",
+   "wrong_closings": "2 of 120",
+   "wrong_closings_applied": 2,
+   "to_person": "11 of 72 (15%)",
+   "failed_reads": 2,
+   "held_back": 0,
+   "cost_per_message": "$0.0029",
+   "cost_total": 0.20644074999999995,
+   "no_effect": null,
+   "end_state": "17 of 24",
+   "without_ambiguous": null,
+   "generated_at": "2026-11-18T03:11:07.469Z",
+   "command": "node eval/run.js --set data/gold_dev.json --reader openai:gpt-6.1-terra --key-file <your key file> --baseline none --concurrency 6 --save-reads data/recorded_reads.json --out eval/reader_runs.json"
+  }
+ ],
+ "spend_usd": 1.93,
+ "runs": 17,
+ "notes": [
+  "The fair test is the unseen set: 30 office messages about new situations, written and labelled after the reader was built, by a separate writer who saw neither the patterns nor the instructions. It is small (57 statements), has one labeller, and covers offices only. Five more parts (consultants, homeowners, phone notes, forged senders, mixed threads) were planned and not made.",
+  "The 72 examples are not a fair test of any reader here. The offline patterns were written while looking at them, and the AI instructions were written by someone who had read them.",
+  "The offline pattern reader is a stand-in for running without a key. It is not the product. On first contact with the unseen set, before any change, it found 5 of 57 statements, 12 of its 17 closing statements were wrong, and it sent no message to a person. It now passes on every sentence with a date or a time that it cannot place, which is why 18 of 30 go to a person. It still makes 4 wrong closings there.",
+  "The models cannot be told apart on 30 messages. The intervals overlap, and the same pair run twice found 49 and 48 of 57 statements. The default pair was chosen on the larger set, where the stronger first reader sent about half as many messages to a person as the cheapest one (10 to 12 of 72 against 21 of 72). A person's minute costs far more than a model call, so that is what decides.",
+  "The wrong closing in the recorded unseen run (1 of 32) is message H059: a second hearing is set for June 20 at 9 a.m. Both readers called it a changed schedule, the labels call it a new schedule. Date, time and place are the same. The one in the recorded examples run (1 of 124) is message 17: \"must stay on June 12 at 2 p.m.\" was read as the office confirming the hearing, which restates the date already on record.",
+  "Four of the six statements missed on the unseen set are two postponement notices (H046, H056). The readers read them as \"postponed\", a statement type added after the labels were written. The labels say \"schedule changed\" with no date. Read by hand, \"postponed\" is right. Counting them as found would give 55 of 57. The table keeps the labels as they are.",
+  "The unseen set exposed one real fault, in the rules and not in the reading: a clerk's voicemail was treated as writing because the channel name contains \"mail\", so it moved a hearing on the record. It is fixed, and check W18 fails without the fix.",
+  "An answer is sometimes cut off because the model thinks for too long: 4 of 102 first reads when the record was made. The reader now asks again with more room, and those four answers come from the second attempt. A cut-off attempt costs about 6 cents, so the four made up 24 of the 60 cents that the record cost.",
+  "Cost and time: the recorded answers cost $0.0035 per message for both readers together, or $0.0059 with the cut-off attempts, and half of the requests took under 4.4 seconds. About 4.6 messages arrive per hearing in the scale runs, so reading costs about 3 cents per hearing.",
+  "Not measured: a Claude reader (the adapter is written from the documentation and has never been run against the live service, because no key was available), models from other providers, unseen wording from consultants, homeowners and phone notes, and how often a second careful person would disagree with the labels."
+ ],
+ "reproduce": [
+  {
+   "what": "The recorded AI readers on the unseen messages, offline, no key",
+   "command": "node eval/run.js --set data/heldout.json --reader recorded:data/recorded_reads.json --crosscheck recorded:data/recorded_reads.json"
+  },
+  {
+   "what": "The same on the 72 examples",
+   "command": "node eval/run.js --set data/gold_dev.json --reader recorded:data/recorded_reads.json --crosscheck recorded:data/recorded_reads.json"
+  },
+  {
+   "what": "The offline pattern reader on the unseen messages",
+   "command": "node eval/run.js --set data/heldout.json --reader rules"
+  },
+  {
+   "what": "A fresh paid run with your own key (about 20 cents)",
+   "command": "node eval/run.js --set data/heldout.json --reader openai:gpt-6.1-sol --crosscheck openai:gpt-6-luna"
+  }
+ ]
+}

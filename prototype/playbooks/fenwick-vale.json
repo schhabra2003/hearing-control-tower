@@ -1,0 +1,22 @@
+{
+  "id": "fenwick-vale",
+  "layer": "county",
+  "county": "Fenwick Vale",
+  "state": "Dovewick",
+  "version": 1,
+  "verified_at": null,
+  "verified_from": "Firm saved instructions in the examples packet (no recorded date)",
+  "office": {
+    "email": "clerk@fenwick-vale.example"
+  },
+  "hearing_mode": "in_person",
+  "staffing": {
+    "method": "staffing_notice",
+    "template": "staffing_notice",
+    "source_text": "Staffing notice naming the representative; government acknowledgment required before coverage is recorded as accepted."
+  },
+  "replacement": {
+    "method": "updated_staffing_notice",
+    "source_text": "Submit an updated staffing notice naming the replacement for each changed case."
+  }
+}

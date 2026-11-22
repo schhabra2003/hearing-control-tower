@@ -1,0 +1,1205 @@
+{
+ "note": "Hand-labelled gold claims for the 72 packet messages (DEV set). Labelled by the author of the extractor: treat scores on this set as development scores, not evidence of generalisation.",
+ "labels": {
+  "1": [
+   {
+    "type": "hearing_scheduled",
+    "cases": [
+     "AX-101"
+    ],
+    "date": "2030-06-10",
+    "time": "09:00",
+    "mode": "in_person"
+   },
+   {
+    "type": "hearing_scheduled",
+    "cases": [
+     "AX-102"
+    ],
+    "date": "2030-06-10",
+    "time": "09:30",
+    "mode": "in_person"
+   },
+   {
+    "type": "rep_requested",
+    "cases": [
+     "AX-101",
+     "AX-102"
+    ]
+   }
+  ],
+  "2": [
+   {
+    "type": "consultant_tentative",
+    "cases": [
+     "AX-101",
+     "AX-102"
+    ],
+    "consultant": "R01"
+   }
+  ],
+  "3": [
+   {
+    "type": "internal_note",
+    "cases": [
+     "AX-101",
+     "AX-102"
+    ]
+   }
+  ],
+  "4": [
+   {
+    "type": "rep_requested",
+    "cases": [
+     "AX-101",
+     "AX-102"
+    ]
+   },
+   {
+    "type": "rep_not_recorded",
+    "cases": [
+     "AX-101",
+     "AX-102"
+    ]
+   }
+  ],
+  "5": [
+   {
+    "type": "consultant_accepted",
+    "cases": [
+     "AX-102"
+    ],
+    "consultant": "R01"
+   },
+   {
+    "type": "consultant_declined",
+    "cases": [
+     "AX-101"
+    ],
+    "consultant": "R01"
+   }
+  ],
+  "6": [
+   {
+    "type": "rep_requested",
+    "cases": [
+     "AX-101",
+     "AX-102"
+    ],
+    "deadline": "2030-06-07T16:00"
+   },
+   {
+    "type": "rep_not_recorded",
+    "cases": [
+     "AX-101",
+     "AX-102"
+    ]
+   }
+  ],
+  "7": [
+   {
+    "type": "hearing_scheduled",
+    "cases": [
+     "AX-103"
+    ],
+    "date": "2030-06-11",
+    "time": "13:00",
+    "mode": "video"
+   },
+   {
+    "type": "hearing_scheduled",
+    "cases": [
+     "AX-104"
+    ],
+    "date": "2030-06-11",
+    "time": "13:30",
+    "mode": "video"
+   }
+  ],
+  "8": [
+   {
+    "type": "change_requested",
+    "cases": [
+     "AX-103",
+     "AX-104"
+    ],
+    "date": "2030-06-13"
+   }
+  ],
+  "9": [
+   {
+    "type": "consultant_declined",
+    "cases": [
+     "AX-103",
+     "AX-104"
+    ],
+    "consultant": "R02"
+   },
+   {
+    "type": "calendar_edited",
+    "cases": [
+     "AX-103",
+     "AX-104"
+    ],
+    "date": "2030-06-13"
+   },
+   {
+    "type": "consultant_conditional",
+    "cases": [
+     "AX-103",
+     "AX-104"
+    ],
+    "consultant": "R02",
+    "date": "2030-06-13"
+   }
+  ],
+  "10": [
+   {
+    "type": "calendar_edited",
+    "cases": [
+     "AX-103",
+     "AX-104"
+    ],
+    "date": "2030-06-13"
+   }
+  ],
+  "11": [
+   {
+    "type": "change_denied",
+    "cases": [
+     "AX-103",
+     "AX-104"
+    ],
+    "date": "2030-06-11"
+   },
+   {
+    "type": "hearing_confirmed",
+    "cases": [
+     "AX-103",
+     "AX-104"
+    ],
+    "date": "2030-06-11"
+   }
+  ],
+  "12": [
+   {
+    "type": "consultant_question",
+    "cases": [
+     "AX-103",
+     "AX-104"
+    ],
+    "consultant": "R02"
+   }
+  ],
+  "13": [
+   {
+    "type": "hearing_scheduled",
+    "cases": [
+     "AX-105"
+    ],
+    "date": "2030-06-12",
+    "time": "09:00",
+    "mode": "video"
+   },
+   {
+    "type": "hearing_scheduled",
+    "cases": [
+     "AX-106"
+    ],
+    "date": "2030-06-12",
+    "time": "14:00",
+    "mode": "video"
+   }
+  ],
+  "14": [
+   {
+    "type": "consultant_accepted",
+    "cases": [
+     "AX-105"
+    ],
+    "consultant": "R03"
+   },
+   {
+    "type": "consultant_declined",
+    "cases": [
+     "AX-106"
+    ],
+    "consultant": "R03"
+   },
+   {
+    "type": "consultant_conditional",
+    "cases": [
+     "AX-105",
+     "AX-106"
+    ],
+    "consultant": "R03",
+    "date": "2030-06-18"
+   }
+  ],
+  "15": [
+   {
+    "type": "change_requested",
+    "cases": [
+     "AX-105",
+     "AX-106"
+    ],
+    "date": "2030-06-18"
+   }
+  ],
+  "16": [
+   {
+    "type": "rep_recorded",
+    "cases": [
+     "AX-105"
+    ],
+    "consultant": "R03"
+   },
+   {
+    "type": "rep_not_recorded",
+    "cases": [
+     "AX-106"
+    ]
+   },
+   {
+    "type": "change_pending",
+    "cases": [
+     "AX-105",
+     "AX-106"
+    ]
+   }
+  ],
+  "17": [
+   {
+    "type": "schedule_changed",
+    "cases": [
+     "AX-105"
+    ],
+    "date": "2030-06-18",
+    "time": "09:00"
+   },
+   {
+    "type": "change_denied",
+    "cases": [
+     "AX-106"
+    ],
+    "date": "2030-06-12"
+   }
+  ],
+  "18": [
+   {
+    "type": "calendar_edited",
+    "cases": [
+     "AX-105",
+     "AX-106"
+    ],
+    "date": "2030-06-18"
+   }
+  ],
+  "19": [
+   {
+    "type": "rep_requested",
+    "cases": [
+     "AX-107",
+     "AX-108"
+    ]
+   },
+   {
+    "type": "hearing_scheduled",
+    "cases": [
+     "AX-107"
+    ],
+    "date": "2030-06-12",
+    "time": "11:00",
+    "mode": "in_person"
+   },
+   {
+    "type": "hearing_scheduled",
+    "cases": [
+     "AX-108"
+    ],
+    "date": "2030-06-12",
+    "time": "11:30",
+    "mode": "in_person"
+   }
+  ],
+  "20": [
+   {
+    "type": "consultant_accepted",
+    "cases": [
+     "AX-107",
+     "AX-108"
+    ],
+    "consultant": "R04"
+   }
+  ],
+  "21": [
+   {
+    "type": "internal_note",
+    "cases": [
+     "AX-107",
+     "AX-108"
+    ]
+   }
+  ],
+  "22": [
+   {
+    "type": "process_rule_changed",
+    "cases": [
+     "AX-107",
+     "AX-108"
+    ]
+   },
+   {
+    "type": "rep_not_recorded",
+    "cases": [
+     "AX-107",
+     "AX-108"
+    ]
+   }
+  ],
+  "23": [
+   {
+    "type": "document_submitted",
+    "cases": [
+     "AX-107",
+     "AX-108"
+    ],
+    "kind": "staffing_form",
+    "consultant": "R04"
+   }
+  ],
+  "24": [
+   {
+    "type": "rep_not_recorded",
+    "cases": [
+     "AX-107",
+     "AX-108"
+    ]
+   }
+  ],
+  "25": [
+   {
+    "type": "hearing_scheduled",
+    "cases": [
+     "AX-109"
+    ],
+    "date": "2030-06-13",
+    "time": "10:00",
+    "mode": "video"
+   },
+   {
+    "type": "hearing_scheduled",
+    "cases": [
+     "AX-110"
+    ],
+    "date": "2030-06-13",
+    "time": "10:30",
+    "mode": "video"
+   },
+   {
+    "type": "rep_requested",
+    "cases": [
+     "AX-109",
+     "AX-110"
+    ]
+   }
+  ],
+  "26": [
+   {
+    "type": "consultant_accepted",
+    "cases": [
+     "AX-109",
+     "AX-110"
+    ],
+    "consultant": "R05"
+   }
+  ],
+  "27": [
+   {
+    "type": "signature_required",
+    "cases": [
+     "AX-109"
+    ],
+    "kind": "settlement",
+    "consultant": "R05"
+   }
+  ],
+  "28": [
+   {
+    "type": "signature_rejected",
+    "cases": [
+     "AX-110"
+    ],
+    "kind": "withdrawal"
+   },
+   {
+    "type": "rep_recorded",
+    "cases": [
+     "AX-110"
+    ],
+    "consultant": "R05"
+   },
+   {
+    "type": "signature_required",
+    "cases": [
+     "AX-110"
+    ],
+    "kind": "withdrawal",
+    "consultant": "R05"
+   },
+   {
+    "type": "hearing_confirmed",
+    "cases": [
+     "AX-110"
+    ]
+   }
+  ],
+  "29": [
+   {
+    "type": "document_submitted",
+    "cases": [
+     "AX-110"
+    ],
+    "kind": "withdrawal"
+   }
+  ],
+  "30": [
+   {
+    "type": "doc_unreadable",
+    "cases": [
+     "AX-110"
+    ],
+    "kind": "withdrawal"
+   }
+  ],
+  "31": [
+   {
+    "type": "hearing_scheduled",
+    "cases": [
+     "AX-111"
+    ],
+    "date": "2030-06-13",
+    "time": "14:00",
+    "mode": "video"
+   },
+   {
+    "type": "hearing_scheduled",
+    "cases": [
+     "AX-112"
+    ],
+    "date": "2030-06-13",
+    "time": "14:30",
+    "mode": "video"
+   },
+   {
+    "type": "rep_recorded",
+    "cases": [
+     "AX-111",
+     "AX-112"
+    ],
+    "consultant": "R06"
+   }
+  ],
+  "32": [
+   {
+    "type": "consultant_accepted",
+    "cases": [
+     "AX-111",
+     "AX-112"
+    ],
+    "consultant": "R06"
+   }
+  ],
+  "33": [
+   {
+    "type": "packet_version_issue",
+    "cases": [
+     "AX-111",
+     "AX-112"
+    ],
+    "version": "v2"
+   },
+   {
+    "type": "document_submitted",
+    "cases": [
+     "AX-111",
+     "AX-112"
+    ],
+    "kind": "packet"
+   }
+  ],
+  "34": [
+   {
+    "type": "packet_received",
+    "cases": [
+     "AX-111"
+    ]
+   },
+   {
+    "type": "doc_unreadable",
+    "cases": [
+     "AX-112"
+    ],
+    "kind": "packet"
+   }
+  ],
+  "35": [
+   {
+    "type": "consultant_question",
+    "cases": [
+     "AX-111",
+     "AX-112"
+    ],
+    "consultant": "R06"
+   },
+   {
+    "type": "packet_version_issue",
+    "cases": [
+     "AX-111",
+     "AX-112"
+    ]
+   }
+  ],
+  "36": [
+   {
+    "type": "internal_note",
+    "cases": [
+     "AX-111",
+     "AX-112"
+    ]
+   }
+  ],
+  "37": [
+   {
+    "type": "hearing_scheduled",
+    "cases": [
+     "AX-113"
+    ],
+    "date": "2030-06-06",
+    "time": "09:00",
+    "mode": "in_person"
+   },
+   {
+    "type": "hearing_scheduled",
+    "cases": [
+     "AX-114"
+    ],
+    "date": "2030-06-06",
+    "time": "09:30",
+    "mode": "in_person"
+   },
+   {
+    "type": "rep_recorded",
+    "cases": [
+     "AX-113",
+     "AX-114"
+    ],
+    "consultant": "R01"
+   }
+  ],
+  "38": [
+   {
+    "type": "consultant_accepted",
+    "cases": [
+     "AX-113",
+     "AX-114"
+    ],
+    "consultant": "R01"
+   },
+   {
+    "type": "packet_received",
+    "cases": [
+     "AX-113",
+     "AX-114"
+    ]
+   }
+  ],
+  "39": [
+   {
+    "type": "internal_note",
+    "cases": [
+     "AX-113",
+     "AX-114"
+    ]
+   }
+  ],
+  "40": [
+   {
+    "type": "packet_received",
+    "cases": [
+     "AX-113",
+     "AX-114"
+    ]
+   },
+   {
+    "type": "hearing_instruction",
+    "cases": [
+     "AX-113",
+     "AX-114"
+    ]
+   }
+  ],
+  "41": [
+   {
+    "type": "consultant_declined",
+    "cases": [
+     "AX-113",
+     "AX-114"
+    ],
+    "consultant": "R01"
+   }
+  ],
+  "42": [
+   {
+    "type": "coverage_offered",
+    "cases": [
+     "AX-113",
+     "AX-114"
+    ],
+    "consultant": "R04"
+   }
+  ],
+  "43": [
+   {
+    "type": "hearing_scheduled",
+    "cases": [
+     "AX-115"
+    ],
+    "date": "2030-06-06",
+    "time": "10:00",
+    "mode": "video",
+    "room": "B"
+   },
+   {
+    "type": "hearing_scheduled",
+    "cases": [
+     "AX-116"
+    ],
+    "date": "2030-06-06",
+    "time": "10:30",
+    "mode": "video",
+    "room": "B"
+   },
+   {
+    "type": "rep_recorded",
+    "cases": [
+     "AX-115",
+     "AX-116"
+    ],
+    "consultant": "R02"
+   }
+  ],
+  "44": [
+   {
+    "type": "consultant_accepted",
+    "cases": [
+     "AX-115",
+     "AX-116"
+    ],
+    "consultant": "R02",
+    "date": "2030-06-06"
+   }
+  ],
+  "45": [
+   {
+    "type": "schedule_changed",
+    "cases": [
+     "AX-115",
+     "AX-116"
+    ],
+    "room": "D"
+   },
+   {
+    "type": "hearing_confirmed",
+    "cases": [
+     "AX-115",
+     "AX-116"
+    ]
+   }
+  ],
+  "46": [
+   {
+    "type": "schedule_changed",
+    "cases": [
+     "AX-115"
+    ],
+    "date": "2030-06-13",
+    "time": "10:00",
+    "homeowner_initiated": true
+   },
+   {
+    "type": "hearing_confirmed",
+    "cases": [
+     "AX-116"
+    ]
+   }
+  ],
+  "47": [
+   {
+    "type": "schedule_changed",
+    "cases": [
+     "AX-115"
+    ],
+    "date": "2030-06-13",
+    "time": "10:00",
+    "room": "D",
+    "homeowner_initiated": true
+   },
+   {
+    "type": "hearing_confirmed",
+    "cases": [
+     "AX-116"
+    ],
+    "date": "2030-06-06",
+    "time": "10:30"
+   }
+  ],
+  "48": [
+   {
+    "type": "consultant_declined",
+    "cases": [
+     "AX-115"
+    ],
+    "consultant": "R02"
+   },
+   {
+    "type": "consultant_question",
+    "cases": [
+     "AX-115",
+     "AX-116"
+    ],
+    "consultant": "R02"
+   }
+  ],
+  "49": [
+   {
+    "type": "hearing_scheduled",
+    "cases": [
+     "AX-117"
+    ],
+    "date": "2030-06-14",
+    "time": "13:00",
+    "mode": "video"
+   },
+   {
+    "type": "hearing_scheduled",
+    "cases": [
+     "AX-118"
+    ],
+    "date": "2030-06-14",
+    "time": "13:30",
+    "mode": "video"
+   },
+   {
+    "type": "rep_recorded",
+    "cases": [
+     "AX-117",
+     "AX-118"
+    ],
+    "consultant": "R03"
+   },
+   {
+    "type": "packet_received",
+    "cases": [
+     "AX-117",
+     "AX-118"
+    ]
+   }
+  ],
+  "50": [
+   {
+    "type": "consultant_accepted",
+    "cases": [
+     "AX-117",
+     "AX-118"
+    ],
+    "consultant": "R03"
+   },
+   {
+    "type": "packet_received",
+    "cases": [
+     "AX-117",
+     "AX-118"
+    ]
+   }
+  ],
+  "51": [
+   {
+    "type": "withdrawal_requested",
+    "cases": [
+     "AX-117"
+    ]
+   },
+   {
+    "type": "hearing_confirmed",
+    "cases": [
+     "AX-118"
+    ]
+   }
+  ],
+  "52": [
+   {
+    "type": "internal_note",
+    "cases": [
+     "AX-117"
+    ]
+   },
+   {
+    "type": "document_submitted",
+    "cases": [
+     "AX-117"
+    ],
+    "kind": "withdrawal"
+   }
+  ],
+  "53": [
+   {
+    "type": "hearing_confirmed",
+    "cases": [
+     "AX-117",
+     "AX-118"
+    ]
+   }
+  ],
+  "54": [
+   {
+    "type": "consultant_question",
+    "cases": [
+     "AX-117",
+     "AX-118"
+    ],
+    "consultant": "R03"
+   }
+  ],
+  "55": [
+   {
+    "type": "hearing_scheduled",
+    "cases": [
+     "AX-119"
+    ],
+    "date": "2030-06-04",
+    "time": "09:00",
+    "mode": "in_person"
+   },
+   {
+    "type": "hearing_scheduled",
+    "cases": [
+     "AX-120"
+    ],
+    "date": "2030-06-04",
+    "time": "09:30",
+    "mode": "in_person"
+   },
+   {
+    "type": "rep_recorded",
+    "cases": [
+     "AX-119",
+     "AX-120"
+    ],
+    "consultant": "R04"
+   },
+   {
+    "type": "packet_received",
+    "cases": [
+     "AX-119",
+     "AX-120"
+    ]
+   }
+  ],
+  "56": [
+   {
+    "type": "consultant_accepted",
+    "cases": [
+     "AX-119",
+     "AX-120"
+    ],
+    "consultant": "R04"
+   },
+   {
+    "type": "packet_received",
+    "cases": [
+     "AX-119",
+     "AX-120"
+    ]
+   }
+  ],
+  "57": [
+   {
+    "type": "outcome_reported",
+    "cases": [
+     "AX-119"
+    ],
+    "result": "continued"
+   },
+   {
+    "type": "outcome_reported",
+    "cases": [
+     "AX-120"
+    ],
+    "result": "heard"
+   }
+  ],
+  "58": [
+   {
+    "type": "internal_note",
+    "cases": [
+     "AX-119",
+     "AX-120"
+    ]
+   }
+  ],
+  "59": [
+   {
+    "type": "obligation_created",
+    "cases": [
+     "AX-119"
+    ],
+    "kind": "homeowner_statement",
+    "deadline": "2030-06-08T16:00",
+    "no_further_hearing": true
+   },
+   {
+    "type": "decision_pending",
+    "cases": [
+     "AX-120"
+    ]
+   }
+  ],
+  "60": [
+   {
+    "type": "obligation_created",
+    "cases": [
+     "AX-119"
+    ],
+    "kind": "homeowner_statement",
+    "deadline": "2030-06-08T16:00",
+    "no_further_hearing": true
+   }
+  ],
+  "61": [
+   {
+    "type": "hearing_scheduled",
+    "cases": [
+     "AX-121"
+    ],
+    "date": "2030-06-10",
+    "time": "11:00",
+    "mode": "in_person"
+   },
+   {
+    "type": "hearing_scheduled",
+    "cases": [
+     "AX-122"
+    ],
+    "date": "2030-06-10",
+    "time": "11:30",
+    "mode": "in_person"
+   },
+   {
+    "type": "rep_recorded",
+    "cases": [
+     "AX-121",
+     "AX-122"
+    ],
+    "consultant": "R02"
+   }
+  ],
+  "62": [
+   {
+    "type": "consultant_accepted",
+    "cases": [
+     "AX-121",
+     "AX-122"
+    ],
+    "consultant": "R02"
+   },
+   {
+    "type": "availability_stated",
+    "cases": [
+     "AX-121",
+     "AX-122"
+    ],
+    "consultant": "R02",
+    "part": "morning"
+   }
+  ],
+  "63": [
+   {
+    "type": "document_submitted",
+    "cases": [
+     "AX-121",
+     "AX-122"
+    ],
+    "kind": "packet"
+   }
+  ],
+  "64": [
+   {
+    "type": "packet_received",
+    "cases": [
+     "AX-121",
+     "AX-122"
+    ]
+   },
+   {
+    "type": "hearing_confirmed",
+    "cases": [
+     "AX-121",
+     "AX-122"
+    ]
+   }
+  ],
+  "65": [
+   {
+    "type": "packet_received",
+    "cases": [
+     "AX-121",
+     "AX-122"
+    ]
+   }
+  ],
+  "66": [
+   {
+    "type": "hearing_confirmed",
+    "cases": [
+     "AX-121",
+     "AX-122"
+    ]
+   },
+   {
+    "type": "rep_recorded",
+    "cases": [
+     "AX-121",
+     "AX-122"
+    ],
+    "consultant": "R02"
+   },
+   {
+    "type": "packet_received",
+    "cases": [
+     "AX-121",
+     "AX-122"
+    ]
+   }
+  ],
+  "67": [
+   {
+    "type": "hearing_scheduled",
+    "cases": [
+     "AX-123"
+    ],
+    "date": "2030-06-11",
+    "time": "15:00",
+    "mode": "video"
+   },
+   {
+    "type": "hearing_scheduled",
+    "cases": [
+     "AX-124"
+    ],
+    "date": "2030-06-11",
+    "time": "15:30",
+    "mode": "video"
+   },
+   {
+    "type": "rep_requested",
+    "cases": [
+     "AX-123",
+     "AX-124"
+    ]
+   }
+  ],
+  "68": [
+   {
+    "type": "consultant_accepted",
+    "cases": [
+     "AX-123",
+     "AX-124"
+    ],
+    "consultant": "R04"
+   },
+   {
+    "type": "availability_stated",
+    "cases": [
+     "AX-123",
+     "AX-124"
+    ],
+    "consultant": "R04",
+    "part": "afternoon"
+   }
+  ],
+  "69": [
+   {
+    "type": "document_submitted",
+    "cases": [
+     "AX-123",
+     "AX-124"
+    ],
+    "kind": "staffing",
+    "consultant": "R04"
+   },
+   {
+    "type": "document_submitted",
+    "cases": [
+     "AX-123",
+     "AX-124"
+    ],
+    "kind": "packet"
+   }
+  ],
+  "70": [
+   {
+    "type": "rep_recorded",
+    "cases": [
+     "AX-123",
+     "AX-124"
+    ],
+    "consultant": "R04"
+   },
+   {
+    "type": "packet_received",
+    "cases": [
+     "AX-123",
+     "AX-124"
+    ]
+   },
+   {
+    "type": "hearing_confirmed",
+    "cases": [
+     "AX-123",
+     "AX-124"
+    ],
+    "room": "C"
+   }
+  ],
+  "71": [
+   {
+    "type": "packet_received",
+    "cases": [
+     "AX-123",
+     "AX-124"
+    ]
+   }
+  ],
+  "72": [
+   {
+    "type": "rep_recorded",
+    "cases": [
+     "AX-123",
+     "AX-124"
+    ],
+    "consultant": "R04"
+   },
+   {
+    "type": "hearing_confirmed",
+    "cases": [
+     "AX-123",
+     "AX-124"
+    ]
+   }
+  ]
+ },
+ "decisions": {
+  "11": "\"We can record Leo as representative\" is an offer, not a statement that Leo is recorded. A hedged sentence from the authority never closes a gate, so it is not labelled rep_recorded."
+ }
+}

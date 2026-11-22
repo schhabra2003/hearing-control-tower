@@ -1,0 +1,12 @@
+{
+ "event": "message.received",
+ "message": {
+  "id": "packet-message-5",
+  "received_at": "2030-06-05T15:00:00-05:00",
+  "from": {
+   "name": "Maya Venn"
+  },
+  "in_reply_to": "S1",
+  "text": "I can take the 9:30 a.m. case on June 10, but cannot get there for 9 a.m. Please send me the files for the one I can cover."
+ }
+}

@@ -1,0 +1,903 @@
+{
+ "note": "Unseen messages: 30 office messages about new situations, written and labelled after the reader was built, by a separate writer who was given the claim vocabulary and the case list but not the reader's patterns or instructions. One labeller only: a planned independent second labelling and five further parts of this set (consultants, homeowners, phone notes, forged senders, mixed threads) were not completed. Each message is read on its own at the end of the examples.",
+ "written": "2026-11-17",
+ "labellers": 1,
+ "parts_planned": 6,
+ "parts_done": 1,
+ "messages": [
+  {
+   "id": "H031",
+   "ts": "2030-06-07T12:15:00-05:00",
+   "sender": "Velloran hearing office",
+   "address": "clerk@velloran.example",
+   "channel": "email",
+   "properties": [
+    "63 Garden Street, Velloran",
+    "81 Garden Street, Velloran"
+   ],
+   "body": "We confirm that we hold the case packets for 63 Garden Street and 81 Garden Street, and that both open without trouble. One further item is needed, for 81 Garden Street only. Page 2 of its appeal summary relies on a contractor's damp survey that is not in the packet. Please file the survey with us by noon on Monday June 10; otherwise the board will not consider that part of the claim. Nothing more is required for 63 Garden Street.\n\nVelloran hearing office, clerk's desk",
+   "claims": [
+    {
+     "type": "packet_received",
+     "cases": [
+      "AX-103",
+      "AX-104"
+     ]
+    },
+    {
+     "type": "obligation_created",
+     "cases": [
+      "AX-104"
+     ],
+     "deadline": "2030-06-10T12:00"
+    }
+   ],
+   "expect_no_effect": false,
+   "trap": "Two claims with different case sets: both packets are confirmed received (AX-103, AX-104), but the new deadline is for AX-104 only and for a document outside the kind list (a contractor's survey), so obligation_created carries a deadline and no kind. A careless reader forces kind packet or homeowner_statement, or puts the deadline on both cases.",
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "new_situation_office"
+  },
+  {
+   "id": "H032",
+   "ts": "2030-06-07T13:10:00-05:00",
+   "sender": "Larkmere hearing office",
+   "address": "clerk@larkmere.example",
+   "channel": "email",
+   "properties": [
+    "14 Willow Lane, Larkmere",
+    "28 Willow Lane, Larkmere"
+   ],
+   "body": "The board will take both Vale appeals in one sitting on Monday June 10. 14 Willow Lane keeps its 9 a.m. start. 28 Willow Lane is brought forward from 9:30 a.m. to 9 a.m. and will be heard in the same sitting, straight after the first. Kindly let us know by reply who will be appearing.",
+   "claims": [
+    {
+     "type": "hearing_confirmed",
+     "cases": [
+      "AX-101"
+     ],
+     "date": "2030-06-10",
+     "time": "09:00"
+    },
+    {
+     "type": "schedule_changed",
+     "cases": [
+      "AX-102"
+     ],
+     "date": "2030-06-10",
+     "time": "09:00"
+    },
+    {
+     "type": "rep_requested",
+     "cases": [
+      "AX-101",
+      "AX-102"
+     ]
+    }
+   ],
+   "expect_no_effect": false,
+   "trap": "A half-hour move earlier for one case only; afterwards both cases share 9 a.m. AX-101 is confirmed (it keeps its time), AX-102 is changed. A careless reader emits one schedule_changed for both cases, or sees no change because 9 a.m. already exists in this thread.",
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "new_situation_office"
+  },
+  {
+   "id": "H033",
+   "ts": "2030-06-07T13:50:00-05:00",
+   "sender": "Fenwick Vale hearing office",
+   "address": "clerk@fenwick-vale.example",
+   "channel": "email",
+   "properties": [
+    "11 Brook Road, Fenwick Vale",
+    "29 Brook Road, Fenwick Vale"
+   ],
+   "body": "Our record for 11 Brook Road and 29 Brook Road has been corrected. Owen Tarris, who appeared before the board on June 6, is now entered as representative for both appeals in place of Maya Venn. No action is needed from your firm.",
+   "claims": [
+    {
+     "type": "rep_recorded",
+     "cases": [
+      "AX-113",
+      "AX-114"
+     ],
+     "consultant": "R04"
+    }
+   ],
+   "expect_no_effect": false,
+   "trap": "Two consultant names: the one now recorded is Owen Tarris (R04); Maya Venn (R01) is the one replaced, and she is still the name in the state. \"Appeared on June 6\" is not an outcome report, because nothing is said about the result.",
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "new_situation_office"
+  },
+  {
+   "id": "H034",
+   "ts": "2030-06-07T14:05:00-05:00",
+   "sender": "Harthmere hearing office",
+   "address": null,
+   "channel": "phone note",
+   "properties": [
+    "48 Linden Avenue, Harthmere",
+    "66 Linden Avenue, Harthmere"
+   ],
+   "body": "Clerk Imre rang back about our question on 48 Linden Avenue: the board will not move that hearing a second time, since it was already moved once for the homeowner. She would not discuss other dates and said a written request would get the same answer.",
+   "claims": [
+    {
+     "type": "change_denied",
+     "cases": [
+      "AX-115"
+     ]
+    }
+   ],
+   "expect_no_effect": true,
+   "trap": "A spoken refusal with no date in it: change_denied without a date, and no hearing_confirmed because the schedule is never restated. \"Already moved once for the homeowner\" refers to the earlier move; it is not a new schedule_changed and does not make this refusal homeowner_initiated.",
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "new_situation_office"
+  },
+  {
+   "id": "H035",
+   "ts": "2030-06-07T14:20:00-05:00",
+   "sender": "Larkmere hearing office",
+   "address": "clerk@larkmere.example",
+   "channel": "email",
+   "properties": [
+    "102 Willow Lane, Larkmere",
+    "118 Willow Lane, Larkmere"
+   ],
+   "body": "Change of format for 102 Willow Lane and 118 Willow Lane. The ceiling in our hearing room is being repaired, so both hearings on Monday June 10 will be held by video instead of in person. The board will email the joining details before 9 a.m. that day to whoever is entered with us as representative.",
+   "claims": [
+    {
+     "type": "schedule_changed",
+     "cases": [
+      "AX-121",
+      "AX-122"
+     ],
+     "date": "2030-06-10",
+     "mode": "video"
+    }
+   ],
+   "expect_no_effect": false,
+   "trap": "Only the mode changes (in person to video); the date is restated and no time is given. \"9 a.m.\" is when the joining details will be sent, not a hearing time, and that promise is not yet a hearing_instruction. \"Whoever is entered with us as representative\" names nobody, so no rep_recorded.",
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "new_situation_office"
+  },
+  {
+   "id": "H036",
+   "ts": "2030-06-07T14:45:00-05:00",
+   "sender": "Caldmere hearing office",
+   "address": "clerk@caldmere.example",
+   "channel": "email",
+   "properties": [
+    "75 Elm Street, Caldmere",
+    "96 Elm Street, Caldmere"
+   ],
+   "body": "Change to how filings reach this office, with immediate effect. Representative names, replacement names and case packets for Caldmere appeals must now be sent to filings@caldmere.example. The clerk@ address will be read only for same-day hearing emergencies, and anything else sent there from today will not be logged. A change of representative must also be made on form CF-7, attached; a name given in the body of an email will no longer be entered. Every filing must carry the case ID in the subject line. Messages without one will be returned unread. This applies to your pending matters, 75 Elm Street and 96 Elm Street, as to all others. Nothing already on file needs to be sent again.",
+   "claims": [
+    {
+     "type": "process_rule_changed",
+     "cases": [
+      "AX-111",
+      "AX-112"
+     ]
+    }
+   ],
+   "expect_no_effect": true,
+   "trap": "A genuine procedure change (new filing address, new form, case ID in the subject line) that differs from the saved Caldmere instructions: one process_rule_changed for the two cases named. It moves no hearing, records nobody and confirms no packet (\"nothing already on file needs to be sent again\" is not a receipt).",
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "new_situation_office"
+  },
+  {
+   "id": "H037",
+   "ts": "2030-06-07T15:20:00-05:00",
+   "sender": "Orimere hearing office",
+   "address": "clerk@orimere.example",
+   "channel": "email",
+   "properties": [
+    "9 Orchard Road, Orimere",
+    "24 Orchard Road, Orimere"
+   ],
+   "body": "Further to our message that 24 Orchard Road could not be moved: a cancellation has freed a later slot, and we have reopened your request. It is with the scheduling supervisor, who has not yet decided. Please do not read this message as approval.",
+   "claims": [
+    {
+     "type": "change_pending",
+     "cases": [
+      "AX-106"
+     ]
+    }
+   ],
+   "expect_no_effect": true,
+   "trap": "The office reopens a request it had refused and says it is under review: change_pending for AX-106 only. The words \"could not be moved\" describe the earlier answer and are not a new change_denied; \"a later slot\" is neither a date nor an approval; AX-105 is not concerned.",
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "new_situation_office"
+  },
+  {
+   "id": "H038",
+   "ts": "2030-06-07T15:45:00-05:00",
+   "sender": "Larkmere hearing office",
+   "address": "clerk@larkmere.example",
+   "channel": "email",
+   "properties": [
+    "14 Willow Lane, Larkmere",
+    "28 Willow Lane, Larkmere"
+   ],
+   "body": "A staffing notice reached us at 3:40 p.m. and has been processed. Our Monday list now shows Owen Tarris as representative for 28 Willow Lane, Larkmere. Nothing has been filed for 14 Willow Lane, and that line is still blank.",
+   "claims": [
+    {
+     "type": "rep_recorded",
+     "cases": [
+      "AX-102"
+     ],
+     "consultant": "R04"
+    },
+    {
+     "type": "rep_not_recorded",
+     "cases": [
+      "AX-101"
+     ]
+    }
+   ],
+   "expect_no_effect": false,
+   "trap": "The firm's own record has Maya Venn (R01) committed to AX-102, but the office names Owen Tarris (R04): the label follows the office. A careless reader fills in the expected consultant or records Owen for both cases; AX-101 is explicitly still blank. \"3:40 p.m.\" is when the notice arrived, not a deadline.",
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "new_situation_office"
+  },
+  {
+   "id": "H039",
+   "ts": "2030-06-08T10:02:00-05:00",
+   "sender": "Iverfen hearing office",
+   "address": "clerk@iverfen.example",
+   "channel": "email",
+   "properties": [
+    "18 Maple Lane, Iverfen",
+    "34 Maple Lane, Iverfen"
+   ],
+   "body": "This is an automatic reply. Your email to the Iverfen hearing office was received on 06/08/2030 at 10:02 a.m. and has been placed in the clerk's queue. The office is closed at weekends and messages are read in order of arrival from Monday at 9 a.m. Please do not reply to this message.",
+   "claims": [],
+   "expect_no_effect": true,
+   "trap": "An automatic acknowledgment in the thread where the firm's withdrawal request for 18 Maple Lane is still unanswered. It says only that an email arrived: it does not process the withdrawal, confirm a packet or confirm a hearing, and \"the office is closed at weekends\" is not a closure that moves anything.",
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "new_situation_office"
+  },
+  {
+   "id": "H040",
+   "ts": "2030-06-10T09:20:00-05:00",
+   "sender": "Juniper Reach hearing office",
+   "address": "clerk@juniper-reach.example",
+   "channel": "email",
+   "properties": [
+    "57 Clover Road, Juniper Reach",
+    "73 Clover Road, Juniper Reach"
+   ],
+   "body": "Good morning. The homeowner statement for 57 Clover Road reached us on Saturday at 2:15 p.m., inside the time allowed, and has been added to the file. On 73 Clover Road the written decision is taking longer than usual; the board now expects to issue it by June 28.",
+   "claims": [
+    {
+     "type": "obligation_cleared",
+     "cases": [
+      "AX-119"
+     ],
+     "kind": "homeowner_statement"
+    },
+    {
+     "type": "decision_pending",
+     "cases": [
+      "AX-120"
+     ]
+    }
+   ],
+   "expect_no_effect": false,
+   "trap": "Two cases, two different claims. June 28 is when the board expects to issue its decision: it is not a deadline for the firm and not a hearing date. Saturday 2:15 p.m. is the time of receipt, not a new deadline; the statement is received, so this is obligation_cleared and not another obligation_created.",
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "new_situation_office"
+  },
+  {
+   "id": "H041",
+   "ts": "2030-06-10T09:35:00-05:00",
+   "sender": "Harthmere hearing office",
+   "address": "clerk@harthmere.example",
+   "channel": "email",
+   "properties": [
+    "48 Linden Avenue, Harthmere",
+    "66 Linden Avenue, Harthmere"
+   ],
+   "body": "Mr. Arlen emailed us over the weekend to say he cannot appear for 48 Linden Avenue on June 13. Until your firm names someone else he stays on our record as the representative for that hearing. Please send us the replacement's name and the case ID by noon on Tuesday June 11.",
+   "claims": [
+    {
+     "type": "consultant_declined",
+     "cases": [
+      "AX-115"
+     ],
+     "consultant": "R02"
+    },
+    {
+     "type": "rep_recorded",
+     "cases": [
+      "AX-115"
+     ],
+     "consultant": "R02"
+    },
+    {
+     "type": "rep_requested",
+     "cases": [
+      "AX-115"
+     ],
+     "deadline": "2030-06-11T12:00"
+    }
+   ],
+   "expect_no_effect": false,
+   "trap": "The office relays a consultant's decline (consultant_declined for R02) and in the same message confirms that he is still the recorded representative; both hold. The deadline belongs to the request for a replacement name, not to a hearing or a document. AX-116 is not concerned.",
+   "ambiguous": true,
+   "ambiguous_why": "The decline is relayed by the office, not written by the consultant. Rule 1 (label what the message asserts) and the note in model.js that anyone may raise consultant_declined support the claim, but the 72 examples contain no relayed decline, so a second labeller could keep only rep_recorded and rep_requested.",
+   "group": "new_situation_office"
+  },
+  {
+   "id": "H042",
+   "ts": "2030-06-10T10:05:00-05:00",
+   "sender": "Orimere hearing office",
+   "address": "clerk@orimere.example",
+   "channel": "email",
+   "properties": [
+    "9 Orchard Road, Orimere",
+    "24 Orchard Road, Orimere"
+   ],
+   "body": "Dear representatives, the assessor wants to hand physical exhibits to the board in the 24 Orchard Road appeal, and the chair has agreed. That hearing will therefore take place in person at the Orimere county building, hearing room 2, on Wednesday June 12 at 2 p.m.; it will not be a video session. Whoever attends should bring photo identification and two paper copies of the case packet, and should sign in at the front desk by 1:45 p.m. 9 Orchard Road is not affected.",
+   "claims": [
+    {
+     "type": "schedule_changed",
+     "cases": [
+      "AX-106"
+     ],
+     "date": "2030-06-12",
+     "time": "14:00",
+     "mode": "in_person",
+     "room": "2"
+    },
+    {
+     "type": "hearing_instruction",
+     "cases": [
+      "AX-106"
+     ]
+    },
+    {
+     "type": "hearing_confirmed",
+     "cases": [
+      "AX-105"
+     ]
+    }
+   ],
+   "expect_no_effect": false,
+   "trap": "Video to in person is a schedule_changed with mode in_person even though date and time stay the same. 1:45 p.m. is the sign-in time (part of the hearing_instruction), not the hearing time and not a deadline. The last sentence confirms AX-105, which must not receive the new mode or room.",
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "new_situation_office"
+  },
+  {
+   "id": "H043",
+   "ts": "2030-06-10T10:50:00-05:00",
+   "sender": "Tesswick hearing office",
+   "address": "clerk@tesswick.example",
+   "channel": "email",
+   "properties": [
+    "37 Meadow Avenue, Tesswick",
+    "52 Meadow Avenue, Tesswick"
+   ],
+   "body": "Ren here, back from leave. Your form had landed in the wrong folder of our mailbox, sorry about that, and I have now made both entries on the representatives list: 37 Meadow Avenue, Owen Tarris; 52 Meadow Avenue, Leo Arlen. That is how the two lines on the form read to me, so tell me if its wrong.",
+   "claims": [
+    {
+     "type": "rep_recorded",
+     "cases": [
+      "AX-107"
+     ],
+     "consultant": "R04"
+    },
+    {
+     "type": "rep_recorded",
+     "cases": [
+      "AX-108"
+     ],
+     "consultant": "R02"
+    }
+   ],
+   "expect_no_effect": false,
+   "trap": "Two different names for the two cases of one thread: split by case (R04 for AX-107, R02 for AX-108). The firm's form named Owen Tarris for both, so a reader that relies on what was expected records R04 twice. The clerk's \"tell me if its wrong\" does not undo the entries.",
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "new_situation_office"
+  },
+  {
+   "id": "H044",
+   "ts": "2030-06-10T11:25:00-05:00",
+   "sender": "Brindlefen hearing office",
+   "address": "clerk@brindlefen.example",
+   "channel": "email",
+   "properties": [
+    "16 Birch Lane, Brindlefen",
+    "42 Birch Lane, Brindlefen"
+   ],
+   "body": "The assessor's officer has a conflict late on the morning of June 13, so the two Birch Lane hearings that day have traded places. 42 Birch Lane will be called first, at 10 a.m., and 16 Birch Lane second, at 10:30 a.m.",
+   "claims": [
+    {
+     "type": "schedule_changed",
+     "cases": [
+      "AX-110"
+     ],
+     "date": "2030-06-13",
+     "time": "10:00"
+    },
+    {
+     "type": "schedule_changed",
+     "cases": [
+      "AX-109"
+     ],
+     "date": "2030-06-13",
+     "time": "10:30"
+    }
+   ],
+   "expect_no_effect": false,
+   "trap": "A swap: the same two times as before, each now attached to the other case. A reader that compares times with the record sees no change, and the house numbers appear in the reverse order of the thread. The \"conflict\" is the assessor's, not a consultant's: no consultant_declined.",
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "new_situation_office"
+  },
+  {
+   "id": "H045",
+   "ts": "2030-06-10T11:40:00-05:00",
+   "sender": "Caldmere hearing office",
+   "address": "clerk@caldmere.example",
+   "channel": "email",
+   "properties": [
+    "75 Elm Street, Caldmere",
+    "96 Elm Street, Caldmere"
+   ],
+   "body": "For your information: Avery Moss wrote to this office on Friday asking for a later date for 75 Elm Street because of a family trip. The request has been refused because the June calendar is closed, and Mr. Moss has been told. The hearing remains on June 13 at 2 p.m. Nothing was asked about 96 Elm Street.\n\nScheduling desk, Caldmere hearing office",
+   "claims": [
+    {
+     "type": "change_denied",
+     "cases": [
+      "AX-111"
+     ],
+     "date": "2030-06-13",
+     "homeowner_initiated": true
+    },
+    {
+     "type": "hearing_confirmed",
+     "cases": [
+      "AX-111"
+     ],
+     "date": "2030-06-13",
+     "time": "14:00"
+    }
+   ],
+   "expect_no_effect": false,
+   "trap": "The office reports a homeowner's request together with its refusal: one change_denied marked homeowner_initiated plus the confirmation of June 13 at 2 p.m. There is no change_requested, no change_pending and no schedule_changed. \"Friday\" is when the homeowner wrote. AX-112 gets no claim.",
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "new_situation_office"
+  },
+  {
+   "id": "H046",
+   "ts": "2030-06-10T13:30:00-05:00",
+   "sender": "Tesswick hearing office",
+   "address": "clerk@tesswick.example",
+   "channel": "email",
+   "properties": [],
+   "body": "NOTICE TO ALL PARTIES AND REPRESENTATIVES. The Tesswick hearing office will be closed all day on Wednesday June 12, 2030 while the county replaces its records system. No hearings will be held on that date, in person or otherwise. For your firm this concerns 37 Meadow Avenue (AX-107) and 52 Meadow Avenue (AX-108), which were listed for 11 a.m. and 11:30 a.m. Every matter on the June 12 list will receive a new date. We expect to post the new dates by Friday June 21, and each party will get a separate written notice. Please do not call the office to ask for a particular date; requests will not be taken until the notices are out. The office reopens on Thursday June 13 at 9 a.m. We apologise for the short notice.",
+   "claims": [
+    {
+     "type": "schedule_changed",
+     "cases": [
+      "AX-107",
+      "AX-108"
+     ]
+    }
+   ],
+   "expect_no_effect": false,
+   "trap": "An office closure: the hearings are off but no new date exists, so there is no date or time field. 11 a.m. and 11:30 a.m. are the old times, June 21 is when the office expects to post new dates and June 13 is when it reopens. New thread: the cases come from the body.",
+   "ambiguous": true,
+   "ambiguous_why": "The vocabulary has no type for a hearing that is taken off the calendar with no new date. schedule_changed without a date is the closest fit, because the office states in writing that the June 12 date no longer holds; a second labeller could leave the list empty.",
+   "group": "new_situation_office"
+  },
+  {
+   "id": "H047",
+   "ts": "2030-06-10T14:05:00-05:00",
+   "sender": "Iverfen hearing office",
+   "address": "clerk@iverfen.example",
+   "channel": "email",
+   "properties": [
+    "18 Maple Lane, Iverfen",
+    "34 Maple Lane, Iverfen"
+   ],
+   "body": "We have now processed the withdrawal of the appeal for 18 Maple Lane, Iverfen, and the file was closed this afternoon. 34 Maple Lane stays on the June 14 list at 1:30 p.m.",
+   "claims": [
+    {
+     "type": "obligation_cleared",
+     "cases": [
+      "AX-117"
+     ],
+     "kind": "withdrawal"
+    },
+    {
+     "type": "hearing_confirmed",
+     "cases": [
+      "AX-118"
+     ],
+     "date": "2030-06-14",
+     "time": "13:30"
+    }
+   ],
+   "expect_no_effect": false,
+   "trap": "The withdrawal has been processed: obligation_cleared, not withdrawal_requested or document_submitted. The confirmation of June 14 at 1:30 p.m. applies to AX-118 only; AX-117 must not be confirmed for June 14.",
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "new_situation_office"
+  },
+  {
+   "id": "H048",
+   "ts": "2030-06-10T15:10:00-05:00",
+   "sender": "Velloran hearing office",
+   "address": "clerk@velloran.example",
+   "channel": "email",
+   "properties": [
+    "63 Garden Street, Velloran",
+    "81 Garden Street, Velloran"
+   ],
+   "body": "The board's morning session tomorrow is overbooked, so the 1 p.m. block will open thirty minutes late. 63 Garden Street is now listed for 1:30 p.m. and 81 Garden Street for 2 p.m. We still have no representative entered for either case.",
+   "claims": [
+    {
+     "type": "schedule_changed",
+     "cases": [
+      "AX-103"
+     ],
+     "date": "2030-06-11",
+     "time": "13:30"
+    },
+    {
+     "type": "schedule_changed",
+     "cases": [
+      "AX-104"
+     ],
+     "date": "2030-06-11",
+     "time": "14:00"
+    },
+    {
+     "type": "rep_not_recorded",
+     "cases": [
+      "AX-103",
+      "AX-104"
+     ]
+    }
+   ],
+   "expect_no_effect": false,
+   "trap": "The new time of AX-103 (1:30 p.m.) is the old time of AX-104, so a reader that compares with the record may see no change or give both cases one time. \"Tomorrow\" has to be resolved from the timestamp. The 3 p.m. Velloran cases (AX-123, AX-124) are not in this block.",
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "new_situation_office"
+  },
+  {
+   "id": "H049",
+   "ts": "2030-06-10T15:40:00-05:00",
+   "sender": "Velloran hearing office",
+   "address": "clerk@velloran.example",
+   "channel": "email",
+   "properties": [
+    "120 Garden Street, Velloran",
+    "138 Garden Street, Velloran"
+   ],
+   "body": "The sign-in link for tomorrow's 3 p.m. session was reissued after a system update, and the link in our earlier confirmation no longer works. For 120 Garden Street and 138 Garden Street please join through https://hearings.velloran.example/join/7Q4-TC2 and enter the case ID when asked. Have the representative connect ten minutes ahead of the 3 p.m. start.",
+   "claims": [
+    {
+     "type": "hearing_instruction",
+     "cases": [
+      "AX-123",
+      "AX-124"
+     ]
+    }
+   ],
+   "expect_no_effect": true,
+   "trap": "A new joining link is a hearing_instruction (how to join). It is not a schedule change: date, times and room are untouched, and they are not re-confirmed either. \"Reissued\" and \"no longer works\" can lure a reader into schedule_changed, \"tomorrow's 3 p.m. session\" into hearing_confirmed.",
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "new_situation_office"
+  },
+  {
+   "id": "H050",
+   "ts": "2030-06-10T16:12:00-05:00",
+   "sender": "Tesswick hearing office",
+   "address": null,
+   "channel": "voicemail transcript",
+   "properties": [],
+   "body": "Hi, this is Ren at the Tesswick hearing office. Two things about 37 and 52 Meadow Avenue on Wednesday. I have your form now and Owen Tarris is down as representative for both. Also, the board is running late that day, so both cases are pushed back half an hour: 37 is now at half past eleven and 52 at twelve noon. I'll put all of that in an email when I get a minute. Thanks, bye.",
+   "claims": [
+    {
+     "type": "rep_recorded",
+     "cases": [
+      "AX-107",
+      "AX-108"
+     ],
+     "consultant": "R04"
+    },
+    {
+     "type": "schedule_changed",
+     "cases": [
+      "AX-107"
+     ],
+     "date": "2030-06-12",
+     "time": "11:30"
+    },
+    {
+     "type": "schedule_changed",
+     "cases": [
+      "AX-108"
+     ],
+     "date": "2030-06-12",
+     "time": "12:00"
+    }
+   ],
+   "expect_no_effect": true,
+   "trap": "Said by the right party but only spoken: the claims are labelled (rep_recorded, two schedule_changed), yet nothing becomes official until the promised email arrives. A voicemail is speech even though the channel name contains the word \"mail\". Times are given in words, the date only as \"Wednesday\", and the new time of AX-107 equals the old time of AX-108.",
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "new_situation_office"
+  },
+  {
+   "id": "H051",
+   "ts": "2030-06-11T09:40:00-05:00",
+   "sender": "Orimere hearing office",
+   "address": "clerk@orimere.example",
+   "channel": "email",
+   "properties": [
+    "9 Orchard Road, Orimere",
+    "24 Orchard Road, Orimere"
+   ],
+   "body": "The June 18 hearing for 9 Orchard Road will begin at 9:30 a.m., not 9 a.m.",
+   "claims": [
+    {
+     "type": "schedule_changed",
+     "cases": [
+      "AX-105"
+     ],
+     "date": "2030-06-18",
+     "time": "09:30"
+    }
+   ],
+   "expect_no_effect": false,
+   "trap": "A half-hour shift on the same day; the old time stands in the same sentence. Only AX-105 is concerned; the other case in the thread (AX-106, June 12) gets no claim.",
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "new_situation_office"
+  },
+  {
+   "id": "H052",
+   "ts": "2030-06-11T10:10:00-05:00",
+   "sender": "Brindlefen hearing office",
+   "address": "clerk@brindlefen.example",
+   "channel": "email",
+   "properties": [
+    "16 Birch Lane, Brindlefen",
+    "42 Birch Lane, Brindlefen"
+   ],
+   "body": "The staffing notice we hold for 16 Birch Lane cannot be entered as it stands. The case number box is empty and the representative line shows only the initials P. M. We are treating it as not filed, so no representative is recorded for that hearing. Please send a complete notice by 3 p.m. on Wednesday June 12.",
+   "claims": [
+    {
+     "type": "rep_not_recorded",
+     "cases": [
+      "AX-109"
+     ]
+    },
+    {
+     "type": "rep_requested",
+     "cases": [
+      "AX-109"
+     ],
+     "deadline": "2030-06-12T15:00"
+    }
+   ],
+   "expect_no_effect": true,
+   "trap": "An incomplete notice is not a recorded representative: the initials P. M. must not become rep_recorded for Priya Marden (R05). The office asks again for the notice with a deadline, which is rep_requested and not obligation_created. AX-110, where Priya is already recorded, is not mentioned.",
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "new_situation_office"
+  },
+  {
+   "id": "H053",
+   "ts": "2030-06-11T11:15:00-05:00",
+   "sender": "Iverfen hearing office",
+   "address": "clerk@iverfen.example",
+   "channel": "email",
+   "properties": [
+    "18 Maple Lane, Iverfen",
+    "34 Maple Lane, Iverfen"
+   ],
+   "body": "Advance warning only. The board is thinking about moving Friday's afternoon video list to the morning because of a staff meeting, which would put the Maple Lane cases at about 10 a.m. Nothing has been decided, and if it happens you will get a formal notice. Could you ask Ms. Pell whether a morning start would be possible for her?",
+   "claims": [],
+   "expect_no_effect": true,
+   "trap": "Hedged and conditional throughout (\"thinking about\", \"would\", \"nothing has been decided\"): not schedule_changed, and 10 a.m. is hypothetical. It is not change_pending either, because no request is under review, and the question about Ms. Pell is not a rep_requested. Nothing in the vocabulary fits, so the list is empty.",
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "new_situation_office"
+  },
+  {
+   "id": "H054",
+   "ts": "2030-06-11T13:25:00-05:00",
+   "sender": "Juniper Reach hearing office",
+   "address": "clerk@juniper-reach.example",
+   "channel": "email",
+   "properties": [
+    "57 Clover Road, Juniper Reach",
+    "73 Clover Road, Juniper Reach"
+   ],
+   "body": "For 73 Clover Road the board asks for the floor-area survey that Mr. Tarris referred to at the hearing but did not hand in. A further homeowner statement will not do in its place. Please file the survey with this office by 4 p.m. on Friday June 14.",
+   "claims": [
+    {
+     "type": "obligation_created",
+     "cases": [
+      "AX-120"
+     ],
+     "deadline": "2030-06-14T16:00"
+    }
+   ],
+   "expect_no_effect": true,
+   "trap": "A deadline for a document that is not in the kind list: obligation_created with a deadline and no kind. \"Homeowner statement\" appears only as what is NOT wanted, and the open homeowner-statement obligation belongs to the other case in this thread (AX-119), so a careless reader picks kind homeowner_statement or the wrong case.",
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "new_situation_office"
+  },
+  {
+   "id": "H055",
+   "ts": "2030-06-11T15:52:00-05:00",
+   "sender": "Brindlefen hearing office",
+   "address": "clerk@brindlefen.example",
+   "channel": "portal notice",
+   "properties": [],
+   "body": "Brindlefen Appeals Portal: automated status update. Appeal AX-110, 42 Birch Lane, Brindlefen. Previous status: withdrawal statement under signature check. New status: withdrawn and closed, processed 06/11/2030 by clerk T. Okoro. Replies to portal notices are not read.",
+   "claims": [
+    {
+     "type": "obligation_cleared",
+     "cases": [
+      "AX-110"
+     ],
+     "kind": "withdrawal"
+    }
+   ],
+   "expect_no_effect": false,
+   "trap": "An automated notice that does assert something: the withdrawal for AX-110 has been processed (obligation_cleared). A reader that treats every automated message as empty misses it; the \"previous status\" line is history, not the current state. New thread: the case comes from the id and address in the body.",
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "new_situation_office"
+  },
+  {
+   "id": "H056",
+   "ts": "2030-06-12T09:15:00-05:00",
+   "sender": "Caldmere hearing office",
+   "address": "clerk@caldmere.example",
+   "channel": "email",
+   "properties": [
+    "75 Elm Street, Caldmere",
+    "96 Elm Street, Caldmere"
+   ],
+   "body": "The hearing officer for tomorrow afternoon's calendar has been taken ill. 75 Elm Street and 96 Elm Street are postponed and will not be heard on June 13. We cannot offer new dates yet; a fresh notice will follow once the July calendar is drawn up. Please let Mr. Corven know.",
+   "claims": [
+    {
+     "type": "schedule_changed",
+     "cases": [
+      "AX-111",
+      "AX-112"
+     ]
+    }
+   ],
+   "expect_no_effect": false,
+   "trap": "A postponement without a new date. The only date in the message (June 13) is the one that no longer holds, so there is no date or time field; \"a fresh notice will follow\" is a promise. A careless reader emits hearing_confirmed for June 13, invents a July date, or turns the hearing officer's illness into a consultant_declined for Mr. Corven.",
+   "ambiguous": true,
+   "ambiguous_why": "The vocabulary has no type for a postponement without a new date. schedule_changed without a date is the closest fit, because the office states in writing that the June 13 date no longer holds; a second labeller could leave the list empty.",
+   "group": "new_situation_office"
+  },
+  {
+   "id": "H057",
+   "ts": "2030-06-12T10:20:00-05:00",
+   "sender": "Harthmere hearing office",
+   "address": "clerk@harthmere.example",
+   "channel": "email",
+   "properties": [
+    "48 Linden Avenue, Harthmere",
+    "66 Linden Avenue, Harthmere"
+   ],
+   "body": "Dear representative, Harthmere is changing the way staffing information is filed. From Monday July 1, 2030 the office will no longer accept representative names by email. From that date every representative, and every replacement, must be entered by the firm in the Harthmere online appeals portal, and an entry counts only once the portal shows the status \"accepted\". Firms need a portal account before they can file; registration opens on June 17 and takes about three working days. Until June 30 the present method stays in force. Entries already on our record will be carried over without any action on your part. Case packets are not affected and continue to go to the clerk by email. This notice is being sent on every open matter, in your case 48 Linden Avenue and 66 Linden Avenue. A short guide is attached. Questions about the portal should go to the county help desk, not to the hearing clerks.",
+   "claims": [
+    {
+     "type": "process_rule_changed",
+     "cases": [
+      "AX-115",
+      "AX-116"
+     ]
+    }
+   ],
+   "expect_no_effect": true,
+   "trap": "A procedure announced now that starts on July 1: until then the saved Harthmere method (email the name and case ID) still applies. June 17, June 30 and July 1 are not hearing dates or deadlines for a case. \"Entries already on our record\" names nobody, so it is not rep_recorded.",
+   "ambiguous": true,
+   "ambiguous_why": "The new rule only starts on July 1. Convention 3 says future statements are not the event, so a second labeller could leave the list empty; it is labelled because the office definitely describes a procedure that differs from the saved instructions.",
+   "group": "new_situation_office"
+  },
+  {
+   "id": "H058",
+   "ts": "2030-06-12T10:30:00-05:00",
+   "sender": "Brindlefen hearing office",
+   "address": "clerk@brindlefen.example",
+   "channel": "email",
+   "properties": [
+    "16 Birch Lane, Brindlefen",
+    "42 Birch Lane, Brindlefen"
+   ],
+   "body": "Settlement for 16 Birch Lane: signed agreement received Monday, approved by the board this morning, matter closed.",
+   "claims": [
+    {
+     "type": "obligation_cleared",
+     "cases": [
+      "AX-109"
+     ],
+     "kind": "settlement"
+    }
+   ],
+   "expect_no_effect": false,
+   "trap": "Telegraphic style. \"Received, approved, closed\" is the office processing the settlement (obligation_cleared with kind settlement); it is not a request for a signature and not a document_submitted. Nothing is said about 42 Birch Lane.",
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "new_situation_office"
+  },
+  {
+   "id": "H059",
+   "ts": "2030-06-12T11:05:00-05:00",
+   "sender": "Juniper Reach hearing office",
+   "address": null,
+   "channel": "mail transcript",
+   "properties": [
+    "57 Clover Road, Juniper Reach",
+    "73 Clover Road, Juniper Reach"
+   ],
+   "body": "Notice dated June 10, 2030. Re: 57 Clover Road, Juniper Reach. The board has decided to hear the parties again. A second hearing is set for Thursday June 20, 2030 at 9 a.m., in person, at the Juniper Reach hearing office. Owen Tarris remains the representative of record. Requests to change this date must be made in writing no later than June 14.",
+   "claims": [
+    {
+     "type": "hearing_scheduled",
+     "cases": [
+      "AX-119"
+     ],
+     "date": "2030-06-20",
+     "time": "09:00",
+     "mode": "in_person"
+    },
+    {
+     "type": "rep_recorded",
+     "cases": [
+      "AX-119"
+     ],
+     "consultant": "R04"
+    }
+   ],
+   "expect_no_effect": false,
+   "trap": "A further hearing after a continued one: a new hearing is set (hearing_scheduled), nothing is moved. The notice date (June 10) and the cut-off for change requests (June 14) are not hearing dates and create no obligation. Only AX-119 is concerned; AX-120 shares the thread but gets no claim.",
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "new_situation_office"
+  },
+  {
+   "id": "H060",
+   "ts": "2030-06-12T15:30:00-05:00",
+   "sender": "Orimere hearing office",
+   "address": "clerk@orimere.example",
+   "channel": "email",
+   "properties": [
+    "9 Orchard Road, Orimere",
+    "24 Orchard Road, Orimere"
+   ],
+   "body": "For your file: the hearing officer for 9 Orchard Road on June 18 has changed from Mr. Lund to Ms. Okafor.",
+   "claims": [],
+   "expect_no_effect": true,
+   "trap": "Nothing in the claim vocabulary fits a change of hearing officer, so the list is empty. \"Has changed\" next to a date invites schedule_changed or hearing_confirmed, but date, time, mode and room are neither touched nor restated.",
+   "ambiguous": false,
+   "ambiguous_why": null,
+   "group": "new_situation_office"
+  }
+ ]
+}

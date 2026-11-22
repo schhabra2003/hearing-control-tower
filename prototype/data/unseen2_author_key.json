@@ -1,0 +1,705 @@
+{
+ "note": "Author key: what the author intended each message to be. Not for the labellers.",
+ "messages": [
+  {
+   "id": "U001",
+   "sender_type": "consultant",
+   "bucket": "consultant",
+   "kind": "outcome report",
+   "channel": "email"
+  },
+  {
+   "id": "U002",
+   "sender_type": "homeowner",
+   "bucket": "homeowner_or_staff",
+   "kind": "homeowner question",
+   "channel": "email"
+  },
+  {
+   "id": "U003",
+   "sender_type": "office",
+   "bucket": "office",
+   "kind": "representative record",
+   "channel": "email"
+  },
+  {
+   "id": "U004",
+   "sender_type": "office",
+   "bucket": "office",
+   "kind": "representative record",
+   "channel": "email"
+  },
+  {
+   "id": "U005",
+   "sender_type": "office",
+   "bucket": "no_proof_or_ambiguous",
+   "kind": "date conflicts with the record",
+   "channel": "email"
+  },
+  {
+   "id": "U006",
+   "sender_type": "office",
+   "bucket": "office",
+   "kind": "decision pending",
+   "channel": "email"
+  },
+  {
+   "id": "U007",
+   "sender_type": "office",
+   "bucket": "office",
+   "kind": "representative record",
+   "channel": "email"
+  },
+  {
+   "id": "U008",
+   "sender_type": "office",
+   "bucket": "office",
+   "kind": "packet received",
+   "channel": "email"
+  },
+  {
+   "id": "U009",
+   "sender_type": "consultant",
+   "bucket": "consultant",
+   "kind": "partial",
+   "channel": "text note"
+  },
+  {
+   "id": "U010",
+   "sender_type": "consultant",
+   "bucket": "consultant",
+   "kind": "document sent or promised",
+   "channel": "phone note"
+  },
+  {
+   "id": "U011",
+   "sender_type": "office",
+   "bucket": "office",
+   "kind": "representative record",
+   "channel": "email"
+  },
+  {
+   "id": "U012",
+   "sender_type": "consultant",
+   "bucket": "consultant",
+   "kind": "partial",
+   "channel": "email"
+  },
+  {
+   "id": "U013",
+   "sender_type": "consultant",
+   "bucket": "consultant",
+   "kind": "decline",
+   "channel": "email"
+  },
+  {
+   "id": "U014",
+   "sender_type": "office",
+   "bucket": "office",
+   "kind": "document rejected",
+   "channel": "portal notice"
+  },
+  {
+   "id": "U015",
+   "sender_type": "consultant",
+   "bucket": "consultant",
+   "kind": "decline",
+   "channel": "text note"
+  },
+  {
+   "id": "U016",
+   "sender_type": "homeowner",
+   "bucket": "homeowner_or_staff",
+   "kind": "homeowner sends document",
+   "channel": "email"
+  },
+  {
+   "id": "U017",
+   "sender_type": "firm_staff",
+   "bucket": "homeowner_or_staff",
+   "kind": "staff call note",
+   "channel": "phone note"
+  },
+  {
+   "id": "U018",
+   "sender_type": "consultant",
+   "bucket": "consultant",
+   "kind": "conditional",
+   "channel": "email"
+  },
+  {
+   "id": "U019",
+   "sender_type": "office",
+   "bucket": "office",
+   "kind": "withdrawal in progress",
+   "channel": "email"
+  },
+  {
+   "id": "U020",
+   "sender_type": "office",
+   "bucket": "office",
+   "kind": "representative record",
+   "channel": "email"
+  },
+  {
+   "id": "U021",
+   "sender_type": "office",
+   "bucket": "office",
+   "kind": "deadline reminder",
+   "channel": "email"
+  },
+  {
+   "id": "U022",
+   "sender_type": "consultant",
+   "bucket": "consultant",
+   "kind": "got the files",
+   "channel": "email"
+  },
+  {
+   "id": "U023",
+   "sender_type": "office",
+   "bucket": "office",
+   "kind": "representative record",
+   "channel": "email"
+  },
+  {
+   "id": "U024",
+   "sender_type": "consultant",
+   "bucket": "no_proof_or_ambiguous",
+   "kind": "thanks",
+   "channel": "email"
+  },
+  {
+   "id": "U025",
+   "sender_type": "consultant",
+   "bucket": "consultant",
+   "kind": "illness",
+   "channel": "email"
+  },
+  {
+   "id": "U026",
+   "sender_type": "consultant",
+   "bucket": "no_proof_or_ambiguous",
+   "kind": "automatic reply",
+   "channel": "email"
+  },
+  {
+   "id": "U027",
+   "sender_type": "homeowner",
+   "bucket": "homeowner_or_staff",
+   "kind": "homeowner confirms own request",
+   "channel": "text note"
+  },
+  {
+   "id": "U028",
+   "sender_type": "consultant",
+   "bucket": "consultant",
+   "kind": "document sent or promised",
+   "channel": "email"
+  },
+  {
+   "id": "U029",
+   "sender_type": "firm_staff",
+   "bucket": "homeowner_or_staff",
+   "kind": "staff call note",
+   "channel": "phone note"
+  },
+  {
+   "id": "U030",
+   "sender_type": "firm_staff",
+   "bucket": "no_proof_or_ambiguous",
+   "kind": "forward",
+   "channel": "email"
+  },
+  {
+   "id": "U031",
+   "sender_type": "consultant",
+   "bucket": "consultant",
+   "kind": "day-before yes",
+   "channel": "email"
+  },
+  {
+   "id": "U032",
+   "sender_type": "consultant",
+   "bucket": "consultant",
+   "kind": "day-before yes",
+   "channel": "text note"
+  },
+  {
+   "id": "U033",
+   "sender_type": "homeowner",
+   "bucket": "homeowner_or_staff",
+   "kind": "homeowner question",
+   "channel": "email"
+  },
+  {
+   "id": "U034",
+   "sender_type": "office",
+   "bucket": "office",
+   "kind": "hearing reminder",
+   "channel": "email"
+  },
+  {
+   "id": "U035",
+   "sender_type": "office",
+   "bucket": "office",
+   "kind": "practical instruction",
+   "channel": "email"
+  },
+  {
+   "id": "U036",
+   "sender_type": "homeowner",
+   "bucket": "homeowner_or_staff",
+   "kind": "homeowner on the date",
+   "channel": "email"
+  },
+  {
+   "id": "U037",
+   "sender_type": "consultant",
+   "bucket": "no_proof_or_ambiguous",
+   "kind": "two cases in one message",
+   "channel": "email"
+  },
+  {
+   "id": "U038",
+   "sender_type": "consultant",
+   "bucket": "consultant",
+   "kind": "arrival",
+   "channel": "text note"
+  },
+  {
+   "id": "U039",
+   "sender_type": "office",
+   "bucket": "office",
+   "kind": "schedule offer",
+   "channel": "email"
+  },
+  {
+   "id": "U040",
+   "sender_type": "office",
+   "bucket": "office",
+   "kind": "documents and deadline",
+   "channel": "email"
+  },
+  {
+   "id": "U041",
+   "sender_type": "office",
+   "bucket": "office",
+   "kind": "documents and deadline",
+   "channel": "email"
+  },
+  {
+   "id": "U042",
+   "sender_type": "firm_staff",
+   "bucket": "homeowner_or_staff",
+   "kind": "staff call note",
+   "channel": "phone note"
+  },
+  {
+   "id": "U043",
+   "sender_type": "office",
+   "bucket": "office",
+   "kind": "representative record",
+   "channel": "email"
+  },
+  {
+   "id": "U044",
+   "sender_type": "office",
+   "bucket": "office",
+   "kind": "withdrawal in progress",
+   "channel": "email"
+  },
+  {
+   "id": "U045",
+   "sender_type": "consultant",
+   "bucket": "consultant",
+   "kind": "arrival",
+   "channel": "text note"
+  },
+  {
+   "id": "U046",
+   "sender_type": "consultant",
+   "bucket": "consultant",
+   "kind": "accept",
+   "channel": "email"
+  },
+  {
+   "id": "U047",
+   "sender_type": "office",
+   "bucket": "office",
+   "kind": "practical instruction",
+   "channel": "email"
+  },
+  {
+   "id": "U048",
+   "sender_type": "consultant",
+   "bucket": "consultant",
+   "kind": "got the files",
+   "channel": "voicemail transcript"
+  },
+  {
+   "id": "U049",
+   "sender_type": "consultant",
+   "bucket": "consultant",
+   "kind": "outcome report",
+   "channel": "email"
+  },
+  {
+   "id": "U050",
+   "sender_type": "office",
+   "bucket": "no_proof_or_ambiguous",
+   "kind": "wrong case",
+   "channel": "email"
+  },
+  {
+   "id": "U051",
+   "sender_type": "consultant",
+   "bucket": "consultant",
+   "kind": "outcome report",
+   "channel": "email"
+  },
+  {
+   "id": "U052",
+   "sender_type": "office",
+   "bucket": "office",
+   "kind": "representative record",
+   "channel": "email"
+  },
+  {
+   "id": "U053",
+   "sender_type": "firm_staff",
+   "bucket": "homeowner_or_staff",
+   "kind": "staff calendar note",
+   "channel": "calendar activity"
+  },
+  {
+   "id": "U054",
+   "sender_type": "consultant",
+   "bucket": "consultant",
+   "kind": "partial",
+   "channel": "email"
+  },
+  {
+   "id": "U055",
+   "sender_type": "office",
+   "bucket": "office",
+   "kind": "representative record",
+   "channel": "email"
+  },
+  {
+   "id": "U056",
+   "sender_type": "office",
+   "bucket": "no_proof_or_ambiguous",
+   "kind": "vague acknowledgement",
+   "channel": "email"
+  },
+  {
+   "id": "U057",
+   "sender_type": "consultant",
+   "bucket": "consultant",
+   "kind": "got the files",
+   "channel": "email"
+  },
+  {
+   "id": "U058",
+   "sender_type": "consultant",
+   "bucket": "consultant",
+   "kind": "day-before yes",
+   "channel": "email"
+  },
+  {
+   "id": "U059",
+   "sender_type": "homeowner",
+   "bucket": "homeowner_or_staff",
+   "kind": "homeowner question",
+   "channel": "email"
+  },
+  {
+   "id": "U060",
+   "sender_type": "homeowner",
+   "bucket": "homeowner_or_staff",
+   "kind": "homeowner asks for a date change",
+   "channel": "voicemail transcript"
+  },
+  {
+   "id": "U061",
+   "sender_type": "office",
+   "bucket": "no_proof_or_ambiguous",
+   "kind": "question",
+   "channel": "email"
+  },
+  {
+   "id": "U062",
+   "sender_type": "office",
+   "bucket": "office",
+   "kind": "signature and deadline",
+   "channel": "email"
+  },
+  {
+   "id": "U063",
+   "sender_type": "office",
+   "bucket": "office",
+   "kind": "withdrawal unclear",
+   "channel": "email"
+  },
+  {
+   "id": "U064",
+   "sender_type": "office",
+   "bucket": "office",
+   "kind": "decision and deadline",
+   "channel": "mail transcript"
+  },
+  {
+   "id": "U065",
+   "sender_type": "office",
+   "bucket": "office",
+   "kind": "change request pending",
+   "channel": "email"
+  },
+  {
+   "id": "U066",
+   "sender_type": "office",
+   "bucket": "office",
+   "kind": "homeowner contact reported",
+   "channel": "phone note"
+  },
+  {
+   "id": "U067",
+   "sender_type": "office",
+   "bucket": "office",
+   "kind": "requested item received",
+   "channel": "phone note"
+  },
+  {
+   "id": "U068",
+   "sender_type": "office",
+   "bucket": "office",
+   "kind": "representative record",
+   "channel": "voicemail transcript"
+  },
+  {
+   "id": "U069",
+   "sender_type": "consultant",
+   "bucket": "consultant",
+   "kind": "arrival",
+   "channel": "text note"
+  },
+  {
+   "id": "U070",
+   "sender_type": "firm_staff",
+   "bucket": "homeowner_or_staff",
+   "kind": "staff call note",
+   "channel": "phone note"
+  },
+  {
+   "id": "U071",
+   "sender_type": "consultant",
+   "bucket": "consultant",
+   "kind": "accept",
+   "channel": "email"
+  },
+  {
+   "id": "U072",
+   "sender_type": "office",
+   "bucket": "office",
+   "kind": "decision pending",
+   "channel": "email"
+  },
+  {
+   "id": "U073",
+   "sender_type": "firm_staff",
+   "bucket": "homeowner_or_staff",
+   "kind": "staff status note",
+   "channel": "email"
+  },
+  {
+   "id": "U074",
+   "sender_type": "consultant",
+   "bucket": "consultant",
+   "kind": "decline",
+   "channel": "email"
+  },
+  {
+   "id": "U075",
+   "sender_type": "homeowner",
+   "bucket": "no_proof_or_ambiguous",
+   "kind": "thanks",
+   "channel": "email"
+  },
+  {
+   "id": "U076",
+   "sender_type": "consultant",
+   "bucket": "consultant",
+   "kind": "day-before yes",
+   "channel": "email"
+  },
+  {
+   "id": "U077",
+   "sender_type": "consultant",
+   "bucket": "no_proof_or_ambiguous",
+   "kind": "date conflicts with the record",
+   "channel": "text note"
+  },
+  {
+   "id": "U078",
+   "sender_type": "consultant",
+   "bucket": "consultant",
+   "kind": "illness",
+   "channel": "text note"
+  },
+  {
+   "id": "U079",
+   "sender_type": "firm_staff",
+   "bucket": "homeowner_or_staff",
+   "kind": "staff request to consultant",
+   "channel": "email"
+  },
+  {
+   "id": "U080",
+   "sender_type": "consultant",
+   "bucket": "consultant",
+   "kind": "arrival",
+   "channel": "text note"
+  },
+  {
+   "id": "U081",
+   "sender_type": "office",
+   "bucket": "office",
+   "kind": "new hearing date",
+   "channel": "mail transcript"
+  },
+  {
+   "id": "U082",
+   "sender_type": "office",
+   "bucket": "office",
+   "kind": "room change",
+   "channel": "email"
+  },
+  {
+   "id": "U083",
+   "sender_type": "office",
+   "bucket": "office",
+   "kind": "outcome and new date",
+   "channel": "email"
+  },
+  {
+   "id": "U084",
+   "sender_type": "office",
+   "bucket": "office",
+   "kind": "day-of problem",
+   "channel": "phone note"
+  },
+  {
+   "id": "U085",
+   "sender_type": "office",
+   "bucket": "office",
+   "kind": "room change",
+   "channel": "email"
+  },
+  {
+   "id": "U086",
+   "sender_type": "office",
+   "bucket": "office",
+   "kind": "representative record",
+   "channel": "email"
+  },
+  {
+   "id": "U087",
+   "sender_type": "consultant",
+   "bucket": "consultant",
+   "kind": "day-before yes",
+   "channel": "email"
+  },
+  {
+   "id": "U088",
+   "sender_type": "consultant",
+   "bucket": "consultant",
+   "kind": "day-before yes",
+   "channel": "email"
+  },
+  {
+   "id": "U089",
+   "sender_type": "office",
+   "bucket": "office",
+   "kind": "hearing reminder",
+   "channel": "email"
+  },
+  {
+   "id": "U090",
+   "sender_type": "firm_staff",
+   "bucket": "homeowner_or_staff",
+   "kind": "staff call note",
+   "channel": "phone note"
+  },
+  {
+   "id": "U091",
+   "sender_type": "consultant",
+   "bucket": "consultant",
+   "kind": "arrival",
+   "channel": "text note"
+  },
+  {
+   "id": "U092",
+   "sender_type": "office",
+   "bucket": "office",
+   "kind": "documents and deadline",
+   "channel": "email"
+  },
+  {
+   "id": "U093",
+   "sender_type": "office",
+   "bucket": "office",
+   "kind": "requested item received",
+   "channel": "email"
+  },
+  {
+   "id": "U094",
+   "sender_type": "consultant",
+   "bucket": "consultant",
+   "kind": "arrival",
+   "channel": "text note"
+  },
+  {
+   "id": "U095",
+   "sender_type": "office",
+   "bucket": "office",
+   "kind": "decision issued",
+   "channel": "email"
+  },
+  {
+   "id": "U096",
+   "sender_type": "consultant",
+   "bucket": "consultant",
+   "kind": "outcome report",
+   "channel": "email"
+  },
+  {
+   "id": "U097",
+   "sender_type": "consultant",
+   "bucket": "consultant",
+   "kind": "day-before yes",
+   "channel": "text note"
+  },
+  {
+   "id": "U098",
+   "sender_type": "consultant",
+   "bucket": "consultant",
+   "kind": "arrival",
+   "channel": "text note"
+  },
+  {
+   "id": "U099",
+   "sender_type": "consultant",
+   "bucket": "consultant",
+   "kind": "outcome report",
+   "channel": "email"
+  },
+  {
+   "id": "U100",
+   "sender_type": "office",
+   "bucket": "office",
+   "kind": "outcome and postponement",
+   "channel": "email"
+  }
+ ]
+}

@@ -1,0 +1,2036 @@
+{
+ "messages": [
+  {
+   "id": 1,
+   "properties": [
+    "14 Willow Lane, Larkmere",
+    "28 Willow Lane, Larkmere"
+   ],
+   "sender": "Larkmere hearing office",
+   "channel": "email",
+   "body": "We have set 14 Willow Lane, Larkmere and 28 Willow Lane, Larkmere for June 10 at 9 a.m. and 9:30 a.m., in person. Please tell us who will attend."
+  },
+  {
+   "id": 2,
+   "properties": [
+    "14 Willow Lane, Larkmere",
+    "28 Willow Lane, Larkmere"
+   ],
+   "sender": "Maya Venn",
+   "channel": "email",
+   "body": "I am usually free that morning. I need to check another commitment before I can say yes to either case."
+  },
+  {
+   "id": 3,
+   "properties": [
+    "14 Willow Lane, Larkmere",
+    "28 Willow Lane, Larkmere"
+   ],
+   "sender": "Alice\u2019s Law Firm operations",
+   "channel": "email",
+   "body": "Thanks. I have put your name on our planning sheet while we wait to hear back."
+  },
+  {
+   "id": 4,
+   "properties": [
+    "14 Willow Lane, Larkmere",
+    "28 Willow Lane, Larkmere"
+   ],
+   "sender": "Larkmere hearing office",
+   "channel": "email",
+   "body": "Please confirm who will attend the hearings for 14 and 28 Willow Lane on June 10. We do not yet have a representative recorded."
+  },
+  {
+   "id": 5,
+   "properties": [
+    "14 Willow Lane, Larkmere",
+    "28 Willow Lane, Larkmere"
+   ],
+   "sender": "Maya Venn",
+   "channel": "text note",
+   "body": "I can take the 9:30 a.m. case on June 10, but cannot get there for 9 a.m. Please send me the files for the one I can cover."
+  },
+  {
+   "id": 6,
+   "properties": [
+    "14 Willow Lane, Larkmere",
+    "28 Willow Lane, Larkmere"
+   ],
+   "sender": "Larkmere hearing office",
+   "channel": "email",
+   "body": "Please return the staffing notices for 14 Willow Lane, Larkmere and 28 Willow Lane, Larkmere by 4 p.m. on June 7. We have not recorded a representative yet."
+  },
+  {
+   "id": 7,
+   "properties": [
+    "63 Garden Street, Velloran",
+    "81 Garden Street, Velloran"
+   ],
+   "sender": "Velloran hearing office",
+   "channel": "email",
+   "body": "The hearings for 63 Garden Street, Velloran and 81 Garden Street, Velloran are scheduled for June 11, 1 p.m. and 1:30 p.m. by video."
+  },
+  {
+   "id": 8,
+   "properties": [
+    "63 Garden Street, Velloran",
+    "81 Garden Street, Velloran"
+   ],
+   "sender": "Alice\u2019s Law Firm operations",
+   "channel": "email",
+   "body": "Could we move both cases to June 13 at the same times? Leo is available then."
+  },
+  {
+   "id": 9,
+   "properties": [
+    "63 Garden Street, Velloran",
+    "81 Garden Street, Velloran"
+   ],
+   "sender": "Leo Arlen",
+   "channel": "email",
+   "body": "I have a conflict on June 11, so I moved both hearings to June 13 in the shared calendar. That date works for me."
+  },
+  {
+   "id": 10,
+   "properties": [
+    "63 Garden Street, Velloran",
+    "81 Garden Street, Velloran"
+   ],
+   "sender": "Alice\u2019s Law Firm operations",
+   "channel": "calendar activity",
+   "body": "Leo changed both shared calendar events from June 11 to June 13. The internal case records now show June 13."
+  },
+  {
+   "id": 11,
+   "properties": [
+    "63 Garden Street, Velloran",
+    "81 Garden Street, Velloran"
+   ],
+   "sender": "Velloran hearing office",
+   "channel": "email",
+   "body": "We can record Leo as representative, but the hearings remain June 11. The June 13 hearing schedule is full."
+  },
+  {
+   "id": 12,
+   "properties": [
+    "63 Garden Street, Velloran",
+    "81 Garden Street, Velloran"
+   ],
+   "sender": "Leo Arlen",
+   "channel": "email",
+   "body": "The invitation says June 13. Please confirm which date I am being asked to cover."
+  },
+  {
+   "id": 13,
+   "properties": [
+    "9 Orchard Road, Orimere",
+    "24 Orchard Road, Orimere"
+   ],
+   "sender": "Orimere hearing office",
+   "channel": "email",
+   "body": "The hearing for 9 Orchard Road, Orimere is June 12 at 9 a.m. The hearing for 24 Orchard Road, Orimere is June 12 at 2 p.m. Both are by video and should take 30 minutes."
+  },
+  {
+   "id": 14,
+   "properties": [
+    "9 Orchard Road, Orimere",
+    "24 Orchard Road, Orimere"
+   ],
+   "sender": "Nora Pell",
+   "channel": "email",
+   "body": "I can cover the morning hearing on June 12, but not the afternoon. I could cover both on June 18 if the county can move them."
+  },
+  {
+   "id": 15,
+   "properties": [
+    "9 Orchard Road, Orimere",
+    "24 Orchard Road, Orimere"
+   ],
+   "sender": "Alice\u2019s Law Firm operations",
+   "channel": "email",
+   "body": "Could you move both hearings to June 18 at the same times? Nora can attend both that day."
+  },
+  {
+   "id": 16,
+   "properties": [
+    "9 Orchard Road, Orimere",
+    "24 Orchard Road, Orimere"
+   ],
+   "sender": "Orimere hearing office",
+   "channel": "email",
+   "body": "Nora is recorded as representative for 9 Orchard Road, Orimere. We have not received an assignment for 24 Orchard Road, Orimere. We are still reviewing your date-change request."
+  },
+  {
+   "id": 17,
+   "properties": [
+    "9 Orchard Road, Orimere",
+    "24 Orchard Road, Orimere"
+   ],
+   "sender": "Orimere hearing office",
+   "channel": "email",
+   "body": "We can move 9 Orchard Road, Orimere to June 18 at 9 a.m. The hearing for 24 Orchard Road, Orimere must stay on June 12 at 2 p.m. We cannot move that one."
+  },
+  {
+   "id": 18,
+   "properties": [
+    "9 Orchard Road, Orimere",
+    "24 Orchard Road, Orimere"
+   ],
+   "sender": "Nora Pell",
+   "channel": "text note",
+   "body": "Thanks, I have cleared June 12 and put both hearings on June 18. Please send the files."
+  },
+  {
+   "id": 19,
+   "properties": [
+    "37 Meadow Avenue, Tesswick",
+    "52 Meadow Avenue, Tesswick"
+   ],
+   "sender": "Tesswick hearing office",
+   "channel": "email",
+   "body": "Please identify the representative for 37 Meadow Avenue, Tesswick and 52 Meadow Avenue, Tesswick, June 12 at 11 a.m. and 11:30 a.m. in person."
+  },
+  {
+   "id": 20,
+   "properties": [
+    "37 Meadow Avenue, Tesswick",
+    "52 Meadow Avenue, Tesswick"
+   ],
+   "sender": "Owen Tarris",
+   "channel": "email",
+   "body": "I accept both hearings. I will be at the Tesswick office by 10:45 a.m."
+  },
+  {
+   "id": 21,
+   "properties": [
+    "37 Meadow Avenue, Tesswick",
+    "52 Meadow Avenue, Tesswick"
+   ],
+   "sender": "Alice\u2019s Law Firm operations",
+   "channel": "phone note",
+   "body": "Called the Tesswick office about recording Owen for 37 Meadow Avenue, Tesswick and 52 Meadow Avenue, Tesswick. Reached voicemail and left the property addresses, name and callback details."
+  },
+  {
+   "id": 22,
+   "properties": [
+    "37 Meadow Avenue, Tesswick",
+    "52 Meadow Avenue, Tesswick"
+   ],
+   "sender": "Alice\u2019s Law Firm operations",
+   "channel": "phone note",
+   "body": "Called again. Clerk Ren said emailing names is no longer enough: send the staffing form, then call to have it entered on the list of representatives. Our saved instructions say to email the property addresses and name. Ren emailed the blank form, saved as 52-meadow-avenue-staffing-form.txt. No list of representatives entry was confirmed."
+  },
+  {
+   "id": 23,
+   "properties": [
+    "37 Meadow Avenue, Tesswick",
+    "52 Meadow Avenue, Tesswick"
+   ],
+   "sender": "Alice\u2019s Law Firm operations",
+   "channel": "email",
+   "body": "Following our call, here are the staffing details on your form: 37 Meadow Avenue, Tesswick and 52 Meadow Avenue, Tesswick, Owen Tarris, June 12 at 11 a.m. and 11:30 a.m. Please confirm they have been recorded."
+  },
+  {
+   "id": 24,
+   "properties": [
+    "37 Meadow Avenue, Tesswick",
+    "52 Meadow Avenue, Tesswick"
+   ],
+   "sender": "Tesswick hearing office",
+   "channel": "phone note",
+   "body": "Clerk Sol returned our call: I cannot find the form in the shared inbox yet. Ren is away today. I cannot confirm who is on the list of representatives; please call tomorrow morning."
+  },
+  {
+   "id": 25,
+   "properties": [
+    "16 Birch Lane, Brindlefen",
+    "42 Birch Lane, Brindlefen"
+   ],
+   "sender": "Brindlefen hearing office",
+   "channel": "email",
+   "body": "16 Birch Lane and 42 Birch Lane will be heard June 13 at 10 a.m. and 10:30 a.m. by video. Please send the name of the representative attending each hearing."
+  },
+  {
+   "id": 26,
+   "properties": [
+    "16 Birch Lane, Brindlefen",
+    "42 Birch Lane, Brindlefen"
+   ],
+   "sender": "Priya Marden",
+   "channel": "email",
+   "body": "I can cover both hearings. Please send me the case files and let the county know I will attend."
+  },
+  {
+   "id": 27,
+   "properties": [
+    "16 Birch Lane, Brindlefen",
+    "42 Birch Lane, Brindlefen"
+   ],
+   "sender": "Alice\u2019s Law Firm operations",
+   "channel": "email",
+   "body": "The settlement offer for 16 Birch Lane is ready for Priya to sign. This county requires the attending consultant\u2019s signature. The hearing for 42 Birch Lane is still scheduled."
+  },
+  {
+   "id": 28,
+   "properties": [
+    "16 Birch Lane, Brindlefen",
+    "42 Birch Lane, Brindlefen"
+   ],
+   "sender": "Brindlefen hearing office",
+   "channel": "email",
+   "body": "The withdrawal statement for 42 Birch Lane names Owen, but Priya is the representative on our record. Please return a corrected statement signed by Priya. The hearing remains on our schedule until we process the withdrawal."
+  },
+  {
+   "id": 29,
+   "properties": [
+    "16 Birch Lane, Brindlefen",
+    "42 Birch Lane, Brindlefen"
+   ],
+   "sender": "Priya Marden",
+   "channel": "email",
+   "body": "I signed the withdrawal statement for 42 Birch Lane and photographed it. The photo is attached as 42-birch-lane-withdrawal-statement.png."
+  },
+  {
+   "id": 30,
+   "properties": [
+    "16 Birch Lane, Brindlefen",
+    "42 Birch Lane, Brindlefen"
+   ],
+   "sender": "Alice\u2019s Law Firm operations",
+   "channel": "email",
+   "body": "We received the photo, but cannot read the case number or date. Please send a clearer copy of the withdrawal statement. The hearing is still scheduled."
+  },
+  {
+   "id": 31,
+   "properties": [
+    "75 Elm Street, Caldmere",
+    "96 Elm Street, Caldmere"
+   ],
+   "sender": "Caldmere hearing office",
+   "channel": "email",
+   "body": "75 Elm Street, Caldmere and 96 Elm Street, Caldmere: June 13 at 2 p.m. and 2:30 p.m. by video. Eli is recorded as representative for both."
+  },
+  {
+   "id": 32,
+   "properties": [
+    "75 Elm Street, Caldmere",
+    "96 Elm Street, Caldmere"
+   ],
+   "sender": "Eli Corven",
+   "channel": "email",
+   "body": "I accept both hearings and will review the case files this week."
+  },
+  {
+   "id": 33,
+   "properties": [
+    "75 Elm Street, Caldmere",
+    "96 Elm Street, Caldmere"
+   ],
+   "sender": "Alice\u2019s Law Firm operations",
+   "channel": "email",
+   "body": "The current files are 75-elm-street-packet-v2.txt and 96-elm-street-packet-v2.txt. Both were sent to the clerk today. The consultant links in the tracker still point to v1."
+  },
+  {
+   "id": 34,
+   "properties": [
+    "75 Elm Street, Caldmere",
+    "96 Elm Street, Caldmere"
+   ],
+   "sender": "Caldmere hearing office",
+   "channel": "email",
+   "body": "The attachment for 75 Elm Street, Caldmere opened. The file for 96 Elm Street, Caldmere was unreadable. Please resend it."
+  },
+  {
+   "id": 35,
+   "properties": [
+    "75 Elm Street, Caldmere",
+    "96 Elm Street, Caldmere"
+   ],
+   "sender": "Eli Corven",
+   "channel": "email",
+   "body": "My links open version 1. Has anything changed? I need the versions you intend me to use."
+  },
+  {
+   "id": 36,
+   "properties": [
+    "75 Elm Street, Caldmere",
+    "96 Elm Street, Caldmere"
+   ],
+   "sender": "Alice\u2019s Law Firm operations",
+   "channel": "email",
+   "body": "Version 2 adds the homeowner statement to both. The current copies are in the documents folder."
+  },
+  {
+   "id": 37,
+   "properties": [
+    "11 Brook Road, Fenwick Vale",
+    "29 Brook Road, Fenwick Vale"
+   ],
+   "sender": "Fenwick Vale hearing office",
+   "channel": "email",
+   "body": "11 Brook Road, Fenwick Vale and 29 Brook Road, Fenwick Vale: June 6 at 9 a.m. and 9:30 a.m., in person. Maya is recorded on both staffing notices."
+  },
+  {
+   "id": 38,
+   "properties": [
+    "11 Brook Road, Fenwick Vale",
+    "29 Brook Road, Fenwick Vale"
+   ],
+   "sender": "Maya Venn",
+   "channel": "email",
+   "body": "I accept both and have reviewed the current packets."
+  },
+  {
+   "id": 39,
+   "properties": [
+    "11 Brook Road, Fenwick Vale",
+    "29 Brook Road, Fenwick Vale"
+   ],
+   "sender": "Alice\u2019s Law Firm operations",
+   "channel": "email",
+   "body": "Thank you. The homeowner notices name Maya and the files are ready."
+  },
+  {
+   "id": 40,
+   "properties": [
+    "11 Brook Road, Fenwick Vale",
+    "29 Brook Road, Fenwick Vale"
+   ],
+   "sender": "Fenwick Vale hearing office",
+   "channel": "email",
+   "body": "Confirming receipt of both case packets. Please arrive 15 minutes before the first case."
+  },
+  {
+   "id": 41,
+   "properties": [
+    "11 Brook Road, Fenwick Vale",
+    "29 Brook Road, Fenwick Vale"
+   ],
+   "sender": "Maya Venn",
+   "channel": "text note",
+   "body": "I am ill and cannot attend tomorrow. I am sorry for the short notice."
+  },
+  {
+   "id": 42,
+   "properties": [
+    "11 Brook Road, Fenwick Vale",
+    "29 Brook Road, Fenwick Vale"
+   ],
+   "sender": "Owen Tarris",
+   "channel": "email",
+   "body": "Owen here. I can cover both tomorrow at the quoted rate. Please confirm the assignment and send the files; I have not seen these cases."
+  },
+  {
+   "id": 43,
+   "properties": [
+    "48 Linden Avenue, Harthmere",
+    "66 Linden Avenue, Harthmere"
+   ],
+   "sender": "Harthmere hearing office",
+   "channel": "mail transcript",
+   "body": "Notice dated May 30: 48 Linden Avenue, Harthmere and 66 Linden Avenue, Harthmere, June 6 at 10 a.m. and 10:30 a.m., video room B. Leo is listed as representative."
+  },
+  {
+   "id": 44,
+   "properties": [
+    "48 Linden Avenue, Harthmere",
+    "66 Linden Avenue, Harthmere"
+   ],
+   "sender": "Leo Arlen",
+   "channel": "email",
+   "body": "I accept the June 6 hearings at the times on the notice."
+  },
+  {
+   "id": 45,
+   "properties": [
+    "48 Linden Avenue, Harthmere",
+    "66 Linden Avenue, Harthmere"
+   ],
+   "sender": "Harthmere hearing office",
+   "channel": "email",
+   "body": "For 48 Linden Avenue, Harthmere and 66 Linden Avenue, Harthmere, use video room D instead of B. The hearing times are unchanged."
+  },
+  {
+   "id": 46,
+   "properties": [
+    "48 Linden Avenue, Harthmere",
+    "66 Linden Avenue, Harthmere"
+   ],
+   "sender": "Alice\u2019s Law Firm operations",
+   "channel": "phone note",
+   "body": "County clerk called: the hearing for 48 Linden Avenue has been moved to June 13 at 10 a.m. following the homeowner request. A written notice will follow. The hearing for 66 Linden Avenue has not changed."
+  },
+  {
+   "id": 47,
+   "properties": [
+    "48 Linden Avenue, Harthmere",
+    "66 Linden Avenue, Harthmere"
+   ],
+   "sender": "Harthmere hearing office",
+   "channel": "email",
+   "body": "The homeowner asked us to move the hearing for 48 Linden Avenue. We have approved the request and moved it from June 6 to June 13 at 10 a.m., video room D. The hearing for 66 Linden Avenue remains June 6 at 10:30 a.m. Please update your representative."
+  },
+  {
+   "id": 48,
+   "properties": [
+    "48 Linden Avenue, Harthmere",
+    "66 Linden Avenue, Harthmere"
+   ],
+   "sender": "Leo Arlen",
+   "channel": "email",
+   "body": "I still have both Linden Avenue hearings tomorrow, room D at 10 and 10:30 a.m. I cannot attend on June 13. Please let me know what has changed."
+  },
+  {
+   "id": 49,
+   "properties": [
+    "18 Maple Lane, Iverfen",
+    "34 Maple Lane, Iverfen"
+   ],
+   "sender": "Iverfen hearing office",
+   "channel": "email",
+   "body": "18 Maple Lane, Iverfen and 34 Maple Lane, Iverfen: June 14 at 1 p.m. and 1:30 p.m. by video. Nora is recorded for both; packets received."
+  },
+  {
+   "id": 50,
+   "properties": [
+    "18 Maple Lane, Iverfen",
+    "34 Maple Lane, Iverfen"
+   ],
+   "sender": "Nora Pell",
+   "channel": "email",
+   "body": "Accepted. I have both case files and will attend."
+  },
+  {
+   "id": 51,
+   "properties": [
+    "18 Maple Lane, Iverfen",
+    "34 Maple Lane, Iverfen"
+   ],
+   "sender": "Iverfen hearing office",
+   "channel": "email",
+   "body": "The homeowner for 18 Maple Lane has asked our office to withdraw the appeal. Please confirm the request with us so we can process it. The hearing for 34 Maple Lane is unaffected."
+  },
+  {
+   "id": 52,
+   "properties": [
+    "18 Maple Lane, Iverfen",
+    "34 Maple Lane, Iverfen"
+   ],
+   "sender": "Alice\u2019s Law Firm operations",
+   "channel": "email",
+   "body": "We have marked 18 Maple Lane, Iverfen canceled internally and emailed a withdrawal request to the clerk. We have not received a reply."
+  },
+  {
+   "id": 53,
+   "properties": [
+    "18 Maple Lane, Iverfen",
+    "34 Maple Lane, Iverfen"
+   ],
+   "sender": "Iverfen hearing office",
+   "channel": "email",
+   "body": "Reminder: hearings for 18 Maple Lane, Iverfen and 34 Maple Lane, Iverfen remain listed for June 14."
+  },
+  {
+   "id": 54,
+   "properties": [
+    "18 Maple Lane, Iverfen",
+    "34 Maple Lane, Iverfen"
+   ],
+   "sender": "Nora Pell",
+   "channel": "email",
+   "body": "Both cases are still in my calendar. Should I prepare for both?"
+  },
+  {
+   "id": 55,
+   "properties": [
+    "57 Clover Road, Juniper Reach",
+    "73 Clover Road, Juniper Reach"
+   ],
+   "sender": "Juniper Reach hearing office",
+   "channel": "email",
+   "body": "57 Clover Road, Juniper Reach and 73 Clover Road, Juniper Reach are confirmed for June 4 at 9 a.m. and 9:30 a.m. in person. Owen is recorded and packets received."
+  },
+  {
+   "id": 56,
+   "properties": [
+    "57 Clover Road, Juniper Reach",
+    "73 Clover Road, Juniper Reach"
+   ],
+   "sender": "Owen Tarris",
+   "channel": "email",
+   "body": "Accepted. I have the files and will attend both."
+  },
+  {
+   "id": 57,
+   "properties": [
+    "57 Clover Road, Juniper Reach",
+    "73 Clover Road, Juniper Reach"
+   ],
+   "sender": "Owen Tarris",
+   "channel": "phone note",
+   "body": "After attending both hearings: They are giving us more time on 57 Clover Road, Juniper Reach. 73 Clover Road, Juniper Reach was heard and no additional material was requested."
+  },
+  {
+   "id": 58,
+   "properties": [
+    "57 Clover Road, Juniper Reach",
+    "73 Clover Road, Juniper Reach"
+   ],
+   "sender": "Alice\u2019s Law Firm operations",
+   "channel": "email",
+   "body": "I marked 57 Clover Road, Juniper Reach awaiting reschedule, and 73 Clover Road, Juniper Reach awaiting decision."
+  },
+  {
+   "id": 59,
+   "properties": [
+    "57 Clover Road, Juniper Reach",
+    "73 Clover Road, Juniper Reach"
+   ],
+   "sender": "Juniper Reach hearing office",
+   "channel": "email",
+   "body": "For 57 Clover Road, Juniper Reach, submit the requested homeowner statement by June 8 at 4 p.m. No further hearing is scheduled. 73 Clover Road, Juniper Reach is awaiting a written decision."
+  },
+  {
+   "id": 60,
+   "properties": [
+    "57 Clover Road, Juniper Reach",
+    "73 Clover Road, Juniper Reach"
+   ],
+   "sender": "Juniper Reach hearing office",
+   "channel": "email",
+   "body": "For 57 Clover Road, we are waiting for the homeowner statement requested at the hearing. Please send it by June 8 at 4 p.m. There is no further hearing scheduled."
+  },
+  {
+   "id": 61,
+   "properties": [
+    "102 Willow Lane, Larkmere",
+    "118 Willow Lane, Larkmere"
+   ],
+   "sender": "Larkmere hearing office",
+   "channel": "email",
+   "body": "102 Willow Lane, Larkmere and 118 Willow Lane, Larkmere: June 10 at 11 a.m. and 11:30 a.m. in person. Staffing notices naming Leo have been accepted."
+  },
+  {
+   "id": 62,
+   "properties": [
+    "102 Willow Lane, Larkmere",
+    "118 Willow Lane, Larkmere"
+   ],
+   "sender": "Leo Arlen",
+   "channel": "email",
+   "body": "I accept both. I have left the morning free for these hearings."
+  },
+  {
+   "id": 63,
+   "properties": [
+    "102 Willow Lane, Larkmere",
+    "118 Willow Lane, Larkmere"
+   ],
+   "sender": "Alice\u2019s Law Firm operations",
+   "channel": "email",
+   "body": "Current packets sent to the government and Leo. Please confirm receipt."
+  },
+  {
+   "id": 64,
+   "properties": [
+    "102 Willow Lane, Larkmere",
+    "118 Willow Lane, Larkmere"
+   ],
+   "sender": "Larkmere hearing office",
+   "channel": "email",
+   "body": "Both packets received and readable. The hearing details are unchanged."
+  },
+  {
+   "id": 65,
+   "properties": [
+    "102 Willow Lane, Larkmere",
+    "118 Willow Lane, Larkmere"
+   ],
+   "sender": "Leo Arlen",
+   "channel": "email",
+   "body": "Both current packets received and reviewed. I will arrive at 10:45 a.m."
+  },
+  {
+   "id": 66,
+   "properties": [
+    "102 Willow Lane, Larkmere",
+    "118 Willow Lane, Larkmere"
+   ],
+   "sender": "Larkmere hearing office",
+   "channel": "email",
+   "body": "The June 10 hearings for 102 and 118 Willow Lane remain confirmed. Leo is recorded for both, and we have the current packets. No further documents are requested at this time."
+  },
+  {
+   "id": 67,
+   "properties": [
+    "120 Garden Street, Velloran",
+    "138 Garden Street, Velloran"
+   ],
+   "sender": "Velloran hearing office",
+   "channel": "email",
+   "body": "120 Garden Street, Velloran and 138 Garden Street, Velloran: June 11 at 3 p.m. and 3:30 p.m. by video. Please confirm your representative."
+  },
+  {
+   "id": 68,
+   "properties": [
+    "120 Garden Street, Velloran",
+    "138 Garden Street, Velloran"
+   ],
+   "sender": "Owen Tarris",
+   "channel": "email",
+   "body": "I accept both. I have no other hearings that afternoon."
+  },
+  {
+   "id": 69,
+   "properties": [
+    "120 Garden Street, Velloran",
+    "138 Garden Street, Velloran"
+   ],
+   "sender": "Alice\u2019s Law Firm operations",
+   "channel": "email",
+   "body": "Owen Tarris will attend 120 Garden Street, Velloran and 138 Garden Street, Velloran. Both current packets are attached."
+  },
+  {
+   "id": 70,
+   "properties": [
+    "120 Garden Street, Velloran",
+    "138 Garden Street, Velloran"
+   ],
+   "sender": "Velloran hearing office",
+   "channel": "email",
+   "body": "Owen is recorded for both cases. Both packets received. Video room C is confirmed."
+  },
+  {
+   "id": 71,
+   "properties": [
+    "120 Garden Street, Velloran",
+    "138 Garden Street, Velloran"
+   ],
+   "sender": "Owen Tarris",
+   "channel": "email",
+   "body": "Files reviewed. Room C and both times are in my work calendar."
+  },
+  {
+   "id": 72,
+   "properties": [
+    "120 Garden Street, Velloran",
+    "138 Garden Street, Velloran"
+   ],
+   "sender": "Velloran hearing office",
+   "channel": "email",
+   "body": "Sending the same confirmation again for your records: Owen is recorded for 120 Garden Street, Velloran and 138 Garden Street, Velloran, June 11 at 3 p.m. and 3:30 p.m., room C. No changes."
+  }
+ ],
+ "cases": [
+  {
+   "property": "14 Willow Lane, Larkmere",
+   "case_id": "AX-101",
+   "customer_id": "H001",
+   "homeowner": "Jamie Vale",
+   "county": "Larkmere",
+   "state": "Asterland",
+   "tax_year": "2029",
+   "hearing_date": "2030-06-10",
+   "hearing_time": "09:00",
+   "timezone": "UTC-05:00",
+   "consultant_id": "R01",
+   "status": "hearing_scheduled",
+   "packet_reference": "14-willow-lane-packet-v2.txt",
+   "record_updated_at": "2030-06-04T18:00:00-05:00"
+  },
+  {
+   "property": "28 Willow Lane, Larkmere",
+   "case_id": "AX-102",
+   "customer_id": "H001",
+   "homeowner": "Jamie Vale",
+   "county": "Larkmere",
+   "state": "Asterland",
+   "tax_year": "2029",
+   "hearing_date": "2030-06-10",
+   "hearing_time": "09:30",
+   "timezone": "UTC-05:00",
+   "consultant_id": "R01",
+   "status": "hearing_scheduled",
+   "packet_reference": "28-willow-lane-packet-v2.txt",
+   "record_updated_at": "2030-06-04T18:00:00-05:00"
+  },
+  {
+   "property": "63 Garden Street, Velloran",
+   "case_id": "AX-103",
+   "customer_id": "H002",
+   "homeowner": "Morgan Ellis",
+   "county": "Velloran",
+   "state": "Asterland",
+   "tax_year": "2029",
+   "hearing_date": "2030-06-13",
+   "hearing_time": "13:00",
+   "timezone": "UTC-05:00",
+   "consultant_id": "R02",
+   "status": "hearing_scheduled",
+   "packet_reference": "63-garden-street-packet-v2.txt",
+   "record_updated_at": "2030-06-04T18:00:00-05:00"
+  },
+  {
+   "property": "81 Garden Street, Velloran",
+   "case_id": "AX-104",
+   "customer_id": "H002",
+   "homeowner": "Morgan Ellis",
+   "county": "Velloran",
+   "state": "Asterland",
+   "tax_year": "2029",
+   "hearing_date": "2030-06-13",
+   "hearing_time": "13:30",
+   "timezone": "UTC-05:00",
+   "consultant_id": "R02",
+   "status": "hearing_scheduled",
+   "packet_reference": "81-garden-street-packet-v2.txt",
+   "record_updated_at": "2030-06-04T18:00:00-05:00"
+  },
+  {
+   "property": "9 Orchard Road, Orimere",
+   "case_id": "AX-105",
+   "customer_id": "H003",
+   "homeowner": "Robin Wren",
+   "county": "Orimere",
+   "state": "Belloria",
+   "tax_year": "2029",
+   "hearing_date": "2030-06-12",
+   "hearing_time": "09:00",
+   "timezone": "UTC-05:00",
+   "consultant_id": "R03",
+   "status": "hearing_scheduled",
+   "packet_reference": "9-orchard-road-packet-v2.txt",
+   "record_updated_at": "2030-06-04T18:00:00-05:00"
+  },
+  {
+   "property": "24 Orchard Road, Orimere",
+   "case_id": "AX-106",
+   "customer_id": "H003",
+   "homeowner": "Robin Wren",
+   "county": "Orimere",
+   "state": "Belloria",
+   "tax_year": "2029",
+   "hearing_date": "2030-06-12",
+   "hearing_time": "14:00",
+   "timezone": "UTC-05:00",
+   "consultant_id": "",
+   "status": "hearing_scheduled",
+   "packet_reference": "24-orchard-road-packet-v2.txt",
+   "record_updated_at": "2030-06-04T18:00:00-05:00"
+  },
+  {
+   "property": "37 Meadow Avenue, Tesswick",
+   "case_id": "AX-107",
+   "customer_id": "H004",
+   "homeowner": "Casey Alder",
+   "county": "Tesswick",
+   "state": "Belloria",
+   "tax_year": "2029",
+   "hearing_date": "2030-06-12",
+   "hearing_time": "11:00",
+   "timezone": "UTC-05:00",
+   "consultant_id": "R04",
+   "status": "hearing_scheduled",
+   "packet_reference": "37-meadow-avenue-packet-v2.txt",
+   "record_updated_at": "2030-06-04T18:00:00-05:00"
+  },
+  {
+   "property": "52 Meadow Avenue, Tesswick",
+   "case_id": "AX-108",
+   "customer_id": "H004",
+   "homeowner": "Casey Alder",
+   "county": "Tesswick",
+   "state": "Belloria",
+   "tax_year": "2029",
+   "hearing_date": "2030-06-12",
+   "hearing_time": "11:30",
+   "timezone": "UTC-05:00",
+   "consultant_id": "R04",
+   "status": "hearing_scheduled",
+   "packet_reference": "52-meadow-avenue-packet-v2.txt",
+   "record_updated_at": "2030-06-04T18:00:00-05:00"
+  },
+  {
+   "property": "16 Birch Lane, Brindlefen",
+   "case_id": "AX-109",
+   "customer_id": "H005",
+   "homeowner": "Taylor Finch",
+   "county": "Brindlefen",
+   "state": "Cindervale",
+   "tax_year": "2029",
+   "hearing_date": "2030-06-13",
+   "hearing_time": "10:00",
+   "timezone": "UTC-05:00",
+   "consultant_id": "R05",
+   "status": "hearing_scheduled",
+   "packet_reference": "16-birch-lane-packet-v2.txt",
+   "record_updated_at": "2030-06-04T18:00:00-05:00"
+  },
+  {
+   "property": "42 Birch Lane, Brindlefen",
+   "case_id": "AX-110",
+   "customer_id": "H005",
+   "homeowner": "Taylor Finch",
+   "county": "Brindlefen",
+   "state": "Cindervale",
+   "tax_year": "2029",
+   "hearing_date": "2030-06-13",
+   "hearing_time": "10:30",
+   "timezone": "UTC-05:00",
+   "consultant_id": "R05",
+   "status": "hearing_scheduled",
+   "packet_reference": "42-birch-lane-packet-v2.txt",
+   "record_updated_at": "2030-06-04T18:00:00-05:00"
+  },
+  {
+   "property": "75 Elm Street, Caldmere",
+   "case_id": "AX-111",
+   "customer_id": "H006",
+   "homeowner": "Avery Moss",
+   "county": "Caldmere",
+   "state": "Cindervale",
+   "tax_year": "2029",
+   "hearing_date": "2030-06-13",
+   "hearing_time": "14:00",
+   "timezone": "UTC-05:00",
+   "consultant_id": "R06",
+   "status": "hearing_scheduled",
+   "packet_reference": "75-elm-street-packet-v1.txt",
+   "record_updated_at": "2030-06-04T18:00:00-05:00"
+  },
+  {
+   "property": "96 Elm Street, Caldmere",
+   "case_id": "AX-112",
+   "customer_id": "H006",
+   "homeowner": "Avery Moss",
+   "county": "Caldmere",
+   "state": "Cindervale",
+   "tax_year": "2029",
+   "hearing_date": "2030-06-13",
+   "hearing_time": "14:30",
+   "timezone": "UTC-05:00",
+   "consultant_id": "R06",
+   "status": "hearing_scheduled",
+   "packet_reference": "96-elm-street-packet-v1.txt",
+   "record_updated_at": "2030-06-04T18:00:00-05:00"
+  },
+  {
+   "property": "11 Brook Road, Fenwick Vale",
+   "case_id": "AX-113",
+   "customer_id": "H007",
+   "homeowner": "Jordan Reed",
+   "county": "Fenwick Vale",
+   "state": "Dovewick",
+   "tax_year": "2029",
+   "hearing_date": "2030-06-06",
+   "hearing_time": "09:00",
+   "timezone": "UTC-05:00",
+   "consultant_id": "R01",
+   "status": "hearing_scheduled",
+   "packet_reference": "11-brook-road-packet-v2.txt",
+   "record_updated_at": "2030-06-04T18:00:00-05:00"
+  },
+  {
+   "property": "29 Brook Road, Fenwick Vale",
+   "case_id": "AX-114",
+   "customer_id": "H007",
+   "homeowner": "Jordan Reed",
+   "county": "Fenwick Vale",
+   "state": "Dovewick",
+   "tax_year": "2029",
+   "hearing_date": "2030-06-06",
+   "hearing_time": "09:30",
+   "timezone": "UTC-05:00",
+   "consultant_id": "R01",
+   "status": "hearing_scheduled",
+   "packet_reference": "29-brook-road-packet-v2.txt",
+   "record_updated_at": "2030-06-04T18:00:00-05:00"
+  },
+  {
+   "property": "48 Linden Avenue, Harthmere",
+   "case_id": "AX-115",
+   "customer_id": "H008",
+   "homeowner": "Riley Fern",
+   "county": "Harthmere",
+   "state": "Dovewick",
+   "tax_year": "2029",
+   "hearing_date": "2030-06-06",
+   "hearing_time": "10:00",
+   "timezone": "UTC-05:00",
+   "consultant_id": "R02",
+   "status": "hearing_scheduled",
+   "packet_reference": "48-linden-avenue-packet-v2.txt",
+   "record_updated_at": "2030-06-04T18:00:00-05:00"
+  },
+  {
+   "property": "66 Linden Avenue, Harthmere",
+   "case_id": "AX-116",
+   "customer_id": "H008",
+   "homeowner": "Riley Fern",
+   "county": "Harthmere",
+   "state": "Dovewick",
+   "tax_year": "2029",
+   "hearing_date": "2030-06-06",
+   "hearing_time": "10:30",
+   "timezone": "UTC-05:00",
+   "consultant_id": "R02",
+   "status": "hearing_scheduled",
+   "packet_reference": "66-linden-avenue-packet-v2.txt",
+   "record_updated_at": "2030-06-04T18:00:00-05:00"
+  },
+  {
+   "property": "18 Maple Lane, Iverfen",
+   "case_id": "AX-117",
+   "customer_id": "H009",
+   "homeowner": "Cameron Hale",
+   "county": "Iverfen",
+   "state": "Everen",
+   "tax_year": "2029",
+   "hearing_date": "2030-06-14",
+   "hearing_time": "13:00",
+   "timezone": "UTC-05:00",
+   "consultant_id": "R03",
+   "status": "canceled",
+   "packet_reference": "18-maple-lane-packet-v2.txt",
+   "record_updated_at": "2030-06-04T18:00:00-05:00"
+  },
+  {
+   "property": "34 Maple Lane, Iverfen",
+   "case_id": "AX-118",
+   "customer_id": "H009",
+   "homeowner": "Cameron Hale",
+   "county": "Iverfen",
+   "state": "Everen",
+   "tax_year": "2029",
+   "hearing_date": "2030-06-14",
+   "hearing_time": "13:30",
+   "timezone": "UTC-05:00",
+   "consultant_id": "R03",
+   "status": "hearing_scheduled",
+   "packet_reference": "34-maple-lane-packet-v2.txt",
+   "record_updated_at": "2030-06-04T18:00:00-05:00"
+  },
+  {
+   "property": "57 Clover Road, Juniper Reach",
+   "case_id": "AX-119",
+   "customer_id": "H010",
+   "homeowner": "Drew Rowan",
+   "county": "Juniper Reach",
+   "state": "Everen",
+   "tax_year": "2029",
+   "hearing_date": "2030-06-04",
+   "hearing_time": "09:00",
+   "timezone": "UTC-05:00",
+   "consultant_id": "R04",
+   "status": "awaiting_reschedule",
+   "packet_reference": "57-clover-road-packet-v2.txt",
+   "record_updated_at": "2030-06-04T18:00:00-05:00"
+  },
+  {
+   "property": "73 Clover Road, Juniper Reach",
+   "case_id": "AX-120",
+   "customer_id": "H010",
+   "homeowner": "Drew Rowan",
+   "county": "Juniper Reach",
+   "state": "Everen",
+   "tax_year": "2029",
+   "hearing_date": "2030-06-04",
+   "hearing_time": "09:30",
+   "timezone": "UTC-05:00",
+   "consultant_id": "R04",
+   "status": "awaiting_decision",
+   "packet_reference": "73-clover-road-packet-v2.txt",
+   "record_updated_at": "2030-06-04T18:00:00-05:00"
+  },
+  {
+   "property": "102 Willow Lane, Larkmere",
+   "case_id": "AX-121",
+   "customer_id": "H011",
+   "homeowner": "Alex Linden",
+   "county": "Larkmere",
+   "state": "Asterland",
+   "tax_year": "2029",
+   "hearing_date": "2030-06-10",
+   "hearing_time": "11:00",
+   "timezone": "UTC-05:00",
+   "consultant_id": "R02",
+   "status": "hearing_scheduled",
+   "packet_reference": "102-willow-lane-packet-v2.txt",
+   "record_updated_at": "2030-06-04T18:00:00-05:00"
+  },
+  {
+   "property": "118 Willow Lane, Larkmere",
+   "case_id": "AX-122",
+   "customer_id": "H011",
+   "homeowner": "Alex Linden",
+   "county": "Larkmere",
+   "state": "Asterland",
+   "tax_year": "2029",
+   "hearing_date": "2030-06-10",
+   "hearing_time": "11:30",
+   "timezone": "UTC-05:00",
+   "consultant_id": "R02",
+   "status": "hearing_scheduled",
+   "packet_reference": "118-willow-lane-packet-v2.txt",
+   "record_updated_at": "2030-06-04T18:00:00-05:00"
+  },
+  {
+   "property": "120 Garden Street, Velloran",
+   "case_id": "AX-123",
+   "customer_id": "H012",
+   "homeowner": "Sam Briar",
+   "county": "Velloran",
+   "state": "Asterland",
+   "tax_year": "2029",
+   "hearing_date": "2030-06-11",
+   "hearing_time": "15:00",
+   "timezone": "UTC-05:00",
+   "consultant_id": "R04",
+   "status": "hearing_scheduled",
+   "packet_reference": "120-garden-street-packet-v2.txt",
+   "record_updated_at": "2030-06-04T18:00:00-05:00"
+  },
+  {
+   "property": "138 Garden Street, Velloran",
+   "case_id": "AX-124",
+   "customer_id": "H012",
+   "homeowner": "Sam Briar",
+   "county": "Velloran",
+   "state": "Asterland",
+   "tax_year": "2029",
+   "hearing_date": "2030-06-11",
+   "hearing_time": "15:30",
+   "timezone": "UTC-05:00",
+   "consultant_id": "R04",
+   "status": "hearing_scheduled",
+   "packet_reference": "138-garden-street-packet-v2.txt",
+   "record_updated_at": "2030-06-04T18:00:00-05:00"
+  }
+ ],
+ "consultants": [
+  {
+   "name": "Maya Venn",
+   "consultant_id": "R01",
+   "email": "maya@consultants.example",
+   "eligible_counties": [
+    "Larkmere",
+    "Velloran",
+    "Orimere",
+    "Tesswick",
+    "Brindlefen",
+    "Caldmere",
+    "Fenwick Vale",
+    "Harthmere",
+    "Iverfen",
+    "Juniper Reach"
+   ],
+   "calendar_access": "None",
+   "availability_note": [
+    "Usually mornings",
+    "confirm each assignment"
+   ],
+   "max_hearings_per_day": "6",
+   "notice_preference": "email",
+   "rate_per_hearing": "85"
+  },
+  {
+   "name": "Leo Arlen",
+   "consultant_id": "R02",
+   "email": "leo@consultants.example",
+   "eligible_counties": [
+    "Larkmere",
+    "Velloran",
+    "Orimere",
+    "Tesswick",
+    "Brindlefen",
+    "Caldmere",
+    "Fenwick Vale",
+    "Harthmere",
+    "Iverfen",
+    "Juniper Reach"
+   ],
+   "calendar_access": "Free/busy only",
+   "availability_note": [
+    "Weekday afternoons preferred",
+    "may accept mornings"
+   ],
+   "max_hearings_per_day": "8",
+   "notice_preference": "email",
+   "rate_per_hearing": "95"
+  },
+  {
+   "name": "Nora Pell",
+   "consultant_id": "R03",
+   "email": "nora@consultants.example",
+   "eligible_counties": [
+    "Larkmere",
+    "Velloran",
+    "Orimere",
+    "Tesswick",
+    "Brindlefen",
+    "Caldmere",
+    "Fenwick Vale",
+    "Harthmere",
+    "Iverfen",
+    "Juniper Reach"
+   ],
+   "calendar_access": "None",
+   "availability_note": [
+    "Confirm by email",
+    "no standing commitment"
+   ],
+   "max_hearings_per_day": "5",
+   "notice_preference": "text",
+   "rate_per_hearing": "80"
+  },
+  {
+   "name": "Owen Tarris",
+   "consultant_id": "R04",
+   "email": "owen@consultants.example",
+   "eligible_counties": [
+    "Larkmere",
+    "Velloran",
+    "Orimere",
+    "Tesswick",
+    "Brindlefen",
+    "Caldmere",
+    "Fenwick Vale",
+    "Harthmere",
+    "Iverfen",
+    "Juniper Reach"
+   ],
+   "calendar_access": "Shared work calendar",
+   "availability_note": "Work calendar excludes personal commitments",
+   "max_hearings_per_day": "8",
+   "notice_preference": "email",
+   "rate_per_hearing": "110"
+  },
+  {
+   "name": "Priya Marden",
+   "consultant_id": "R05",
+   "email": "priya@consultants.example",
+   "eligible_counties": [
+    "Brindlefen",
+    "Caldmere",
+    "Fenwick Vale",
+    "Harthmere",
+    "Iverfen",
+    "Juniper Reach"
+   ],
+   "calendar_access": "None",
+   "availability_note": "Remote hearings preferred",
+   "max_hearings_per_day": "6",
+   "notice_preference": "phone",
+   "rate_per_hearing": "90"
+  },
+  {
+   "name": "Eli Corven",
+   "consultant_id": "R06",
+   "email": "eli@consultants.example",
+   "eligible_counties": [
+    "Brindlefen",
+    "Caldmere",
+    "Fenwick Vale",
+    "Harthmere",
+    "Iverfen",
+    "Juniper Reach"
+   ],
+   "calendar_access": "None",
+   "availability_note": "Contact for each batch",
+   "max_hearings_per_day": "4",
+   "notice_preference": "email",
+   "rate_per_hearing": "75"
+  }
+ ],
+ "counties": [
+  {
+   "county": "Larkmere",
+   "state": "Asterland",
+   "office_email": "clerk@larkmere.example",
+   "timezone": "UTC-05:00 (fixed for this exercise)",
+   "hearing_mode": "in_person",
+   "staffing_rule": "Staffing notice naming the representative; government acknowledgment required before coverage is recorded as accepted.",
+   "replacement_rule": "Submit an updated staffing notice naming the replacement for each changed case.",
+   "schedule_rule": "Only the government can approve a hearing date change. The firm, consultants and homeowners can request a change, but moving a calendar event does not move the hearing.",
+   "packet_rule": "Send current case packet to the clerk and consultant at least 48 hours before the hearing. Late material requires clerk confirmation.",
+   "contact_hours": "09:00-16:00 local, Monday-Friday",
+   "travel_note": "Allow 60 minutes between in-person hearings in different counties. Video hearings require 15 minutes between separate sessions. Consecutive hearings in the same government hearing block do not need that extra gap."
+  },
+  {
+   "county": "Velloran",
+   "state": "Asterland",
+   "office_email": "clerk@velloran.example",
+   "timezone": "UTC-05:00 (fixed for this exercise)",
+   "hearing_mode": "video",
+   "staffing_rule": "Email case IDs and representative name to clerk; government acknowledgment required.",
+   "replacement_rule": "Email the replacement name and affected case IDs.",
+   "schedule_rule": "Only the government can approve a hearing date change. The firm, consultants and homeowners can request a change, but moving a calendar event does not move the hearing.",
+   "packet_rule": "Send current case packet to the clerk and consultant at least 48 hours before the hearing. Late material requires clerk confirmation.",
+   "contact_hours": "09:00-16:00 local, Monday-Friday",
+   "travel_note": "Allow 60 minutes between in-person hearings in different counties. Video hearings require 15 minutes between separate sessions. Consecutive hearings in the same government hearing block do not need that extra gap."
+  },
+  {
+   "county": "Orimere",
+   "state": "Belloria",
+   "office_email": "clerk@orimere.example",
+   "timezone": "UTC-05:00 (fixed for this exercise)",
+   "hearing_mode": "video",
+   "staffing_rule": "Staffing notice naming the representative; government acknowledgment required before coverage is recorded as accepted.",
+   "replacement_rule": "Submit an updated staffing notice naming the replacement for each changed case.",
+   "schedule_rule": "Only the government can approve a hearing date change. The firm, consultants and homeowners can request a change, but moving a calendar event does not move the hearing.",
+   "packet_rule": "Send current case packet to the clerk and consultant at least 48 hours before the hearing. Late material requires clerk confirmation.",
+   "contact_hours": "09:00-16:00 local, Monday-Friday",
+   "travel_note": "Allow 60 minutes between in-person hearings in different counties. Video hearings require 15 minutes between separate sessions. Consecutive hearings in the same government hearing block do not need that extra gap."
+  },
+  {
+   "county": "Tesswick",
+   "state": "Belloria",
+   "office_email": "clerk@tesswick.example",
+   "timezone": "UTC-05:00 (fixed for this exercise)",
+   "hearing_mode": "in_person",
+   "staffing_rule": "Email case IDs and representative name to clerk; government acknowledgment required.",
+   "replacement_rule": "Email the replacement name and affected case IDs.",
+   "schedule_rule": "Only the government can approve a hearing date change. The firm, consultants and homeowners can request a change, but moving a calendar event does not move the hearing.",
+   "packet_rule": "Send current case packet to the clerk and consultant at least 48 hours before the hearing. Late material requires clerk confirmation.",
+   "contact_hours": "09:00-16:00 local, Monday-Friday",
+   "travel_note": "Allow 60 minutes between in-person hearings in different counties. Video hearings require 15 minutes between separate sessions. Consecutive hearings in the same government hearing block do not need that extra gap.",
+   "instructions_recorded_at": "2030-05-15"
+  },
+  {
+   "county": "Brindlefen",
+   "state": "Cindervale",
+   "office_email": "clerk@brindlefen.example",
+   "timezone": "UTC-05:00 (fixed for this exercise)",
+   "hearing_mode": "video",
+   "staffing_rule": "Staffing notice naming the representative; government acknowledgment required before coverage is recorded as accepted.",
+   "replacement_rule": "Submit an updated staffing notice naming the replacement for each changed case.",
+   "schedule_rule": "Only the government can approve a hearing date change. The firm, consultants and homeowners can request a change, but moving a calendar event does not move the hearing.",
+   "packet_rule": "Send current case packet to the clerk and consultant at least 48 hours before the hearing. Late material requires clerk confirmation.",
+   "contact_hours": "09:00-16:00 local, Monday-Friday",
+   "travel_note": "Allow 60 minutes between in-person hearings in different counties. Video hearings require 15 minutes between separate sessions. Consecutive hearings in the same government hearing block do not need that extra gap."
+  },
+  {
+   "county": "Caldmere",
+   "state": "Cindervale",
+   "office_email": "clerk@caldmere.example",
+   "timezone": "UTC-05:00 (fixed for this exercise)",
+   "hearing_mode": "video",
+   "staffing_rule": "Email case IDs and representative name to clerk; government acknowledgment required.",
+   "replacement_rule": "Email the replacement name and affected case IDs.",
+   "schedule_rule": "Only the government can approve a hearing date change. The firm, consultants and homeowners can request a change, but moving a calendar event does not move the hearing.",
+   "packet_rule": "Send current case packet to the clerk and consultant at least 48 hours before the hearing. Late material requires clerk confirmation.",
+   "contact_hours": "09:00-16:00 local, Monday-Friday",
+   "travel_note": "Allow 60 minutes between in-person hearings in different counties. Video hearings require 15 minutes between separate sessions. Consecutive hearings in the same government hearing block do not need that extra gap."
+  },
+  {
+   "county": "Fenwick Vale",
+   "state": "Dovewick",
+   "office_email": "clerk@fenwick-vale.example",
+   "timezone": "UTC-05:00 (fixed for this exercise)",
+   "hearing_mode": "in_person",
+   "staffing_rule": "Staffing notice naming the representative; government acknowledgment required before coverage is recorded as accepted.",
+   "replacement_rule": "Submit an updated staffing notice naming the replacement for each changed case.",
+   "schedule_rule": "Only the government can approve a hearing date change. The firm, consultants and homeowners can request a change, but moving a calendar event does not move the hearing.",
+   "packet_rule": "Send current case packet to the clerk and consultant at least 48 hours before the hearing. Late material requires clerk confirmation.",
+   "contact_hours": "09:00-16:00 local, Monday-Friday",
+   "travel_note": "Allow 60 minutes between in-person hearings in different counties. Video hearings require 15 minutes between separate sessions. Consecutive hearings in the same government hearing block do not need that extra gap."
+  },
+  {
+   "county": "Harthmere",
+   "state": "Dovewick",
+   "office_email": "clerk@harthmere.example",
+   "timezone": "UTC-05:00 (fixed for this exercise)",
+   "hearing_mode": "video",
+   "staffing_rule": "Email case IDs and representative name to clerk; government acknowledgment required.",
+   "replacement_rule": "Email the replacement name and affected case IDs.",
+   "schedule_rule": "Only the government can approve a hearing date change. The firm, consultants and homeowners can request a change, but moving a calendar event does not move the hearing.",
+   "packet_rule": "Send current case packet to the clerk and consultant at least 48 hours before the hearing. Late material requires clerk confirmation.",
+   "contact_hours": "09:00-16:00 local, Monday-Friday",
+   "travel_note": "Allow 60 minutes between in-person hearings in different counties. Video hearings require 15 minutes between separate sessions. Consecutive hearings in the same government hearing block do not need that extra gap."
+  },
+  {
+   "county": "Iverfen",
+   "state": "Everen",
+   "office_email": "clerk@iverfen.example",
+   "timezone": "UTC-05:00 (fixed for this exercise)",
+   "hearing_mode": "video",
+   "staffing_rule": "Staffing notice naming the representative; government acknowledgment required before coverage is recorded as accepted.",
+   "replacement_rule": "Submit an updated staffing notice naming the replacement for each changed case.",
+   "schedule_rule": "Only the government can approve a hearing date change. The firm, consultants and homeowners can request a change, but moving a calendar event does not move the hearing.",
+   "packet_rule": "Send current case packet to the clerk and consultant at least 48 hours before the hearing. Late material requires clerk confirmation.",
+   "contact_hours": "09:00-16:00 local, Monday-Friday",
+   "travel_note": "Allow 60 minutes between in-person hearings in different counties. Video hearings require 15 minutes between separate sessions. Consecutive hearings in the same government hearing block do not need that extra gap."
+  },
+  {
+   "county": "Juniper Reach",
+   "state": "Everen",
+   "office_email": "clerk@juniper-reach.example",
+   "timezone": "UTC-05:00 (fixed for this exercise)",
+   "hearing_mode": "in_person",
+   "staffing_rule": "Email case IDs and representative name to clerk; government acknowledgment required.",
+   "replacement_rule": "Email the replacement name and affected case IDs.",
+   "schedule_rule": "Only the government can approve a hearing date change. The firm, consultants and homeowners can request a change, but moving a calendar event does not move the hearing.",
+   "packet_rule": "Send current case packet to the clerk and consultant at least 48 hours before the hearing. Late material requires clerk confirmation.",
+   "contact_hours": "09:00-16:00 local, Monday-Friday",
+   "travel_note": "Allow 60 minutes between in-person hearings in different counties. Video hearings require 15 minutes between separate sessions. Consecutive hearings in the same government hearing block do not need that extra gap."
+  }
+ ],
+ "documents": [
+  {
+   "name": "102-willow-lane-assignment-v1.txt",
+   "kind": "staffing_notice",
+   "version": 1,
+   "case_id": "AX-121",
+   "fields": {
+    "property": "102 Willow Lane, Larkmere",
+    "case": "AX-121",
+    "county": "Larkmere",
+    "representative": "Leo Arlen",
+    "status": "recorded (simulated)"
+   },
+   "text": "FICTIONAL STAFFING NOTICE\nProperty: 102 Willow Lane, Larkmere\nCase: AX-121\nCounty: Larkmere\nRepresentative: Leo Arlen\nStatus: recorded (simulated)\nNo consultant signature is required for this staffing notice."
+  },
+  {
+   "name": "102-willow-lane-packet-v2.txt",
+   "kind": "packet",
+   "version": 2,
+   "case_id": "AX-121",
+   "fields": {
+    "property": "102 Willow Lane, Larkmere",
+    "homeowner": "Alex Linden",
+    "case": "AX-121",
+    "county": "Larkmere",
+    "tax_year": "2029",
+    "packet_version": "2",
+    "prepared": "2030-05-29",
+    "contents": "appeal summary, property worksheet, homeowner statement.",
+    "hearing_representative": "see assignment record."
+   },
+   "text": "FICTIONAL TRAINING DOCUMENT\nProperty: 102 Willow Lane, Larkmere\nHomeowner: Alex Linden\nCase: AX-121\nCounty: Larkmere\nTax year: 2029\nPacket version: 2\nPrepared: 2030-05-29\nAdministrative cover sheet for the mock case packet.\nContents: appeal summary, property worksheet, homeowner statement.\nHearing representative: see assignment record.\nThis fixture contains no real evidence or legal analysis."
+  },
+  {
+   "name": "11-brook-road-assignment-v1.txt",
+   "kind": "staffing_notice",
+   "version": 1,
+   "case_id": "AX-113",
+   "fields": {
+    "property": "11 Brook Road, Fenwick Vale",
+    "case": "AX-113",
+    "county": "Fenwick Vale",
+    "representative": "Maya Venn",
+    "status": "recorded (simulated)"
+   },
+   "text": "FICTIONAL STAFFING NOTICE\nProperty: 11 Brook Road, Fenwick Vale\nCase: AX-113\nCounty: Fenwick Vale\nRepresentative: Maya Venn\nStatus: recorded (simulated)\nNo consultant signature is required for this staffing notice."
+  },
+  {
+   "name": "11-brook-road-packet-v2.txt",
+   "kind": "packet",
+   "version": 2,
+   "case_id": "AX-113",
+   "fields": {
+    "property": "11 Brook Road, Fenwick Vale",
+    "homeowner": "Jordan Reed",
+    "case": "AX-113",
+    "county": "Fenwick Vale",
+    "tax_year": "2029",
+    "packet_version": "2",
+    "prepared": "2030-05-29",
+    "contents": "appeal summary, property worksheet, homeowner statement.",
+    "hearing_representative": "see assignment record."
+   },
+   "text": "FICTIONAL TRAINING DOCUMENT\nProperty: 11 Brook Road, Fenwick Vale\nHomeowner: Jordan Reed\nCase: AX-113\nCounty: Fenwick Vale\nTax year: 2029\nPacket version: 2\nPrepared: 2030-05-29\nAdministrative cover sheet for the mock case packet.\nContents: appeal summary, property worksheet, homeowner statement.\nHearing representative: see assignment record.\nThis fixture contains no real evidence or legal analysis."
+  },
+  {
+   "name": "118-willow-lane-assignment-v1.txt",
+   "kind": "staffing_notice",
+   "version": 1,
+   "case_id": "AX-122",
+   "fields": {
+    "property": "118 Willow Lane, Larkmere",
+    "case": "AX-122",
+    "county": "Larkmere",
+    "representative": "Leo Arlen",
+    "status": "recorded (simulated)"
+   },
+   "text": "FICTIONAL STAFFING NOTICE\nProperty: 118 Willow Lane, Larkmere\nCase: AX-122\nCounty: Larkmere\nRepresentative: Leo Arlen\nStatus: recorded (simulated)\nNo consultant signature is required for this staffing notice."
+  },
+  {
+   "name": "118-willow-lane-packet-v2.txt",
+   "kind": "packet",
+   "version": 2,
+   "case_id": "AX-122",
+   "fields": {
+    "property": "118 Willow Lane, Larkmere",
+    "homeowner": "Alex Linden",
+    "case": "AX-122",
+    "county": "Larkmere",
+    "tax_year": "2029",
+    "packet_version": "2",
+    "prepared": "2030-05-29",
+    "contents": "appeal summary, property worksheet, homeowner statement.",
+    "hearing_representative": "see assignment record."
+   },
+   "text": "FICTIONAL TRAINING DOCUMENT\nProperty: 118 Willow Lane, Larkmere\nHomeowner: Alex Linden\nCase: AX-122\nCounty: Larkmere\nTax year: 2029\nPacket version: 2\nPrepared: 2030-05-29\nAdministrative cover sheet for the mock case packet.\nContents: appeal summary, property worksheet, homeowner statement.\nHearing representative: see assignment record.\nThis fixture contains no real evidence or legal analysis."
+  },
+  {
+   "name": "120-garden-street-packet-v2.txt",
+   "kind": "packet",
+   "version": 2,
+   "case_id": "AX-123",
+   "fields": {
+    "property": "120 Garden Street, Velloran",
+    "homeowner": "Sam Briar",
+    "case": "AX-123",
+    "county": "Velloran",
+    "tax_year": "2029",
+    "packet_version": "2",
+    "prepared": "2030-05-29",
+    "contents": "appeal summary, property worksheet, homeowner statement.",
+    "hearing_representative": "see assignment record."
+   },
+   "text": "FICTIONAL TRAINING DOCUMENT\nProperty: 120 Garden Street, Velloran\nHomeowner: Sam Briar\nCase: AX-123\nCounty: Velloran\nTax year: 2029\nPacket version: 2\nPrepared: 2030-05-29\nAdministrative cover sheet for the mock case packet.\nContents: appeal summary, property worksheet, homeowner statement.\nHearing representative: see assignment record.\nThis fixture contains no real evidence or legal analysis."
+  },
+  {
+   "name": "138-garden-street-packet-v2.txt",
+   "kind": "packet",
+   "version": 2,
+   "case_id": "AX-124",
+   "fields": {
+    "property": "138 Garden Street, Velloran",
+    "homeowner": "Sam Briar",
+    "case": "AX-124",
+    "county": "Velloran",
+    "tax_year": "2029",
+    "packet_version": "2",
+    "prepared": "2030-05-29",
+    "contents": "appeal summary, property worksheet, homeowner statement.",
+    "hearing_representative": "see assignment record."
+   },
+   "text": "FICTIONAL TRAINING DOCUMENT\nProperty: 138 Garden Street, Velloran\nHomeowner: Sam Briar\nCase: AX-124\nCounty: Velloran\nTax year: 2029\nPacket version: 2\nPrepared: 2030-05-29\nAdministrative cover sheet for the mock case packet.\nContents: appeal summary, property worksheet, homeowner statement.\nHearing representative: see assignment record.\nThis fixture contains no real evidence or legal analysis."
+  },
+  {
+   "name": "14-willow-lane-assignment-v1.txt",
+   "kind": "staffing_notice",
+   "version": 1,
+   "case_id": "AX-101",
+   "fields": {
+    "property": "14 Willow Lane, Larkmere",
+    "case": "AX-101",
+    "county": "Larkmere",
+    "representative": "Maya Venn",
+    "status": "not yet submitted"
+   },
+   "text": "FICTIONAL STAFFING NOTICE\nProperty: 14 Willow Lane, Larkmere\nCase: AX-101\nCounty: Larkmere\nRepresentative: Maya Venn\nStatus: not yet submitted\nNo consultant signature is required for this staffing notice."
+  },
+  {
+   "name": "14-willow-lane-packet-v2.txt",
+   "kind": "packet",
+   "version": 2,
+   "case_id": "AX-101",
+   "fields": {
+    "property": "14 Willow Lane, Larkmere",
+    "homeowner": "Jamie Vale",
+    "case": "AX-101",
+    "county": "Larkmere",
+    "tax_year": "2029",
+    "packet_version": "2",
+    "prepared": "2030-05-29",
+    "contents": "appeal summary, property worksheet, homeowner statement.",
+    "hearing_representative": "see assignment record."
+   },
+   "text": "FICTIONAL TRAINING DOCUMENT\nProperty: 14 Willow Lane, Larkmere\nHomeowner: Jamie Vale\nCase: AX-101\nCounty: Larkmere\nTax year: 2029\nPacket version: 2\nPrepared: 2030-05-29\nAdministrative cover sheet for the mock case packet.\nContents: appeal summary, property worksheet, homeowner statement.\nHearing representative: see assignment record.\nThis fixture contains no real evidence or legal analysis."
+  },
+  {
+   "name": "16-birch-lane-assignment-v1.txt",
+   "kind": "staffing_notice",
+   "version": 1,
+   "case_id": "AX-109",
+   "fields": {
+    "property": "16 Birch Lane, Brindlefen",
+    "case": "AX-109",
+    "county": "Brindlefen",
+    "representative": "Priya Marden",
+    "status": "recorded (simulated)"
+   },
+   "text": "FICTIONAL STAFFING NOTICE\nProperty: 16 Birch Lane, Brindlefen\nCase: AX-109\nCounty: Brindlefen\nRepresentative: Priya Marden\nStatus: recorded (simulated)\nNo consultant signature is required for this staffing notice."
+  },
+  {
+   "name": "16-birch-lane-packet-v2.txt",
+   "kind": "packet",
+   "version": 2,
+   "case_id": "AX-109",
+   "fields": {
+    "property": "16 Birch Lane, Brindlefen",
+    "homeowner": "Taylor Finch",
+    "case": "AX-109",
+    "county": "Brindlefen",
+    "tax_year": "2029",
+    "packet_version": "2",
+    "prepared": "2030-05-29",
+    "contents": "appeal summary, property worksheet, homeowner statement.",
+    "hearing_representative": "see assignment record."
+   },
+   "text": "FICTIONAL TRAINING DOCUMENT\nProperty: 16 Birch Lane, Brindlefen\nHomeowner: Taylor Finch\nCase: AX-109\nCounty: Brindlefen\nTax year: 2029\nPacket version: 2\nPrepared: 2030-05-29\nAdministrative cover sheet for the mock case packet.\nContents: appeal summary, property worksheet, homeowner statement.\nHearing representative: see assignment record.\nThis fixture contains no real evidence or legal analysis."
+  },
+  {
+   "name": "18-maple-lane-assignment-v1.txt",
+   "kind": "staffing_notice",
+   "version": 1,
+   "case_id": "AX-117",
+   "fields": {
+    "property": "18 Maple Lane, Iverfen",
+    "case": "AX-117",
+    "county": "Iverfen",
+    "representative": "Nora Pell",
+    "status": "recorded (simulated)"
+   },
+   "text": "FICTIONAL STAFFING NOTICE\nProperty: 18 Maple Lane, Iverfen\nCase: AX-117\nCounty: Iverfen\nRepresentative: Nora Pell\nStatus: recorded (simulated)\nNo consultant signature is required for this staffing notice."
+  },
+  {
+   "name": "18-maple-lane-packet-v2.txt",
+   "kind": "packet",
+   "version": 2,
+   "case_id": "AX-117",
+   "fields": {
+    "property": "18 Maple Lane, Iverfen",
+    "homeowner": "Cameron Hale",
+    "case": "AX-117",
+    "county": "Iverfen",
+    "tax_year": "2029",
+    "packet_version": "2",
+    "prepared": "2030-05-29",
+    "contents": "appeal summary, property worksheet, homeowner statement.",
+    "hearing_representative": "see assignment record."
+   },
+   "text": "FICTIONAL TRAINING DOCUMENT\nProperty: 18 Maple Lane, Iverfen\nHomeowner: Cameron Hale\nCase: AX-117\nCounty: Iverfen\nTax year: 2029\nPacket version: 2\nPrepared: 2030-05-29\nAdministrative cover sheet for the mock case packet.\nContents: appeal summary, property worksheet, homeowner statement.\nHearing representative: see assignment record.\nThis fixture contains no real evidence or legal analysis."
+  },
+  {
+   "name": "24-orchard-road-assignment-v1.txt",
+   "kind": "staffing_notice",
+   "version": 1,
+   "case_id": "AX-106",
+   "fields": {
+    "property": "24 Orchard Road, Orimere",
+    "case": "AX-106",
+    "county": "Orimere",
+    "representative": "Nora Pell",
+    "status": "not yet submitted"
+   },
+   "text": "FICTIONAL STAFFING NOTICE\nProperty: 24 Orchard Road, Orimere\nCase: AX-106\nCounty: Orimere\nRepresentative: Nora Pell\nStatus: not yet submitted\nNo consultant signature is required for this staffing notice."
+  },
+  {
+   "name": "24-orchard-road-packet-v2.txt",
+   "kind": "packet",
+   "version": 2,
+   "case_id": "AX-106",
+   "fields": {
+    "property": "24 Orchard Road, Orimere",
+    "homeowner": "Robin Wren",
+    "case": "AX-106",
+    "county": "Orimere",
+    "tax_year": "2029",
+    "packet_version": "2",
+    "prepared": "2030-05-29",
+    "contents": "appeal summary, property worksheet, homeowner statement.",
+    "hearing_representative": "see assignment record."
+   },
+   "text": "FICTIONAL TRAINING DOCUMENT\nProperty: 24 Orchard Road, Orimere\nHomeowner: Robin Wren\nCase: AX-106\nCounty: Orimere\nTax year: 2029\nPacket version: 2\nPrepared: 2030-05-29\nAdministrative cover sheet for the mock case packet.\nContents: appeal summary, property worksheet, homeowner statement.\nHearing representative: see assignment record.\nThis fixture contains no real evidence or legal analysis."
+  },
+  {
+   "name": "28-willow-lane-assignment-v1.txt",
+   "kind": "staffing_notice",
+   "version": 1,
+   "case_id": "AX-102",
+   "fields": {
+    "property": "28 Willow Lane, Larkmere",
+    "case": "AX-102",
+    "county": "Larkmere",
+    "representative": "Maya Venn",
+    "status": "not yet submitted"
+   },
+   "text": "FICTIONAL STAFFING NOTICE\nProperty: 28 Willow Lane, Larkmere\nCase: AX-102\nCounty: Larkmere\nRepresentative: Maya Venn\nStatus: not yet submitted\nNo consultant signature is required for this staffing notice."
+  },
+  {
+   "name": "28-willow-lane-packet-v2.txt",
+   "kind": "packet",
+   "version": 2,
+   "case_id": "AX-102",
+   "fields": {
+    "property": "28 Willow Lane, Larkmere",
+    "homeowner": "Jamie Vale",
+    "case": "AX-102",
+    "county": "Larkmere",
+    "tax_year": "2029",
+    "packet_version": "2",
+    "prepared": "2030-05-29",
+    "contents": "appeal summary, property worksheet, homeowner statement.",
+    "hearing_representative": "see assignment record."
+   },
+   "text": "FICTIONAL TRAINING DOCUMENT\nProperty: 28 Willow Lane, Larkmere\nHomeowner: Jamie Vale\nCase: AX-102\nCounty: Larkmere\nTax year: 2029\nPacket version: 2\nPrepared: 2030-05-29\nAdministrative cover sheet for the mock case packet.\nContents: appeal summary, property worksheet, homeowner statement.\nHearing representative: see assignment record.\nThis fixture contains no real evidence or legal analysis."
+  },
+  {
+   "name": "29-brook-road-assignment-v1.txt",
+   "kind": "staffing_notice",
+   "version": 1,
+   "case_id": "AX-114",
+   "fields": {
+    "property": "29 Brook Road, Fenwick Vale",
+    "case": "AX-114",
+    "county": "Fenwick Vale",
+    "representative": "Maya Venn",
+    "status": "recorded (simulated)"
+   },
+   "text": "FICTIONAL STAFFING NOTICE\nProperty: 29 Brook Road, Fenwick Vale\nCase: AX-114\nCounty: Fenwick Vale\nRepresentative: Maya Venn\nStatus: recorded (simulated)\nNo consultant signature is required for this staffing notice."
+  },
+  {
+   "name": "29-brook-road-packet-v2.txt",
+   "kind": "packet",
+   "version": 2,
+   "case_id": "AX-114",
+   "fields": {
+    "property": "29 Brook Road, Fenwick Vale",
+    "homeowner": "Jordan Reed",
+    "case": "AX-114",
+    "county": "Fenwick Vale",
+    "tax_year": "2029",
+    "packet_version": "2",
+    "prepared": "2030-05-29",
+    "contents": "appeal summary, property worksheet, homeowner statement.",
+    "hearing_representative": "see assignment record."
+   },
+   "text": "FICTIONAL TRAINING DOCUMENT\nProperty: 29 Brook Road, Fenwick Vale\nHomeowner: Jordan Reed\nCase: AX-114\nCounty: Fenwick Vale\nTax year: 2029\nPacket version: 2\nPrepared: 2030-05-29\nAdministrative cover sheet for the mock case packet.\nContents: appeal summary, property worksheet, homeowner statement.\nHearing representative: see assignment record.\nThis fixture contains no real evidence or legal analysis."
+  },
+  {
+   "name": "34-maple-lane-assignment-v1.txt",
+   "kind": "staffing_notice",
+   "version": 1,
+   "case_id": "AX-118",
+   "fields": {
+    "property": "34 Maple Lane, Iverfen",
+    "case": "AX-118",
+    "county": "Iverfen",
+    "representative": "Nora Pell",
+    "status": "recorded (simulated)"
+   },
+   "text": "FICTIONAL STAFFING NOTICE\nProperty: 34 Maple Lane, Iverfen\nCase: AX-118\nCounty: Iverfen\nRepresentative: Nora Pell\nStatus: recorded (simulated)\nNo consultant signature is required for this staffing notice."
+  },
+  {
+   "name": "34-maple-lane-packet-v2.txt",
+   "kind": "packet",
+   "version": 2,
+   "case_id": "AX-118",
+   "fields": {
+    "property": "34 Maple Lane, Iverfen",
+    "homeowner": "Cameron Hale",
+    "case": "AX-118",
+    "county": "Iverfen",
+    "tax_year": "2029",
+    "packet_version": "2",
+    "prepared": "2030-05-29",
+    "contents": "appeal summary, property worksheet, homeowner statement.",
+    "hearing_representative": "see assignment record."
+   },
+   "text": "FICTIONAL TRAINING DOCUMENT\nProperty: 34 Maple Lane, Iverfen\nHomeowner: Cameron Hale\nCase: AX-118\nCounty: Iverfen\nTax year: 2029\nPacket version: 2\nPrepared: 2030-05-29\nAdministrative cover sheet for the mock case packet.\nContents: appeal summary, property worksheet, homeowner statement.\nHearing representative: see assignment record.\nThis fixture contains no real evidence or legal analysis."
+  },
+  {
+   "name": "37-meadow-avenue-packet-v2.txt",
+   "kind": "packet",
+   "version": 2,
+   "case_id": "AX-107",
+   "fields": {
+    "property": "37 Meadow Avenue, Tesswick",
+    "homeowner": "Casey Alder",
+    "case": "AX-107",
+    "county": "Tesswick",
+    "tax_year": "2029",
+    "packet_version": "2",
+    "prepared": "2030-05-29",
+    "contents": "appeal summary, property worksheet, homeowner statement.",
+    "hearing_representative": "see assignment record."
+   },
+   "text": "FICTIONAL TRAINING DOCUMENT\nProperty: 37 Meadow Avenue, Tesswick\nHomeowner: Casey Alder\nCase: AX-107\nCounty: Tesswick\nTax year: 2029\nPacket version: 2\nPrepared: 2030-05-29\nAdministrative cover sheet for the mock case packet.\nContents: appeal summary, property worksheet, homeowner statement.\nHearing representative: see assignment record.\nThis fixture contains no real evidence or legal analysis."
+  },
+  {
+   "name": "42-birch-lane-assignment-v1.txt",
+   "kind": "staffing_notice",
+   "version": 1,
+   "case_id": "AX-110",
+   "fields": {
+    "property": "42 Birch Lane, Brindlefen",
+    "case": "AX-110",
+    "representative": "Priya Marden",
+    "status": "recorded (simulated)"
+   },
+   "text": "FICTIONAL STAFFING NOTICE\nProperty: 42 Birch Lane, Brindlefen\nCase: AX-110\nRepresentative: Priya Marden\nStatus: recorded (simulated)\nNo consultant signature is required for this staffing notice."
+  },
+  {
+   "name": "42-birch-lane-packet-v2.txt",
+   "kind": "packet",
+   "version": 2,
+   "case_id": "AX-110",
+   "fields": {
+    "property": "42 Birch Lane, Brindlefen",
+    "homeowner": "Taylor Finch",
+    "case": "AX-110",
+    "county": "Brindlefen",
+    "tax_year": "2029",
+    "packet_version": "2",
+    "prepared": "2030-05-29",
+    "contents": "appeal summary, property worksheet, homeowner statement.",
+    "hearing_representative": "see assignment record."
+   },
+   "text": "FICTIONAL TRAINING DOCUMENT\nProperty: 42 Birch Lane, Brindlefen\nHomeowner: Taylor Finch\nCase: AX-110\nCounty: Brindlefen\nTax year: 2029\nPacket version: 2\nPrepared: 2030-05-29\nAdministrative cover sheet for the mock case packet.\nContents: appeal summary, property worksheet, homeowner statement.\nHearing representative: see assignment record.\nThis fixture contains no real evidence or legal analysis."
+  },
+  {
+   "name": "48-linden-avenue-packet-v2.txt",
+   "kind": "packet",
+   "version": 2,
+   "case_id": "AX-115",
+   "fields": {
+    "property": "48 Linden Avenue, Harthmere",
+    "homeowner": "Riley Fern",
+    "case": "AX-115",
+    "county": "Harthmere",
+    "tax_year": "2029",
+    "packet_version": "2",
+    "prepared": "2030-05-29",
+    "contents": "appeal summary, property worksheet, homeowner statement.",
+    "hearing_representative": "see assignment record."
+   },
+   "text": "FICTIONAL TRAINING DOCUMENT\nProperty: 48 Linden Avenue, Harthmere\nHomeowner: Riley Fern\nCase: AX-115\nCounty: Harthmere\nTax year: 2029\nPacket version: 2\nPrepared: 2030-05-29\nAdministrative cover sheet for the mock case packet.\nContents: appeal summary, property worksheet, homeowner statement.\nHearing representative: see assignment record.\nThis fixture contains no real evidence or legal analysis."
+  },
+  {
+   "name": "52-meadow-avenue-packet-v2.txt",
+   "kind": "packet",
+   "version": 2,
+   "case_id": "AX-108",
+   "fields": {
+    "property": "52 Meadow Avenue, Tesswick",
+    "homeowner": "Casey Alder",
+    "case": "AX-108",
+    "county": "Tesswick",
+    "tax_year": "2029",
+    "packet_version": "2",
+    "prepared": "2030-05-29",
+    "contents": "appeal summary, property worksheet, homeowner statement.",
+    "hearing_representative": "see assignment record."
+   },
+   "text": "FICTIONAL TRAINING DOCUMENT\nProperty: 52 Meadow Avenue, Tesswick\nHomeowner: Casey Alder\nCase: AX-108\nCounty: Tesswick\nTax year: 2029\nPacket version: 2\nPrepared: 2030-05-29\nAdministrative cover sheet for the mock case packet.\nContents: appeal summary, property worksheet, homeowner statement.\nHearing representative: see assignment record.\nThis fixture contains no real evidence or legal analysis."
+  },
+  {
+   "name": "52-meadow-avenue-staffing-form.txt",
+   "kind": "staffing_form",
+   "version": null,
+   "case_id": null,
+   "fields": {
+    "case_ids": "____________________",
+    "representative_name": "____________________",
+    "hearing_date_and_times": "____________________",
+    "contact_email": "____________________"
+   },
+   "text": "FICTIONAL TESSWICK STAFFING FORM\nReceived from clerk Ren, June 4, 2030.\nCase IDs: ____________________\nRepresentative name: ____________________\nHearing date and times: ____________________\nContact email: ____________________"
+  },
+  {
+   "name": "57-clover-road-packet-v2.txt",
+   "kind": "packet",
+   "version": 2,
+   "case_id": "AX-119",
+   "fields": {
+    "property": "57 Clover Road, Juniper Reach",
+    "homeowner": "Drew Rowan",
+    "case": "AX-119",
+    "county": "Juniper Reach",
+    "tax_year": "2029",
+    "packet_version": "2",
+    "prepared": "2030-05-29",
+    "contents": "appeal summary, property worksheet, homeowner statement.",
+    "hearing_representative": "see assignment record."
+   },
+   "text": "FICTIONAL TRAINING DOCUMENT\nProperty: 57 Clover Road, Juniper Reach\nHomeowner: Drew Rowan\nCase: AX-119\nCounty: Juniper Reach\nTax year: 2029\nPacket version: 2\nPrepared: 2030-05-29\nAdministrative cover sheet for the mock case packet.\nContents: appeal summary, property worksheet, homeowner statement.\nHearing representative: see assignment record.\nThis fixture contains no real evidence or legal analysis."
+  },
+  {
+   "name": "63-garden-street-packet-v2.txt",
+   "kind": "packet",
+   "version": 2,
+   "case_id": "AX-103",
+   "fields": {
+    "property": "63 Garden Street, Velloran",
+    "homeowner": "Morgan Ellis",
+    "case": "AX-103",
+    "county": "Velloran",
+    "tax_year": "2029",
+    "packet_version": "2",
+    "prepared": "2030-05-29",
+    "contents": "appeal summary, property worksheet, homeowner statement.",
+    "hearing_representative": "see assignment record."
+   },
+   "text": "FICTIONAL TRAINING DOCUMENT\nProperty: 63 Garden Street, Velloran\nHomeowner: Morgan Ellis\nCase: AX-103\nCounty: Velloran\nTax year: 2029\nPacket version: 2\nPrepared: 2030-05-29\nAdministrative cover sheet for the mock case packet.\nContents: appeal summary, property worksheet, homeowner statement.\nHearing representative: see assignment record.\nThis fixture contains no real evidence or legal analysis."
+  },
+  {
+   "name": "66-linden-avenue-packet-v2.txt",
+   "kind": "packet",
+   "version": 2,
+   "case_id": "AX-116",
+   "fields": {
+    "property": "66 Linden Avenue, Harthmere",
+    "homeowner": "Riley Fern",
+    "case": "AX-116",
+    "county": "Harthmere",
+    "tax_year": "2029",
+    "packet_version": "2",
+    "prepared": "2030-05-29",
+    "contents": "appeal summary, property worksheet, homeowner statement.",
+    "hearing_representative": "see assignment record."
+   },
+   "text": "FICTIONAL TRAINING DOCUMENT\nProperty: 66 Linden Avenue, Harthmere\nHomeowner: Riley Fern\nCase: AX-116\nCounty: Harthmere\nTax year: 2029\nPacket version: 2\nPrepared: 2030-05-29\nAdministrative cover sheet for the mock case packet.\nContents: appeal summary, property worksheet, homeowner statement.\nHearing representative: see assignment record.\nThis fixture contains no real evidence or legal analysis."
+  },
+  {
+   "name": "73-clover-road-packet-v2.txt",
+   "kind": "packet",
+   "version": 2,
+   "case_id": "AX-120",
+   "fields": {
+    "property": "73 Clover Road, Juniper Reach",
+    "homeowner": "Drew Rowan",
+    "case": "AX-120",
+    "county": "Juniper Reach",
+    "tax_year": "2029",
+    "packet_version": "2",
+    "prepared": "2030-05-29",
+    "contents": "appeal summary, property worksheet, homeowner statement.",
+    "hearing_representative": "see assignment record."
+   },
+   "text": "FICTIONAL TRAINING DOCUMENT\nProperty: 73 Clover Road, Juniper Reach\nHomeowner: Drew Rowan\nCase: AX-120\nCounty: Juniper Reach\nTax year: 2029\nPacket version: 2\nPrepared: 2030-05-29\nAdministrative cover sheet for the mock case packet.\nContents: appeal summary, property worksheet, homeowner statement.\nHearing representative: see assignment record.\nThis fixture contains no real evidence or legal analysis."
+  },
+  {
+   "name": "75-elm-street-packet-v1.txt",
+   "kind": "packet",
+   "version": 1,
+   "case_id": "AX-111",
+   "fields": {
+    "property": "75 Elm Street, Caldmere",
+    "homeowner": "Avery Moss",
+    "case": "AX-111",
+    "county": "Caldmere",
+    "tax_year": "2029",
+    "packet_version": "1",
+    "prepared": "2030-05-28",
+    "contents": "appeal summary, property worksheet.",
+    "hearing_representative": "see assignment record."
+   },
+   "text": "FICTIONAL TRAINING DOCUMENT\nProperty: 75 Elm Street, Caldmere\nHomeowner: Avery Moss\nCase: AX-111\nCounty: Caldmere\nTax year: 2029\nPacket version: 1\nPrepared: 2030-05-28\nAdministrative cover sheet for the mock case packet.\nContents: appeal summary, property worksheet.\nHearing representative: see assignment record.\nThis fixture contains no real evidence or legal analysis."
+  },
+  {
+   "name": "75-elm-street-packet-v2.txt",
+   "kind": "packet",
+   "version": 2,
+   "case_id": "AX-111",
+   "fields": {
+    "property": "75 Elm Street, Caldmere",
+    "homeowner": "Avery Moss",
+    "case": "AX-111",
+    "county": "Caldmere",
+    "tax_year": "2029",
+    "packet_version": "2",
+    "prepared": "2030-05-29",
+    "contents": "appeal summary, property worksheet, homeowner statement.",
+    "hearing_representative": "see assignment record."
+   },
+   "text": "FICTIONAL TRAINING DOCUMENT\nProperty: 75 Elm Street, Caldmere\nHomeowner: Avery Moss\nCase: AX-111\nCounty: Caldmere\nTax year: 2029\nPacket version: 2\nPrepared: 2030-05-29\nAdministrative cover sheet for the mock case packet.\nContents: appeal summary, property worksheet, homeowner statement.\nHearing representative: see assignment record.\nThis fixture contains no real evidence or legal analysis."
+  },
+  {
+   "name": "81-garden-street-packet-v2.txt",
+   "kind": "packet",
+   "version": 2,
+   "case_id": "AX-104",
+   "fields": {
+    "property": "81 Garden Street, Velloran",
+    "homeowner": "Morgan Ellis",
+    "case": "AX-104",
+    "county": "Velloran",
+    "tax_year": "2029",
+    "packet_version": "2",
+    "prepared": "2030-05-29",
+    "contents": "appeal summary, property worksheet, homeowner statement.",
+    "hearing_representative": "see assignment record."
+   },
+   "text": "FICTIONAL TRAINING DOCUMENT\nProperty: 81 Garden Street, Velloran\nHomeowner: Morgan Ellis\nCase: AX-104\nCounty: Velloran\nTax year: 2029\nPacket version: 2\nPrepared: 2030-05-29\nAdministrative cover sheet for the mock case packet.\nContents: appeal summary, property worksheet, homeowner statement.\nHearing representative: see assignment record.\nThis fixture contains no real evidence or legal analysis."
+  },
+  {
+   "name": "9-orchard-road-assignment-v1.txt",
+   "kind": "staffing_notice",
+   "version": 1,
+   "case_id": "AX-105",
+   "fields": {
+    "property": "9 Orchard Road, Orimere",
+    "case": "AX-105",
+    "county": "Orimere",
+    "representative": "Nora Pell",
+    "status": "recorded (simulated)"
+   },
+   "text": "FICTIONAL STAFFING NOTICE\nProperty: 9 Orchard Road, Orimere\nCase: AX-105\nCounty: Orimere\nRepresentative: Nora Pell\nStatus: recorded (simulated)\nNo consultant signature is required for this staffing notice."
+  },
+  {
+   "name": "9-orchard-road-packet-v2.txt",
+   "kind": "packet",
+   "version": 2,
+   "case_id": "AX-105",
+   "fields": {
+    "property": "9 Orchard Road, Orimere",
+    "homeowner": "Robin Wren",
+    "case": "AX-105",
+    "county": "Orimere",
+    "tax_year": "2029",
+    "packet_version": "2",
+    "prepared": "2030-05-29",
+    "contents": "appeal summary, property worksheet, homeowner statement.",
+    "hearing_representative": "see assignment record."
+   },
+   "text": "FICTIONAL TRAINING DOCUMENT\nProperty: 9 Orchard Road, Orimere\nHomeowner: Robin Wren\nCase: AX-105\nCounty: Orimere\nTax year: 2029\nPacket version: 2\nPrepared: 2030-05-29\nAdministrative cover sheet for the mock case packet.\nContents: appeal summary, property worksheet, homeowner statement.\nHearing representative: see assignment record.\nThis fixture contains no real evidence or legal analysis."
+  },
+  {
+   "name": "96-elm-street-packet-v1.txt",
+   "kind": "packet",
+   "version": 1,
+   "case_id": "AX-112",
+   "fields": {
+    "property": "96 Elm Street, Caldmere",
+    "homeowner": "Avery Moss",
+    "case": "AX-112",
+    "county": "Caldmere",
+    "tax_year": "2029",
+    "packet_version": "1",
+    "prepared": "2030-05-28",
+    "contents": "appeal summary, property worksheet.",
+    "hearing_representative": "see assignment record."
+   },
+   "text": "FICTIONAL TRAINING DOCUMENT\nProperty: 96 Elm Street, Caldmere\nHomeowner: Avery Moss\nCase: AX-112\nCounty: Caldmere\nTax year: 2029\nPacket version: 1\nPrepared: 2030-05-28\nAdministrative cover sheet for the mock case packet.\nContents: appeal summary, property worksheet.\nHearing representative: see assignment record.\nThis fixture contains no real evidence or legal analysis."
+  },
+  {
+   "name": "96-elm-street-packet-v2.txt",
+   "kind": "packet",
+   "version": 2,
+   "case_id": "AX-112",
+   "fields": {
+    "property": "96 Elm Street, Caldmere",
+    "homeowner": "Avery Moss",
+    "case": "AX-112",
+    "county": "Caldmere",
+    "tax_year": "2029",
+    "packet_version": "2",
+    "prepared": "2030-05-29",
+    "contents": "appeal summary, property worksheet, homeowner statement.",
+    "hearing_representative": "see assignment record."
+   },
+   "text": "FICTIONAL TRAINING DOCUMENT\nProperty: 96 Elm Street, Caldmere\nHomeowner: Avery Moss\nCase: AX-112\nCounty: Caldmere\nTax year: 2029\nPacket version: 2\nPrepared: 2030-05-29\nAdministrative cover sheet for the mock case packet.\nContents: appeal summary, property worksheet, homeowner statement.\nHearing representative: see assignment record.\nThis fixture contains no real evidence or legal analysis."
+  },
+  {
+   "name": "42-birch-lane-withdrawal-statement.png",
+   "kind": "other",
+   "version": null,
+   "case_id": null,
+   "fields": {},
+   "text": "Fictional handwritten withdrawal statement sent by a consultant.\n30"
+  }
+ ]
+}

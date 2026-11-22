@@ -1,0 +1,25 @@
+case_id,property,record_says,latest_evidence_says,issue,evidence_msgs,no_show_risk
+AX-101,14 Willow Lane,R01 Maya at 09:00,Maya can only do 09:30; no rep for 09:00; staffing notice due Jun 7 16:00,wrong_assignment,2;5;6,1
+AX-102,28 Willow Lane,R01 Maya at 09:30,Maya accepted 09:30; staffing notice not yet submitted or acknowledged,unverified_ack,5;6,0
+AX-103,63 Garden Street,Jun 13 13:00 R02,Government: stays Jun 11; Leo has Jun 11 conflict,wrong_date_and_uncovered,9;10;11;12,1
+AX-104,81 Garden Street,Jun 13 13:30 R02,Government: stays Jun 11; Leo has Jun 11 conflict,wrong_date_and_uncovered,9;10;11;12,1
+AX-105,9 Orchard Road,Jun 12 09:00,Government moved to Jun 18 09:00; Nora recorded,wrong_date,16;17,0
+AX-106,24 Orchard Road,no consultant,Stays Jun 12 14:00; Nora believes it moved to Jun 18; no rep assigned,uncovered,14;16;17;18,1
+AX-107,37 Meadow Avenue,R04 Owen,Owen accepted; government has not confirmed rep; Tesswick now needs form + call,unverified_ack_and_stale_playbook,20;22;24,0
+AX-108,52 Meadow Avenue,R04 Owen,Same as AX-107,unverified_ack_and_stale_playbook,20;22;24,0
+AX-109,16 Birch Lane,R05 hearing_scheduled,Settlement awaiting Priya signature,pending_signature,27,0
+AX-110,42 Birch Lane,R05 hearing_scheduled,Withdrawal rejected (wrong signer); re-signed photo unreadable; hearing still listed,pending_signature,28;29;30,0
+AX-111,75 Elm Street,packet v1,v2 is current; consultant links point to v1,stale_packet,33;35;36,0
+AX-112,96 Elm Street,packet v1,v2 is current; clerk copy unreadable; consultant links point to v1,stale_packet_and_unreadable,33;34;35,0
+AX-113,11 Brook Road,R01 Maya,Maya ill; Owen offered to cover; notice must be updated,consultant_cancelled,41;42,1
+AX-114,29 Brook Road,R01 Maya,Same as AX-113,consultant_cancelled,41;42,1
+AX-115,48 Linden Avenue,Jun 6 10:00 R02,Government moved to Jun 13 10:00 room D; Leo cannot attend Jun 13,wrong_date_and_uncovered,46;47;48,1
+AX-116,66 Linden Avenue,Jun 6 10:30,Unchanged date; room changed B->D (no room field in record),missing_room,45;47,0
+AX-117,18 Maple Lane,canceled,Government still lists Jun 14; withdrawal not processed,premature_cancel,51;52;53,0
+AX-118,34 Maple Lane,R03 scheduled,Consistent,ok,49;53,0
+AX-119,57 Clover Road,awaiting_reschedule,No further hearing; homeowner statement due Jun 8 16:00,wrong_status_missed_deadline_risk,57;59;60,0
+AX-120,73 Clover Road,awaiting_decision,Consistent,ok,59,0
+AX-121,102 Willow Lane,R02 scheduled,Consistent and fully confirmed,ok,61-66,0
+AX-122,118 Willow Lane,R02 scheduled,Consistent and fully confirmed,ok,61-66,0
+AX-123,120 Garden Street,R04 scheduled,Consistent and fully confirmed (duplicate confirmation msg 72),ok,67-72,0
+AX-124,138 Garden Street,R04 scheduled,Consistent and fully confirmed,ok,67-72,0
