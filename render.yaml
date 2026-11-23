@@ -1,0 +1,21 @@
+# Render Blueprint: runs the Hearing Desk with the live AI readers on one free web service.
+# The OpenAI key is entered in the Render dashboard (sync: false) and stays on the server.
+services:
+  - type: web
+    name: hearing-desk
+    runtime: node
+    plan: free
+    buildCommand: node --version
+    startCommand: node app/server/live.mjs
+    healthCheckPath: /api/status
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: HOST
+        value: 0.0.0.0
+      - key: LIVE_CAP_USD
+        value: "5"
+      - key: LIVE_PER_HOUR
+        value: "6"
+      - key: OPENAI_API_KEY
+        sync: false

@@ -5,7 +5,6 @@ Submission by **Shreyaansh Chhabra** for the Founder's Associate take-home case 
 with less human work and fewer errors, across county offices that each follow their own process.
 The brief is in [docs/ASSIGNMENT.md](docs/ASSIGNMENT.md).
 
-**Try the prototype online:** [Hearing Desk](https://schhabra2003.github.io/hearing-control-tower/app/dist/index.html) · [Later coordination software (simulated)](https://schhabra2003.github.io/hearing-control-tower/prototype/control-tower.html)
 
 The firm, its offices, consultants, hearings and messages are fictional and come from the case's
 example packet. Nothing in this repository sends a message or reads a real mailbox, and no API key
@@ -16,9 +15,9 @@ is included.
 | Deliverable | Where | What it is |
 |---|---|---|
 | One-page write-up | [docs/write-up/one-page-write-up.pdf](docs/write-up/one-page-write-up.pdf) | Memorandum: KPIs, priorities, process, human oversight, scalability, assumptions and budget |
-| Prototype: Hearing Desk | [Open online](https://schhabra2003.github.io/hearing-control-tower/app/dist/index.html), or `app/dist/index.html` offline (no install, no network) | The web app a coordinator and a consultant would use, with the AI readers and an agent-readable API |
+| Prototype: Hearing Desk | `app/dist/index.html`, opened offline (no install, no network), or hosted with the live AI readers (see Hosting) | The web app a coordinator and a consultant would use, with the AI readers and an agent-readable API |
 | Prototype: coordination sheet | [sheet/gate-sheet.xlsx](sheet/gate-sheet.xlsx) | The spreadsheet the firm runs this season: five checks on every hearing |
-| Prototype: later software | [Open online](https://schhabra2003.github.io/hearing-control-tower/prototype/control-tower.html), or `prototype/control-tower.html` | The coordination software proposed for about 5,000 hearings a year, simulated and not built |
+| Prototype: later software | `prototype/control-tower.html`, offline or at `/control-tower.html` on the hosted app | The coordination software proposed for about 5,000 hearings a year, simulated and not built |
 | Walkthrough video | [media/hearing-desk-launch.mp4](media/hearing-desk-launch.mp4) | 10 min 34 s, narrated, with subtitles |
 | Instructions to try it | [The three-minute tour](#the-three-minute-tour) and [How to run](#how-to-run) | Below |
 
@@ -112,6 +111,16 @@ The key stays in the server process: it is not sent to the page, logged or writt
 spend in one server run (change it with `--cap <usd>`), the server falls back to recorded answers. Behind a proxy, set `NODE_USE_ENV_PROXY=1` and
 `NODE_EXTRA_CA_CERTS`. Without a key, `npm run live:recorded` replays the recorded answers and says
 so. The readers only suggest rows; a person accepts or refuses each one.
+
+### Hosting
+
+`render.yaml` deploys the same server as one Render web service, with no build step and no
+dependencies. The key is entered once in the Render dashboard as the secret `OPENAI_API_KEY`; the
+server reads it, removes it from its environment and never sends it to the page. On a public host
+each visitor address gets 6 live reads an hour (`LIVE_PER_HOUR`), each read holds at most 10
+messages, and spend stops at $5 per server run (`LIVE_CAP_USD`). After a limit, the app keeps working
+with the recorded answers and says so. The cap restarts when the service restarts, so an OpenAI
+project budget is the hard stop.
 
 The same readers run from the command line in `prototype/` (`node cli/sheet.js --paste <file>`,
 or `node eval/run.js` for the full evaluation), as described in

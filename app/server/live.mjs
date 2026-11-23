@@ -37,7 +37,11 @@ if (flag('--help') || flag('-h')) {
   process.exit(0);
 }
 const PORT = Number(opt('--port', process.env.PORT || 4173));
-const HOST = opt('--host', '127.0.0.1');
+const HOST = opt('--host', process.env.HOST || '127.0.0.1');
+const PUBLIC = !/^(127\.0\.0\.1|localhost|::1)$/i.test(HOST);
+// On a public host each visitor's address may start at most LIVE_PER_HOUR live reads an hour; after
+// that the server answers with the recorded readers and says why. The spend cap still applies.
+const PER_HOUR = Number(opt('--per-hour', process.env.LIVE_PER_HOUR || 6));
 const CAP = Number(opt('--cap', process.env.LIVE_CAP_USD || 5));
 const MAX_MESSAGES = Number(opt('--max-messages', 10));
 const MAX_BODY_CHARS = 6000;
@@ -168,12 +172,12 @@ function withProgress(fn, role, emit) {
 }
 
 let queue = Promise.resolve();
-function runRead(messages, emit) {
+function runRead(messages, emit, limited = false) {
   const job = queue.then(async () => {
     state.busy = true;
     const t0 = Date.now();
     const cost0 = spent(), req0 = requestsMade();
-    const liveNow = state.mode === 'live' && spent() < CAP;
+    const liveNow = state.mode === 'live' && spent() < CAP && !limited;
     const fresh = messages.filter((m) => !isExample(m));
     emit({ type: 'start', mode: liveNow ? 'live' : 'recorded', messages: messages.length, toReadLive: liveNow ? fresh.length : 0, expectedRequests: liveNow ? fresh.length * 2 : 0 });
     try {
@@ -221,8 +225,20 @@ function allowed(req) {
   const host = String(req.headers.host || '');
   if (HOST === '127.0.0.1' || HOST === 'localhost') { if (!LOCAL.test(host)) return false; }
   const origin = req.headers.origin;
-  if (origin && origin !== `http://${host}`) return false;
+  if (origin && origin !== `http://${host}` && origin !== `https://${host}`) return false;
   return true;
+}
+// Live reads per visitor address in the last hour (public host only; memory only, nothing stored).
+const hits = new Map();
+function overLimit(req) {
+  if (!PUBLIC) return false;
+  const ip = String(req.headers['x-forwarded-for'] || req.socket.remoteAddress || '').split(',')[0].trim();
+  const now = Date.now();
+  const recent = (hits.get(ip) || []).filter((t) => now - t < 3600000);
+  if (recent.length >= PER_HOUR) { hits.set(ip, recent); return true; }
+  recent.push(now); hits.set(ip, recent);
+  if (hits.size > 5000) hits.clear();
+  return false;
 }
 function readBody(req, limit = 256 * 1024) {
   return new Promise((resolve, reject) => {
@@ -237,7 +253,7 @@ const server = http.createServer(async (req, res) => {
   const url = new URL(req.url, 'http://local');
   try {
     if (url.pathname.startsWith('/api/')) {
-      if (!allowed(req)) return send(res, 403, { error: 'Only pages served by this server on this computer may call it.' });
+      if (!allowed(req)) return send(res, 403, { error: 'Only pages served by this server may call it.' });
       if (url.pathname === '/api/status' && req.method === 'GET') return send(res, 200, status());
       if (url.pathname === '/api/read' && req.method === 'POST') {
         if (!/application\/json/i.test(String(req.headers['content-type'] || ''))) return send(res, 415, { error: 'Send the messages as application/json.' });
@@ -249,7 +265,9 @@ const server = http.createServer(async (req, res) => {
         if (stream) res.writeHead(200, { 'content-type': 'application/x-ndjson; charset=utf-8', 'cache-control': 'no-store', 'x-content-type-options': 'nosniff' });
         const emit = (ev) => { if (stream && !res.writableEnded) res.write(`${JSON.stringify(ev)}\n`); };
         try {
-          const out = await runRead(messages, emit);
+          const limited = overLimit(req);
+          const out = await runRead(messages, emit, limited);
+          if (limited) out.limitNote = `This address has used its ${PER_HOUR} live reads for this hour, so recorded answers were used.`;
           console.log(`Read ${out.messages.length} ${out.messages.length === 1 ? 'message' : 'messages'} (${out.mode}): ${out.readLive.length} live, ${out.failed.length} failed, ${out.rows.length} rows, ${(out.ms / 1000).toFixed(1)} s, $${out.costUsd.toFixed(4)}. Total $${out.status.costUsd.toFixed(4)} of the $${CAP.toFixed(2)} cap.`);
           if (stream) { res.end(`${JSON.stringify(out)}\n`); return; }
           return send(res, 200, out);
@@ -263,6 +281,7 @@ const server = http.createServer(async (req, res) => {
       return send(res, 404, { error: 'There is no such API path. Use GET /api/status or POST /api/read.' });
     }
     if (req.method !== 'GET' && req.method !== 'HEAD') return send(res, 405, 'Method not allowed', 'text/plain; charset=utf-8');
+    if (url.pathname === '/control-tower.html') return send(res, 200, fs.readFileSync(path.join(PROTO, 'control-tower.html')), TYPES['.html']);
     if (!DIST) return send(res, 404, 'The app is not built. Run npm run build, or pass --dist <dir>.', 'text/plain; charset=utf-8');
     const rel = decodeURIComponent(url.pathname === '/' ? '/index.html' : url.pathname);
     const file = path.resolve(DIST, `.${rel}`);
