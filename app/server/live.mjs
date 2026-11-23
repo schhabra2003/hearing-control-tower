@@ -257,6 +257,8 @@ const server = http.createServer(async (req, res) => {
     if (url.pathname.startsWith('/api/')) {
       if (!allowed(req)) return send(res, 403, { error: 'Only pages served by this server may call it.' });
       if (url.pathname === '/api/status' && req.method === 'GET') return send(res, 200, status());
+      // The control tower page asks its own server for a reader; here it keeps its offline reader.
+      if (url.pathname === '/api/reader' && req.method === 'GET') return send(res, 200, { live: false, reason: 'The control tower runs its offline reader here; the live readers are on the Paste page of Hearing Desk.' });
       if (url.pathname === '/api/read' && req.method === 'POST') {
         if (!/application\/json/i.test(String(req.headers['content-type'] || ''))) return send(res, 415, { error: 'Send the messages as application/json.' });
         let body;
