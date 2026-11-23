@@ -5,6 +5,7 @@ Submission by **Shreyaansh Chhabra** for the Founder's Associate take-home case 
 with less human work and fewer errors, across county offices that each follow their own process.
 The brief is in [docs/ASSIGNMENT.md](docs/ASSIGNMENT.md).
 
+**Try the prototype online:** [Hearing Desk](https://hearing-desk.onrender.com/) (live AI readers; the first visit can take about a minute to wake the server) · [Later coordination software (simulated)](https://hearing-desk.onrender.com/control-tower.html)
 
 The firm, its offices, consultants, hearings and messages are fictional and come from the case's
 example packet. Nothing in this repository sends a message or reads a real mailbox, and no API key
@@ -15,9 +16,9 @@ is included.
 | Deliverable | Where | What it is |
 |---|---|---|
 | One-page write-up | [docs/write-up/one-page-write-up.pdf](docs/write-up/one-page-write-up.pdf) | Memorandum: KPIs, priorities, process, human oversight, scalability, assumptions and budget |
-| Prototype: Hearing Desk | `app/dist/index.html`, opened offline (no install, no network), or hosted with the live AI readers (see Hosting) | The web app a coordinator and a consultant would use, with the AI readers and an agent-readable API |
+| Prototype: Hearing Desk | [Open online](https://hearing-desk.onrender.com/) with the live AI readers, or `app/dist/index.html` offline (no install, no network) | The web app a coordinator and a consultant would use, with the AI readers and an agent-readable API |
 | Prototype: coordination sheet | [sheet/gate-sheet.xlsx](sheet/gate-sheet.xlsx) | The spreadsheet the firm runs this season: five checks on every hearing |
-| Prototype: later software | `prototype/control-tower.html`, offline or at `/control-tower.html` on the hosted app | The coordination software proposed for about 5,000 hearings a year, simulated and not built |
+| Prototype: later software | [Open online](https://hearing-desk.onrender.com/control-tower.html), or `prototype/control-tower.html` offline | The coordination software proposed for about 5,000 hearings a year, simulated and not built |
 | Walkthrough video | [media/hearing-desk-launch.mp4](media/hearing-desk-launch.mp4) | 10 min 34 s, narrated, with subtitles |
 | Instructions to try it | [The three-minute tour](#the-three-minute-tour) and [How to run](#how-to-run) | Below |
 
