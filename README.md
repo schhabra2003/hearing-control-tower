@@ -1,33 +1,56 @@
-# Alice's Law Firm: hearing coordination
+# Hearing Coordination Plan for Alice's Law Firm
 
-A take-home case for a Founder's Associate role at FairAppeal. The firm, its offices,
-consultants, hearings and messages are fictional and come from the case's example packet.
-Nothing in this repository sends a message or reads a real mailbox, and no API key is included.
+Submission by **Shreyaansh Chhabra** for the Founder's Associate take-home case at FairAppeal
+(November 2026). The case asks how a small law firm can handle more property tax appeal hearings,
+with less human work and fewer errors, across county offices that each follow their own process.
+The brief is in [docs/ASSIGNMENT.md](docs/ASSIGNMENT.md).
 
-**The task.** A small firm sends part-time consultants to property tax appeal hearings at county
-offices, and hearings get missed. Choose the measures, set the order of work, design the process
-for the first priority, build a prototype, and show how the approach scales. The brief is in
-[docs/ASSIGNMENT.md](docs/ASSIGNMENT.md).
+The firm, its offices, consultants, hearings and messages are fictional and come from the case's
+example packet. Nothing in this repository sends a message or reads a real mailbox, and no API key
+is included.
+
+## Deliverables
+
+| Deliverable | Where | What it is |
+|---|---|---|
+| One-page write-up | [docs/write-up/one-page-write-up.pdf](docs/write-up/one-page-write-up.pdf) | Memorandum: KPIs, priorities, process, human oversight, scalability, assumptions and budget |
+| Prototype: Hearing Desk | `app/dist/index.html` (open in a browser; no install, no network) | The web app a coordinator and a consultant would use, with the AI readers and an agent-readable API |
+| Prototype: coordination sheet | [sheet/gate-sheet.xlsx](sheet/gate-sheet.xlsx) | The spreadsheet the firm runs this season: five checks on every hearing |
+| Prototype: later software | `prototype/control-tower.html` | The coordination software proposed for about 5,000 hearings a year, simulated and not built |
+| Walkthrough video | [media/hearing-desk-launch.mp4](media/hearing-desk-launch.mp4) | 10 min 34 s, narrated, with subtitles |
+| Instructions to try it | [The three-minute tour](#the-three-minute-tour) and [How to run](#how-to-run) | Below |
 
 ![Hearing Desk, the Today page](media/screenshots/today.png)
 
-## The answer in five lines
+## Summary of the recommendation
 
-1. **First, this season:** every hearing has a named consultant who has said yes, three working
-   days ahead. The firm runs a daily kit, a spreadsheet with five checks on every hearing, and one
-   small reply rule. No custom software is built this season.
-2. **Next:** fuller consultant-days. Whole dockets go to one consultant, and offices are asked to
-   hear the firm's cases on one day.
-3. **Later:** a hearing control tower for a 5,000-hearing season. It is prototyped here and is not
-   built for live use. A lean build costs $40,000 to $70,000 a year (estimate). It is built only if
-   the firm's own timed minutes, counted by September, show that it pays in cash.
-4. **Why first:** in the example week, 4 of the 11 hearings due within three working days have no
-   consultant's yes (measured on the packet). A missed hearing costs the client and the firm.
-5. **One number reverses the order:** if the fee a hearing earns is under the $104 a hearing
-   costs (estimate), the firm first decides which cases go to a hearing.
+**Issue.** The firm's records often diverge from the official county record, and consultant
+attendance is not confirmed in writing. In the example week, 4 of the 11 hearings due within three
+working days lacked written confirmation, and 11 of 24 records did not match the county's
+(measured on the packet).
 
-**The ask:** two to four weeks of my time, three days of a coordinator, two hours a week of Alice
-and three days of technical help. Set-up costs about $12,000 at 300 hearings a year (estimate).
+**Recommendation.**
+
+1. **Immediate (from December):** confirm every hearing three working days in advance through five
+   documented checks, each closed by a written reply from the responsible party and recorded in a
+   shared spreadsheet. No custom software is built this season.
+2. **Near term (December to April):** expand the consultant roster, the principal constraint on
+   growth, and schedule full days at each office to raise output from 1.7 to 2.4 hearings per
+   consultant-day.
+3. **Longer term (September):** invest in coordination software (prototyped here as the control
+   tower) only as volume approaches 5,000 hearings a year. A lean build costs $40,000 to $70,000 a
+   year and breaks even on coordinator time at 5,000 to 8,700 hearings a year (estimates).
+
+**Expected benefit.** Missed hearings are not yet tracked, so the benefit is principally risk
+reduction: the checks recover their cost if a missed hearing costs the firm more than about $677
+in lost fees, refunds and remedial work (estimate).
+
+**Principal sensitivity.** If the fee per hearing is below its cost of about $104 (estimate), case
+selection takes precedence.
+
+**Resources.** Two to four weeks of an associate, three days of a coordinator, two hours a week of
+Alice, about five hours of counsel and three days of technical support. Set-up costs about $12,000
+at 300 hearings a year (estimate).
 
 ## Walkthrough video
 
@@ -42,7 +65,7 @@ choose "View raw" to download it.
 
 | Minute | Open | What to look at |
 |---|---|---|
-| 0 to 1 | [docs/write-up/one-page-write-up.pdf](docs/write-up/one-page-write-up.pdf) | Priorities, measures, process and cost on one page |
+| 0 to 1 | [docs/write-up/one-page-write-up.pdf](docs/write-up/one-page-write-up.pdf) | The memorandum: KPIs, priorities, process, scalability and budget on one page |
 | 1 to 2 | `app/dist/index.html` (double-click; no install, no network) | Hearing Desk, the web app. The tour button runs eleven stops from How it works to How we know |
 | 2 to 3 | [sheet/gate-sheet.xlsx](sheet/gate-sheet.xlsx) | The sheet a coordinator runs. Start with its "How to use" tab. The 24 example hearings are its rows |
 
