@@ -27,7 +27,7 @@ Every call returns a fresh JSON copy, so changing an answer changes nothing in t
 | `state()` | The current view, the same JSON as the page's `<script id="desk-state">` |
 | `session()` | What a person decided in this browser. None of it is on the sheet |
 
-Try it in the browser console after opening `app/dist/index.html`:
+Try it in the browser console after opening `app/dist/index.html` or https://hearing-desk.onrender.com/:
 
 ```js
 hearingDesk.help()

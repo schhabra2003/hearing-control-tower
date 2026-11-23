@@ -20,6 +20,7 @@ All data the checks use is fictional. No check sends a message, calls a model or
 | `npm run smoke` (in `app/`) | after `make app`, Playwright Chromium | Pass. 52 steps print `ok`, 0 `FAIL`, exit code 0 | 68 s |
 | `npm run engine-check` (in `app/`) | after `make app`, Playwright Chromium | Pass. 7 of 7 checks in the browser build | 3 s |
 | `npm run live:check` (in `app/`) | after `make app`; no key | Pass. 4 of 4 checks of the live server in recorded mode | 1 s |
+| Hosted copy: `GET https://hearing-desk.onrender.com/api/status` | a browser | Pass (23 Nov 2026). `"mode":"live"`, both models checked, $0 spent at start | under 1 s once awake |
 | `make open`, `make tower` | a browser | Opens the file with `xdg-open` or `open`; where neither exists, prints the path | under 1 s |
 
 `make app-check` runs typecheck, smoke and engine-check in that order and stops at the first

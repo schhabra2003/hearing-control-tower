@@ -3,7 +3,9 @@
 // prototype on new messages, with the same code as `node cli/sheet.js --paste`.
 //
 //   node server/live.mjs [--key-file <path>] [--port 4173] [--host 127.0.0.1] [--dist <dir>]
-//                        [--prototype <dir>] [--cap <usd>] [--recorded]
+//                        [--prototype <dir>] [--cap <usd>] [--per-hour <n>] [--recorded]
+//   Environment: PORT, HOST (0.0.0.0 on a public host), LIVE_CAP_USD, LIVE_PER_HOUR, OPENAI_API_KEY.
+//   On a public host each visitor address gets --per-hour live reads an hour (default 6).
 //
 // The key comes from the environment variable OPENAI_API_KEY or from --key-file (a file with a
 // line OPENAI_API_KEY=... or the key alone). It stays in this process: it is never sent to the
@@ -33,7 +35,7 @@ const argv = process.argv.slice(2);
 const opt = (name, dflt = null) => { const i = argv.indexOf(name); return i >= 0 && argv[i + 1] && !argv[i + 1].startsWith('--') ? argv[i + 1] : dflt; };
 const flag = (name) => argv.includes(name);
 if (flag('--help') || flag('-h')) {
-  console.log(fs.readFileSync(fileURLToPath(import.meta.url), 'utf8').split('\n').slice(1, 22).map((l) => l.replace(/^\/\/ ?/, '')).join('\n'));
+  console.log(fs.readFileSync(fileURLToPath(import.meta.url), 'utf8').split('\n').slice(1, 24).map((l) => l.replace(/^\/\/ ?/, '')).join('\n'));
   process.exit(0);
 }
 const PORT = Number(opt('--port', process.env.PORT || 4173));
@@ -218,8 +220,8 @@ const send = (res, code, body, type = 'application/json; charset=utf-8') => {
   res.writeHead(code, { 'content-type': type, 'cache-control': 'no-store', 'x-content-type-options': 'nosniff', 'referrer-policy': 'no-referrer' });
   res.end(typeof body === 'string' || Buffer.isBuffer(body) ? body : JSON.stringify(body));
 };
-// Only this machine's own pages may call the API: the Host must be local (no DNS rebinding) and a
-// browser's Origin, when present, must be this server.
+// Only this server's own pages may call the API: on a local host the Host must be local (no DNS
+// rebinding), and a browser's Origin, when present, must be this server (http or https).
 const LOCAL = /^(localhost|127\.0\.0\.1|\[::1\])(:\d+)?$/i;
 function allowed(req) {
   const host = String(req.headers.host || '');

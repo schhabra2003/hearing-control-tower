@@ -10,6 +10,7 @@ marked.
 - `FILES.md`: This list
 - `LICENSE`: MIT license for the code, and the notice that all example data is fictional
 - `Makefile`: One-command runs: check, sheet-check, app, app-data, app-check, open, tower, clean
+- `render.yaml`: Render deployment of the live server (the hosted copy); the OpenAI key is a dashboard secret, not in the file
 - `README.md`: What this is, the answer in five lines, the tour, how to run, live AI mode, real versus simulated, limits
 
 ## app
@@ -47,7 +48,7 @@ marked.
 ## app/server
 
 - `app/server/live-check.mjs`: No key, no cost: starts the live server with --recorded, posts the paste example file to /api/read, and checks that the rows equal what `node cli/shee
-- `app/server/live.mjs`: Hearing Desk live server
+- `app/server/live.mjs`: Hearing Desk live server: serves the app and the control tower file, runs the two AI readers with a key kept on the server, with a spend cap and, on a public host, a per-visitor hourly limit
 
 ## app/src
 

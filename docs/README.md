@@ -43,8 +43,8 @@ The commands that produce the checked numbers, and their last results, are in
 | [agents-api.md](agents-api.md) | `window.hearingDesk`, the read-only view of the app's data for agents that browse it |
 | [design-system/README.md](design-system/README.md) | Tokens, type, colour and the shared components of the web app |
 
-How to build and test the app, and how to run its live AI mode with your own OpenAI key, is in
-[../app/README.md](../app/README.md).
+How to build and test the app, how to run its live AI mode with your own OpenAI key, and how the
+hosted copy (https://hearing-desk.onrender.com/) is deployed, is in [../app/README.md](../app/README.md).
 
 ## Research
 

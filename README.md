@@ -68,7 +68,7 @@ choose "View raw" to download it.
 | Minute | Open | What to look at |
 |---|---|---|
 | 0 to 1 | [docs/write-up/one-page-write-up.pdf](docs/write-up/one-page-write-up.pdf) | The memorandum: KPIs, priorities, process, scalability and budget on one page |
-| 1 to 2 | `app/dist/index.html` (double-click; no install, no network) | Hearing Desk, the web app. The tour button runs eleven stops from How it works to How we know |
+| 1 to 2 | [Hearing Desk online](https://hearing-desk.onrender.com/), or `app/dist/index.html` (double-click; no install, no network) | Hearing Desk, the web app. The tour button runs eleven stops from How it works to How we know |
 | 2 to 3 | [sheet/gate-sheet.xlsx](sheet/gate-sheet.xlsx) | The sheet a coordinator runs. Start with its "How to use" tab. The 24 example hearings are its rows |
 
 Three pages to try in the app:
@@ -96,8 +96,9 @@ The last measured result of each command is in [CHECKS.md](CHECKS.md).
 
 ## Live AI mode (optional, your own key)
 
-The offline file replays the readers' recorded answers. To read new messages live with the two AI
-readers (gpt-6.1-sol reads, gpt-6-luna checks), run the app's server with an OpenAI key:
+The hosted copy at https://hearing-desk.onrender.com/ already reads new messages live with the two AI
+readers (gpt-6.1-sol reads, gpt-6-luna checks); see Hosting below. The offline file replays the
+readers' recorded answers. To read live on your own machine, run the app's server with an OpenAI key:
 
 ```
 cd app
@@ -115,7 +116,9 @@ so. The readers only suggest rows; a person accepts or refuses each one.
 
 ### Hosting
 
-`render.yaml` deploys the same server as one Render web service, with no build step and no
+The hosted copy is https://hearing-desk.onrender.com/ (the simulated later software is at
+`/control-tower.html`). On 23 Nov 2026 its `/api/status` answered `"mode":"live"` with both models
+checked (measured). `render.yaml` deploys the same server as one Render web service, with no build step and no
 dependencies. The key is entered once in the Render dashboard as the secret `OPENAI_API_KEY`; the
 server reads it, removes it from its environment and never sends it to the page. On a public host
 each visitor address gets 6 live reads an hour (`LIVE_PER_HOUR`), each read holds at most 10
@@ -211,6 +214,9 @@ notice, office instructions and packet files. It has no access to any real syste
 - One workbook holds 39 offices, 40 consultants and 1,199 hearing rows (measured). Past that, kit
   appendix section 15 gives a procedure that was designed and not run.
 - Part L of the sheet's rules passes the sheet's own check but has had no independent test.
+- The hosted copy runs on a free Render instance: after about 15 minutes without visitors it
+  sleeps, and the next visit takes up to about a minute. Its live reads use the author's key within
+  the limits under Hosting, and it will be taken down after the review.
 
 ## What is not done
 

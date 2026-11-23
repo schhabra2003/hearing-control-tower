@@ -2,8 +2,9 @@
 
 Hearing Desk shows the season-one plan as a coordinator would use it. It is one offline file,
 `dist/index.html`, that opens with a double-click: no server, no install and no network. Every firm,
-office, person and message in it is fictional. It sends nothing, reads no mailbox, calls no model
-and holds no key.
+office, person and message in it is fictional. It sends nothing and reads no mailbox. The file calls
+no model and holds no key. A hosted copy with the live AI readers runs at
+https://hearing-desk.onrender.com/ (see Hosting below).
 
 Every number on a page is read from the gate sheet or the engine, not typed into the page, and
 carries a label: measured, simulated, estimate or packet. The Evidence page lists the command
@@ -49,6 +50,15 @@ line `OPENAI_API_KEY=...`; the environment variable `OPENAI_API_KEY` also works.
 the server process: it is not sent to the page, logged or written to disk. After $5 of spend in one
 run (`--cap <usd>` changes it), the server falls back to recorded answers. Behind a proxy, set
 `NODE_USE_ENV_PROXY=1` and `NODE_EXTRA_CA_CERTS`. Only fictional example messages belong here.
+
+### Hosting
+
+The same server runs at https://hearing-desk.onrender.com/ from `../render.yaml` (Render, free plan,
+no build step, no dependencies). The key is a secret in the Render dashboard, read once by the
+server and never sent to the page. On a public host (`HOST=0.0.0.0`) each visitor address gets
+`LIVE_PER_HOUR` live reads an hour (6), each read holds at most 10 messages, and `LIVE_CAP_USD` ($5)
+stops spend for one server run; past a limit the app answers with the recorded readers and says so.
+Pages of another site are refused. The server also serves `/control-tower.html` from `../prototype/`.
 
 Without a key, `npm run live:recorded` replays the recorded answers and says so, and
 `npm run live:check` tests that path (status, origin check, and rows equal to the command's).

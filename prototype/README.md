@@ -12,7 +12,8 @@ The folder holds two different things. Keep them apart when you read the results
 | **The control tower** (section 5) | `control-tower.html`, one file that opens in a browser, and the engine in `src/` behind it | Later. It is not built for live use this season. The build decision is made in September on the firm's own timed minutes |
 
 Hearing Desk, the web app (`app/dist/index.html`), shows the season-one plan in one offline HTML
-file. It is described in the root README and is not checked in this file.
+file; a hosted copy with the live readers runs at https://hearing-desk.onrender.com/, which also
+serves `control-tower.html`. It is described in the root README and is not checked in this file.
 
 ## 1. What you need
 
